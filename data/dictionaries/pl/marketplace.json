@@ -1,0 +1,22 @@
+[
+  {"word": "wysyłka", "lemma": "wysyłka", "pos": "NOUN", "language": "pl",
+   "synonyms": [
+     {"text": "dostawa", "formality": "neutral", "frequency": 0.76, "contexts": ["marketplace"]},
+     {"text": "przesyłka", "formality": "neutral", "frequency": 0.68, "contexts": ["marketplace"]}
+   ]},
+  {"word": "oferta", "lemma": "oferta", "pos": "NOUN", "language": "pl",
+   "synonyms": [
+     {"text": "promocja", "formality": "neutral", "frequency": 0.72, "contexts": ["marketplace", "seo"]},
+     {"text": "propozycja", "formality": "formal", "frequency": 0.62, "contexts": ["professional"]}
+   ]},
+  {"word": "trwały", "lemma": "trwały", "pos": "ADJ", "language": "pl",
+   "synonyms": [
+     {"text": "wytrzymały", "formality": "neutral", "frequency": 0.68, "contexts": ["marketplace"]},
+     {"text": "solidny", "formality": "neutral", "frequency": 0.66, "contexts": ["marketplace", "technical"]}
+   ], "antonyms": ["nietrwały"]},
+  {"word": "wygodny", "lemma": "wygodny", "pos": "ADJ", "language": "pl",
+   "synonyms": [
+     {"text": "komfortowy", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace"]},
+     {"text": "ergonomiczny", "formality": "formal", "frequency": 0.56, "contexts": ["marketplace", "technical"]}
+   ], "antonyms": ["niewygodny"]}
+]

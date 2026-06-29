@@ -1,0 +1,825 @@
+Le pregunte a las IAS: 
+
+prompt para claude para que cree un modulo de reescritura inteligente y natural de texto, usando una especie de diccionarios de sinonimos, y sea multilenguaje, usar algunas repos reelevantes para ello
+
+prompt por copilot:
+
+Eres un asistente especializado en reescritura multilenguaje. Tu tarea es transformar cualquier texto en una versión más natural, fluida y humana, manteniendo el sentido original pero mejorando estilo, claridad y tono. 
+
+### Objetivos:
+1. **Pipeline completo (HumanAI)**:
+   - Cleanup → elimina patrones IA (frases quemadas, transiciones falsas).
+   - Specificity → sustituye abstracciones por detalles concretos.
+   - Tone → ajusta voz (formal, académico, coloquial, narrativo).
+   - Rhythm → varía longitud y estructura de frases.
+   - Proofread → revisión final gramatical.
+
+2. **Parafraseo avanzado (Humanizer)**:
+   - Usa modelos HuggingFace (T5, BART, Pegasus).
+   - Detecta y corrige frases sospechosas de IA.
+   - Reescribe con estilo humano y natural.
+
+3. **Back-translation (Mayaluri/NLP)**:
+   - Traduce a otro idioma y regresa al original.
+   - Genera variaciones naturales y evita literalidad.
+   - Compatible con MarianMT y spaCy.
+
+4. **CLI modular (Humanizer Workbench)**:
+   - Permite ejecución desde terminal.
+   - Configura idioma, tono y formalidad.
+   - Integra diccionarios de sinónimos locales (WordNet, spaCy).
+
+### Configuración:
+- **Idioma**: detectar automáticamente (es, en, fr, de, zh…).
+- **Formalidad**: configurable (formal, neutro, coloquial).
+- **Objetivo**: ensayo académico, copywriting, conversación.
+- **Modo**: full pipeline / single stage / audit.
+
+### Ejemplo de entrada/salida:
+Entrada: "El proyecto fue terminado rápidamente, pero el resultado no fue muy bueno."
+Salida (reescrito): "El proyecto se completó con rapidez, aunque el resultado dejó mucho que desear."
+
+Prompt por Meta AI:
+
+Aquí tienes un prompt listo para pegar en **Claude** que te va a generar exactamente lo que pides: un módulo de reescritura inteligente, natural y multilenguaje, basado en diccionarios de sinónimos + modelos transformer, y apoyado en repos reales.
+
+Copia todo desde `---` hasta `---`:
+
+---
+
+**Prompt para Claude:**
+
+Actúa como arquitecto senior en NLP. Quiero que diseñes e implementes en Python un módulo llamado `SmartRewriter` para reescritura inteligente y natural de texto.
+
+**Objetivo:**
+- Reescribir frases/párrafos preservando significado pero variando léxico y sintaxis.
+- Funcionar en al menos 30 idiomas (es, en, fr, de, it, pt, ru, zh, ja, ar...).
+- Usar una arquitectura híbrida: diccionarios de sinónimos + modelo transformer multilingüe, no solo reemplazo tonto.
+
+**Requisitos técnicos:**
+
+1. **Capa 1 – Sinónimos controlados:**
+   - Usa WordNet offline vía `zaibacu/thesaurus` para inglés
+   - Para multilenguaje (15 idiomas) integra la API de thesaurus.altervista.org como en `smallwat3r/synonym`
+   - Complementa con Datamuse para sinónimos, antónimos y palabras relacionadas (`dariusjonda/synomuse`, `agmmnn/syn`)
+   - Implementa un `SynonymResolver` que:
+     - detecte idioma con langdetect
+     - lematice con spaCy (modelos `es_core_news_sm`, `en_core_web_sm`, etc.) como hace `woolz/Text-Rewrite-NLP`
+     - filtre por POS para no cambiar sustantivos propios
+     - puntúe candidatos por frecuencia y similitud semántica (spaCy vectors o fastText)
+
+2. **Capa 2 – Parafraseo neuronal:**
+   - Integra el modelo multilingüe de `RasaHQ/paraphraser`, basado en Prism NMT, que soporta 30 idiomas y genera paráfrasis con diversidad controlada
+   - Expón parámetros `--prism_a` (0.001-0.1) para diversidad y `--diverse_beam_groups` para número de variantes
+
+3. **Capa 3 – Naturalidad:**
+   - Después del reemplazo, pasa por un corrector de fluidez (LanguageTool API o transformer tipo mT5)
+   - Aplica reglas de `johnbumgarner/synonyms_discovery_aggregation` para agregar sinónimos vía Word2Vec/fastText cuando el diccionario falla
+
+**API que quiero:**
+```python
+rewriter = SmartRewriter(languages=["es","en","fr"], mode="hybrid")
+rewriter.rewrite("Pasa por la puerta verde, pero no pises las baldosas rojas.",
+                 creativity=0.7,
+                 preserve_entities=True,
+                 n_variants=3)
+# → ["Cruza la puerta verde, pero evita las baldosas rojas.",...]
+```
+
+**Estructura del código:**
+- `/core/synonym_resolver.py`
+- `/core/paraphraser_engine.py` (wrapper Docker de Rasa paraphraser)
+- `/core/fluency.py`
+- `/utils/lang_detect.py`
+- `config.yaml` con API keys
+- Tests con 100 frases en 5 idiomas
+
+**Repos que DEBES usar como referencia e inspirarte en su código:**
+- RasaHQ/paraphraser – paraphrasing multilingüe 30 idiomas
+- woolz/Text-Rewrite-NLP – base spaCy + NLTK + Datamuse
+- zaibacu/thesaurus – WordNet offline JSONL
+- smallwat3r/synonym – CLI multilingüe 15 idiomas
+- johnbumgarner/synonyms_discovery_aggregation – agregación con embeddings
+
+**Entregables:**
+1. Código Python completo, modular, con type hints
+2. Dockerfile para el paraphraser
+3. README con instalación y ejemplos en español e inglés
+4. Explicación de cuándo usar solo sinónimos vs híbrido
+
+No me des teoría. Dame código funcional y comentado.
+
+---
+
+### Por qué estos repos
+
+- **Rasa paraphraser** te da la base neuronal multilingüe real, no un simple reemplazo. Ya está probado en es/en/fr/de/ru.
+- **Text-Rewrite-NLP** muestra exactamente cómo combinar spaCy+NLTK+Datamuse para reescritura controlada.
+- **thesaurus + synonym + synomuse** te resuelven el problema de diccionarios offline y online en varios idiomas, evitando depender solo de inglés.
+
+
+Prompt por gemini:
+
+A continuación se presenta una estructura de prompt optimizada para Claude. El diseño se enfoca en la creación de un sistema de procesamiento de lenguaje natural (NLP) híbrido, que combine la eficiencia computacional de los diccionarios de sinónimos con la comprensión contextual de los modelos de lenguaje, asegurando soporte para múltiples idiomas.
+
+---
+
+### Prompt para Claude
+
+**Rol y Objetivo:**
+Actúa como un ingeniero experto en Procesamiento de Lenguaje Natural (NLP) y Python. El objetivo es desarrollar un módulo de reescritura de texto avanzado (paraphraser/spinner) que sea inteligente, de flujo natural y con soporte multilenguaje.
+
+**Especificaciones del Sistema:**
+El sistema debe evitar sonar robótico. Para lograrlo, es necesario implementar un enfoque híbrido:
+
+1. **Detección y Configuración Multilenguaje:** El módulo debe ser capaz de identificar el idioma de entrada dinámicamente y cargar los recursos lingüísticos correspondientes.
+2. **Sustitución Inteligente (Diccionarios):** Se debe implementar tokenización, lematización y etiquetado gramatical (POS tagging). El reemplazo de sustantivos, verbos y adjetivos debe realizarse consultando diccionarios de sinónimos estructurados, respetando el tiempo verbal y género.
+3. **Desambiguación del Sentido de las Palabras (WSD):** Garantizar que el sinónimo seleccionado coincida semánticamente con el contexto específico de la oración.
+4. **Suavizado Contextual:** Aplicar un paso final de corrección gramatical y cohesión para que el resultado final fluya de manera natural.
+
+**Repositorios e Integraciones Requeridas:**
+Generar el código base en Python integrando obligatoriamente las lógicas de las siguientes herramientas y repositorios clave en la industria:
+
+* **[makcedward/nlpaug](https://github.com/makcedward/nlpaug):** Utilizar para la implementación rápida de aumento de datos y sustitución de sinónimos a nivel de palabras (WordNet, PPDB, o diccionarios personalizados).
+* **[explosion/spaCy](https://github.com/explosion/spaCy):** Implementar para el pipeline base de NLP, análisis morfológico, POS tagging y extracción de entidades nombradas (NER) en múltiples idiomas (para evitar reemplazar nombres propios).
+* **Open Multilingual Wordnet (OMW):** Usar como base de datos de conocimiento léxico para mapear los sinónimos correctos cuando se detecten idiomas distintos al inglés.
+* **[huggingface/transformers](https://github.com/huggingface/transformers):** Opcional, pero recomendado en el prompt, para integrar modelos de lenguaje ligeros (como T5 o modelos de traducción inversa/back-translation con MarianMT) encargados del paso final de "suavizado" del texto.
+
+**Entregables Esperados en la Respuesta:**
+
+1. Arquitectura modular del código (clases separadas para la inicialización de diccionarios, el motor de reescritura y el procesador de idiomas).
+2. Un script ejecutable de demostración que procese una cadena de texto en español y otra en inglés.
+3. Archivo `requirements.txt` con las versiones estables de las librerías mencionadas.
+
+---
+
+### Notas de Implementación
+
+Este enfoque basado en la combinación de `spaCy` y `nlpaug` garantiza un control total sobre el nivel de agresividad en la reescritura del texto. Al utilizar diccionarios estructurados (como WordNet/OMW), el procesamiento es significativamente más rápido y económico en recursos que depender exclusivamente de modelos de lenguaje masivos para procesar cada palabra.
+
+¿El usuario requiere que el prompt incluya instrucciones adicionales sobre cómo eludir penalizaciones de contenido duplicado, o sobre el manejo de formato de etiquetas HTML durante la reescritura?
+mi respuesta fue si:
+
+Aquí tienes la extensión del prompt con las instrucciones específicas para manejar código HTML y asegurar que el texto resultante sea seguro para SEO y libre de penalizaciones por contenido duplicado.
+
+Puedes agregar esta sección directamente al prompt anterior antes de enviárselo a Claude:
+
+---
+
+### **[AÑADIR AL PROMPT ORIGINAL]**
+
+**Requisitos Avanzados: Manejo de HTML y Evasión de Contenido Duplicado (SEO)**
+
+Además de la arquitectura base, el módulo debe implementar las siguientes dos características críticas:
+
+**1. Preservación Estructural de HTML (Rich Text Handling):**
+El texto de entrada puede contener formato HTML complejo (párrafos, negritas, enlaces, listas).
+
+* Implementa un paso de preprocesamiento utilizando `BeautifulSoup` (o una herramienta similar).
+* El sistema debe extraer y aislar únicamente el texto visible para su reescritura, ignorando completamente los bloques de código, etiquetas, atributos (como `href` o `class`) y shortcodes.
+* Una vez reescrito el texto, el sistema debe reinyectarlo en la estructura de etiquetas original con precisión quirúrgica, garantizando que el HTML de salida sea completamente válido y no esté roto.
+
+**2. Algoritmos Anti-Plagio y Diversificación SEO:**
+El reemplazo palabra por palabra (spinning tradicional) no es suficiente y genera penalizaciones por contenido duplicado en los motores de búsqueda. El motor debe asegurar la singularidad del texto:
+
+* **Métrica de Superposición:** Integra una función de evaluación que compare el texto original con el reescrito (por ejemplo, midiendo la similitud de Jaccard o la superposición de n-gramas). El sistema debe iterar o ajustar su agresividad hasta garantizar que la similitud léxica caiga por debajo del 40%.
+* **Reestructuración Sintáctica:** Además de consultar diccionarios de sinónimos, el pipeline debe incluir reglas de reescritura a nivel de frase. Esto incluye la conversión entre voz activa y pasiva, la alteración del orden de las cláusulas y la fusión o división de oraciones mediante la manipulación de los árboles de dependencia sintáctica extraídos con `spaCy`.
+
+**Actualización de Entregables:**
+Asegúrate de que el script de demostración en Python incluya una prueba donde el input sea una cadena de texto con etiquetas HTML (ej. `"<p>El <b>rápido</b> zorro marrón salta sobre el perro perezoso.</p>"`) y devuelva el HTML intacto con el texto interno correctamente reescrito y optimizado.
+
+---
+
+### Consejos de implementación para este enfoque:
+
+Al exigirle a Claude que use `BeautifulSoup` junto con `spaCy`, fuerzas al modelo a crear un sistema que desarma el texto, mapea la posición exacta de cada palabra modificable y luego reconstruye el rompecabezas. Esto es vital si planeas usar este módulo en gestores de contenido como WordPress.
+
+
+Prompt por ChatGPT:
+
+Para que salga natural, no conviene hacerlo solo con “sinónimos aleatorios”. Lo mejor es un motor híbrido: diccionarios/WordNet + lematización + detector de idioma + puntuación por frecuencia + validación semántica con embeddings. OMW sirve como base multilenguaje abierta; NLTK/WordNet maneja synsets, lemmas, sinónimos y antónimos; spaCy y Simplemma ayudan con tokenización/lematización; LanguageTool puede validar gramática; y Sentence Transformers puede comparar si el texto reescrito conserva el significado. ([Omwn][1])
+
+Copia este prompt en Claude Code:
+
+```text
+Actúa como arquitecto senior de software, especialista en NLP multilenguaje y reescritura natural de texto.
+
+Quiero que crees un módulo de “Reescritura Inteligente y Natural de Texto” para mi proyecto actual. El objetivo NO es hacer un simple reemplazo de palabras por sinónimos, sino un sistema híbrido que reescriba textos de forma natural, legible, contextual y multilenguaje, conservando el significado original.
+
+OBJETIVO PRINCIPAL
+Crear un módulo que reciba texto y devuelva una versión reescrita, más natural, clara y fluida, con distintos modos de reescritura:
+
+1. Natural
+2. Formal
+3. Informal
+4. Profesional
+5. SEO
+6. Producto / Marketplace
+7. Técnico
+8. Simple / fácil de entender
+9. Expandido
+10. Resumido
+11. Corrección gramatical sin cambiar demasiado
+12. Reescritura creativa moderada
+
+IDIOMAS
+Debe ser multilenguaje desde el diseño. Como mínimo soportar:
+
+- Español
+- Inglés
+- Portugués
+- Francés
+- Italiano
+- Alemán
+
+Diseñar la arquitectura para poder agregar más idiomas después.
+
+IMPORTANTE
+No quiero un “spinner” antiguo ni un sistema que cambie palabras sin sentido. Quiero una reescritura natural. El sistema debe cuidar:
+
+- Significado original
+- Gramática
+- Tono
+- Concordancia de género y número
+- Contexto
+- Entidades protegidas
+- Marcas
+- Nombres propios
+- URLs
+- Fechas
+- Precios
+- Porcentajes
+- SKUs
+- Códigos
+- Nombres de productos
+- Términos legales, médicos o técnicos sensibles
+- Palabras que no deben alterarse
+
+REPOS Y LIBRERÍAS A INVESTIGAR / USAR COMO REFERENCIA
+
+Investiga, revisa licencias y usa como dependencia o inspiración técnica estas opciones cuando convenga:
+
+1. Open Multilingual Wordnet
+   https://github.com/globalwordnet/OMW
+
+2. Open English WordNet
+   https://github.com/globalwordnet/english-wordnet
+
+3. NLTK WordNet / OMW
+   https://github.com/nltk/nltk
+
+4. Simplemma, lematizador multilenguaje
+   https://github.com/adbar/simplemma
+
+5. spaCy, NLP industrial multilenguaje
+   https://github.com/explosion/spaCy
+
+6. Stanza, NLP multilenguaje de Stanford
+   https://github.com/stanfordnlp/stanza
+
+7. LanguageTool, corrección gramatical multilenguaje
+   https://github.com/languagetool-org/languagetool
+
+8. wordfreq, frecuencia de palabras por idioma
+   https://github.com/rspeer/wordfreq
+
+9. Parrot Paraphraser, referencia de parafraseo
+   https://github.com/PrithivirajDamodaran/Parrot_Paraphraser
+
+10. T5 Paraphrase Generator, referencia de parafraseo neural
+    https://github.com/Vamsi995/Paraphrase-Generator
+
+11. sentence-transformers para validación semántica
+    https://github.com/UKPLab/sentence-transformers
+
+12. Modelo de embeddings multilenguaje:
+    sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+13. Lingua o fastText para detección de idioma:
+    https://github.com/pemistahl/lingua-py
+    https://fasttext.cc/docs/en/language-identification.html
+
+No copies código sin revisar licencia. Si una repo no conviene, explica por qué y usa alternativa.
+
+ARQUITECTURA DEL MÓDULO
+
+Crea una arquitectura limpia con estas capas:
+
+1. LanguageDetector
+   - Detecta idioma automáticamente.
+   - Permite forzar idioma manualmente.
+   - Devuelve idioma + confianza.
+
+2. TextProtector
+   - Detecta y protege:
+     - URLs
+     - correos
+     - teléfonos
+     - fechas
+     - precios
+     - porcentajes
+     - nombres propios
+     - marcas
+     - SKUs
+     - hashtags
+     - menciones
+     - código
+     - HTML
+     - shortcodes
+   - Sustituye temporalmente estos elementos por tokens seguros:
+     __PROTECTED_001__
+   - Al final restaura todo exactamente igual.
+
+3. TokenizerAndLemmatizer
+   - Tokeniza el texto.
+   - Detecta POS cuando sea posible.
+   - Lematiza palabras para buscar sinónimos correctamente.
+   - Usa spaCy, Simplemma, Stanza o la mejor opción según idioma.
+
+4. SynonymDictionaryEngine
+   - Carga diccionarios por idioma.
+   - Usa WordNet / OMW cuando esté disponible.
+   - Soporta diccionarios personalizados en JSON.
+   - Cada entrada debe permitir:
+     - palabra
+     - lema
+     - idioma
+     - categoría gramatical
+     - sinónimos
+     - antónimos
+     - nivel de formalidad
+     - frecuencia
+     - contexto recomendado
+     - palabras prohibidas
+     - ejemplos
+   - Permitir agregar diccionarios propios por industria:
+     - marketplace
+     - legal
+     - marketing
+     - tecnología
+     - salud
+     - educación
+     - productos
+
+5. CandidateGenerator
+   - Genera posibles sustituciones.
+   - Nunca debe reemplazar una palabra si:
+     - cambia el significado
+     - suena forzado
+     - rompe la gramática
+     - es una entidad protegida
+     - es una palabra técnica sensible
+     - baja demasiado la naturalidad
+   - Debe evitar reemplazar demasiadas palabras en una misma oración.
+
+6. ContextScorer
+   - Evalúa cada candidato por:
+     - similitud semántica
+     - frecuencia de uso
+     - naturalidad
+     - concordancia gramatical
+     - tono solicitado
+     - longitud deseada
+     - repetición de palabras
+   - Usar embeddings multilenguaje para comparar texto original vs texto reescrito.
+   - Si la similitud semántica baja de cierto umbral, descartar la versión.
+
+7. SentenceRewriter
+   - Reescribe por oración, no solo por palabra.
+   - Puede reordenar ligeramente frases para que suenen naturales.
+   - Debe conservar intención, datos y estructura esencial.
+   - Debe generar varias alternativas y elegir la mejor.
+
+8. GrammarAndStyleChecker
+   - Corrige errores gramaticales cuando sea posible.
+   - Puede integrarse con LanguageTool local o API configurable.
+   - Debe funcionar aunque LanguageTool no esté instalado.
+
+9. OutputRanker
+   - Genera 3 alternativas cuando se solicite.
+   - Selecciona la mejor según:
+     - claridad
+     - naturalidad
+     - similitud semántica
+     - tono
+     - gramática
+     - baja repetición
+   - Devuelve también métricas.
+
+10. API / Servicio
+   Crear endpoints o funciones equivalentes:
+
+   POST /api/rewrite
+   Entrada:
+   {
+     "text": "texto original",
+     "language": "auto",
+     "mode": "natural",
+     "strength": 0.35,
+     "preserveKeywords": ["Mananpa Labs", "Shomex"],
+     "avoidWords": [],
+     "returnAlternatives": 3
+   }
+
+   Salida:
+   {
+     "original": "...",
+     "rewritten": "...",
+     "alternatives": [],
+     "language": "es",
+     "similarityScore": 0.92,
+     "readabilityScore": 0.86,
+     "changedWords": [],
+     "protectedTerms": [],
+     "warnings": []
+   }
+
+PARÁMETROS IMPORTANTES
+
+- strength:
+  - 0.1 = cambios mínimos
+  - 0.3 = reescritura natural moderada
+  - 0.6 = reescritura fuerte
+  - 0.9 = muy creativa, pero sin cambiar significado
+
+- mode:
+  natural, formal, informal, professional, seo, marketplace, technical, simple, expanded, summarized, grammar_only
+
+- preserveKeywords:
+  Lista de palabras que no deben cambiarse.
+
+- avoidWords:
+  Palabras que no deben aparecer.
+
+- locale:
+  Ejemplo: es-MX, es-ES, en-US, pt-BR.
+
+DICCIONARIOS PERSONALIZADOS
+
+Crea una carpeta tipo:
+
+/rewrite-engine
+  /dictionaries
+    /es
+      general.json
+      marketplace.json
+      legal.json
+      technical.json
+    /en
+      general.json
+      marketplace.json
+      legal.json
+      technical.json
+    /pt
+    /fr
+    /it
+    /de
+  /protected
+    brands.json
+    legal_terms.json
+    medical_terms.json
+    marketplace_terms.json
+
+Ejemplo de entrada JSON:
+
+{
+  "word": "comprar",
+  "lemma": "comprar",
+  "pos": "verb",
+  "language": "es",
+  "synonyms": [
+    {
+      "text": "adquirir",
+      "formality": "formal",
+      "frequency": 0.82,
+      "contexts": ["marketplace", "legal", "professional"],
+      "avoidContexts": ["informal"]
+    },
+    {
+      "text": "llevar",
+      "formality": "informal",
+      "frequency": 0.74,
+      "contexts": ["marketplace", "advertising"],
+      "avoidContexts": ["legal"]
+    }
+  ],
+  "antonyms": ["vender"],
+  "examples": [
+    "Puedes comprar este producto hoy.",
+    "Puedes adquirir este producto hoy."
+  ]
+}
+
+REGLAS DE NATURALIDAD
+
+Implementa reglas para evitar resultados artificiales:
+
+1. No cambiar todas las palabras posibles.
+2. No reemplazar palabras comunes si la frase ya suena natural.
+3. No usar sinónimos raros o demasiado formales en textos casuales.
+4. No cambiar términos técnicos sin validación.
+5. No alterar datos duros.
+6. No cambiar nombres de marcas.
+7. No modificar precios, fechas o porcentajes.
+8. No romper HTML ni Markdown.
+9. No generar frases más largas si el modo no lo pide.
+10. No inventar información.
+11. No agregar promesas comerciales falsas.
+12. No convertir el texto en spam SEO.
+13. No usar lenguaje engañoso.
+14. No alterar el sentido legal, médico o financiero.
+15. Si no hay buena reescritura posible, devolver el texto original con warning.
+
+MODO MARKETPLACE
+
+Agregar reglas especiales para textos de productos:
+
+- Mejorar títulos de productos sin exagerar.
+- Hacer descripciones más claras y atractivas.
+- Generar bullets de beneficios.
+- Mantener medidas, capacidad, compatibilidad, marca y modelo.
+- Evitar claims falsos.
+- Evitar palabras prohibidas configurables.
+- Evitar afirmaciones médicas si no están permitidas.
+- Permitir tono tipo Amazon, MercadoLibre, Temu, Shopee, pero sin copiar contenido de terceros.
+
+Ejemplo:
+Original:
+"Audífonos bluetooth buenos con batería grande"
+
+Reescritura:
+"Audífonos Bluetooth con batería de larga duración y sonido claro"
+
+MODO SEO
+
+- Mejorar claridad.
+- Mantener palabras clave.
+- Evitar keyword stuffing.
+- Generar meta title y meta description opcional.
+- Sugerir variantes semánticas naturales.
+- No repetir la keyword de forma forzada.
+
+INTERFAZ DE USUARIO
+
+Si el proyecto tiene frontend, crea una UI simple:
+
+- Textarea de texto original
+- Selector de idioma
+- Selector de modo
+- Slider de intensidad
+- Campo de palabras protegidas
+- Botón “Reescribir”
+- Resultado principal
+- 3 alternativas
+- Métricas:
+  - similitud
+  - legibilidad
+  - porcentaje modificado
+- Botón copiar
+- Botón restaurar original
+
+SI EL PROYECTO ES LARAVEL / PHP
+
+Crear:
+
+- RewriteController
+- RewriteService
+- DictionaryRepository
+- LanguageDetectorService
+- TextProtectorService
+- routes/api.php
+- tests Feature y Unit
+- migraciones si se requiere guardar historial
+
+SI EL PROYECTO ES NODE / NEXT / EXPRESS
+
+Crear:
+
+- /src/modules/rewrite
+- rewrite.controller.ts
+- rewrite.service.ts
+- dictionary.service.ts
+- language-detector.service.ts
+- text-protector.service.ts
+- routes
+- tests
+
+SI EL PROYECTO ES PYTHON
+
+Crear:
+
+- rewrite_engine/
+- detector.py
+- protector.py
+- tokenizer.py
+- synonyms.py
+- scorer.py
+- rewriter.py
+- api.py
+- tests/
+
+Puedes elegir la mejor arquitectura según el stack detectado del proyecto.
+
+FUNCIONES CLAVE A IMPLEMENTAR
+
+Implementa al menos estas funciones:
+
+- detectLanguage(text)
+- protectTerms(text, customTerms)
+- restoreProtectedTerms(text, map)
+- tokenize(text, language)
+- lemmatize(token, language)
+- getSynonyms(word, language, pos, context)
+- scoreCandidate(originalSentence, candidateSentence, options)
+- rewriteSentence(sentence, options)
+- rewriteText(text, options)
+- generateAlternatives(text, options, count)
+- validateMeaning(original, rewritten)
+- checkGrammar(text, language)
+- calculateReadability(text, language)
+
+VALIDACIÓN SEMÁNTICA
+
+Usar embeddings cuando sea posible:
+
+- sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- O alternativa ligera configurable
+- Si no hay modelo disponible, usar fallback por similitud léxica y reglas.
+
+Umbrales sugeridos:
+
+- similarity >= 0.88 para textos normales
+- similarity >= 0.93 para textos legales, médicos o técnicos
+- similarity >= 0.80 solo para modo creativo
+
+TESTS OBLIGATORIOS
+
+Crear pruebas para:
+
+1. No cambiar URLs.
+2. No cambiar precios.
+3. No cambiar nombres propios.
+4. No cambiar marcas protegidas.
+5. Mantener significado.
+6. Reescribir español.
+7. Reescribir inglés.
+8. Reescribir portugués.
+9. Modo formal.
+10. Modo informal.
+11. Modo marketplace.
+12. Modo SEO.
+13. HTML y Markdown intactos.
+14. Frases técnicas sin cambios peligrosos.
+15. Diccionarios personalizados funcionando.
+16. Baja similitud semántica debe rechazarse.
+17. Texto corto debe manejarse sin errores.
+18. Texto largo debe dividirse por oraciones.
+19. Palabras prohibidas no deben aparecer.
+20. Si no hay mejora real, devolver original con warning.
+
+EJEMPLOS DE PRUEBA
+
+Entrada:
+"Este producto es bueno y barato, cómpralo ahora."
+
+Modo marketplace:
+"Este producto ofrece una buena relación calidad-precio y está listo para que lo compres hoy."
+
+Entrada:
+"Necesito ayuda para arreglar este error en mi sitio web."
+
+Modo formal:
+"Solicito apoyo para corregir este error en mi sitio web."
+
+Entrada:
+"Buy this product now because it is very good."
+
+Modo natural en inglés:
+"Get this product today — it offers great value and quality."
+
+Entrada:
+"Este suplemento cura enfermedades."
+
+Debe advertir:
+"Posible claim médico sensible. No se debe reescribir como afirmación médica."
+
+RESULTADO FINAL ESPERADO
+
+Entrega:
+
+1. Análisis breve del stack detectado.
+2. Arquitectura propuesta.
+3. Archivos creados/modificados.
+4. Instalación de dependencias.
+5. Módulo funcional.
+6. Diccionarios base por idioma.
+7. API o funciones listas para usar.
+8. UI básica si aplica.
+9. Tests.
+10. Documentación en README.
+11. Ejemplos de uso.
+12. Advertencias de licencias de las repos/librerías usadas.
+13. Explicación de cómo agregar nuevos idiomas y diccionarios.
+
+CRITERIO DE CALIDAD
+
+El módulo será aceptado solo si:
+
+- No funciona como spinner barato.
+- Conserva significado.
+- Reescribe de forma natural.
+- Soporta varios idiomas.
+- Protege entidades importantes.
+- Tiene tests.
+- Tiene diccionarios editables.
+- Permite integrar IA después, pero funciona aunque no haya IA externa.
+- Es extensible.
+- Es seguro para marketplace, SEO y textos profesionales.
+```
+
+Nota importante: `wordfreq` puede servir para elegir sinónimos más comunes, pero su propio repositorio indica que sus datos son una “foto” de lenguaje hasta 2021, así que conviene combinarlo con diccionarios propios actualizables para español mexicano, marketplace y términos modernos. ([GitHub][2])
+
+[1]: https://omwn.org/?utm_source=chatgpt.com "Open Multilingual Wordnet"
+[2]: https://github.com/rspeer/wordfreq?utm_source=chatgpt.com "rspeer/wordfreq: Access a database of word frequencies, in ..."
+
+
+Prompt por grok:
+
+**Aquí tienes un prompt bien estructurado y detallado para Claude (Anthropic) que debería generar un módulo de reescritura inteligente y natural:**
+
+---
+
+**Prompt para Claude:**
+
+Eres un experto en Ingeniería de Prompts y Desarrollo de Software en Python. Crea un **módulo completo, modular y profesional** llamado `smart_text_rewriter` para reescritura inteligente y natural de texto.
+
+### Requisitos principales:
+
+1. **Funcionalidad principal**:
+   - Reescribir texto manteniendo el significado original, pero mejorando naturalidad, fluidez, variedad léxica y estilo.
+   - Soporte completo **multilingüe** (al menos español, inglés, francés, alemán, portugués, italiano y más si es posible).
+   - Modo "ligero" (basado en sinónimos + reglas) y modo "inteligente" (combinado con contexto semántico).
+
+2. **Enfoque en sinónimos**:
+   - Usa diccionarios de sinónimos / tesauros.
+   - Reemplazo contextual (considerar POS - parte de la oración).
+   - Evitar repeticiones y mejorar variedad sin sonar forzado o robótico.
+   - Opciones de "intensidad" de reescritura (baja, media, alta).
+
+3. **Bibliotecas y repos recomendados a integrar**:
+   - **PyMultiDictionary** (o similar): para sinónimos, significados y traducciones en múltiples idiomas.
+   - **WordHoard** (github.com/johnbumgarner/wordhoard): excelente para sinónimos, antónimos, hiperónimos, etc.
+   - **NLTK** + **Open Multilingual WordNet (OMW)**: para synsets y sinónimos multilingües.
+   - **spaCy** (con modelos multilenguaje): para tokenización, POS tagging y análisis contextual.
+   - **Simplemma**: lematizador rápido y ligero para muchos idiomas.
+   - Opcionalmente: `deep-translator` para soporte adicional entre idiomas.
+   - `textblob` o `pattern` como fallback.
+
+4. **Características técnicas del módulo**:
+   - Clase principal `SmartTextRewriter` con métodos como:
+     - `rewrite(text, language='es', intensity='medium', preserve_style=False)`
+     - `paraphrase_sentence(sentence, ...)` 
+     - `improve_naturalness(text, ...)`
+   - Caché de sinónimos (usando `functools.lru_cache` o Redis-like).
+   - Detección automática de idioma (usando `langdetect` o spaCy).
+   - Manejo de puntuación, entidades nombradas y estructura sintáctica.
+   - Opciones para preservar tono, formalidad o estilo específico.
+   - Logging y manejo de errores robusto.
+
+5. **Estrategia de reescritura inteligente**:
+   - Tokenizar → Lematizar → Obtener sinónimos contextuales → Elegir el mejor según frecuencia, compatibilidad semántica y naturalidad.
+   - Reglas de diversidad: evitar reemplazar palabras clave o términos técnicos a menos que se indique.
+   - Combinar con reordenamiento sutil de frases cuando sea posible (en modo avanzado).
+   - Fallback a reglas simples si no hay sinónimos buenos.
+
+6. **Estructura del código**:
+   - Usa una estructura de paquete Python moderna (`pyproject.toml` o `setup.py` recomendado).
+   - Incluye `__init__.py`, módulo principal, utils, y un archivo de ejemplo/demo.
+   - Buen manejo de dependencias (con `requirements.txt` o `pyproject.toml`).
+   - Documentación clara con docstrings (Google o NumPy style) y ejemplos de uso.
+   - Tests unitarios básicos.
+
+7. **Consideraciones adicionales**:
+   - Rendimiento: debe ser rápido para texto largo.
+   - Precisión multilingüe: prioriza calidad en los idiomas principales.
+   - Edge cases: textos cortos, jerga, poesía, contenido técnico, código, etc.
+   - Posibilidad de extender con modelos locales (ej. sentence-transformers para similitud semántica) en el futuro.
+   - Licencias compatibles (MIT preferible).
+
+Genera el código completo del módulo, incluyendo instalación, ejemplos de uso y explicaciones. Hazlo listo para producción y fácil de extender. 
+
+---
+
+**Consejos para usar este prompt con Claude**:
+- Pégalo tal cual o divídelo en partes si Claude tiene límite de tokens.
+- Puedes agregar: "Genera primero la estructura y luego implementa cada archivo" para respuestas más manejables.
+- Después de que Claude lo genere, pídele iteraciones específicas (ej. "mejora el manejo de contexto" o "agrega soporte para español peninsular vs. latinoamericano").
+
+Este prompt está diseñado para que Claude produzca algo **mucho más sofisticado** que un simple reemplazo de sinónimos, con buena arquitectura y aprovechando las mejores herramientas open-source disponibles. ¿Quieres que ajuste el prompt o que yo mismo intente implementar partes clave aquí?
+
+
+
+
+
+
+

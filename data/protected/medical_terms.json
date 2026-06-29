@@ -1,0 +1,10 @@
+{
+  "_note": "Términos médicos sensibles que no deben reescribirse (se protegen literalmente). NO reemplazar evita crear o alterar afirmaciones médicas.",
+  "terms": [
+    "principio activo", "dosis", "posología", "contraindicaciones",
+    "efectos secundarios", "reacciones adversas", "indicaciones terapéuticas",
+    "diagnóstico", "tratamiento", "prescripción médica", "miligramos",
+    "active ingredient", "dosage", "contraindications", "side effects",
+    "adverse reactions", "diagnosis", "prescription", "clinical trial"
+  ]
+}

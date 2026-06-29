@@ -1,0 +1,47 @@
+[
+  {"word": "köpa", "lemma": "köpa", "pos": "VERB", "language": "sv",
+   "synonyms": [
+     {"text": "införskaffa", "formality": "formal", "frequency": 0.56, "contexts": ["marketplace", "professional", "legal"], "avoidContexts": ["informal"]},
+     {"text": "skaffa", "formality": "informal", "frequency": 0.74, "contexts": ["marketplace", "informal"], "avoidContexts": ["legal"]}
+   ], "antonyms": ["sälja"]},
+  {"word": "bra", "lemma": "bra", "pos": "ADJ", "language": "sv",
+   "synonyms": [
+     {"text": "utmärkt", "formality": "neutral", "frequency": 0.68, "contexts": ["marketplace", "seo"]},
+     {"text": "solid", "formality": "neutral", "frequency": 0.6, "contexts": ["professional", "technical"]}
+   ], "antonyms": ["dålig"]},
+  {"word": "billig", "lemma": "billig", "pos": "ADJ", "language": "sv",
+   "synonyms": [
+     {"text": "prisvärd", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "seo"]},
+     {"text": "förmånlig", "formality": "formal", "frequency": 0.56, "contexts": ["marketplace", "professional"]}
+   ], "antonyms": ["dyr"]},
+  {"word": "hjälp", "lemma": "hjälp", "pos": "NOUN", "language": "sv",
+   "synonyms": [
+     {"text": "stöd", "formality": "formal", "frequency": 0.76, "contexts": ["professional", "technical"]},
+     {"text": "assistans", "formality": "formal", "frequency": 0.62, "contexts": ["professional", "technical"]}
+   ]},
+  {"word": "fel", "lemma": "fel", "pos": "NOUN", "language": "sv",
+   "synonyms": [
+     {"text": "misstag", "formality": "neutral", "frequency": 0.68, "contexts": ["technical"]},
+     {"text": "defekt", "formality": "formal", "frequency": 0.56, "contexts": ["technical", "professional"]}
+   ]},
+  {"word": "snabb", "lemma": "snabb", "pos": "ADJ", "language": "sv",
+   "synonyms": [
+     {"text": "effektiv", "formality": "neutral", "frequency": 0.66, "contexts": ["technical", "professional"]},
+     {"text": "kvick", "formality": "informal", "frequency": 0.54, "contexts": ["informal"]}
+   ], "antonyms": ["långsam"]},
+  {"word": "enkel", "lemma": "enkel", "pos": "ADJ", "language": "sv",
+   "synonyms": [
+     {"text": "lätt", "formality": "neutral", "frequency": 0.76, "contexts": ["marketplace", "technical"]},
+     {"text": "okomplicerad", "formality": "formal", "frequency": 0.54, "contexts": ["technical", "professional"]}
+   ], "antonyms": ["svår"]},
+  {"word": "förbättra", "lemma": "förbättra", "pos": "VERB", "language": "sv",
+   "synonyms": [
+     {"text": "utveckla", "formality": "neutral", "frequency": 0.66, "contexts": ["professional"]},
+     {"text": "förfina", "formality": "formal", "frequency": 0.54, "contexts": ["professional"]}
+   ]},
+  {"word": "viktig", "lemma": "viktig", "pos": "ADJ", "language": "sv",
+   "synonyms": [
+     {"text": "central", "formality": "formal", "frequency": 0.66, "contexts": ["professional"]},
+     {"text": "avgörande", "formality": "formal", "frequency": 0.62, "contexts": ["professional", "technical"]}
+   ]}
+]

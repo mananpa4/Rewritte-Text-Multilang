@@ -1,0 +1,20 @@
+[
+  {"word": "envío", "lemma": "envío", "pos": "NOUN", "language": "es",
+   "synonyms": [
+     {"text": "entrega", "formality": "neutral", "frequency": 0.74, "contexts": ["marketplace"]}
+   ]},
+  {"word": "oferta", "lemma": "oferta", "pos": "NOUN", "language": "es",
+   "synonyms": [
+     {"text": "promoción", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "seo"]}
+   ]},
+  {"word": "duradero", "lemma": "duradero", "pos": "ADJ", "language": "es",
+   "synonyms": [
+     {"text": "resistente", "formality": "neutral", "frequency": 0.68, "contexts": ["marketplace"]},
+     {"text": "de larga duración", "formality": "neutral", "frequency": 0.6, "contexts": ["marketplace"]}
+   ]},
+  {"word": "cómodo", "lemma": "cómodo", "pos": "ADJ", "language": "es",
+   "synonyms": [
+     {"text": "confortable", "formality": "neutral", "frequency": 0.62, "contexts": ["marketplace"]},
+     {"text": "ergonómico", "formality": "formal", "frequency": 0.55, "contexts": ["marketplace", "technical"]}
+   ]}
+]

@@ -1,0 +1,47 @@
+[
+  {"word": "купити", "lemma": "купити", "pos": "VERB", "language": "uk",
+   "synonyms": [
+     {"text": "придбати", "formality": "formal", "frequency": 0.68, "contexts": ["marketplace", "professional", "legal"], "avoidContexts": ["informal"]},
+     {"text": "взяти", "formality": "informal", "frequency": 0.72, "contexts": ["marketplace", "informal"], "avoidContexts": ["legal"]}
+   ], "antonyms": ["продати"]},
+  {"word": "добрий", "lemma": "добрий", "pos": "ADJ", "language": "uk",
+   "synonyms": [
+     {"text": "чудовий", "formality": "neutral", "frequency": 0.72, "contexts": ["marketplace", "seo"]},
+     {"text": "якісний", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "professional"]}
+   ], "antonyms": ["поганий"]},
+  {"word": "дешевий", "lemma": "дешевий", "pos": "ADJ", "language": "uk",
+   "synonyms": [
+     {"text": "доступний", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "seo"]},
+     {"text": "недорогий", "formality": "neutral", "frequency": 0.66, "contexts": ["marketplace"]}
+   ], "antonyms": ["дорогий"]},
+  {"word": "допомога", "lemma": "допомога", "pos": "NOUN", "language": "uk",
+   "synonyms": [
+     {"text": "підтримка", "formality": "formal", "frequency": 0.76, "contexts": ["professional", "technical"]},
+     {"text": "сприяння", "formality": "formal", "frequency": 0.6, "contexts": ["professional"]}
+   ]},
+  {"word": "помилка", "lemma": "помилка", "pos": "NOUN", "language": "uk",
+   "synonyms": [
+     {"text": "збій", "formality": "neutral", "frequency": 0.64, "contexts": ["technical"]},
+     {"text": "проблема", "formality": "neutral", "frequency": 0.76, "contexts": ["technical", "professional"]}
+   ]},
+  {"word": "швидкий", "lemma": "швидкий", "pos": "ADJ", "language": "uk",
+   "synonyms": [
+     {"text": "оперативний", "formality": "formal", "frequency": 0.62, "contexts": ["professional", "technical"]},
+     {"text": "жвавий", "formality": "neutral", "frequency": 0.54, "contexts": ["marketplace"]}
+   ], "antonyms": ["повільний"]},
+  {"word": "легкий", "lemma": "легкий", "pos": "ADJ", "language": "uk",
+   "synonyms": [
+     {"text": "простий", "formality": "neutral", "frequency": 0.76, "contexts": ["marketplace", "technical"]},
+     {"text": "зрозумілий", "formality": "neutral", "frequency": 0.66, "contexts": ["technical"]}
+   ], "antonyms": ["складний"]},
+  {"word": "покращити", "lemma": "покращити", "pos": "VERB", "language": "uk",
+   "synonyms": [
+     {"text": "удосконалити", "formality": "formal", "frequency": 0.58, "contexts": ["professional"]},
+     {"text": "поліпшити", "formality": "neutral", "frequency": 0.66, "contexts": ["professional", "technical"]}
+   ]},
+  {"word": "важливий", "lemma": "важливий", "pos": "ADJ", "language": "uk",
+   "synonyms": [
+     {"text": "суттєвий", "formality": "formal", "frequency": 0.64, "contexts": ["professional"]},
+     {"text": "ключовий", "formality": "formal", "frequency": 0.7, "contexts": ["professional", "technical"]}
+   ]}
+]

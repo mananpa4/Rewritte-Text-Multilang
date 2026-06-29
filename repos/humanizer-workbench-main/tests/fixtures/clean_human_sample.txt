@@ -1,0 +1,9 @@
+I've been running distributed systems for about eight years, and I still get this wrong sometimes.
+
+Last quarter, we had an outage that traced back to a message queue backing up under load. The fix was simple — we'd set the consumer concurrency too low when we migrated to the new cluster. Twenty minutes to fix, four hours to find.
+
+The thing is, the monitoring was there. We had metrics, we had dashboards, we had alerts. What we didn't have was someone who knew which numbers mattered when things started going sideways. The on-call engineer saw the queue depth climbing but didn't know our threshold for "this is about to break."
+
+We fixed that by writing down, in plain language, what each alert means and what to do first. Not a runbook with fifty steps — a one-paragraph description per alert. It's lived in our team wiki for six months. We've used it three times.
+
+The technical fix took twenty minutes. The documentation took two hours. The documentation has saved us more time than the fix.

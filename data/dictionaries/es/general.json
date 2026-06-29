@@ -1,0 +1,124 @@
+[
+  {
+    "word": "comprar", "lemma": "comprar", "pos": "VERB", "language": "es",
+    "synonyms": [
+      {"text": "adquirir", "formality": "formal", "frequency": 0.78, "contexts": ["marketplace", "professional", "legal"], "avoidContexts": ["informal"]},
+      {"text": "llevar", "formality": "informal", "frequency": 0.7, "contexts": ["marketplace"], "avoidContexts": ["legal"]}
+    ],
+    "antonyms": ["vender"]
+  },
+  {
+    "word": "bueno", "lemma": "bueno", "pos": "ADJ", "language": "es",
+    "synonyms": [
+      {"text": "excelente", "formality": "neutral", "frequency": 0.72, "contexts": ["marketplace", "seo", "professional"]},
+      {"text": "estupendo", "formality": "informal", "frequency": 0.6, "contexts": ["informal"]},
+      {"text": "notable", "formality": "formal", "frequency": 0.55, "contexts": ["professional"]}
+    ],
+    "antonyms": ["malo"]
+  },
+  {
+    "word": "barato", "lemma": "barato", "pos": "ADJ", "language": "es",
+    "synonyms": [
+      {"text": "económico", "formality": "neutral", "frequency": 0.74, "contexts": ["marketplace", "seo"]},
+      {"text": "asequible", "formality": "formal", "frequency": 0.62, "contexts": ["marketplace", "professional"]}
+    ],
+    "antonyms": ["caro"]
+  },
+  {
+    "word": "ayuda", "lemma": "ayuda", "pos": "NOUN", "language": "es",
+    "synonyms": [
+      {"text": "apoyo", "formality": "formal", "frequency": 0.76, "contexts": ["professional", "technical"]},
+      {"text": "asistencia", "formality": "formal", "frequency": 0.68, "contexts": ["professional", "technical"]}
+    ]
+  },
+  {
+    "word": "arreglar", "lemma": "arreglar", "pos": "VERB", "language": "es",
+    "synonyms": [
+      {"text": "corregir", "formality": "formal", "frequency": 0.72, "contexts": ["professional", "technical"]},
+      {"text": "reparar", "formality": "neutral", "frequency": 0.7, "contexts": ["technical"]},
+      {"text": "solucionar", "formality": "neutral", "frequency": 0.74, "contexts": ["professional", "technical"]}
+    ]
+  },
+  {
+    "word": "error", "lemma": "error", "pos": "NOUN", "language": "es",
+    "synonyms": [
+      {"text": "fallo", "formality": "neutral", "frequency": 0.73, "contexts": ["technical"]},
+      {"text": "defecto", "formality": "formal", "frequency": 0.6, "contexts": ["technical", "professional"]}
+    ]
+  },
+  {
+    "word": "rápido", "lemma": "rápido", "pos": "ADJ", "language": "es",
+    "synonyms": [
+      {"text": "veloz", "formality": "neutral", "frequency": 0.62, "contexts": ["marketplace"]},
+      {"text": "ágil", "formality": "neutral", "frequency": 0.6, "contexts": ["professional"]}
+    ],
+    "antonyms": ["lento"]
+  },
+  {
+    "word": "grande", "lemma": "grande", "pos": "ADJ", "language": "es",
+    "synonyms": [
+      {"text": "amplio", "formality": "neutral", "frequency": 0.66, "contexts": ["marketplace", "professional"]},
+      {"text": "considerable", "formality": "formal", "frequency": 0.58, "contexts": ["professional"]}
+    ],
+    "antonyms": ["pequeño"]
+  },
+  {
+    "word": "pequeño", "lemma": "pequeño", "pos": "ADJ", "language": "es",
+    "synonyms": [
+      {"text": "compacto", "formality": "neutral", "frequency": 0.6, "contexts": ["marketplace", "technical"]},
+      {"text": "reducido", "formality": "formal", "frequency": 0.55, "contexts": ["professional"]}
+    ],
+    "antonyms": ["grande"]
+  },
+  {
+    "word": "mejorar", "lemma": "mejorar", "pos": "VERB", "language": "es",
+    "synonyms": [
+      {"text": "optimizar", "formality": "formal", "frequency": 0.6, "contexts": ["technical", "professional"], "avoidContexts": ["informal"]},
+      {"text": "perfeccionar", "formality": "formal", "frequency": 0.5, "contexts": ["professional"]}
+    ],
+    "antonyms": ["empeorar"]
+  },
+  {
+    "word": "problema", "lemma": "problema", "pos": "NOUN", "language": "es",
+    "synonyms": [
+      {"text": "inconveniente", "formality": "formal", "frequency": 0.62, "contexts": ["professional"]},
+      {"text": "dificultad", "formality": "neutral", "frequency": 0.66, "contexts": ["professional", "technical"]}
+    ]
+  },
+  {
+    "word": "fácil", "lemma": "fácil", "pos": "ADJ", "language": "es",
+    "synonyms": [
+      {"text": "sencillo", "formality": "neutral", "frequency": 0.74, "contexts": ["marketplace", "seo", "professional"]},
+      {"text": "simple", "formality": "neutral", "frequency": 0.7, "contexts": ["technical"]}
+    ],
+    "antonyms": ["difícil"]
+  },
+  {
+    "word": "mostrar", "lemma": "mostrar", "pos": "VERB", "language": "es",
+    "synonyms": [
+      {"text": "presentar", "formality": "formal", "frequency": 0.68, "contexts": ["professional"]},
+      {"text": "exhibir", "formality": "formal", "frequency": 0.55, "contexts": ["marketplace"]}
+    ]
+  },
+  {
+    "word": "usar", "lemma": "usar", "pos": "VERB", "language": "es",
+    "synonyms": [
+      {"text": "utilizar", "formality": "formal", "frequency": 0.72, "contexts": ["professional", "technical"]},
+      {"text": "emplear", "formality": "formal", "frequency": 0.6, "contexts": ["professional"]}
+    ]
+  },
+  {
+    "word": "necesitar", "lemma": "necesitar", "pos": "VERB", "language": "es",
+    "synonyms": [
+      {"text": "requerir", "formality": "formal", "frequency": 0.66, "contexts": ["professional", "technical"]},
+      {"text": "precisar", "formality": "formal", "frequency": 0.5, "contexts": ["professional"]}
+    ]
+  },
+  {
+    "word": "importante", "lemma": "importante", "pos": "ADJ", "language": "es",
+    "synonyms": [
+      {"text": "relevante", "formality": "formal", "frequency": 0.66, "contexts": ["professional"]},
+      {"text": "fundamental", "formality": "formal", "frequency": 0.6, "contexts": ["professional"]}
+    ]
+  }
+]

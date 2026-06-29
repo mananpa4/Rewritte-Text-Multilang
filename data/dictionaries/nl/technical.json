@@ -1,0 +1,22 @@
+[
+  {"word": "installatie", "lemma": "installatie", "pos": "NOUN", "language": "nl",
+   "synonyms": [
+     {"text": "configuratie", "formality": "formal", "frequency": 0.66, "contexts": ["technical"]},
+     {"text": "setup", "formality": "neutral", "frequency": 0.62, "contexts": ["technical"]}
+   ]},
+  {"word": "fout", "lemma": "fout", "pos": "NOUN", "language": "nl",
+   "synonyms": [
+     {"text": "defect", "formality": "formal", "frequency": 0.58, "contexts": ["technical", "professional"]},
+     {"text": "storing", "formality": "neutral", "frequency": 0.66, "contexts": ["technical"]}
+   ]},
+  {"word": "snel", "lemma": "snel", "pos": "ADJ", "language": "nl",
+   "synonyms": [
+     {"text": "efficiënt", "formality": "formal", "frequency": 0.6, "contexts": ["technical", "professional"]},
+     {"text": "vlot", "formality": "neutral", "frequency": 0.62, "contexts": ["technical"]}
+   ]},
+  {"word": "verbeteren", "lemma": "verbeteren", "pos": "VERB", "language": "nl",
+   "synonyms": [
+     {"text": "optimaliseren", "formality": "formal", "frequency": 0.62, "contexts": ["technical", "professional"]},
+     {"text": "verfijnen", "formality": "formal", "frequency": 0.58, "contexts": ["professional"]}
+   ]}
+]

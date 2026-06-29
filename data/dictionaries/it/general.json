@@ -1,0 +1,32 @@
+[
+  {"word": "comprare", "lemma": "comprare", "pos": "VERB", "language": "it",
+   "synonyms": [
+     {"text": "acquistare", "formality": "formal", "frequency": 0.74, "contexts": ["marketplace", "professional", "legal"], "avoidContexts": ["informal"]},
+     {"text": "prendere", "formality": "informal", "frequency": 0.7, "contexts": ["marketplace"], "avoidContexts": ["legal"]}
+   ], "antonyms": ["vendere"]},
+  {"word": "buono", "lemma": "buono", "pos": "ADJ", "language": "it",
+   "synonyms": [
+     {"text": "eccellente", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "seo", "professional"]},
+     {"text": "ottimo", "formality": "neutral", "frequency": 0.76, "contexts": ["marketplace"]}
+   ], "antonyms": ["cattivo"]},
+  {"word": "veloce", "lemma": "veloce", "pos": "ADJ", "language": "it",
+   "synonyms": [
+     {"text": "rapido", "formality": "neutral", "frequency": 0.72, "contexts": ["marketplace", "technical"]},
+     {"text": "celere", "formality": "formal", "frequency": 0.5, "contexts": ["professional"]}
+   ], "antonyms": ["lento"]},
+  {"word": "aiuto", "lemma": "aiuto", "pos": "NOUN", "language": "it",
+   "synonyms": [
+     {"text": "supporto", "formality": "formal", "frequency": 0.74, "contexts": ["professional", "technical"]},
+     {"text": "assistenza", "formality": "formal", "frequency": 0.68, "contexts": ["professional", "technical"]}
+   ]},
+  {"word": "errore", "lemma": "errore", "pos": "NOUN", "language": "it",
+   "synonyms": [
+     {"text": "difetto", "formality": "formal", "frequency": 0.6, "contexts": ["technical", "professional"]},
+     {"text": "guasto", "formality": "neutral", "frequency": 0.58, "contexts": ["technical"]}
+   ]},
+  {"word": "facile", "lemma": "facile", "pos": "ADJ", "language": "it",
+   "synonyms": [
+     {"text": "semplice", "formality": "neutral", "frequency": 0.78, "contexts": ["marketplace", "technical"]},
+     {"text": "agevole", "formality": "formal", "frequency": 0.5, "contexts": ["professional"]}
+   ], "antonyms": ["difficile"]}
+]

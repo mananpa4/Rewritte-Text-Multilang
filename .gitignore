@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+
+# Entornos
+.venv/
+venv/
+env/
+.env
+
+# Caches de herramientas
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Modelos / datos descargados por NLTK (se descargan en runtime)
+nltk_data/
+
+# IDE / SO
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

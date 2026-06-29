@@ -1,0 +1,115 @@
+[
+  {
+    "word": "buy", "lemma": "buy", "pos": "VERB", "language": "en",
+    "synonyms": [
+      {"text": "purchase", "formality": "formal", "frequency": 0.78, "contexts": ["marketplace", "professional", "legal"], "avoidContexts": ["informal"]},
+      {"text": "get", "formality": "informal", "frequency": 0.82, "contexts": ["marketplace", "informal"], "avoidContexts": ["legal"]}
+    ],
+    "antonyms": ["sell"]
+  },
+  {
+    "word": "good", "lemma": "good", "pos": "ADJ", "language": "en",
+    "synonyms": [
+      {"text": "excellent", "formality": "neutral", "frequency": 0.74, "contexts": ["marketplace", "seo", "professional"]},
+      {"text": "great", "formality": "informal", "frequency": 0.8, "contexts": ["marketplace", "informal"]},
+      {"text": "solid", "formality": "neutral", "frequency": 0.68, "contexts": ["professional"]}
+    ],
+    "antonyms": ["bad"]
+  },
+  {
+    "word": "cheap", "lemma": "cheap", "pos": "ADJ", "language": "en",
+    "synonyms": [
+      {"text": "affordable", "formality": "neutral", "frequency": 0.74, "contexts": ["marketplace", "seo"]},
+      {"text": "inexpensive", "formality": "formal", "frequency": 0.62, "contexts": ["marketplace", "professional"]}
+    ],
+    "antonyms": ["expensive"]
+  },
+  {
+    "word": "help", "lemma": "help", "pos": "NOUN", "language": "en",
+    "synonyms": [
+      {"text": "support", "formality": "formal", "frequency": 0.8, "contexts": ["professional", "technical"]},
+      {"text": "assistance", "formality": "formal", "frequency": 0.68, "contexts": ["professional", "technical"]}
+    ]
+  },
+  {
+    "word": "fix", "lemma": "fix", "pos": "VERB", "language": "en",
+    "synonyms": [
+      {"text": "resolve", "formality": "formal", "frequency": 0.72, "contexts": ["professional", "technical"]},
+      {"text": "repair", "formality": "neutral", "frequency": 0.7, "contexts": ["technical"]},
+      {"text": "correct", "formality": "formal", "frequency": 0.68, "contexts": ["professional", "technical"]}
+    ]
+  },
+  {
+    "word": "fast", "lemma": "fast", "pos": "ADJ", "language": "en",
+    "synonyms": [
+      {"text": "quick", "formality": "neutral", "frequency": 0.8, "contexts": ["marketplace"]},
+      {"text": "rapid", "formality": "formal", "frequency": 0.64, "contexts": ["technical", "professional"]}
+    ],
+    "antonyms": ["slow"]
+  },
+  {
+    "word": "big", "lemma": "big", "pos": "ADJ", "language": "en",
+    "synonyms": [
+      {"text": "large", "formality": "neutral", "frequency": 0.8, "contexts": ["marketplace", "professional"]},
+      {"text": "substantial", "formality": "formal", "frequency": 0.6, "contexts": ["professional"]}
+    ],
+    "antonyms": ["small"]
+  },
+  {
+    "word": "small", "lemma": "small", "pos": "ADJ", "language": "en",
+    "synonyms": [
+      {"text": "compact", "formality": "neutral", "frequency": 0.66, "contexts": ["marketplace", "technical"]},
+      {"text": "modest", "formality": "formal", "frequency": 0.58, "contexts": ["professional"]}
+    ],
+    "antonyms": ["big"]
+  },
+  {
+    "word": "improve", "lemma": "improve", "pos": "VERB", "language": "en",
+    "synonyms": [
+      {"text": "enhance", "formality": "formal", "frequency": 0.68, "contexts": ["professional", "technical"]},
+      {"text": "refine", "formality": "formal", "frequency": 0.56, "contexts": ["professional"]}
+    ]
+  },
+  {
+    "word": "problem", "lemma": "problem", "pos": "NOUN", "language": "en",
+    "synonyms": [
+      {"text": "issue", "formality": "neutral", "frequency": 0.82, "contexts": ["professional", "technical"]},
+      {"text": "difficulty", "formality": "formal", "frequency": 0.62, "contexts": ["professional"]}
+    ]
+  },
+  {
+    "word": "easy", "lemma": "easy", "pos": "ADJ", "language": "en",
+    "synonyms": [
+      {"text": "simple", "formality": "neutral", "frequency": 0.8, "contexts": ["marketplace", "seo", "technical"]},
+      {"text": "straightforward", "formality": "formal", "frequency": 0.6, "contexts": ["professional", "technical"]}
+    ],
+    "antonyms": ["hard"]
+  },
+  {
+    "word": "show", "lemma": "show", "pos": "VERB", "language": "en",
+    "synonyms": [
+      {"text": "display", "formality": "neutral", "frequency": 0.72, "contexts": ["technical", "marketplace"]},
+      {"text": "present", "formality": "formal", "frequency": 0.7, "contexts": ["professional"]}
+    ]
+  },
+  {
+    "word": "use", "lemma": "use", "pos": "VERB", "language": "en",
+    "synonyms": [
+      {"text": "utilize", "formality": "formal", "frequency": 0.64, "contexts": ["professional", "technical"], "avoidContexts": ["informal"]},
+      {"text": "employ", "formality": "formal", "frequency": 0.6, "contexts": ["professional"]}
+    ]
+  },
+  {
+    "word": "need", "lemma": "need", "pos": "VERB", "language": "en",
+    "synonyms": [
+      {"text": "require", "formality": "formal", "frequency": 0.7, "contexts": ["professional", "technical"]}
+    ]
+  },
+  {
+    "word": "important", "lemma": "important", "pos": "ADJ", "language": "en",
+    "synonyms": [
+      {"text": "essential", "formality": "formal", "frequency": 0.7, "contexts": ["professional"]},
+      {"text": "key", "formality": "neutral", "frequency": 0.78, "contexts": ["professional", "marketplace"]}
+    ]
+  }
+]

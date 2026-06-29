@@ -1,0 +1,37 @@
+[
+  {"word": "comprar", "lemma": "comprar", "pos": "VERB", "language": "pt",
+   "synonyms": [
+     {"text": "adquirir", "formality": "formal", "frequency": 0.76, "contexts": ["marketplace", "professional", "legal"], "avoidContexts": ["informal"]},
+     {"text": "levar", "formality": "informal", "frequency": 0.68, "contexts": ["marketplace"], "avoidContexts": ["legal"]}
+   ], "antonyms": ["vender"]},
+  {"word": "bom", "lemma": "bom", "pos": "ADJ", "language": "pt",
+   "synonyms": [
+     {"text": "excelente", "formality": "neutral", "frequency": 0.72, "contexts": ["marketplace", "seo", "professional"]},
+     {"text": "ótimo", "formality": "informal", "frequency": 0.78, "contexts": ["marketplace", "informal"]}
+   ], "antonyms": ["ruim"]},
+  {"word": "barato", "lemma": "barato", "pos": "ADJ", "language": "pt",
+   "synonyms": [
+     {"text": "econômico", "formality": "neutral", "frequency": 0.72, "contexts": ["marketplace", "seo"]},
+     {"text": "acessível", "formality": "formal", "frequency": 0.64, "contexts": ["marketplace", "professional"]}
+   ], "antonyms": ["caro"]},
+  {"word": "ajuda", "lemma": "ajuda", "pos": "NOUN", "language": "pt",
+   "synonyms": [
+     {"text": "apoio", "formality": "formal", "frequency": 0.74, "contexts": ["professional", "technical"]},
+     {"text": "assistência", "formality": "formal", "frequency": 0.66, "contexts": ["professional", "technical"]}
+   ]},
+  {"word": "erro", "lemma": "erro", "pos": "NOUN", "language": "pt",
+   "synonyms": [
+     {"text": "falha", "formality": "neutral", "frequency": 0.72, "contexts": ["technical"]},
+     {"text": "defeito", "formality": "formal", "frequency": 0.6, "contexts": ["technical", "professional"]}
+   ]},
+  {"word": "rápido", "lemma": "rápido", "pos": "ADJ", "language": "pt",
+   "synonyms": [
+     {"text": "veloz", "formality": "neutral", "frequency": 0.6, "contexts": ["marketplace"]},
+     {"text": "ágil", "formality": "neutral", "frequency": 0.6, "contexts": ["professional"]}
+   ], "antonyms": ["lento"]},
+  {"word": "fácil", "lemma": "fácil", "pos": "ADJ", "language": "pt",
+   "synonyms": [
+     {"text": "simples", "formality": "neutral", "frequency": 0.74, "contexts": ["marketplace", "technical"]},
+     {"text": "descomplicado", "formality": "informal", "frequency": 0.55, "contexts": ["informal"]}
+   ], "antonyms": ["difícil"]}
+]

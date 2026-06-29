@@ -1,0 +1,22 @@
+[
+  {"word": "konfiguration", "lemma": "konfiguration", "pos": "NOUN", "language": "sv",
+   "synonyms": [
+     {"text": "inställning", "formality": "neutral", "frequency": 0.66, "contexts": ["technical"]},
+     {"text": "uppsättning", "formality": "neutral", "frequency": 0.54, "contexts": ["technical"]}
+   ]},
+  {"word": "fel", "lemma": "fel", "pos": "NOUN", "language": "sv",
+   "synonyms": [
+     {"text": "defekt", "formality": "formal", "frequency": 0.56, "contexts": ["technical", "professional"]},
+     {"text": "störning", "formality": "neutral", "frequency": 0.58, "contexts": ["technical"]}
+   ]},
+  {"word": "snabb", "lemma": "snabb", "pos": "ADJ", "language": "sv",
+   "synonyms": [
+     {"text": "effektiv", "formality": "formal", "frequency": 0.66, "contexts": ["technical", "professional"]},
+     {"text": "responsiv", "formality": "formal", "frequency": 0.52, "contexts": ["technical"]}
+   ]},
+  {"word": "förbättra", "lemma": "förbättra", "pos": "VERB", "language": "sv",
+   "synonyms": [
+     {"text": "optimera", "formality": "formal", "frequency": 0.62, "contexts": ["technical", "professional"]},
+     {"text": "förfina", "formality": "formal", "frequency": 0.54, "contexts": ["professional"]}
+   ]}
+]

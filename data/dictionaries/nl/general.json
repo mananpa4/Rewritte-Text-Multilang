@@ -1,0 +1,47 @@
+[
+  {"word": "kopen", "lemma": "kopen", "pos": "VERB", "language": "nl",
+   "synonyms": [
+     {"text": "aanschaffen", "formality": "formal", "frequency": 0.68, "contexts": ["marketplace", "professional", "legal"], "avoidContexts": ["informal"]},
+     {"text": "halen", "formality": "informal", "frequency": 0.72, "contexts": ["marketplace", "informal"], "avoidContexts": ["legal"]}
+   ], "antonyms": ["verkopen"]},
+  {"word": "goed", "lemma": "goed", "pos": "ADJ", "language": "nl",
+   "synonyms": [
+     {"text": "uitstekend", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "seo", "professional"]},
+     {"text": "degelijk", "formality": "neutral", "frequency": 0.64, "contexts": ["professional", "technical"]}
+   ], "antonyms": ["slecht"]},
+  {"word": "goedkoop", "lemma": "goedkoop", "pos": "ADJ", "language": "nl",
+   "synonyms": [
+     {"text": "betaalbaar", "formality": "neutral", "frequency": 0.72, "contexts": ["marketplace", "seo"]},
+     {"text": "voordelig", "formality": "neutral", "frequency": 0.68, "contexts": ["marketplace"]}
+   ], "antonyms": ["duur"]},
+  {"word": "hulp", "lemma": "hulp", "pos": "NOUN", "language": "nl",
+   "synonyms": [
+     {"text": "ondersteuning", "formality": "formal", "frequency": 0.74, "contexts": ["professional", "technical"]},
+     {"text": "assistentie", "formality": "formal", "frequency": 0.62, "contexts": ["professional", "technical"]}
+   ]},
+  {"word": "fout", "lemma": "fout", "pos": "NOUN", "language": "nl",
+   "synonyms": [
+     {"text": "probleem", "formality": "neutral", "frequency": 0.72, "contexts": ["technical"]},
+     {"text": "defect", "formality": "formal", "frequency": 0.58, "contexts": ["technical", "professional"]}
+   ]},
+  {"word": "snel", "lemma": "snel", "pos": "ADJ", "language": "nl",
+   "synonyms": [
+     {"text": "vlot", "formality": "neutral", "frequency": 0.62, "contexts": ["marketplace", "technical"]},
+     {"text": "efficiënt", "formality": "formal", "frequency": 0.6, "contexts": ["professional", "technical"]}
+   ], "antonyms": ["langzaam"]},
+  {"word": "makkelijk", "lemma": "makkelijk", "pos": "ADJ", "language": "nl",
+   "synonyms": [
+     {"text": "eenvoudig", "formality": "neutral", "frequency": 0.76, "contexts": ["marketplace", "technical"]},
+     {"text": "simpel", "formality": "informal", "frequency": 0.72, "contexts": ["informal", "marketplace"]}
+   ], "antonyms": ["moeilijk"]},
+  {"word": "verbeteren", "lemma": "verbeteren", "pos": "VERB", "language": "nl",
+   "synonyms": [
+     {"text": "verfijnen", "formality": "formal", "frequency": 0.58, "contexts": ["professional"]},
+     {"text": "optimaliseren", "formality": "formal", "frequency": 0.62, "contexts": ["technical", "professional"]}
+   ]},
+  {"word": "belangrijk", "lemma": "belangrijk", "pos": "ADJ", "language": "nl",
+   "synonyms": [
+     {"text": "essentieel", "formality": "formal", "frequency": 0.66, "contexts": ["professional"]},
+     {"text": "cruciaal", "formality": "formal", "frequency": 0.62, "contexts": ["professional", "technical"]}
+   ]}
+]

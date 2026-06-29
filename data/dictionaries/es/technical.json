@@ -1,0 +1,16 @@
+[
+  {"word": "rápido", "lemma": "rápido", "pos": "ADJ", "language": "es",
+   "synonyms": [
+     {"text": "eficiente", "formality": "formal", "frequency": 0.66, "contexts": ["technical"]}
+   ]},
+  {"word": "configurar", "lemma": "configurar", "pos": "VERB", "language": "es",
+   "synonyms": [
+     {"text": "ajustar", "formality": "neutral", "frequency": 0.68, "contexts": ["technical"]},
+     {"text": "parametrizar", "formality": "formal", "frequency": 0.45, "contexts": ["technical"]}
+   ]},
+  {"word": "fallo", "lemma": "fallo", "pos": "NOUN", "language": "es",
+   "synonyms": [
+     {"text": "error", "formality": "neutral", "frequency": 0.74, "contexts": ["technical"]},
+     {"text": "incidencia", "formality": "formal", "frequency": 0.58, "contexts": ["technical", "professional"]}
+   ]}
+]

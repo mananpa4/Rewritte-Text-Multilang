@@ -1,0 +1,47 @@
+[
+  {"word": "kupić", "lemma": "kupić", "pos": "VERB", "language": "pl",
+   "synonyms": [
+     {"text": "nabyć", "formality": "formal", "frequency": 0.62, "contexts": ["marketplace", "professional", "legal"], "avoidContexts": ["informal"]},
+     {"text": "wziąć", "formality": "informal", "frequency": 0.68, "contexts": ["marketplace", "informal"], "avoidContexts": ["legal"]}
+   ], "antonyms": ["sprzedać"]},
+  {"word": "dobry", "lemma": "dobry", "pos": "ADJ", "language": "pl",
+   "synonyms": [
+     {"text": "świetny", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "seo"]},
+     {"text": "solidny", "formality": "neutral", "frequency": 0.66, "contexts": ["professional", "technical"]}
+   ], "antonyms": ["zły"]},
+  {"word": "tani", "lemma": "tani", "pos": "ADJ", "language": "pl",
+   "synonyms": [
+     {"text": "przystępny", "formality": "neutral", "frequency": 0.68, "contexts": ["marketplace", "seo"]},
+     {"text": "niedrogi", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace"]}
+   ], "antonyms": ["drogi"]},
+  {"word": "pomoc", "lemma": "pomoc", "pos": "NOUN", "language": "pl",
+   "synonyms": [
+     {"text": "wsparcie", "formality": "formal", "frequency": 0.76, "contexts": ["professional", "technical"]},
+     {"text": "asysta", "formality": "formal", "frequency": 0.54, "contexts": ["professional"]}
+   ]},
+  {"word": "błąd", "lemma": "błąd", "pos": "NOUN", "language": "pl",
+   "synonyms": [
+     {"text": "usterka", "formality": "neutral", "frequency": 0.64, "contexts": ["technical"]},
+     {"text": "problem", "formality": "neutral", "frequency": 0.78, "contexts": ["technical", "professional"]}
+   ]},
+  {"word": "szybki", "lemma": "szybki", "pos": "ADJ", "language": "pl",
+   "synonyms": [
+     {"text": "sprawny", "formality": "neutral", "frequency": 0.64, "contexts": ["technical", "professional"]},
+     {"text": "prędki", "formality": "formal", "frequency": 0.48, "contexts": ["professional"]}
+   ], "antonyms": ["wolny"]},
+  {"word": "łatwy", "lemma": "łatwy", "pos": "ADJ", "language": "pl",
+   "synonyms": [
+     {"text": "prosty", "formality": "neutral", "frequency": 0.78, "contexts": ["marketplace", "technical"]},
+     {"text": "nieskomplikowany", "formality": "formal", "frequency": 0.54, "contexts": ["technical", "professional"]}
+   ], "antonyms": ["trudny"]},
+  {"word": "poprawić", "lemma": "poprawić", "pos": "VERB", "language": "pl",
+   "synonyms": [
+     {"text": "ulepszyć", "formality": "neutral", "frequency": 0.62, "contexts": ["professional"]},
+     {"text": "usprawnić", "formality": "formal", "frequency": 0.64, "contexts": ["technical", "professional"]}
+   ]},
+  {"word": "ważny", "lemma": "ważny", "pos": "ADJ", "language": "pl",
+   "synonyms": [
+     {"text": "istotny", "formality": "formal", "frequency": 0.7, "contexts": ["professional"]},
+     {"text": "kluczowy", "formality": "formal", "frequency": 0.68, "contexts": ["professional", "technical"]}
+   ]}
+]

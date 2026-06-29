@@ -1,0 +1,15 @@
+[
+  {"word": "fast", "lemma": "fast", "pos": "ADJ", "language": "en",
+   "synonyms": [
+     {"text": "efficient", "formality": "formal", "frequency": 0.68, "contexts": ["technical"]}
+   ]},
+  {"word": "setup", "lemma": "setup", "pos": "NOUN", "language": "en",
+   "synonyms": [
+     {"text": "configuration", "formality": "formal", "frequency": 0.66, "contexts": ["technical"]}
+   ]},
+  {"word": "bug", "lemma": "bug", "pos": "NOUN", "language": "en",
+   "synonyms": [
+     {"text": "defect", "formality": "formal", "frequency": 0.6, "contexts": ["technical", "professional"]},
+     {"text": "fault", "formality": "neutral", "frequency": 0.62, "contexts": ["technical"]}
+   ]}
+]

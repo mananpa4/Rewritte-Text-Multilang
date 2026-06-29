@@ -1,0 +1,20 @@
+[
+  {"word": "shipping", "lemma": "shipping", "pos": "NOUN", "language": "en",
+   "synonyms": [
+     {"text": "delivery", "formality": "neutral", "frequency": 0.78, "contexts": ["marketplace"]}
+   ]},
+  {"word": "deal", "lemma": "deal", "pos": "NOUN", "language": "en",
+   "synonyms": [
+     {"text": "offer", "formality": "neutral", "frequency": 0.76, "contexts": ["marketplace", "seo"]}
+   ]},
+  {"word": "durable", "lemma": "durable", "pos": "ADJ", "language": "en",
+   "synonyms": [
+     {"text": "long-lasting", "formality": "neutral", "frequency": 0.66, "contexts": ["marketplace"]},
+     {"text": "sturdy", "formality": "neutral", "frequency": 0.62, "contexts": ["marketplace"]}
+   ]},
+  {"word": "comfortable", "lemma": "comfortable", "pos": "ADJ", "language": "en",
+   "synonyms": [
+     {"text": "cozy", "formality": "informal", "frequency": 0.6, "contexts": ["marketplace", "informal"]},
+     {"text": "ergonomic", "formality": "formal", "frequency": 0.55, "contexts": ["marketplace", "technical"]}
+   ]}
+]

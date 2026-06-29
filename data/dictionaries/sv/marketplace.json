@@ -1,0 +1,22 @@
+[
+  {"word": "frakt", "lemma": "frakt", "pos": "NOUN", "language": "sv",
+   "synonyms": [
+     {"text": "leverans", "formality": "neutral", "frequency": 0.76, "contexts": ["marketplace"]},
+     {"text": "transport", "formality": "neutral", "frequency": 0.62, "contexts": ["marketplace"]}
+   ]},
+  {"word": "erbjudande", "lemma": "erbjudande", "pos": "NOUN", "language": "sv",
+   "synonyms": [
+     {"text": "kampanj", "formality": "neutral", "frequency": 0.68, "contexts": ["marketplace", "seo"]},
+     {"text": "deal", "formality": "informal", "frequency": 0.58, "contexts": ["marketplace", "informal"]}
+   ]},
+  {"word": "hållbar", "lemma": "hållbar", "pos": "ADJ", "language": "sv",
+   "synonyms": [
+     {"text": "slitstark", "formality": "neutral", "frequency": 0.62, "contexts": ["marketplace"]},
+     {"text": "långvarig", "formality": "neutral", "frequency": 0.58, "contexts": ["marketplace"]}
+   ]},
+  {"word": "bekväm", "lemma": "bekväm", "pos": "ADJ", "language": "sv",
+   "synonyms": [
+     {"text": "komfortabel", "formality": "neutral", "frequency": 0.64, "contexts": ["marketplace"]},
+     {"text": "ergonomisk", "formality": "formal", "frequency": 0.56, "contexts": ["marketplace", "technical"]}
+   ], "antonyms": ["obekväm"]}
+]

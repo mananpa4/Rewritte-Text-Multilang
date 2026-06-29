@@ -1,0 +1,31 @@
+[
+  {"word": "kaufen", "lemma": "kaufen", "pos": "VERB", "language": "de",
+   "synonyms": [
+     {"text": "erwerben", "formality": "formal", "frequency": 0.68, "contexts": ["marketplace", "professional", "legal"], "avoidContexts": ["informal"]}
+   ], "antonyms": ["verkaufen"]},
+  {"word": "gut", "lemma": "gut", "pos": "ADJ", "language": "de",
+   "synonyms": [
+     {"text": "hervorragend", "formality": "neutral", "frequency": 0.62, "contexts": ["marketplace", "professional"]},
+     {"text": "ausgezeichnet", "formality": "formal", "frequency": 0.6, "contexts": ["professional"]}
+   ], "antonyms": ["schlecht"]},
+  {"word": "schnell", "lemma": "schnell", "pos": "ADJ", "language": "de",
+   "synonyms": [
+     {"text": "rasch", "formality": "formal", "frequency": 0.58, "contexts": ["professional"]},
+     {"text": "zügig", "formality": "neutral", "frequency": 0.55, "contexts": ["professional"]}
+   ], "antonyms": ["langsam"]},
+  {"word": "hilfe", "lemma": "hilfe", "pos": "NOUN", "language": "de",
+   "synonyms": [
+     {"text": "unterstützung", "formality": "formal", "frequency": 0.7, "contexts": ["professional", "technical"]},
+     {"text": "beistand", "formality": "formal", "frequency": 0.5, "contexts": ["professional"]}
+   ]},
+  {"word": "fehler", "lemma": "fehler", "pos": "NOUN", "language": "de",
+   "synonyms": [
+     {"text": "defekt", "formality": "formal", "frequency": 0.58, "contexts": ["technical", "professional"]},
+     {"text": "mangel", "formality": "formal", "frequency": 0.56, "contexts": ["professional"]}
+   ]},
+  {"word": "einfach", "lemma": "einfach", "pos": "ADJ", "language": "de",
+   "synonyms": [
+     {"text": "unkompliziert", "formality": "neutral", "frequency": 0.55, "contexts": ["marketplace", "technical"]},
+     {"text": "schlicht", "formality": "formal", "frequency": 0.5, "contexts": ["professional"]}
+   ]}
+]

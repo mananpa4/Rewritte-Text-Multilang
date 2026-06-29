@@ -1,0 +1,59 @@
+{
+  "_note": "Palabras y frases sobre-representadas en texto de IA, por idioma. Sembrado desde HUMAN-AI/shared/burned-words.md (MIT) + ampliaciones. Editable.",
+  "universal": [
+    "leverage", "utilize", "harness", "empower", "facilitate", "optimize",
+    "streamline", "revolutionize", "robust", "seamless", "cutting-edge",
+    "holistic", "synergy", "scalable", "dynamic", "ecosystem", "granular"
+  ],
+  "words": {
+    "en": [
+      "leverage", "utilize", "harness", "empower", "facilitate", "optimize",
+      "streamline", "revolutionize", "robust", "seamless", "cutting-edge",
+      "holistic", "synergy", "scalable", "dynamic", "ecosystem", "delve",
+      "comprehensive", "transformative", "innovative", "groundbreaking",
+      "unprecedented", "tapestry", "endeavor", "vibrant", "pivotal"
+    ],
+    "es": [
+      "aprovechar", "potenciar", "optimizar", "integrar", "robusto",
+      "revolucionar", "holístico", "sinergia", "ecosistema", "escalable",
+      "dinámico", "integral", "vanguardia", "sin fisuras", "de última generación",
+      "empoderar", "fomentar", "impulsar", "transformador", "innovador"
+    ],
+    "pt": [
+      "aproveitar", "potencializar", "otimizar", "integrar", "robusto",
+      "revolucionar", "holístico", "sinergia", "ecossistema", "escalável",
+      "dinâmico", "abrangente", "vanguarda", "transformador", "inovador"
+    ],
+    "fr": [
+      "exploiter", "optimiser", "intégrer", "robuste", "révolutionner",
+      "holistique", "synergie", "écosystème", "évolutif", "dynamique",
+      "transformateur", "innovant", "de pointe", "rationaliser"
+    ],
+    "it": [
+      "sfruttare", "ottimizzare", "integrare", "robusto", "rivoluzionare",
+      "olistico", "sinergia", "ecosistema", "scalabile", "dinamico",
+      "trasformativo", "innovativo", "all'avanguardia", "semplificare"
+    ],
+    "de": [
+      "optimieren", "integrieren", "transformieren", "skalieren", "innovativ",
+      "ganzheitlich", "nahtlos", "robust", "synergie", "ökosystem", "dynamisch",
+      "skalierbar", "wegweisend", "revolutionär", "modernste"
+    ]
+  },
+  "intensifiers": {
+    "en": ["very", "extremely", "incredibly", "amazingly", "truly", "really", "absolutely", "completely", "highly", "remarkably"],
+    "es": ["muy", "extremadamente", "increíblemente", "realmente", "absolutamente", "completamente", "sumamente", "verdaderamente"],
+    "pt": ["muito", "extremamente", "incrivelmente", "realmente", "absolutamente", "completamente"],
+    "fr": ["très", "extrêmement", "incroyablement", "vraiment", "absolument", "complètement"],
+    "it": ["molto", "estremamente", "incredibilmente", "davvero", "assolutamente", "completamente"],
+    "de": ["sehr", "extrem", "unglaublich", "wirklich", "absolut", "vollständig", "äußerst"]
+  },
+  "fillers": {
+    "en": ["it is worth noting that", "it is important to note that", "in today's fast-paced world", "in the digital age", "when it comes to", "plays a crucial role", "a wide range of", "first and foremost", "last but not least", "in conclusion"],
+    "es": ["vale la pena señalar que", "es importante destacar que", "en el mundo actual", "en la era digital", "cuando se trata de", "juega un papel crucial", "una amplia gama de", "en primer lugar", "en conclusión", "cabe destacar que"],
+    "pt": ["vale a pena notar que", "é importante destacar que", "no mundo atual", "na era digital", "quando se trata de", "desempenha um papel crucial", "uma ampla gama de", "em conclusão"],
+    "fr": ["il convient de noter que", "il est important de noter que", "dans le monde actuel", "à l'ère numérique", "quand il s'agit de", "joue un rôle crucial", "un large éventail de", "en conclusion"],
+    "it": ["vale la pena notare che", "è importante notare che", "nel mondo di oggi", "nell'era digitale", "quando si tratta di", "svolge un ruolo cruciale", "un'ampia gamma di", "in conclusione"],
+    "de": ["es ist erwähnenswert, dass", "es ist wichtig zu beachten", "in der heutigen schnelllebigen welt", "im digitalen zeitalter", "wenn es um", "spielt eine entscheidende rolle", "eine breite palette von", "abschließend"]
+  }
+}

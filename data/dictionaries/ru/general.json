@@ -1,0 +1,52 @@
+[
+  {"word": "купить", "lemma": "купить", "pos": "VERB", "language": "ru",
+   "synonyms": [
+     {"text": "приобрести", "formality": "formal", "frequency": 0.68, "contexts": ["marketplace", "professional", "legal"], "avoidContexts": ["informal"]},
+     {"text": "взять", "formality": "informal", "frequency": 0.76, "contexts": ["marketplace", "informal"], "avoidContexts": ["legal"]}
+   ], "antonyms": ["продать"]},
+  {"word": "хороший", "lemma": "хороший", "pos": "ADJ", "language": "ru",
+   "synonyms": [
+     {"text": "отличный", "formality": "neutral", "frequency": 0.74, "contexts": ["marketplace", "seo"]},
+     {"text": "качественный", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "professional"]}
+   ], "antonyms": ["плохой"]},
+  {"word": "дешевый", "lemma": "дешевый", "pos": "ADJ", "language": "ru",
+   "synonyms": [
+     {"text": "доступный", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "seo"]},
+     {"text": "недорогой", "formality": "neutral", "frequency": 0.68, "contexts": ["marketplace"]}
+   ], "antonyms": ["дорогой"]},
+  {"word": "дешёвый", "lemma": "дешёвый", "pos": "ADJ", "language": "ru",
+   "synonyms": [
+     {"text": "доступный", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "seo"]},
+     {"text": "недорогой", "formality": "neutral", "frequency": 0.68, "contexts": ["marketplace"]}
+   ], "antonyms": ["дорогой"]},
+  {"word": "помощь", "lemma": "помощь", "pos": "NOUN", "language": "ru",
+   "synonyms": [
+     {"text": "поддержка", "formality": "formal", "frequency": 0.76, "contexts": ["professional", "technical"]},
+     {"text": "содействие", "formality": "formal", "frequency": 0.6, "contexts": ["professional"]}
+   ]},
+  {"word": "ошибка", "lemma": "ошибка", "pos": "NOUN", "language": "ru",
+   "synonyms": [
+     {"text": "сбой", "formality": "neutral", "frequency": 0.66, "contexts": ["technical"]},
+     {"text": "проблема", "formality": "neutral", "frequency": 0.78, "contexts": ["technical", "professional"]}
+   ]},
+  {"word": "быстрый", "lemma": "быстрый", "pos": "ADJ", "language": "ru",
+   "synonyms": [
+     {"text": "оперативный", "formality": "formal", "frequency": 0.62, "contexts": ["professional", "technical"]},
+     {"text": "скорый", "formality": "neutral", "frequency": 0.54, "contexts": ["professional"]}
+   ], "antonyms": ["медленный"]},
+  {"word": "легкий", "lemma": "легкий", "pos": "ADJ", "language": "ru",
+   "synonyms": [
+     {"text": "простой", "formality": "neutral", "frequency": 0.76, "contexts": ["marketplace", "technical"]},
+     {"text": "понятный", "formality": "neutral", "frequency": 0.66, "contexts": ["technical"]}
+   ], "antonyms": ["сложный"]},
+  {"word": "улучшить", "lemma": "улучшить", "pos": "VERB", "language": "ru",
+   "synonyms": [
+     {"text": "усовершенствовать", "formality": "formal", "frequency": 0.58, "contexts": ["professional"]},
+     {"text": "доработать", "formality": "neutral", "frequency": 0.64, "contexts": ["technical", "professional"]}
+   ]},
+  {"word": "важный", "lemma": "важный", "pos": "ADJ", "language": "ru",
+   "synonyms": [
+     {"text": "существенный", "formality": "formal", "frequency": 0.64, "contexts": ["professional"]},
+     {"text": "ключевой", "formality": "formal", "frequency": 0.7, "contexts": ["professional", "technical"]}
+   ]}
+]

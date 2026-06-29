@@ -1,0 +1,22 @@
+[
+  {"word": "доставка", "lemma": "доставка", "pos": "NOUN", "language": "ru",
+   "synonyms": [
+     {"text": "отправка", "formality": "neutral", "frequency": 0.64, "contexts": ["marketplace"]},
+     {"text": "перевозка", "formality": "neutral", "frequency": 0.58, "contexts": ["marketplace"]}
+   ]},
+  {"word": "предложение", "lemma": "предложение", "pos": "NOUN", "language": "ru",
+   "synonyms": [
+     {"text": "акция", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "seo"]},
+     {"text": "вариант", "formality": "neutral", "frequency": 0.66, "contexts": ["marketplace"]}
+   ]},
+  {"word": "прочный", "lemma": "прочный", "pos": "ADJ", "language": "ru",
+   "synonyms": [
+     {"text": "надежный", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace"]},
+     {"text": "износостойкий", "formality": "formal", "frequency": 0.48, "contexts": ["marketplace", "technical"]}
+   ], "antonyms": ["хрупкий"]},
+  {"word": "удобный", "lemma": "удобный", "pos": "ADJ", "language": "ru",
+   "synonyms": [
+     {"text": "комфортный", "formality": "neutral", "frequency": 0.68, "contexts": ["marketplace"]},
+     {"text": "эргономичный", "formality": "formal", "frequency": 0.54, "contexts": ["marketplace", "technical"]}
+   ], "antonyms": ["неудобный"]}
+]
