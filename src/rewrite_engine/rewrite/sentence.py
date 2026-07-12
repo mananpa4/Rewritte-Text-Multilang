@@ -9,6 +9,8 @@ puntuación originales, e ignora por completo los tokens protegidos.
 from __future__ import annotations
 
 from rewrite_engine.core.models import ChangedWord, Mode
+from rewrite_engine.lang.esperanto import reinflect_eo
+from rewrite_engine.lang.morphology import MorphFeatures, reinflect
 from rewrite_engine.lang.tokenizer import TokenizerLemmatizer
 from rewrite_engine.rewrite.candidates import CandidateGenerator
 from rewrite_engine.rewrite.textutils import match_case
@@ -47,7 +49,7 @@ class SentenceRewriter:
             return sentence, []
 
         spans = self._tok.spans(sentence, lang=lang)
-        pos_tags = self._tok.pos_of(sentence, lang)
+        analysis = self._tok.analyze(sentence, lang)
         creative = mode == Mode.CREATIVE
 
         # Fracción objetivo de palabras a cambiar (mayor strength → más cambios).
@@ -67,7 +69,7 @@ class SentenceRewriter:
             sentence_initial = not seen_word
             seen_word = True
 
-            pos = pos_tags.get(word, "")
+            pos, morph = analysis.get(word, ("", MorphFeatures()))
             if not self._cand.is_eligible(
                 word, lang=lang, pos=pos, preserve=preserve,
                 sentence_initial=sentence_initial,
@@ -86,7 +88,17 @@ class SentenceRewriter:
             if not cand_list:
                 continue
 
-            replacement = match_case(word, cand_list[0].replacement)
+            base = cand_list[0].replacement
+            if lang == "eo":
+                # Esperanto es regular: reaplica al sinónimo la flexión del
+                # original (plural -j, acusativo -n, tiempo verbal).
+                base = reinflect_eo(word, base)
+            elif not morph.is_empty:
+                # Concordancia morfológica (spaCy): género/número en
+                # adjetivos/sustantivos, conjugación regular en presente 3ª
+                # persona para verbos. Sin rasgos (sin spaCy), no hace nada.
+                base = reinflect(word, base, pos, morph, lang)
+            replacement = match_case(word, base)
             if replacement == word:
                 continue
 

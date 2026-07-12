@@ -1,0 +1,69 @@
+== {{langue|fr}} ==
+=== {{S|étymologie}} ===
+: ''([[#fr-nom-1|Nom 1]])'' (Vers 1950) Du {{étyl|zh|fr|mot=拼音|tr=pīnyīn}}, {{composé de|拼|tr1=pīn|sens1=épeler|音|tr2=yīn|sens2=son|lang=zh|nocat=oui}}.
+: ''([[#fr-nom-2|Nom 2]])'' De l’{{étyl|en|fr|mot=Pinyin}}.
+
+=== {{S|nom|fr|num=1}} ===
+[[Image:Pinyin accents.svg|thumb|Le '''pinyin''' utilise l’alphabet romain ainsi que le [[macron]], l’accent aigu, le [[caron]] et l’accent grave pour indiquer lequel des 4 tons doit être prononcé.]]
+'''pinyin''' {{pron|pin.jin|fr}} {{m}} {{invar}}
+# Systèmes de [[transcription]] de différentes langues, permettant de [[romanisation|romaniser]] les sons des [[sinogramme]]s, et d’indiquer le ton utilisé lors de la prononciation. Le [[hanyu pinyin]] sert à la transcription du [[mandarin standard]].
+#* {{exemple | lang=fr | Shanghaï s’écrit ''上海'' en sinogrammes, et ''shànghǎi'' en '''hanyu pinyin'''.}}
+#* {{exemple | lang=fr | Le '''pinyin''' fut développé en République populaire de Chine.}}
+#* {{exemple|La perception qu’on a du '''''pinyin''''' en Chine a changé ces dernières années depuis que celui-ci est utilisé pour la saisie informatique des textes.|source=Viviane Alleton, ''L’écriture chinoise: Le défi de la modernité'', 2008|lang=fr}}
+
+==== {{S|notes}} ====
+: Le pinyin est un système de notation phonétique fondé sur la [[Annexe:Prononciation/chinois|prononciation du mandarin]]. Pour qui ne connaît pas ses conventions, sa lecture est très trompeuse, et le résultat généralement très éloigné de la prononciation chinoise.
+
+==== {{S|variantes}} ====
+* [[pin yin]]
+
+==== {{S|vocabulaire}} ====
+* [[bopomofo]] ou [[zhuyin]], système de la République de Chine (Taïwan) avec la romanisation Wade-Giles, tend à être progressivement remplacé par le [[hanyu pinyin]].
+* [[caron]]
+* [[macron]]
+* [[tonème]]
+* {{zh-l|藏文拼音|zàngwén pīnyīn|[[pinyin tibétain]]}}
+
+==== {{S|traductions}} ====
+{{trad-début}}
+* {{T|en}} : {{trad+|en|pinyin}}
+* {{T|ar}} : {{trad-|ar|بينيين|R=bynyyn}}
+* {{T|bg}} : {{trad-|bg|пинин|R=pinin}}
+* {{T|zh}} : {{trad+|zh|拼音|R=pīnyīn}}
+* {{T|ko}} : {{trad-|ko|병음|R=byeongeum}}
+* {{T|da}} : {{trad+|da|pinyin}}
+* {{T|es}} : {{trad-|es|pinyin}}
+* {{T|eo}} : {{trad+|eo|pinjino}}
+* {{T|he}} : {{trad-|he|פין-יין|R=pyn-yyn}}
+* {{T|hu}} : {{trad+|hu|pinjin}}
+* {{T|is}} : {{trad-|is|pinyin}}
+* {{T|it}} : {{trad+|it|pinyin}}
+* {{T|ja}} : {{trad+|ja|拼音|R=pin’in}}, {{trad+|ja|ピンイン|tr=pin’in}}
+* {{T|oc}} : {{trad-|oc|pinyin}}
+* {{T|fa}} : {{trad-|fa|پینیین|R=pynyyn}}
+* {{T|ru}} : {{trad+|ru|пиньинь}}
+{{trad-fin}}
+
+=== {{S|nom|fr|num=2}} ===
+'''pinyin''' {{pron|pin.jin|fr}} {{m}} {{au singulier uniquement|fr}}
+# {{langues|fr}} Langue [[bantoïde]] parlée dans la [[Région du Nord-Ouest]] au [[Cameroun]].
+#*{{exemple|lang=fr}}
+
+==== {{S|notes}} ====
+: {{note code langue}}
+
+==== {{S|traductions}} ====
+{{trad-début}}
+* {{T|en}} : {{trad+|en|Pinyin}}
+* {{T|ja}} : {{trad-|ja|ピニン語|tr=Piningo}}
+* {{T|oc}} : {{trad-|oc|pinyin}}
+* {{T|sw}} : {{trad-|sw|kipinyin}}
+{{trad-fin}}
+
+=== {{S|prononciation}} ===
+* {{écouter|lang=fr|France (Île-de-France)|pin.jin|audio=LL-Q150 (fra)-Assassas77-pinyin.wav}}
+
+=== {{S|voir aussi}} ===
+* {{WP}}
+* {{WP|Pinyin (langue)}}
+* {{catégorie langue|spéc1=du Cameroun}}

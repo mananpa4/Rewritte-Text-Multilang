@@ -1,0 +1,176 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "BoboTiG",
+      "name": "Mickaël Schoentgen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2033598?v=4",
+      "profile": "https://www.tiger-222.fr",
+      "contributions": [
+        "bug",
+        "code",
+        "doc",
+        "projectManagement"
+      ]
+    },
+    {
+      "login": "lasconic",
+      "name": "Nicolas Froment",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/234271?v=4",
+      "profile": "http://lasconic.com",
+      "contributions": [
+        "bug",
+        "code",
+        "doc",
+        "projectManagement"
+      ]
+    },
+    {
+      "login": "atti84it",
+      "name": "Attilio",
+      "avatar_url": "https://avatars.githubusercontent.com/u/817905?v=4",
+      "profile": "https://github.com/atti84it",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "chopinesque",
+      "name": "chopinesque",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10416842?v=4",
+      "profile": "https://github.com/chopinesque",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ilius",
+      "name": "Saeed Rasooli",
+      "avatar_url": "https://avatars.githubusercontent.com/u/197648?v=4",
+      "profile": "https://github.com/ilius",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "Moonbase59",
+      "name": "Matthias C. Hormann",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3706922?v=4",
+      "profile": "https://github.com/Moonbase59",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "tjaderxyz",
+      "name": "tjader",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81907?v=4",
+      "profile": "https://github.com/tjaderxyz",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "victornove",
+      "name": "Victor",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10910369?v=4",
+      "profile": "https://github.com/victornove",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "drkoll",
+      "name": "John Koll",
+      "avatar_url": "https://avatars.githubusercontent.com/u/128939759?v=4",
+      "profile": "https://github.com/drkoll",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "MartaMalb",
+      "name": "Marta Malberti",
+      "avatar_url": "https://avatars.githubusercontent.com/u/129286939?v=4",
+      "profile": "http://www.linkedin.com/in/martamalberti/",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "g1r0",
+      "name": "Arsenii Chaplinskii",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17737200?v=4",
+      "profile": "https://github.com/g1r0",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "and4po",
+      "name": "Ander Romero",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94716615?v=4",
+      "profile": "http://and4po.github.io",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "yue-dongchen",
+      "name": "Dongchen Yue | 岳东辰",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38829129?v=4",
+      "profile": "http://blog.yue-dongchen.xyz",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "jolars",
+      "name": "Johan Larsson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13087841?v=4",
+      "profile": "https://larssonjohan.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "kyxap",
+      "name": "kyxap",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3080529?v=4",
+      "profile": "https://github.com/kyxap",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Baitur5",
+      "name": "Baitur Ulukbekov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73650784?v=4",
+      "profile": "https://github.com/Baitur5",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "StillerHarpo",
+      "name": "Florian Engel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25526706?v=4",
+      "profile": "https://github.com/StillerHarpo",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 6,
+  "projectName": "ebook-reader-dict",
+  "projectOwner": "BoboTiG",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "commitConvention": "angular",
+  "commitType": "docs"
+}

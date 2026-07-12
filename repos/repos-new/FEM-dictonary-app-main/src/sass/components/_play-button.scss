@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+
+.results__play-button {
+  position: relative;
+  display: inline-block;
+  height: rem(48);
+  width: rem(48);
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+
+  svg {
+    width: 100%;
+    height: 100%;
+
+    * {
+      transition: all 0.3s ease;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    svg {
+      circle {
+        fill: var(--contrast);
+        opacity: 1;
+      }
+      path {
+        fill: var(--white);
+      }
+    }
+  }
+}
+
+@include breakpoint("tablet") {
+  .results__play-button {
+    height: rem(75);
+    width: rem(75);
+  }
+}

@@ -14,11 +14,13 @@ from dataclasses import dataclass
 
 import regex as re
 
+from rewrite_engine.lang.esperanto import lemmatize_eo
 from rewrite_engine.lang.metadata import (
     SEGMENTED_SCRIPT_LANGS,
     SPACY_MODELS,
     normalize_language_code,
 )
+from rewrite_engine.lang.morphology import MorphFeatures
 
 # Fragmentos significativos: token protegido (atómico) o palabra (con acentos,
 # apóstrofos y guiones internos). El resto (espacios, puntuación) son "huecos".
@@ -131,6 +133,10 @@ class TokenizerLemmatizer:
     def lemmatize(self, word: str, lang: str) -> str:
         """Lema en minúsculas (o la palabra en minúsculas si no hay backend)."""
         lower = word.lower()
+        if lang == "eo":
+            # Esperanto es súper regular: lematizador por reglas propio
+            # (simplemma/spaCy no lo cubren).
+            return lemmatize_eo(lower)
         if self._simplemma is not None:
             try:
                 return self._simplemma.lemmatize(lower, lang=lang)
@@ -144,6 +150,16 @@ class TokenizerLemmatizer:
         Devuelve sólo la primera aparición de cada forma; suficiente para el
         filtrado heurístico (no reemplazar nombres propios, etc.).
         """
+        return {word: info[0] for word, info in self.analyze(sentence, lang).items()}
+
+    def analyze(self, sentence: str, lang: str) -> dict[str, tuple[str, MorphFeatures]]:
+        """Mapa palabra→(UPOS, rasgos morfológicos) usando spaCy si está.
+
+        Un único parseo de spaCy alimenta tanto el filtrado por POS
+        (``CandidateGenerator``) como la concordancia morfológica del
+        reemplazo (``lang/morphology.py``). Sin spaCy, devuelve vacío: el
+        motor sigue funcionando, sólo sin esas dos mejoras.
+        """
         nlp = self._nlp(lang)
         if nlp is None:
             return {}
@@ -151,7 +167,7 @@ class TokenizerLemmatizer:
             doc = nlp(sentence)
         except Exception:
             return {}
-        tags: dict[str, str] = {}
+        info: dict[str, tuple[str, MorphFeatures]] = {}
         for tok in doc:
-            tags.setdefault(tok.text, tok.pos_)
-        return tags
+            info.setdefault(tok.text, (tok.pos_, MorphFeatures.from_dict(tok.morph.to_dict())))
+        return info

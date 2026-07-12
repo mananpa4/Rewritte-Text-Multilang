@@ -1,0 +1,38 @@
+repos:
+  # Ruff for linting and formatting
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.16 # Keep in sync ruff version with pyproject.toml
+    hooks:
+      # Run the linter
+      - id: ruff
+        args: [--fix]
+      # Run the formatter
+      - id: ruff-format
+
+  # mypy for type checking
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v2.1.0 # Keep in sync mypy version with pyproject.toml
+    hooks:
+      - id: mypy
+        args: [--config-file=pyproject.toml]
+
+  # zizmor for github actions linting
+  - repo: https://github.com/zizmorcore/zizmor-pre-commit
+    rev: v1.26.1 # Keep in sync zizmor version with pyproject.toml
+    hooks:
+      - id: zizmor
+        args: [--no-progress, --fix, --persona=auditor]
+
+  # Standard pre-commit hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+        args: [--maxkb=1000]
+      - id: check-json
+      - id: check-toml
+      - id: mixed-line-ending
+        args: [--fix=lf]

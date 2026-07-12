@@ -1,0 +1,10 @@
+[
+  {"word": "envio", "lemma": "envio", "pos": "NOUN", "language": "pt",
+   "synonyms": [{"text": "entrega", "formality": "neutral", "frequency": 0.74, "contexts": ["marketplace"]}]},
+  {"word": "oferta", "lemma": "oferta", "pos": "NOUN", "language": "pt",
+   "synonyms": [{"text": "promoção", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "seo"]}]},
+  {"word": "durável", "lemma": "durável", "pos": "ADJ", "language": "pt",
+   "synonyms": [{"text": "resistente", "formality": "neutral", "frequency": 0.68, "contexts": ["marketplace"]}]},
+  {"word": "confortável", "lemma": "confortável", "pos": "ADJ", "language": "pt",
+   "synonyms": [{"text": "cômodo", "formality": "neutral", "frequency": 0.6, "contexts": ["marketplace"]}]}
+]

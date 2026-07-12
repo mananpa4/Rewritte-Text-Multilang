@@ -1,0 +1,170 @@
+== {{-ca-}} ==
+{{ca-pron|ó
+|f-centr=LL-Q7026 (cat)-Toniher-bot.wav
+}}
+{{-etimologia-|la|ca}} [1] Per la forma de bóta: del llatí vulgar {{m|la|buttis|trad=bóta}}, {{etim-s|ca|XIII}}.
+{{-etimologia-}} [2] Per l’acció de botar: de {{comp|ca|botar|+Ø}}, segle XV.
+{{-etimologia-}} [3] Nàutica: {{del-lang|fro|ca|bot}}, segle XVII, {{del-lang|ang|ca|bat|trad=barca petita}}, actualment {{m|en|boat}}.
+{{-etimologia-}} [4] Informàtica: afèresi de {{m|ca|robot}}, calc de l’anglès {{m|en|bot}}, segle XX.
+
+=== Nom ===
+{{ca-nom|m}}
+
+# Recipient de [[cuir]], originalment de [[boc]] per a contenir [[vi]].
+# [[sac de gemecs]]
+# [[reclam|Reclam]] a manera d'ocell.
+# Peix (''[[Mola mola]]'') de la família els [[mòlids]], de color gris i textura aspra, de cos discoïdal aplanat, però que s'unfla com un globus com a sistema de defensa.
+# Peix subtropical de la família dels [[diodòntids]]. (''[[Chilomycterus reticulatus]]'')
+# {{marca|ca|peixos}} [[ballesta]]
+
+<gallery>
+Fitxer:086 Vinseum, bots.JPG|Bots de vi
+Fitxer:Sunfish2.jpg|Peix ''Mola mola''
+</gallery>
+
+{{-sin-}}
+* {{q|recipient}} [[cuiro]] {{q|valencià}}, [[odre]] {{q|mallorquí}}
+* {{q|peix mòlid}}: [[caçó]], [[lluna]], [[mola]], [[peix lluna]], [[roda marina]], [[but]]
+
+{{-hiper-}}
+* {{q|peix mòlid}}: [[peixos]] > [[mòlids]]
+* {{q|Chilomycterus reticulatus}}: [[peixos]] > [[diodòntids]]
+
+{{-comp-}}
+* [[ploure a bots i barrals]]
+
+{{-trad-}}
+{{t-inici|Recipient de cuir}}
+* {{de}}: {{trad|de|Weinschlauch|m}}
+* {{en}}: {{trad|en|wineskin}}
+* {{hy}}: {{trad|hy|տիկ}}
+* {{es}}: {{trad|es|odre|m}}
+* {{fr}}: {{trad|fr|outre}}
+* {{grc}}: {{trad|grc|ἀσκός|m}}
+* {{is}}: {{trad|is|vínbelgur|m}}
+* {{it}}: {{trad|it|otre|m}}
+* {{nl}}: {{trad|nl|wijnzak|m}}
+* {{no}}: {{trad|no|vinsekk|m}}
+* {{pl}}: {{trad|pl|bukłak|m}}
+* {{pt}}: {{trad|pt|borracha|f}}
+* {{ru}}: {{trad|ru|бурдю́к|m}}
+* {{sh}}: {{trad|sh|mješina|f}}
+* {{sv}}: {{trad|sv|lägel|c}}
+* {{uk}}: {{trad|uk|бурдюк|m}}
+{{t-final}}
+
+{{t-inici|Peix mòlid}}
+* {{en}}: {{trad|en|ocean sunfish}}, {{trad|en|sunfish}}
+* {{ast}}: {{trad|ast|rueda}}
+* {{es}}: {{trad|es|mola}}, {{trad|es|muela}}, {{trad|es|muela de molino}}, {{trad|es|pez ballesta}}, {{trad|es|pez luna}}, {{trad|es|pez-luna}}, {{trad|es|rodador}}, {{trad|es|rueda marina}}
+* {{da}}: {{trad|da|klumpfisk|c}}
+* {{fr}}: {{trad|fr|môle}}, {{trad|fr|poisson lune}}, {{trad|fr|poisson-lune}}
+{{t-final}}
+
+=== Nom ===
+{{ca-nom|m}}
+
+# [[salt|Salt]] enlaire amb un [[impuls]] ràpid.
+# Moviment [[elàstic]] d’un cos que en [[topar]] és llançat [[enlaire]].
+
+<gallery>
+Fitxer:NwFusionTapM.jpg|Bot d’una ballarina
+Fitxer:EVD-baloncesto-053.jpg|Bot de pilota de bàsquet
+</gallery>
+
+{{-der-}}
+* [[botir]]
+
+{{-comp-}}
+* [[ball de bot]]: Conjunt de balls tradicionals de Mallorca
+* [[pegar un bot]]: Anar a un lloc breument o de seguida {{q|col·loquial|mallorquí}}
+*: {{ex-us|ca|Si pots, pega un bot a sa botiga abans que tanquin.}}
+* [[pegar bot]]: Botar {{q|col·loquial|mallorquí}}
+*: {{ex-us|ca|De sa retgirada, va pegar bot a sa paret i no el tornàrem a veure.}}
+
+{{-trad-}}
+{{t-inici|Salt}}
+* {{de}}: {{trad|de|Sprung|m}}
+* {{en}}: {{trad|en|jump}}, {{trad|en|bound}}
+* {{eu}}: {{trad|eu|jauzi}}
+* {{bg}}: {{trad|bg|скок|m}}
+* {{es}}: {{trad|es|bote}}
+* {{fi}}: {{trad|fi|hyppy}}
+* {{fr}}: {{trad|fr|bond}}, {{trad|fr|saut|m}}
+* {{el}}: {{trad|el|άλμα|n}}
+* {{grc}}: {{trad|grc|πήδημα|n}}
+* {{hu}}: {{trad|hu|ugrás}}
+* {{it}}: {{trad|it|balzo|m}}
+* {{csc}}: {{trad|csc|SALTAR}}
+* {{nl}}: {{trad|nl|sprong}}
+* {{pt}}: {{trad|pt|salto|m}}
+* {{ru}}: {{trad|ru|прыжо́к|m}}
+* {{sv}}: {{trad|sv|hopp|n}}
+{{t-final}}
+
+{{t-inici|Moviment elàstic}}
+* {{en}}: {{trad|en|bounce}}, {{trad|en|bound}}
+* {{es}}: {{trad|es|bote}}
+* {{fr}}: {{trad|fr|bond}}, {{trad|fr|rebond}}
+{{t-final}}
+
+=== Nom ===
+{{ca-nom|m}}
+
+[[Fitxer:ORŁ 0033 ubt.JPEG|miniatura|]]
+# [[embarcació|Embarcació]] petita sense [[coberta]].
+
+{{-trad-}}
+{{t-inici|Embarcació petita}}
+* {{en}}: {{trad|en|boat}}
+* {{es}}: {{trad|es|bote}}
+* {{da}}: {{trad|da|båd|c}}
+* {{fr}}: {{trad|fr|canot}}
+{{t-final}}
+
+=== Nom ===
+{{ca-nom|m}}
+
+# {{marca|ca|informàtica}} [[programa|Programa]] informàtic dissenyat per a completar [[tasques]] d’assistència, especialment quan opera com un [[usuari]].
+
+{{-sin-}}
+* [[robot]]
+
+{{-trad-}}
+{{t-inici|Programa informàtic}}
+* {{en}}: {{trad|en|bot}}
+* {{es}}: {{trad|es|bot}}
+* {{fr}}: {{trad|fr|bot}}
+{{t-final}}
+
+=== Verb ===
+{{ca-verb-forma}}
+
+# {{marca-nocat|ca|balear|alguerès}} {{ca-forma-conj|botar|1|pres|ind}}
+# {{ca-forma-conj|botre|3|pres|ind}}
+# {{ca-forma-conj|botre|2|imp}}
+
+=== Miscel·lània ===
+* {{ca-sil}}
+
+=== Vegeu també ===
+* {{Viquipèdia}}
+* {{ca-dicc|diec|gdlc|termcat}}
+* {{termcat|dicc=173}}
+
+== {{-en-}} ==
+{{-pronafi-}} {{pron|en|/bɒt/}} {{àudio simple|en-us-bot.ogg|àudio (EUA)}}
+{{-etimologia-}} Afèresi de {{m|en|robot}}.
+
+=== Nom ===
+{{en-nom}}
+
+# {{marca|en|informàtica}} {{e|ca|bot}}
+
+== {{-fr-}} ==
+{{-pronafi-}} {{pron|fr|/bo/}}
+
+=== Nom ===
+{{fr-nom|m}}
+
+# {{marca|en|informàtica}} {{e|ca|bot}}

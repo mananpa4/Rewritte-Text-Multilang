@@ -1,0 +1,103 @@
+== {{lengua|es}} ==
+{{pron-graf|1audio1=Gracias (español).ogg}}
+
+=== Etimología 1 ===
+{{etimología}}.
+
+==== {{interjección|es}} ====
+;1: {{impropia|Úsase para expresar agradecimiento}}.
+{{relacionado|de nada|muchas gracias|muchísimas gracias}}.
+{{ejemplo|Madre bendita, ¡qué deseo traigo! ''Gracias'' a Dios que te me dejó ver.|a=Fernando de Rojas|c=libro|f=1841|p=48|t=La Celestina}}
+{{ejemplo|—¡Cómo no, pues, Juan de la Verdá! —le dijo el rey—. Cásate con ella y el palacio que le gané a mi vecino te quedarás tú con él.<br/>— Muchas ''gracias'', mi rey.|a=Yolando Pino Saavedra|c=libro|f=1992|t=Nuevos cuentos folklóricos de Chile de raíces hispánicas}}
+;2: {{impropia|Irónicamente expresa desagrado, desprecio o enfado}}.
+{{uso|coloquial|irónico}}
+{{ejemplo requerido}}
+
+==== Véase también ====
+{{w}}
+
+==== Traducciones ====
+{{trad-arriba}}
+{{t|sh|a1=2|a2=2|t1=hvala|t2=хвала|tl2=hvala}}
+{{t|sq|a1=2|t1=faleminderit}}
+{{t|de|a1=2|t1=danke}}
+{{t|ar|a1=2|t1=شكرا|tl1=šukran}}
+{{t|hy|a1=2|t1=շնորհակալ եմ|tl1=šnorhagal em}}
+{{t|ast|a1=1|t1=gracies}}
+{{t|bn|a1=2|t1=ধন্যবাদ|tl1=dhônnôbad}}
+{{t|br|a1=2|g2=f|t1=trugarekaat|t2=trugarez}}
+{{t|bg|a1=2|t1=благодаря|tl1=blagodarâ}}
+{{t|yue|a1=2|t1=多謝|tl1=dō ze}}
+{{t|ca|a1=2|t1=gràcies}}
+{{t|cs|a1=2|t1=děkuji}}
+{{t|ko|a1=2|t1=감사합니다|tl1=gham-sa-han-ni-da}}
+{{t|da|a1=2|t1=tak}}
+{{t|dv|a1=2|t1=ޝުކުރިއްޔާ|tl1=shukuriyyaa}}
+{{t|sk|a1=2|t1=ďakujem}}
+{{t|sl|a1=2|t1=hvala}}
+{{t|eo|a1=2|t1=dankon}}
+{{t|eu|a1=2|t1=eskerrik asko}}
+{{t|ext|a1=1|a3=2|g1=m|g2=m|g3=f|g4=f|t1=agralecíu|t2=agraecíu|t3=gracias|t4=gracias}}
+{{t|fo|a1=2|t1=takk}}
+{{t|fi|a1=2|t1=kiitos}}
+{{t|fr|a1=2|t1=merci}}
+{{t|gl|a1=2|t1=grazas}}
+{{t|ka|a1=2|t1=მადლობ}}
+{{t|el|a1=2|t1=ευχαριστώ|tl1=eukharistó}}
+{{t|gn|a1=2|t1=aguyje}}
+{{t|he|a1=2|t1=תודה|tl1=todá}}
+{{t|hi|a1=2|t1=धन्यवाद|tl1=dhanyavād}}
+{{t|hu|a1=2|t1=köszönöm}}
+{{t|id|a1=2|t1=terima kasih}}
+{{t|en|a1=2|nota3=informal|t1=thanks|t2=thank you|t3=cheers}}
+{{t|ga|a1=2|t1=go raibh maith agat}}
+{{t|is|a1=2|t1=takk}}
+{{t|it|a1=2|t1=grazie}}
+{{t|ja|a1=2|t1=ありがとう|t2=ありがとうございます|t3=どうも|t4=どうもありがとうございます}}
+{{t|kuz|a1=2|t1=patta}}
+{{t|la|a1=2|t1=gratias ago}}
+{{t|lut|a1=2|a2=2|t1=hiskʼʷuʔ|t2=hišǝbǝʔ}}
+{{t|mk|a1=2|t1=благодарам|tl1=blagodaram}}
+{{t|ms|a1=2|t1=terima kasih}}
+{{t|mg|a1=2|t1=misaotra}}
+{{t|mt|a1=2|t1=grazzi}}
+{{t|zh|a1=2|t1=謝謝|t2=谢谢|t3=多谢|tl2=xièxie|tl3=duōxiè}}
+{{t|mn|a1=2|t1=баярлалаа|tl1=baârlalā}}
+{{t|nhn|a1=2|t1=tlazohcamati}}
+{{t|nci|a1=2|t1=tlazohcamati}}
+{{t|nch|a1=2|t1=tlaxkamati}}
+{{t|nl|a1=2|t1=bedankt|t2=dank u}}
+{{t|no|a1=2|t1=takk}}
+{{t|nn|a1=2|t1=takk}}
+{{t|oc|t1=mercés}}
+{{t|ote|a1=2|t1=jämadi}}
+{{t|pap|a1=2|t1=danki}}
+{{t|fa|a1=2|t1=با تشکر|tl1=mo-teh-shaker-am}}
+{{t|pl|a1=2|t1=dziękuję}}
+{{t|pt|a1=2|t1=obrigado|t2=obrigada}}
+{{t|quh|a1=2|t1=añaychay}}
+{{t|quz|a1=2|t1=yusulpayki}}
+{{t|qwh|a1=1|t1=payllaa}}
+{{t|rap|a1=2|t1=maururu}}
+{{t|ro|a1=2|t1=mulțumesc}}
+{{t|ru|a1=2|t1=спасибо|tl1=spasibo}}
+{{t|shp|a1=1|t1=irake}}
+{{t|sv|a1=2|t1=tack}}
+{{t|sw|a1=2|t1=asante}}
+{{t|tl|a1=2|t1=salamat}}
+{{t|th|a1=2|t1=ขอบคุณ|tl1=kòp-kuun}}
+{{t|tr|a1=2|t1=teşekkür ederim}}
+{{t|ur|a1=2|t1=تھنکس|tl1=šukriyā}}
+{{t|vi|a1=2|t1=cảm ơn}}
+{{t|yi|a1=2|t1=אַ דאַנק|tl1=a dank}}
+{{t|zu|a1=2|t1=ngiyabonga}}
+{{trad-abajo}}
+
+=== Forma flexiva ===
+==== Forma sustantiva ====
+;1: {{forma sustantivo plural|gracia}}.
+{{ejemplo|E desta guisa honró el Rey a todos los grandes señores e donzellas sus parientas, de que mucha honra cobró así de gelo tener por gran bondad los de España por fazer tanto bien a su linage, como de la honra que alcançó por todo el mundo, porque tales señores como éstos quisieron tomar de tan buena voluntad sus '''''gracias''''' del Rey, e obligarse de lo servir todos.|a=Pedro de Corral|c=libro|f=1587|p=285|t=Cronica del rey don Rodrigo}}
+{{ejemplo|Él, sus consejeros y los vecinos más caracterizados de la ciudad, se confesaron y comulgaron para ganar aquellas '''''gracias''''' espirituales y tener al cielo propicio en los acuerdos que iban a tomarse.|a=Diego Barros Arana|c=libro|editorial=Editorial Universitaria|f=1999|isbn=9789561115590|p=30|t=Historia general de Chile}}
+
+== Referencias y notas ==
+<references />

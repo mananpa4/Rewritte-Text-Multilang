@@ -1,0 +1,28 @@
+{
+  "name": "grammarer",
+  "version": "0.2.0",
+  "description": "A customisable grammar and vocab learning platform for schools",
+  "main": "controller.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --timeout 5000",
+    "start": "set PORT=80&&set DBSTRING=\"mongodb://localhost:27017\"&&node controller.js",
+    "start-dev": "set PORT=3000&&set DBSTRING=\"mongodb://localhost:27017\"&&node controller.js",
+    "dev-reset-db": "set DBSTRING=\"mongodb://localhost:27017\"&&node reset.js"
+  },
+  "author": "Pal Kerecsenyi",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-json-equal": "0.0.1",
+    "cookie-parser": "^1.4.3",
+    "css": "^2.2.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "getos": "^3.1.0",
+    "mocha": "^5.1.1",
+    "mongodb": "^3.0.7",
+    "prompt": "^1.0.0",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {}
+}

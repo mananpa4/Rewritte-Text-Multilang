@@ -7,7 +7,9 @@ tokenizador y filtros léxicos se desalineen al ampliar cobertura.
 from __future__ import annotations
 
 # Idiomas con soporte sembrado: diccionario local + heurísticas de seguridad.
-DEFAULT_LANGUAGES = ("es", "en", "pt", "fr", "it", "de", "nl", "pl", "ru", "uk", "sv")
+DEFAULT_LANGUAGES = (
+    "es", "en", "pt", "fr", "it", "de", "nl", "pl", "ru", "uk", "sv", "eo",
+)
 
 LANGUAGE_ALIASES: dict[str, str] = {
     "en-us": "en",
@@ -103,6 +105,10 @@ STOPWORD_HINTS: dict[str, frozenset[str]] = {
         "och", "i", "att", "det", "som", "en", "ett", "är", "på", "för",
         "med", "av", "inte", "den", "de", "har", "till", "om", "men", "från",
     }),
+    "eo": frozenset({
+        "la", "kaj", "de", "en", "al", "por", "kun", "mi", "vi", "li",
+        "estas", "ne", "ke", "tiu", "ĉi", "pri", "el", "ĝi", "ni", "aŭ",
+    }),
 }
 
 # Palabras función que NO deben reemplazarse cuando no hay POS fiable.
@@ -181,6 +187,11 @@ FUNCTION_WORDS: dict[str, frozenset[str]] = {
         "från", "om", "är", "var", "vara", "har", "hade", "inte", "ingen",
         "jag", "du", "han", "hon", "vi", "ni", "min", "din",
     }),
+    "eo": frozenset({
+        "la", "kaj", "aŭ", "sed", "ke", "ne", "de", "en", "al", "por",
+        "kun", "sur", "pri", "el", "mi", "vi", "li", "ŝi", "ĝi", "ni",
+        "ili", "estas", "esti", "se", "ĉu", "tiu", "tio", "min", "sia", "do",
+    }),
 }
 
 # Intensificadores: se dejan intactos para evitar sustituciones forzadas.
@@ -213,6 +224,9 @@ INTENSIFIERS: dict[str, frozenset[str]] = {
     "sv": frozenset({
         "mycket", "väldigt", "riktigt", "ganska", "för", "så", "nästan",
         "otroligt",
+    }),
+    "eo": frozenset({
+        "tre", "tro", "sufiĉe", "plej", "pli", "tute", "vere", "preskaŭ",
     }),
 }
 

@@ -1,0 +1,6 @@
+[
+  {"word": "rapida", "lemma": "rapida", "pos": "ADJ", "language": "eo",
+   "synonyms": [{"text": "efika", "formality": "formal", "frequency": 0.5, "contexts": ["technical"]}]},
+  {"word": "eraro", "lemma": "eraro", "pos": "NOUN", "language": "eo",
+   "synonyms": [{"text": "misfunkcio", "formality": "formal", "frequency": 0.46, "contexts": ["technical"]}]}
+]

@@ -1,0 +1,54 @@
+{
+  "name": "@ohm-js/semantics",
+  "version": "18.0.0-alpha.0",
+  "description": "v18 semantics",
+  "keywords": ["parser", "parsing", "ohm", "ohm-js", "semantics"],
+  "homepage": "https://github.com/ohmjs/ohm#readme",
+  "bugs": {
+    "url": "https://github.com/ohmjs/ohm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohmjs/ohm.git"
+  },
+  "license": "MIT",
+  "author": "Patrick Dubroy <pdubroy@gmail.com>",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    },
+    "./cstView": {
+      "types": "./dist/src/cstViewOps.d.ts",
+      "default": "./dist/src/cstViewOps.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "bench": "node bench.ts",
+    "bench:smoke": "node bench.ts --small-size",
+    "test": "ava"
+  },
+  "devDependencies": {
+    "@ohm-js/compiler": "workspace:^",
+    "ava": "^6.0.0",
+    "tinybench": "^6.0.0"
+  },
+  "peerDependencies": {
+    "@ohm-js/compiler": "workspace:^",
+    "ohm-js": "workspace:^"
+  },
+  "peerDependenciesMeta": {
+    "@ohm-js/compiler": {
+      "optional": true
+    },
+    "ohm-js": {
+      "optional": true
+    }
+  },
+  "ava": {
+    "extensions": ["ts"]
+  }
+}

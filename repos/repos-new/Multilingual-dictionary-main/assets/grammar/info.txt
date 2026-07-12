@@ -1,0 +1,10 @@
+"h: "     - headline - larger shrift, margin
+"@table:" - table - in tables.json - displayed in a grid, stored as a two-dimentional array
+"@ex:"    - example - in examples.json - displayed in a table
+"="      - bullet point - the '=' is replaced by '  ·'
+"\n"     - new line
+
+every independent string starts at a new line
+
+
+if the table shouldn't have a coloured first row: in the tables.json make a "no-header" property (array) with the name of the table inside 

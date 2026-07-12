@@ -1,0 +1,1295 @@
+{{also|Word|worð}}
+==English==
+
+===Alternative forms===
+* {{alter|en|worde||obsolete}}
+
+===Pronunciation===
+* {{IPA|en|/wɜɹd/|a=GA}}, {{enPR|wûrd}}
+* {{IPA|en|/wɜːd/|a=RP}}
+* {{audio|en|en-us-word.ogg|a=GA}}
+{{col-top|1|other pronunciations}}
+* {{IPA|en|/wəɹd/|[wɚ(ɹ)d]|a=CA}}
+* {{IPA|en|/wɛːd/|a=Humberside,Teesside,square-nurse}}
+* {{IPA|en|/weːd/|a=Scouse,square-nurse}}
+* {{IPA|en|/wøːd/|a=NZ}}
+* {{IPA|en|/wʌrd/|a=Scotland}}
+{{col-bottom}}
+* {{homophones|en|whirred<aa:wine-whine>|;|wared<aa:fair-fur>}}
+* {{rhymes|en|ɜː(ɹ)d|s=1}}
+
+===Etymology 1===
+[[File:About- General sign.ogv|thumb| The word ''about'' signed in [[American Sign Language]].]]
+{{root|en|ine-pro|*werh₁-|*dʰeh₁-}}
+From {{inh|en|enm|word}}, from {{inh|en|ang|word}}, from {{inh|en|gmw-pro|*word}}, from {{inh|en|gem-pro|*wurdą}}, from {{inh|en|ine-pro|*werdʰh₁om|*wr̥dʰh₁om}}. {{doublet|en|verb|verve}}; further related to {{m|en|vrata}}.
+
+====Noun====
+{{en-noun|~}}
+
+# {{senseid|en|Q8171}}{{lb|en|semantics}} The smallest unit of language that has a particular meaning and can be expressed by itself; the smallest [[discrete]], [[meaningful]] unit of language. {{qualifier|contrast ''[[morpheme]]''.}}
+#* {{quote-book|en|year=1897|author=Ouida|chapter=The New Woman|title=An Altruist and Four Essays|page=239|passage=But every '''word''', whether written or spoken, which urges the woman to antagonism against the man, every '''word''' which is written or spoken to try and make of her a hybrid, self-contained opponent of men, makes a rift in the lute to which the world looks for its sweetest music.}}
+#* {{quote-book|en|year=1986|author=David Barrat|title=Media Sociology|isbn=041505110X|page=112|passage=The '''word''', whether written or spoken, does not look like or sound like its meaning — it does not resemble its signified. We only connect the two because we have learnt the code — language. Without such knowledge, 'Maggie' would just be a meaningless pattern of shapes or sounds.}}
+#* {{quote-book|en|year=2009|author=Jack Fitzgerald|title=Viva La Evolucin|isbn=055719833X|page=233|passage=Brian and Abby signed the '''word''' ''clothing'', in which the thumbs brush down the chest as though something is hanging there. They both spoke the '''word''' ''clothing''. Brian then signed the '''word''' for ''change'', {{...}}}}
+#* {{quote-journal|en|date=2013-06-14|author=[http://www.guardian.co.uk/profile/sam-leith Sam Leith]|volume=189|issue=1|page=37|magazine=w:The Guardian Weekly|title=[http://www.guardian.co.uk/books/2013/may/23/holy-shit-history-swearing-mohr Where the profound meets the profane]|passage=Swearing doesn't just mean what we now understand by "dirty words". It is entwined, in social and linguistic history, with the other sort of swearing: vows and oaths. Consider for a moment the origins of almost any '''word''' we have for bad language – "profanity", "curses", "oaths" and "swearing" itself.}}
+## The smallest discrete unit of spoken language with a particular meaning, composed of one or more [[phoneme]]s and one or more [[morpheme]]s
+##* {{quote-journal|en|year=1894|author=Alex. R. Mackwen|title=The Samaritan Passover|magazine=Littell's Living Age|issue=6|volume=1|passage=Then all was silent save the voice of the high priest, whose '''words''' grew louder and louder, {{...}}}}
+##* {{RQ:Churchill Celebrity|chapter=4|passage=Mr. Cooke at once began a tirade against the residents of Asquith for permitting a sandy and generally disgraceful condition of the roads. So roundly did he vituperate the inn management in particular, and with such a loud flow of '''words''', that I trembled lest he should be heard on the veranda.}}
+##* '''2006 Feb. 17''', Graham Linehan, ''[[w:The IT Crowd|The IT Crowd]]'', Season 1, Episode 4:
+##*: I can't believe you want me back.<br>You've got Jen to thank for that. Her '''words''' the other day moved me deeply. Very deeply indeed.<br>Really? What did she say.<br>Like I remember! Point is it's the effect of her '''words''' that's important.
+## The smallest discrete unit of written language with a particular meaning, composed of one or more [[letter]]s or [[symbol]]s and one or more [[morpheme]]s
+##* {{RQ:Shakespeare Hamlet|2|2|text=Polonius: What do you read, my lord?<br>Hamlet: '''Words''', '''words''', '''words'''.}}
+##* {{quote-book|en|year=2003|author=Jan Furman|title=Toni Morrison's Song of Solomon: A Casebook|isbn=0195146352|page=194|passage=The name was a confused gift of love from her father, who could not read the '''word''' but picked it out of the Bible for its visual shape, {{...}}}}
+##* {{quote-book|en|year=2009|author=Stanislas Dehaene|title=Reading in the Brain: The New Science of How We Read|isbn=1101152400|passage=Well-meaning academics even introduced spelling absurdities such as the “s” in the '''word''' “island,” a misguided Renaissance attempt to restore the etymology of the [unrelated] Latin word ''insula''.}}
+## A discrete, meaningful unit of language approved by an [[authority]] or [[native speaker]] (''compare [[non-word]]'').
+##* {{quote-book|en|year=1896|author=w:Israel Zangwill|title=Without Prejudice|page=21|passage=“Ain’t! How often am I to tell you ain’t ain’t a '''word'''?”}}
+##* {{quote-book|en|year=1999|author=Linda Greenlaw|title=The Hungry Ocean|publisher=Hyperion|page=11|passage=''Fisherwoman'' isn’t even a '''word'''. It’s not in the dictionary.}}
+# Something like such a unit of language:
+#: {{hypernyms|en|syntagma}}
+## A [[sequence]] of [[letters]], characters, or [[sound]]s, considered as a [[discrete]] [[entity]], though it does not necessarily belong to a language or have a meaning.
+##* {{quote-book|en|year=1974|title=Thinking Goes to School: Piaget's Theory in Practice|isbn=0199839077|page=183|passage=In still another variation, the nonsense '''word''' is presented and the teacher asks, "What sound was in the beginning of the word?" "In the middle?" and so on. The child should always respond with the phoneme; he should not use letter labels.}}
+##* {{quote-book|en|author=w:Matt Ridley|title=Genome|year=1999|publisher=Harper Collins|page=301|pageurl=https://archive.org/details/isbn_9780965213677_f7s0/page/301/mode/1up|isbn=978-0-9652136-7-7|passage=All 15.5 million ‘'''words'''’ (or so–the exact length depends on the repeat sequences, which vary greatly) in the twenty-second chapter of the human autobiography have been read and written down in English letters: 47 million As, Cs, Gs and Ts.}}
+##* {{quote-book|en|year=2003|title=How To Do Everything with Your Tablet PC|isbn=0072227710|page=278|passage=I wrote a nonsense '''word''', "umbalooie," in the Input Panel's Writing Pad. Input Panel converted it to "cembalos" and displayed it in the Text Preview pane.}}
+##* {{quote-book|en|year=2006|title=Scribal Habits and Theological Influences in the Apocalypse|isbn=3161491122|page=141|passage=Here the scribe has dropped the με from καθημενος, thereby creating the nonsense '''word''' καθηνος.}}
+##* {{quote-book|en|year=2013|title=The Cognitive Neuropsychology of Language|isbn=1317859979|page=91|passage=If M. V. has sustained impairment to a phonological output process common to reading and repetition, we might anticipate that her mispronunciations will partially reflect the underlying phonemic form of the nonsense '''word'''.}}
+## {{lb|en|telegraphy}} A unit of [[text]] equivalent to five [[character]]s and one [[space]]. {{defdate|from 19th c.}}
+## {{senseid|en|Q625642}} {{lb|en|computing}} A fixed-size group of [[bit]]s handled as a unit by a machine and which can be stored in or retrieved from a typical [[register]] (so that it has the same size as such a register). {{defdate|from 20th c.}}
+##* {{quote-book|en|year=1997|author=John L. Hennessy|coauthors=David A. Patterson|title=Computer Organization and Design|section=&sect;3.3|url=|page=109|text=The size of a register in the MIPS architecture is 32 bits; groups of 32 bits occur so frequently that they are given the name <b>''word''</b> in the MIPS architecture.|publisher=Morgan Kaufmann Publishers, Inc.|location=San Francisco, California|edition=2nd}}
+## {{senseid|en|16bits}} {{lb|en|computing}} With regards to Intel or Intel-compatible hardware and/or in the context of Windows programming, a group of exactly 16 [[bit]]s regardless of the actual processor capabilities; a fossilized unit referring to the small word size of historical CPUs. {{defdate|from 20th c.}}
+## {{lb|en|computer science}} A [[finite]] [[string]] that is [[not]] a [[command]] or [[operator]]. {{defdate|from 20th c.}}
+## {{lb|en|group theory}} A [[group]] [[element]], expressed as a [[product]] of group elements.
+# The fact or act of [[speaking]], as opposed to taking [[action]]. {{defdate|from 9th c}}.
+#* {{quote-book|en|year=1811|author=w:Jane Austen|title=w:Sense and Sensibility|passage={{...}} she believed them still so very much attached to each other, that they could not be too sedulously divided in '''word''' and deed on every occasion.}}
+#* {{quote-journal|en|date=8 September 2004|author=Richard Williams|work=The Guardian|passage=As they fell apart against Austria, England badly needed someone capable of leading by '''word''' and example.}}
+# {{lb|en|now|rare|_|outside certain phrases}} Something that someone said; a [[comment]], [[utterance]]; [[speech]]. {{defdate|from 10th c.}}
+#* {{RQ:KJV|Matthew|26|75|text=And Peter remembered the '''word''' of Jesus, which said unto him, Before the cock crow, thou shalt deny me thrice.}}
+#* {{quote-book|en|year=1847|author={{w|Alfred, Lord Tennyson|Alfred Tennyson}}|title={{w|The Princess (Tennyson poem)|The Princess}}|passage=She said; but at the happy '''word''' "he lives", / My father stooped, re-fathered, o'er my wound.}}
+#* {{quote-book|en|year=1853|author=w:Charles Dickens|title=w:Bleak House|passage=There is only one other point on which I offer a '''word''' of remark.}}
+#* {{quote-journal|en|date=April 1 1945|author=Sebastian Haffner|work=The Observer|passage="The Kaiser laid down his arms at a quarter to twelve. In me, however, they have an opponent who ceases fighting only at five minutes past twelve," said Hitler some time ago. He has never spoken a truer '''word'''.}}
+#* {{quote-book|en|year=2011|author=w:David Bellos|title=Is That a Fish in Your Ear?|publisher=Penguin|year_published=2012|page=126|passage=Despite appearances to the contrary [...] dragomans stuck rigidly to their brief, which was not to translate the Sultan's words, but his '''word'''.}}
+#* {{quote-book|en|year=2011|author=John Lehew (senior)|title=The Encouragement of Peter|isbn=1615074708|page=108|passage=In what sense is God's Word living? No other '''word''', whether written or spoken, has the power that the Bible has to change lives.}}
+# {{lb|en|obsolete|_|outside certain phrases}} A [[watchword]] or rallying cry, a verbal signal (even when consisting of multiple words).
+#: {{ux|en|[[mum's the word|mum's the '''word''']]}}
+#* {{quote-book|en|year=1592|author=William Shakespeare|title={{w|Richard III (play)|Richard III}}|passage=Our ancient '''word''' of courage, fair Saint George, inspire us with the spleen of fiery dragons!}}
+#* {{quote-book|en|year=c. 1623|year_published=1647|author=John Fletcher; William Rowley|title=w:The Maid in the Mill|edition_plain=published in the first Beaumont and Fletcher folio)|section=scene 3|passage=I have the '''word''' : sentinel, do thou stand; {{...}}}}
+# {{lb|en|obsolete}} A [[proverb]] or [[motto]].
+#* {{quote-book|en|year=1499|author=w:John Skelton|title=The Bowge of Court|passage=Among all other was wrytten in her trone / In golde letters, this '''worde''', whiche I dyde rede: / ''Garder le fortune que est {{l|fr|mal|mauelz}} et {{l|fr|bon|bone}}''.<!--[Prepare for good and ill fortune alike.]-->}}
+#* {{quote-book|en|year=1599|author=Ben Jonson|title=w:Every Man out of His Humour|passage=Let the '''word''' be 'Not without mustard'. Your crest is very rare, sir.}}
+#* {{quote-book|en|year=1646|author={{w|Joseph Hall (bishop)|Joseph Hall}}|title=The Balm of Gilead|passage=The old '''word''' is, 'What the eye views not, the heart rues not.'}}
+# {{senseid|en|news, tidings}} {{lb|en|uncountable}} [[news|News]]; [[tidings]]. {{defdate|from 10th c.}}
+#: {{ux|en|Have you had any '''word''' from John yet?}}
+#: {{ux|en|I've tried for weeks to get '''word''', but I still don't know where she is or if she's all right.}}
+#* {{RQ:Orwell Animal Farm|1|passage='''Word''' had gone round during the day that old Major, the prize Middle White boar, had had a strange dream on the previous night and wished to communicate it to the other animals.}}
+# An [[order]]; a [[request]] or [[instruction]]; an expression of will. {{defdate|from 10th c.}}
+#: {{ux|en|He sent '''word''' that we should strike camp before winter.}}
+#: {{ux|en|Don't fire till I give the '''word'''}}
+#: {{ux|en|Their mother's '''word''' was law.}}
+# {{senseid|en|oath promise}}A [[promise]]; an [[oath]] or [[guarantee]]. {{defdate|from 10th c.}}
+#: {{syn|en|promise}}
+#: {{ux|en|I give you my '''word''' that I will be there on time.}}
+# A brief [[discussion]] or [[conversation]]. {{defdate|from 15th c.}}
+#: {{ux|en|Can I have a '''word''' with you?}}
+# {{lb|en|meiosis}} A minor [[reprimand]].
+#: {{ux|en|I had a '''word''' with him about it.}}
+# {{lb|en|in the plural}} ''See'' '''[[words]]'''.
+#: {{ux|en|There had been '''words''' between him and the secretary about the outcome of the meeting.}}
+# {{lb|en|theology|sometimes '''[[Word]]'''}} Communication from [[God]]; the [[message]] of the Christian [[gospel]]; the [[Bible]], [[Scripture]]. {{defdate|from 10th c.}}
+#: {{syn|en|word of God|Bible}}
+#: {{ux|en|Her parents had lived in Botswana, spreading the '''word''' among the tribespeople.}}
+# {{lb|en|theology|sometimes '''[[Word]]'''}} [[Logos]], [[Christ]]. {{defdate|from 8th c.}}
+#: {{syn|en|God|Logos}}
+#* {{RQ:Tyndale NT|John|I|text=And that '''worde''' was made flesshe, and dwelt amonge vs, and we sawe the glory off yt, as the glory off the only begotten sonne off the father, which '''worde''' was full of grace, and verite.}}
+#* {{RQ:Tennyson In Memoriam|XXXVI|56|And so the '''Word''' had breath, and wrought<br>⁠With human hands the creed of creeds<br>⁠In loveliness of perfect deeds,<br>More strong than all poetic thought; {{...}}}}
+
+=====Usage notes=====
+* In English and other languages with a tradition of space-delimited writing, it is customary to treat "word" as referring to any sequence of characters delimited by spaces. However, this is not applicable to languages such as [[Chinese]] and [[Japanese]], which are normally written without spaces, or to languages such as [[Vietnamese]], which are written with spaces delimiting [[syllable]]s. In computing, the size (length) of a word, while being fixed in a particular machine or processor family design, can be different in different designs, for many reasons. See {{w|Word (computer architecture)}} for a full explanation.
+
+=====Synonyms=====
+* [[vocable]]; ''see also'' '''[[Thesaurus:word]]'''
+
+=====Derived terms=====
+{{col4|en
+|actions speak louder than words
+|action word
+|afterword
+|all one word
+|an image is worth a thousand words
+|a picture is worth a thousand words
+|a picture paints a thousand words
+|arrowword
+|at a loss for words
+|a-word
+|babble-word,babble word
+|backword|hundred-dollar word
+|bad word
+|bag of words
+|bandy words
+|bareword
+|baseword
+|beyond words
+|big word
+|book of words
+|book word,book-word
+|break one's word
+|breathe a word
+|brunch word|word lover
+|bug-word
+|buzz-word,buzz word,buzzword
+|b-word
+|byword
+|catchword
+|Champernowne word
+|choice word
+|code word
+|codeword
+|compound predicate word
+|compound word
+|connecting word
+|content word
+|continuous bag of words
+|counterword
+|cranberry word
+|crossword
+|crutch word
+|curse word
+|cuss word
+|C-word,c-word
+|description word
+|directed acyclic word graph
+|dirty word
+|doubleword
+|drunken words are sober thoughts
+|drunk words are sober thoughts
+|d-word,dword,D-word
+|Dyck word
+|eat one's words
+|empty word,empty words
+|e-word
+|eye-word
+|facts speak louder than words
+|famous last word,famous last words
+|fighting word,fighting words
+|filler word
+|final words
+|fine words butter no parsnips
+|five-dollar word
+|foreword
+|fossil word
+|four-letter word
+|frankenword
+|from the word go
+|full word
+|function word
+|fuzzword
+|f-word,F word,f word,F-word
+|gainword
+|gallipot word
+|gamer word
+|get a word in
+|get a word in edgeways,get a word in edgewise
+|get the word out
+|ghost word,ghostword
+|give one's word
+|give the word
+|good as one's word
+|good word
+|grammatical word
+|guideword,guide word
+|G-word,g-word
+|halfword
+|hang on every word
+|hard word
+|have a quiet word
+|have a word
+|have a word in someone's ear
+|have a word with oneself
+|have words
+|headword
+|honeyword
+|hotword
+|household word
+|how do you pronounce this word
+|how do you spell this word
+|Humpty Dumpty word
+|h-word,H-word
+|in a word
+|in every sense of the word
+|inkhorn word
+|in other words
+|in so many words
+|interword
+|in words of one syllable
+|i-word
+|Janus word
+|joey word
+|j-word
+|kangaroo word
+|keep one's word
+|key-word,keyword,key word
+|kiloword
+|k-word
+|last-wordism
+|last word,last words
+|lexical word
+|loaded word
+|loanword,loan word
+|longword
+|lost for words
+|l-word
+|Lyndon word
+|machine word
+|magic word
+|man of few words
+|mark my word
+|mark my words
+|McWord
+|measure word
+|megaword
+|metaword
+|midword
+|mince one's words
+|mince words
+|money and fair words
+|mouth the words
+|multi-word,multiword
+|multi-word expression
+|mum's the word
+|m-word,M-word
+|my word,oh my word
+|nameword
+|naughty word
+|noise word
+|nonce word
+|none of these words are in the Bible
+|nonsense word
+|non-word
+|not a word
+|not a word of a lie
+|not to put too fine a word on it
+|no word of a lie,no word of lie
+|N-word,n-word
+|N-word pass,n-word pass
+|octoword
+|of one's word
+|one's word is law
+|one-word
+|one word leads to another
+|operative word
+|or words to that effect
+|overword
+|oword
+|o-word
+|partword
+|pass one's word
+|pass-word,password
+|patchword
+|pattern word
+|phantom word
+|phoneword
+|phonological word
+|pillow word
+|place word
+|play of words
+|play on words
+|play upon words
+|polyword
+|portmanteau word
+|power word
+|procedure word,proword
+|protoword
+|pseudoword
+|purr word
+|put in a good word
+|put in a word
+|put into words
+|put to words
+|put words in someone's mouth
+|P-word,p-word
+|Pygmalion word
+|quadword
+|question word
+|q-word,Q-word
+|qword
+|reduced word
+|reserved word
+|re-word
+|root word
+|r-word,R-word
+|safe word
+|safeword
+|SAT word
+|say the word
+|say word one
+|semiword
+|send word
+|seven dirty words
+|sight word
+|single-word
+|small words
+|snarl word
+|songword
+|spelling word
+|spellword
+|spoken word
+|spread the word
+|startword
+|star word
+|stopword,stop word
+|subword
+|suit the action to the word
+|swallow one's words
+|swear word
+|s-word
+|syncword
+|tableword
+|take someone at their word
+|take someone's word for it
+|take the words out of someone's mouth
+|telescope word
+|ten-cent word
+|ten-dollar word
+|the word is go
+|thunder word
+|trigger word
+|true to one's word
+|turn of words
+|twenty-five cent word
+|twist someone's words
+|two-dollar word
+|t-word,T-word
+|type-word
+|underword
+|upon my word
+|ur-word,urword
+|use your words
+|u-word
+|vocabulary word
+|vogue word
+|v-word,V-word
+|wake word
+|wanderword
+|war of words
+|watchword
+|weasel word
+|weigh one's words
+|wh-word
+|winged word
+|without a word of a lie
+|woman of few words
+|Wonderword
+|wordage
+|wordaholic
+|word art
+|word association
+|word balloon
+|word-blind
+|word-blindness
+|word blindness
+|wordbook
+|word-bound
+|word box
+|word break,word-break
+|word bubble
+|wordbuilding
+|wordcel
+|word chain
+|word class
+|word cloud
+|word count
+|wordcraft
+|word-deafness
+|word divider
+|wordfact
+|word family
+|wordfast
+|wordfest
+|wordfilter
+|wordfinal,word-final
+|wordfinding
+|wordflow
+|wordform
+|word-formation,word formation
+|word-formational
+|word-for-word,word for word
+|wordful
+|word game
+|word gets around
+|word golf
+|word has it
+|word-hoard
+|word hole
+|wordhood
+|wordie
+|wording
+|wordinitial,word-initial
+|word is
+|word is bond
+|wordish
+|word ladder
+|wordlength
+|wordless
+|wordlet
+|wordlike
+|wordline,word line
+|wordlist,word list
+|wordlore
+|word-lover
+|wordly
+|wordmaker
+|wordmaking
+|word mark,wordmark
+|wordmaster
+|wordmeal
+|word method
+|word-mincer
+|wordmonger
+|word music
+|word name
+|word nerd
+|wordness
+|wordnet
+|WordNet
+|wordnik
+|Word of Allah
+|word of faith
+|word of finger
+|Word of God,word of God,God's word
+|word of honor,word of honour
+|word of life
+|word of mouth,word-of-mouth| time word
+|Word of Wisdom
+|wordoid
+|wordology
+|word on the street
+|word on the wire
+|word order
+|word painter
+|word painting
+|word-perfect
+|word-picture
+|wordplay,word play
+|wordpool
+|word problem
+|wordprocess
+|word processing
+|word processor
+|word-salad
+|word salad
+|words-as-words distinction
+|wordscape
+|words cut deep
+|word-search
+|word search
+|word separator
+|words fail someone
+|wordshaping
+|wordship
+|wordsize
+|word sketch
+|wordsmith
+|word snake
+|words of institution
+|words of one syllable
+|wordsome
+|word sound
+|word space
+|word-spelling alphabet
+|word square
+|wordster
+|word-stock
+|wordstring
+|word time
+|word to conjure with
+|word to the wise
+|word vector
+|word vomit
+|word-wheeling
+|wordwise
+|word wrap
+|wordy
+|workword
+|wow word
+|write as separate words
+|wug word
+|W-word
+|w-word
+|x-word
+|you get more with a kind word and a gun than you do with a kind word alone
+|y-word
+|z-word
+}}
+
+=====Descendants=====
+* {{desc|cpi|word|alts=1}}
+
+=====Translations=====
+{{trans-top|id=Q8171|unit of language}}
+{{multitrans|data=
+* Abkhaz: {{tt|ab|ажәа}}
+* Adyghe: {{tt|ady|гущыӏ}}
+* Afrikaans: {{tt+|af|woord}}
+* Akkadian: {{t|akk|𒀀𒉿𒌈|tr=awātum|f}}, {{t|akk|𒅗|tr=INIM|ts=awātum|f}}
+* Albanian: {{tt+|sq|fjalë|f}}, {{tt+|sq|llaf|m}}
+* Aleut: {{t|ale|tunux̂}}
+* Ambonese Malay: {{tt|abs|kata}}
+* Amharic: {{tt+|am|ቃል}}
+* Arabic: {{tt+|ar|كَلِمَة|f}}
+*: Chadian Arabic: {{t|shu|كلمة|f|tr=kilme}}
+*: Egyptian Arabic: {{tt|arz|كلمة|f|tr=kilma}}
+*: Hijazi Arabic: {{tt|acw|كلمة|f|tr=kilma}}
+* Aragonese: {{tt+|an|parola|f}}
+* Aramaic:
+*: Hebrew: {{tt|arc|מלתא|c|tr=melthā, meltho}}
+*: Syriac: {{tt|arc|ܡܠܬܐ|c|tr=melthā, meltho}}
+* Archi: {{tt|aqc|чӏат}}
+* Armenian: {{tt+|hy|բառ}}
+* Aromanian: {{tt|rup|zbor}}, {{tt|rup|cuvendã}}
+* Assamese: {{tt|as|শব্দ}}
+* Asturian: {{tt+|ast|pallabra|f}}
+* Avar: {{tt|av|рагӏул}}, {{tt|av|рагӏи}}
+* Azerbaijani: {{tt+|az|söz}}, {{q|South Azerbaijani}} {{tt|az|واژه|tr=vajə}}
+* Balinese: {{tt|ban|kruna}}
+* Bashkir: {{tt|ba|һүҙ}}
+* Basque: {{tt|eu|hitz}}, {{tt|eu|berba}}
+* Belarusian: {{tt+|be|сло́ва|n}}
+* Bengali: {{tt+|bn|শব্দ}}, {{t+|bn|লফজ}}
+* Bikol Central: {{tt|bcl|kataga}}
+* Breton: {{tt+|br|ger|m}}, {{tt+|br|gerioù|p}}
+* Bulgarian: {{tt+|bg|ду́ма|f}}, {{tt+|bg|сло́во|n}}
+* Burmese: {{tt+|my|စကားလုံး}}, {{tt+|my|ပုဒ်}}, {{t+|my|ပဒ}}
+* Buryat: {{tt|bua|үгэ}}
+* Carpathian Rusyn: {{tt|rue|сло́во|n}}
+* Catalan: {{tt+|ca|paraula|f}}, {{tt+|ca|mot|m}}
+* Cebuano: {{t|ceb|pulong}}
+* Chamicuro: {{tt|ccc|nachale}}
+* Chechen: {{tt|ce|дош}}
+* Cherokee: {{tt|chr|ᎧᏁᏨ}}
+* Chichewa: {{tt|ny|mawu}}
+* Chickasaw: {{tt|cic|anompa}}
+* Chinese:
+*: Cantonese: {{t|yue|詞|tr=ci4}}
+*: Dungan: {{t|dng|цы}}
+*: Mandarin: {{tt+|cmn|詞|tr=cí}}, {{tt+|cmn|單詞}}, {{tt+|cmn|詞語}}
+* Chukchi: {{tt|ckt|вэтгав|tr=vėtgav}}
+* Chuvash: {{tt|cv|сӑмах}}
+* Classical Nahuatl: {{tt|nci|tēntli}}, {{tt|nci|tlahtōlli}}
+* Crimean Tatar: {{tt|crh|söz}}
+* Czech: {{tt+|cs|slovo|n}}
+* Danish: {{tt+|da|ord|n}}
+* Dhivehi: {{tt|dv|ލަފުޒު}}
+* Drung: {{t|duu|ka}}
+* Dutch: {{tt+|nl|woord|n}}
+* Dzongkha: {{tt|dz|ཚིག}}
+* Eastern Mari: {{tt|mhr|мут}}
+* Egyptian: {{t-egy|mdw|h=md-d-w-A2}}
+* Elfdalian: {{tt|ovd|uord|n}}
+* Erzya: {{tt|myv|вал}}
+* Esperanto: {{tt+|eo|vorto}}
+* Estonian: {{tt+|et|sõna}}
+* Even: {{t|eve|төрэн}}
+* Evenki: {{t|evn|турэн}}
+* Farefare: {{t|gur|tɔɣʋm|c14}} {{qualifier|uncountable}}, {{t|gur|tɔgʋm|c14}} {{qualifier|uncountable}}
+* Faroese: {{tt+|fo|orð|n}}
+* Finnish: {{tt+|fi|sana}}
+* French: {{tt+|fr|mot|m}}
+* Friulian: {{tt|fur|peraule|f}}
+* Ga: {{tt|gaa|wiemɔ}}
+* Gagauz: {{t|gag|söz}}, {{t|gag|laf}}
+* Galician: {{tt+|gl|palabra|f}}, {{tt|gl|verba|f}}, {{tt|gl|pravoa|f}}, {{tt+|gl|parola|f}}
+* Georgian: {{tt+|ka|სიტყვა}}
+* German: {{tt+|de|Wort|n}}
+* Gothic: {{tt|got|𐍅𐌰𐌿𐍂𐌳|n}}
+* Greek: {{tt+|el|λέξη|f}}
+*: Ancient: {{tt|grc|λόγος|m}}, {{tt|grc|ῥῆμα|n}}, {{tt|grc|λέξις|f}}, {{qualifier|Epic}} {{tt|grc|ὄψ|f}}
+* Greenlandic: {{tt|kl|oqaaseq}}
+* Guerrero Amuzgo: {{tt|amu|jñ'o}}
+* Gujarati: {{tt+|gu|શબ્દ|m}}
+* Haitian Creole: {{tt|ht|mo}}
+* Hausa: {{tt|ha|kalma}}
+* Hawaiian: {{tt|haw|huaʻōlelo}}
+* Hebrew: {{tt+|he|מילה|alt=מִלָּה|f|tr=milá}}, {{t+|he|דבר|m|tr=davár}} {{q|Biblical}}
+* Higaonon: {{t|mba|polong}}
+* Hindi: {{tt+|hi|शब्द|m}}, {{tt+|hi|बात|f}}, {{tt|hi|लुग़त|m}}, {{t|hi|लफ़्ज़|m}}
+* Hittite: {{t|hit|𒌓𒋻|tr=uttar|n}}, {{t|hit|𒈨𒈪𒅀𒀸|tr=memiyaš|c}}, {{t|hit|𒅗|tr=INIM|ts=uttar|n}}
+* Hungarian: {{tt+|hu|szó}}
+* Ibanag: {{t|ibg|kagi}}
+* Icelandic: {{tt+|is|orð|n}}
+* Ido: {{tt+|io|vorto}}
+* Ilocano: {{qualifier|literally}} {{tt|ilo|sao|n}}
+* Indonesian: {{tt+|id|kata}}
+* Ingrian: {{tt|izh|sana}}
+* Ingush: {{tt|inh|дош}}
+* Interlingua: {{tt+|ia|parola}}, {{tt+|ia|vocabulo}}
+* Irish: {{tt+|ga|focal|m}}
+* Italian: {{tt+|it|parola|f}}, {{tt+|it|vocabolo|m}}, {{tt+|it|termine|m}}
+* Japanese: {{tt+|ja|言葉|tr=ことば, kotoba}}, {{tt+|ja|単語|tr=たんご, tango}}, {{tt+|ja|語|tr=ご, go}}
+* Javanese:
+*: Carakan: {{tt+|jv|ꦠꦼꦩ꧀ꦧꦸꦁ}}
+*: Rumi: {{tt|jv|tembung}}
+* Jeju: {{t|jje|말}}
+* K'iche': {{tt|quc|tzij}}
+* Kabardian: {{tt+|kbd|псалъэ}}
+* Kabyle: {{t|kab|awal}}
+* Kaingang: {{t|kgp|vĩ}}
+* Kalmyk: {{tt|xal|үг}}
+* Kannada: {{tt+|kn|ಶಬ್ದ}}, {{tt+|kn|ಪದ}}
+* Kapampangan: {{tt|pam|kataya}}, {{tt|pam|salita}}, {{tt|pam|amanu}}
+* Karachay-Balkar: {{tt|krc|сёз}}
+* Karelian: {{tt|krl|sana}}
+* Kashubian: {{tt|csb|słowò|n}}
+* Kazakh: {{tt+|kk|сөз}}
+* Khmer: {{tt+|km|ពាក្យ}}, {{tt|km|ពាក្យសំដី}}
+* Korean: {{tt+|ko|말}}, {{tt+|ko|낱말}}, {{tt+|ko|단어(單語)}}, {{t+|ko|마디}}
+* Kurdish:
+*: Central Kurdish: {{tt+|ckb|وشە}}
+*: Northern Kurdish: {{tt+|kmr|peyv|f}}, {{tt+|kmr|bêje|f}}, {{tt+|kmr|kelîme|f}}, {{t|kmr|qıse}}
+* Kyrgyz: {{tt+|ky|сөз}}
+* Ladin: {{tt|lld|parola|f}}
+* Ladino: {{tt|lad|palavra|f}}, {{tt|lad|פﭏאבﬞרה|tr=palavra}}, {{tt|lad|biervo|m}}
+* Lak: {{tt|lbe|махъ}}
+* Lao: {{tt+|lo|ຄຳ}}
+* Latgalian: {{tt|ltg|vuords|m}}
+* Latin: {{tt+|la|verbum|n}}; {{tt|la|vocabulum|alt=vocābulum|n}}, {{tt|la|fatus|alt=fātus|m}}
+* Latvian: {{tt+|lv|vārds|m}}
+* Laz: {{tt|lzz|ნენა}}
+* Lezgi: {{t|lez|гаф}}
+* Ligurian: {{tt|lij|paròlla|f}}
+* Lingala: {{tt|ln|nkómbó}}
+* Lithuanian: {{tt+|lt|žodis|m}}
+* Lombard: {{tt|lmo|paròlla|f}}
+* Lü: {{tt|khb|ᦅᧄ}}
+* Low German:
+*: German Low German: {{t|nds-de|Woord|n}}
+* Luganda: {{tt|lg|ekigambo}}
+* Lutuv: {{t|clt|bie}}
+* Luxembourgish: {{tt+|lb|Wuert|n}}
+* Macedonian: {{tt+|mk|збор|m}}, {{tt+|mk|слово|n}} {{qualifier|archaic}}
+* Malagasy: {{t+|mg|teny}}
+* Malay: {{tt+|ms|kata}}, {{tt+|ms|perkataan}}, {{tt+|ms|kalimah}}
+* Malayalam: {{tt+|ml|വാക്ക്}}, {{tt+|ml|പദം}}, {{tt+|ml|ശബ്ദം}}
+* Maltese: {{tt|mt|kelma|f}}
+* Maori: {{tt+|mi|kupu}}
+* Mara Chin: {{tt|mrh|bie}}
+* Marathi: {{tt+|mr|शब्द|m}}
+* Middle English: {{tt|enm|word}}
+* Mingrelian: {{t|xmf|ზიტყვა}}, {{t|xmf|სიტყვა}}
+* Mòcheno: {{tt|mhn|bourt|n}}
+* Moksha: {{tt|mdf|вал}}
+* Mongolian:
+*: Cyrillic: {{tt+|mn|үг}}
+*: Mongolian: {{tt|mn|ᠦᠭᠡ}}
+* Mwani: {{t|wmw|semo}}
+* Nahuatl: {{tt+|nah|tlahtolli}}
+* Nanai: {{t|gld|хэсэ}}
+* Nauruan: {{tt+|na|dorer}}
+* Navajo: {{tt|nv|saad}}
+* Nepali: {{tt|ne|शब्द}}
+* North Frisian:
+*: Föhr-Amrum: {{tt|frr|wurd|n}}
+*: Helgoland: {{tt|frr|Wür|n}}
+*: Mooring: {{tt|frr|uurd|n}}
+*: Sylt: {{tt|frr|Uurt|n}}
+* Northern Sami: {{tt|se|sátni}}
+* Northern Yukaghir: {{tt|ykg|аруу}}
+* Norwegian:
+*: Bokmål: {{tt+|nb|ord|n}}
+*: Nynorsk: {{tt+|nn|ord|n}}
+* Occitan: {{tt+|oc|mot|m}}, {{tt+|oc|paraula|f}}
+* Odia: {{tt+|or|ଶବ୍ଦ}}
+* Ojibwe: {{tt|oj|ikidowin}}
+* Okinawan: {{tt|ryu|くとぅば|tr=kutuba}}
+* Old Anatolian Turkish: {{t|trk-oat|سوز|tr=söz}}
+* Old Church Slavonic:
+*: Cyrillic: {{tt|cu|слово|n}}
+*: Glagolitic: {{tt|cu|ⱄⰾⱁⰲⱁ|n}}
+* Old East Slavic: {{tt|orv|слово|n}}
+* Old English: {{tt+|ang|word|n}}
+* Old Norse: {{tt|non|orð|n}}
+* Oromo: {{t|om|jecha}}
+* Ossetian: {{tt|os|дзырд}}, {{tt|os|ныхас}}
+* Ottoman Turkish: {{t|ota|لغت|tr=lügat}}, {{t|ota|سوز|tr=söz}}
+* Pali: {{t|pi|pada|n}}
+* Pannonian Rusyn: {{t|rsk|слово|n}}
+* Papiamentu: {{tt|pap|palabra|f}}
+* Pashto: {{tt+|ps|لغت|tr=luġat}}, {{tt|ps|کلمه|tr=kalimā}}
+* Persian:
+*: Dari: {{tt|prs|وَاژَه}}, {{tt|prs|کَلِمَه}}, {{tt|prs|لُغَت}}
+*: Iranian Persian: {{tt|fa-ira|واژِه}}, {{tt|fa-ira|کَلِمِه}}, {{tt|fa-ira|لُغَت}}
+* Piedmontese: {{t|pms|mòt|m}}, {{t|pms|vos|f}}, {{tt|pms|paròla|f}}
+* Plautdietsch: {{tt+|pdt|Wuat|n}}
+* Polabian: {{tt|pox|slüvǘ|n}}
+* Polish: {{tt+|pl|słowo|n}}
+* Portuguese: {{tt+|pt|palavra|f}}, {{tt+|pt|vocábulo|m}}
+* Punjabi: {{tt+|pa|ਸ਼ਬਦ}}
+* Romanian: {{tt+|ro|cuvânt|n}}, {{tt+|ro|vorbă|f}}
+* Romansch: {{tt|rm|pled|m}}, {{tt|rm|plaid|m}}
+* Russian: {{tt+|ru|сло́во|n}}
+* S'gaw Karen: {{t|ksw|တၢ်ကတိၤ}}
+* Sami:
+*: Kildin Sami: {{t|sjd|са̄ннҍ}}, {{t|sjd|соа̄гк}}
+* Samoan: {{tt|sm|’upu}}
+* Samogitian: {{tt|sgs|žuodis|m}}
+* Sanskrit: {{tt+|sa|शब्द|m}}, {{tt+|sa|पद|n}}, {{t+|sa|अक्षरा|f}}
+* Santali: {{tt|sat|ᱨᱳᱲ}}
+* Sardinian: {{tt|sc|fueddu}}
+* Scots: {{tt|sco|wird}}, {{tt|sco|wurd}}
+* Scottish Gaelic: {{tt|gd|facal|m}}, {{tt|gd|briathar|m}}
+* Serbo-Croatian:
+*: Cyrillic: {{tt|sh|ре̑ч|f}}, {{tt|sh|рије̑ч|f}}, {{tt|sh|сло̏во|n}} {{qualifier|obsolete}}
+*: Roman: {{tt+|sh|rȇč|f}}, {{tt+|sh|rijȇč|f}}, {{tt+|sh|slȍvo|n}} {{qualifier|obsolete}}
+* Sicilian: {{tt+|scn|palora|f}}, {{tt+|scn|parola|f}}
+* Sidamo: {{t|sid|qaale}}
+* Silesian: {{tt|szl|suowo|n}}
+* Sindhi: {{tt+|sd|لفظ|tr=lafẓu|alt=لَفظُ}}
+* Sinhalese: {{tt+|si|වචනය}}
+* Skolt Sami: {{tt|sms|sääˊnn}}
+* Slovak: {{tt+|sk|slovo|n}}
+* Slovene: {{tt+|sl|beseda|f}}
+* Somali: {{tt+|so|eray}}
+* Sorbian:
+*: Lower Sorbian: {{tt|dsb|słowo|n}}
+*: Upper Sorbian: {{tt|hsb|słowo|n}}
+* Sotho: {{tt|st|lentswe}}
+* Southern Sami: {{tt|sma|baakoe}}
+* Spanish: {{tt+|es|palabra|f}}, {{t+|es|voz|f}}, {{tt+|es|vocablo|m}}
+* Sranan Tongo: {{t|srn|wortu}}
+* Sumerian: {{t|sux|𒅗|tr=inim}}
+* Sundanese: {{tt|su|ᮊᮨᮎᮕ᮪}}
+* Svan: {{t-needed|sva}}
+* Swahili: {{tt+|sw|neno}}
+* Swedish: {{tt+|sv|ord|n}}
+* Tagalog: {{tt+|tl|salita}}
+* Tahitian: {{tt|ty|parau}}
+* Tajik: {{tt+|tg|вожа}}, {{tt+|tg|калима}}, {{tt+|tg|луғат}}
+* Tamil: {{tt+|ta|வார்த்தை}}, {{tt+|ta|சொல்}}
+* Tarifit: {{t|rif|awar|m}}
+* Tatar: {{tt+|tt|сүз}}
+* Telugu: {{tt+|te|పదము}}, {{tt+|te|మాట}}
+* Tetum: {{t|tet|liafuan}}
+* Thai: {{tt+|th|คำ}}
+* Tibetan: {{tt|bo|ཚིག}}
+* Tigrinya: {{tt+|ti|ቃል}}
+* Tocharian B: {{tt|txb|reki}}
+* Tofa: {{tt|kim|соот|tr=soot}}
+* Tongan: {{t|to|lea}}
+* Tswana: {{tt|tn|lefoko}}
+* Tuareg: {{tt|tmh|tăfert}}
+* Tumbuka: {{t|tum|lizgo}}
+* Turkish: {{tt+|tr|sözcük}}, {{tt+|tr|kelime}}
+* Turkmen: {{tt|tk|söz}}
+* Tuvan: {{tt|tyv|сөс}}
+* Tày: {{t|tyz|cằm}}
+* Udmurt: {{tt|udm|кыл}}
+* Ugaritic: {{tt|uga|𐎅𐎆𐎚}}
+* Ukrainian: {{tt+|uk|сло́во|n}}
+* Unami: {{t|unm|laptunakàn}}
+* Urdu: {{tt|ur|شَبْد|m|m}}, {{tt|ur|بات|f}}, {{tt+|ur|کَلِمَہ|m}}, {{tt+|ur|لُغَت|m}}, {{t+|ur|لَفْظ|m}}
+* Uyghur: {{tt|ug|سۆز}}
+* Uzbek: {{tt+|uz|soʻz}}
+* Venetan: {{tt|vec|paroła|f}}, {{tt|vec|paròła|f}}, {{tt|vec|paròla|f}}
+* Vietnamese: {{tt+|vi|từ}}, {{tt+|vi|lời}}, {{tt+|vi|nhời}}, {{tt+|vi|tiếng}}
+* Volapük: {{tt+|vo|vöd}}
+* Walloon: {{tt+|wa|mot|m}}
+* Waray-Waray: {{t|war|pulong}}
+* Welsh: {{tt+|cy|gair}}
+* West Frisian: {{tt+|fy|wurd|n}}
+* Western Cham: {{tt|cja|بۉه ڤنوۉئ}}
+* White Hmong: {{tt|mww|lo lus}}
+* Woiwurrung: {{t|wyi|ngol}}
+* Wolof: {{tt+|wo|baat}}
+* Xhosa: {{tt|xh|igama}}
+* Yaghnobi: {{t|yai|гап}}
+* Yakut: {{tt|sah|тыл}}
+* Yiddish: {{tt+|yi|וואָרט|n}}
+* Yoruba: {{tt|yo|ọ̀rọ̀}}
+* Yup'ik: {{tt|esu|qanruyun}}
+* Zazaki: {{tt|zza|çeku|c}}, {{tt+|zza|kelime|c}}, {{tt+|zza|qıse|m}}, {{tt|zza|qısa|f}}
+* Zhuang: {{tt|za|cih}}
+* Zulu: {{tt+|zu|igama|c5|c6}}, {{tt|zu|uhlamvu|c11|c10}}
+* Zyphe: {{t|zyp|bie}}
+{{trans-bottom}}
+
+{{trans-top|telegraphy: unit of text}}
+* Finnish: {{tt+|fi|sana}}
+* Greek: {{tt+|el|λέξη|f}}
+* Maori: {{tt+|mi|kupu}}
+* Russian: {{tt+|ru|сло́во|n}}
+* Telugu: {{tt|te|సంకేత పదము}}
+{{trans-bottom}}
+
+{{trans-top|computing: fixed-size group of bits handled as a unit}}
+* Afrikaans: {{tt+|af|woord}}
+* Chinese:
+*: Mandarin: {{tt+|cmn|單字|tr=dānzì}}
+* Finnish: {{tt+|fi|sana}}
+* French: {{tt+|fr|mot|m}}
+* Greek: {{tt+|el|λέξη|f}}
+* Interlingua: {{tt+|ia|parola}}
+* Italian: {{tt+|it|word|m}}
+* Japanese: {{tt+|ja|言語|tr=げんご, gengo}}
+* Macedonian: {{tt+|mk|збор|m}}
+* Norwegian:
+*: Bokmål: {{tt+|nb|ord|n}}
+* Persian:
+*: Iranian Persian: {{tt|fa-ira|واژِه}}
+* Portuguese: {{tt+|pt|palavra|f}}
+* Romanian: {{tt+|ro|cuvânt|n}}
+* Russian: {{tt+|ru|сло́во|n}}
+* Slovak: {{tt+|sk|slovo|n}}
+* Spanish: {{tt+|es|palabra|f}}
+* Swedish: {{tt+|sv|ord|n}}
+* Welsh: {{t+|cy|gair|m}}
+{{trans-bottom}}
+
+{{trans-top|computer science: finite string which is not a command or operator}}
+* Finnish: {{tt+|fi|sana}}
+* Russian: {{tt+|ru|сло́во|n}}
+{{trans-bottom}}
+
+{{trans-top|group theory: kind of group element}}
+* Finnish: {{tt+|fi|sana}}
+* Russian: {{tt+|ru|сло́во|n}}
+{{trans-bottom}}
+
+{{trans-top|fact or act of speaking, as opposed to taking action}}
+* Finnish: {{tt+|fi|sanat|p}}
+{{trans-bottom}}
+
+{{trans-top|something which has been said}}
+* Arabic: {{tt+|ar|كَلِمَة|f}}, {{tt+|ar|كَلَام|m}}, {{tt|ar|قَوْل|m}}
+* Bulgarian: {{t+|bg|реч|f}}
+* Finnish: {{tt+|fi|sana}}, {{tt+|fi|puhe}}
+* French: {{tt+|fr|parole|f}}
+* German: {{tt+|de|Wort|n}}
+* Judeo-Italian: {{tt|itk|דִיטוֹ|tr=diṭo|ts=ditto}}, {{tt|itk|פַארַאוֵילַה|tr=paʾraʾvelah|ts=paravela}}
+* Malay: {{tt+|ms|perkataan}}
+* Maore Comorian: {{tt|swb|urongozi|c11}}
+* Middle English: {{tt|enm|word}}
+* Russian: {{tt+|ru|речь|f}}, {{tt+|ru|слова́|n-p}}
+* Zazaki: {{tt+|zza|qıse|c}}
+{{trans-bottom}}
+
+{{trans-see|watchword}}
+
+{{trans-see|proverb}}
+
+{{trans-top|news, tidings}}
+* Bulgarian: {{t+|bg|изве́стие|n}}
+* Finnish: {{tt+|fi|uutiset|p}}, {{tt+|fi|sana}}
+* Malay: {{tt+|ms|berita}}, {{tt+|ms|khabar}}, {{tt+|ms|kabar}}
+* Maori: {{tt+|mi|pūrongo}}
+* Middle English: {{tt|enm|word}}
+* Portuguese: {{tt+|pt|notícias|f}}
+* Russian: {{tt+|ru|весть|f}}, {{tt+|ru|изве́стие|n}}, {{tt+|ru|но́вость|f}}
+* Telugu: {{tt+|te|వార్త}}
+{{trans-bottom}}
+
+{{trans-top-also|order, request, expression of will|order|request}}
+* Bulgarian: {{t+|bg|кома́нда|f}}, {{t+|bg|за́повед|f}}
+* Finnish: {{tt+|fi|sana}}
+* Russian: {{tt+|ru|сло́во|n}}, {{t+|ru|кома́нда|f}}, {{t+|ru|приказа́ние|n}}, {{t+|ru|прика́з|m}}
+{{trans-bottom}}
+
+{{trans-top|promise}}
+* Afrikaans: {{tt|af|erewoord}}
+* Albanian: {{tt+|sq|sharje|f}}
+* Armenian: {{tt+|hy|խոսք}}, {{tt+|hy|խոստում}}
+* Breton: {{tt+|br|ger|m}}
+* Bulgarian: {{t+|bg|обеща́ние|n}}, {{t+|bg|ду́ма|f}}
+* Catalan: {{tt+|ca|paraula|f}}
+* Chinese:
+*: Mandarin: {{tt+|cmn|諾言}}
+* Czech: {{tt+|cs|slovo|n}}, {{tt+|cs|slib|m}}
+* Dutch: {{tt+|nl|erewoord|n}}, {{tt+|nl|woord|n}}
+* Finnish: {{tt+|fi|sana}}
+* French: {{tt+|fr|parole|f}}
+* Galician: {{tt+|gl|palabra|f}}
+* German: {{tt+|de|Ehrenwort|n}}
+* Greek: {{tt+|el|λόγος|m}}
+* Haitian Creole: {{tt|ht|pawòl}}
+* Hungarian: {{tt+|hu|szó}}
+* Interlingua: {{tt|ia|parolaa}}
+* Italian: {{tt+|it|parola|f}}
+* Japanese: {{tt+|ja|約束|tr=やくそく, yakusoku}}, {{tt+|ja|誓い|tr=ちかい, chikai}}
+* Korean: {{tt+|ko|말}}, {{tt+|ko|약속(約束)}}
+* Lithuanian: {{tt+|lt|žodis|m}}
+* Macedonian: {{tt+|mk|збор|m}}
+* Malay: {{tt+|ms|janji}}
+* Malayalam: {{tt+|ml|വാക്ക്}}
+* Middle English: {{tt|enm|word}}
+* Norwegian:
+*: Bokmål: {{tt+|nb|ord|n}}, {{tt+|nb|lovnad|m}}
+* Persian:
+*: Iranian Persian: {{tt|fa-ira|پِیْمان}}, {{tt|fa-ira|قُوْل}}
+* Polish: {{tt+|pl|słowo|n}}
+* Portuguese: {{tt+|pt|palavra|f}}, {{tt+|pt|promessa|f}}
+* Romanian: {{tt|ro|[[cuvânt]] [[de]] [[onoare]]|n}}
+* Russian: {{tt+|ru|сло́во|n}}, {{tt+|ru|обеща́ние|n}}
+* Slovak: {{tt|sk|čestné slovo|n}}
+* Slovene: {{tt+|sl|častna beseda|f}}, {{tt+|sl|beseda|f}}
+* Spanish: {{tt+|es|palabra|f}}
+* Swedish: {{tt+|sv|ord|n}}
+* Telugu: {{tt+|te|మాట}}
+* Zulu: {{tt|zu|isithembiso|c7|c8}}
+{{trans-bottom}}
+
+{{trans-top|brief discussion}}
+* Finnish: {{tt|fi|[[pari]] [[sanaa]]}}
+* Ladino: {{tt|lad|byerveziko}}
+* Malay: {{tt+|ms|perbincangan}}
+* Maori: {{tt|mi|matapakinga}}
+* Middle English: {{tt|enm|word}}
+* Portuguese: {{tt+|pt|palavra|f}}
+* Russian: {{tt+|ru|разгово́р|m}}
+* Telugu: {{tt+|te|చర్చ}}
+{{trans-bottom}}
+
+{{trans-top|angry debate; argument}}
+* Bulgarian: {{t+|bg|спор|m}}
+* Dutch: {{tt+|nl|woordenwisseling|f}}
+* Finnish: {{tt+|fi|riita}}, {{tt+|fi|kiista}}, {{tt+|fi|sanailu}}, {{tt|fi|sananvaihto}}
+* Norwegian:
+*: Bokmål: {{tt|nb|krangel|m}}
+* Russian: {{tt+|ru|перебра́нка|f}}
+{{trans-bottom}}
+
+{{trans-top|Christ}}
+* Burmese: {{tt|my|နှုတ်ကပတ်တော်သည်}}
+* Chinese:
+*: Mandarin: {{tt+|cmn|道|tr=dào}}
+* Finnish: {{tt|fi|Sana}}
+* French: {{tt+|fr|Verbe|m}}, {{tt+|fr|verbe|m}}
+* Hungarian: {{tt+|hu|ige}}
+* Middle English: {{tt|enm|word}}
+* Occitan: {{tt+|oc|vèrbe|m}}, {{tt+|oc|vèrb|m}}
+* Odia: {{tt+|or|ବାକ୍ୟ}}
+* Tajik: {{tt+|tg|калом}}
+* Telugu: {{tt+|te|దేవుడు}}
+{{trans-bottom}}
+
+{{trans-top|the word of God}}
+* Arabic: {{tt|ar|كَلِمَةُ اللهِ|f}}
+* Armenian: {{tt+|hy|բան}}
+* Catalan: {{tt+|ca|paraula|f}}
+* Czech: {{tt|cs|slovo boží|n}}
+* Finnish: {{tt+|fi|sana}}
+* French: {{tt+|fr|parole|f}}
+* German: {{tt+|de|Wort|n}}
+* Greek: {{tt+|el|λόγος|m}}
+* Indonesian: {{tt+|id|firman}}
+* Interlingua: {{tt+|ia|parola}}, {{tt+|ia|verbo}}
+* Italian: {{tt+|it|parola|f}}, {{tt+|it|verbo|m}}
+* Japanese: {{tt+|ja|福音|tr=ふくいん, fukuin}}
+* Korean: {{tt+|ko|복음(福音)}}, {{tt+|ko|말씀}}
+* Lingala: {{tt|ln|liloba}}
+* Luxembourgish: {{tt+|lb|Wuert|n}}
+* Macedonian: {{tt|mk|божја реч|f}}
+* Malay: {{tt|ms|sabda}}, {{tt|ms|firman}}
+* Maore Comorian: {{tt|swb|Urongozi wa Mungu|c11}}
+* Norwegian:
+*: Bokmål: {{tt+|nb|ord|n}}
+* Persian:
+*: Iranian Persian: {{tt|fa-ira|گُفْتار}}
+* Polish: {{tt|pl|Słowo Boże|n}}
+* Portuguese: {{tt+|pt|verbo}}, {{tt+|pt|palavra|f}}, {{tt|pt|palavra do Senhor|f}}, {{tt|pt|palavra divina|f}}, {{tt|pt|palavra de Deus|f}}
+* Romanian: {{tt+|ro|cuvânt|n}}
+* Russian: {{t|ru|сло́во бо́жье|n}}
+* Slovak: {{tt|sk|slovo božie|n}}, {{tt|sk|božie slovo|n}}
+* Telugu: {{tt+|te|వాణి}}
+}}<!-- close {{multitrans}} -->
+{{trans-bottom}}
+
+====Verb====
+{{en-verb}}
+
+# {{lb|en|transitive}} To [[say]] or [[write]] (something) using particular words; to [[phrase]] (something).
+#: {{syn|en|express|phrase|put into words|state}}
+#: {{ux|en|I’m not sure how to '''word''' this letter to the council.}}
+# {{lb|en|transitive|obsolete}} To [[flatter]] with words, to [[cajole]].
+#* {{quote-book|en|year=1607|author=William Shakespeare|title=Anthony and Cleopatra|section=act 5, scene 2|passage=He '''words''' me, girls, he '''words''' me, that I should not / be noble to myself.}}
+# {{lb|en|transitive}} To [[ply]] or [[overpower]] with words.
+#* {{quote-book|en|date=November 30 1621|author=James Howell|title=letter to Francis Bacon, from Turin|passage={{...}} if one were to be '''worded''' to death, Italian is the fittest Language [for that task]}}
+#* {{quote-journal|en|date=April 1829|title=Webster's Dictionary|magazine=The North American Review|volume=28|page=438|passage={{...}} if a man were to be worded to death, or stoned to death by words, the High-Dutch were the fittest [language for that task].}}
+# {{lb|en|transitive|rare}} To [[conjure]] with a word.
+#* {{quote-text|en|year=c. 1645-1715|author=w:Robert South|title=Sermon on Psalm XXXIX. 9
+|passage=Against him {{...}} who could '''word''' heaven and earth out of nothing, and can when he pleases '''word''' them into nothing again.}}
+#* {{quote-journal|en|year=1994|title=Liminal Postmodernisms|journal=Postmodern Studies|volume=8|page=162|passage="Postcolonialism" might well be another linguistic construct, desperately begging for a referent that will never show up, simply because it never existed on its own and was literally '''worded''' into existence by the very term that pretends to be born from it.}}
+#* {{quote-book|en|year=2013|author=Carla Mae Streeter|title=Foundations of Spirituality: The Human and the Holy|isbn=0814680712|page=92|passage=The being of each person is '''worded''' into existence in the Word, {{...}}}}
+# {{lb|en|intransitive|archaic}} To [[speak]], to use words; to [[converse]], to [[discourse]].
+#* {{RQ:Keats Lamia|poem=Hyperion|page=181|passage=Thus '''wording''' timidly among the fierce: / "O Father, I am here the simplest voice, {{...}}"}}
+
+=====Derived terms=====
+{{col3|en
+|misword
+|reword
+|wordable
+|worder
+|word it
+}}
+
+=====Translations=====
+{{trans-top|to say or write using particular words}}
+{{multitrans|data=
+* Bulgarian: {{tt+|bg|изразява}}
+* Catalan: {{tt+|ca|redactar}}
+* Chinese:
+*: Mandarin: {{tt+|cmn|措辞}}
+* Danish: {{tt|da|formulere}}
+* Dutch: {{tt+|nl|verwoorden}}, {{tt|nl|onder woorden brengen}}, {{tt+|nl|formuleren}}
+* Finnish: {{tt+|fi|muotoilla}} {{q|to formulate}}; {{tt+|fi|pukea sanoiksi}} {{q|to put into words}}
+* French: {{tt+|fr|formuler}}
+* Greek: {{tt+|el|διατυπώνω}}, {{tt+|el|συντάσσω}}
+* Hebrew: {{tt|he|ניסח|tr=nisákh}}
+* Hungarian: {{tt|hu|megfogalmazn}}
+* Icelandic: {{tt|is|orða}}
+* Macedonian: {{tt|mk|изразува}}, {{tt|mk|формулира}}
+* Portuguese: {{tt+|pt|frasear}}
+* Russian: {{tt+|ru|формули́ровать}}
+* Spanish: {{tt+|es|redactar}}
+* Swedish: {{tt+|sv|formulera}}
+{{trans-bottom}}
+
+{{trans-top|to flatter with words}}
+* Finnish: {{tt+|fi|imarrella}}
+{{trans-bottom}}
+
+{{trans-top|to ply or overpower with words}}
+* Finnish: {{tt+|fi|puhua}}
+{{trans-bottom}}
+
+{{trans-top|to conjure with a word}}
+* Finnish: {{tt+|fi|loitsia}}
+{{trans-bottom}}
+
+{{trans-top|to speak}}
+* Finnish: {{tt+|fi|virkkaa}} {{q|archaic or literary}}
+}}<!--close {{multitrans}} -->
+{{trans-bottom}}
+
+====Interjection====
+{{en-interj}}
+
+# {{lb|en|slang}} [[truth|Truth]], [[indeed]], that is the truth! {{n-g|The shortened form of the statement "My word is my bond."}}
+#: {{ux|en|"Yo, that movie was epic!" / "'''Word'''?" ("You speak the truth?") / "'''Word'''." ("I speak the truth.")}}
+# {{lb|en|slang|emphatic|stereotypically|_|AAVE}} {{n-g|An abbreviated form of {{m|en|word up}}; a statement of the acknowledgment of fact with a hint of nonchalant approval.}}
+#* {{quote-book|en|year=2004|author=Shannon Holmes|title=Never Go Home Again: A Novel|page=218|passage="{{...}} Know what I'm sayin'?" / "'''Word'''!" the other man strongly agreed. "Let's do this — "}}
+#* {{quote-book|en|year=2007|author=Gabe Rotter|title=Duck Duck Wally: A Novel|page=105|passage="{{...}} Not bad at all, man. Worth da wait, dawg. '''Word'''." / "You liked it?" I asked dumbly, stoned still, and feeling victorious. / "Yeah, man," said Oral B. "'''Word''' up. {{...}}"}}
+#* {{quote-book|en|year=2007|author=Relentless Aaron|title=The Last Kingpin|page=34|passage="{{...}} I mean, I don't blame you... '''Word'''! {{...}}"}}
+
+====Quotations====
+* {{see citations|en}}
+
+====See also====
+* [[allomorph]]
+* [[compound word]]
+* [[grapheme]]
+* [[idiomatic]]
+* [[lexeme]]
+* [[listeme]]
+* [[morpheme]]
+* [[orthographic]]
+* [[phrase]]
+* [[set phrase]]
+* [[syllable]]
+* [[term]]
+
+===Etymology 2===
+Variant of {{m|en|worth||to become, turn into, grow, get}}, from {{inh|en|enm|worthen}}, from {{inh|en|ang|weorþan|t=to turn into, become, grow}}, from {{inh|en|gmw-pro|*werþan}}, from {{inh|en|gem-pro|*werþaną|t=to turn, turn into, become}}. More at {{section link|worth#Verb}}.
+
+====Verb====
+{{head|en|verb}}
+
+# {{alt form|en|worth|t=to become}}.
+
+====See also====
+* [[Appendix:Wordhood]]
+
+===Further reading===
+* {{pedia}}
+
+===Anagrams===
+* {{anagrams|en|a=dorw|drow}}
+
+{{cln|en|autological terms}}
+{{C|en|Communication}}
+
+==Afrikaans==
+
+===Alternative forms===
+* {{alt|af|worde||obsolete|see usage notes below}}
+
+===Etymology===
+From {{inh|af|nl|worden}}, from {{inh|af|dum|werden}}, from {{inh|af|odt|werthan}}, from {{inh|af|gem-pro|*werþaną}}.
+
+===Pronunciation===
+* {{IPA|af|/vɔrt/}}
+* {{audio|af|LL-Q14196 (afr)-Oesjaar-word.wav}}
+
+===Verb===
+{{af-verb}}
+
+# to [[become]]; to [[get]] {{gloss|to change one’s state}}
+#: {{uxi|af|Ek het ryk '''geword'''.|t=I '''became''' rich.}}
+#: {{uxi|af|Ek '''word''' ryk.|t=I '''am becoming''' rich.}}
+#: {{uxi|af|Sy '''word''' beter.|t=She '''is getting''' better.}}
+# {{non-gloss|Forms the present passive voice when followed by a past participle}}
+#: {{uxi|af|Die kat '''word''' gevoer.|t=The cat '''is being''' fed.}}
+
+====Usage notes====
+* The verb has an archaic preterite {{m|af|werd}}: {{m|af||Die kat <u>werd</u> gevoer.|t=The cat <u>was</u> fed.}} In contemporary Afrikaans the perfect is used instead: {{m|af||Die kat <u>is</u> gevoer.}}
+* Until the early 20th century this verb still often distinguished the infinitive {{m|af|worde}} from the present tense {{m|af||word}} (as is now still done with {{m|af|[[wees]] ↔ [[is]]}} and {{m|af|[[hê]] ↔ [[het]]}}): {{m|af||Dit moet verbeter <u>worde</u> en dit <u>word</u> ook verbeter.|t=It must <u>be</u> improved and it <u>is</u> being improved.}}
+
+{{cln|af|auxiliary verbs|irregular verbs}}
+
+==Chinese Pidgin English==
+
+===Alternative forms===
+* {{alter|cpi|𭉉||Chinese spelling}}
+
+===Etymology===
+From {{inh|cpi|en|word}}.
+
+===Noun===
+{{head|cpi|noun}}
+
+# [[#English|word]]
+#* {{RQ:cpi:Instructor|volume=6|page=78}}
+#*: {{cpi-q|挨仙{{sic|⿰口仙}}㕭'''𭉉'''
+|aai1 sin1[sen1] ju1 '''wut3'''
+|I send you '''word'''.
+|I will send you '''word'''.}}
+
+==Dutch==
+
+===Pronunciation===
+* {{IPA|nl|/ʋɔrt/}}
+* {{rhymes|nl|ɔrt|s=1}}
+* {{audio|nl|Nl-word.ogg}}
+
+===Verb===
+{{head|nl|verb form}}
+
+# {{infl of|nl|worden||bare-verb}}
+
+==Middle English==
+
+===Etymology 1===
+From {{inh|enm|ang|word}}, from {{inh|enm|gmw-pro|*word}}, from {{inh|enm|gem-pro|*wurdą}}, from {{inh|enm|ine-pro|*werdʰh₁om}}. {{doublet|enm|verbe}}.
+
+====Alternative forms====
+* {{alter|enm|vord|weord|woord|worde|wourd|wurd}}
+
+====Pronunciation====
+* {{IPA|enm|/wurd/|/woːrd/}}
+
+====Noun====
+{{enm-noun|wordes|pl2=word|pl2_qual=early}}
+
+# A {{l|en|word}} {{gloss|separable, discrete linguistic unit}}
+#* {{quote-book|enm|year=a.1400|author=w:Geoffrey Chaucer|title=w:Troilus and Criseyde|chapter=Book II|line= 22–28|passage=  Ȝe knowe ek that in fourme of ſpeche is chaunge / With-inne a thousand ȝeer, and '''wordes''' tho / That hadden pris now wonder nyce and ſtraunge / Us thenketh hem, and ȝet thei ſpake hem so / And ſpedde as wel in loue as men now do|translation=You also know that the form of language is in flux; / within a thousand years, '''words''' / that had currency; really weird and bizarre / they seem to us now, but they still spoke them / and accomplished as much in love as men do now.}}
+# A [[statement]]; a linguistic unit said or [[written]] by someone:
+## A [[speech]]; a formal [[statement]].
+## A [[byword]] or maxim; a short expression of truth.
+## A [[promise]]; an [[oath]] or [[guarantee]].
+## A [[motto]]; an [[expression]] associated with a person or people.
+## A piece of [[news]] {{gloss|often warning or recommending}}
+## An [[order]] or [[directive]]; something necessary.
+## A [[religious]] precept, [[stricture]], or belief.
+# The act of [[speaking]] {{gloss|especially as opposed to action}}:
+# [[discourse|Discourse]]; the [[exchange]] of statements.
+## The [[basic]], non-figurative reading of something.
+## The way one [[speaks]] {{gloss|especially with modifying adjective}}
+# {{lb|enm|theology}} The [[Logos]] {{gloss|Jesus Christ}}
+#* {{RQ:Wycliffe NT Lichfield|book=John|chapter=1|verse=1|leaf=44|side=r|column=2|passage=IN þe bigynnyng was þe '''woꝛd''' .· ⁊ þe '''woꝛd''' was at god / ⁊ god was þe '''woꝛd'''|translation=In the beginning was the '''Word''', and the '''Word''' was with God, and God was the '''Word'''.}}
+# {{lb|enm|rare}} The human faculty of [[language]] as a whole.
+
+=====Related terms=====
+{{col3|enm|bodeword|byword|hereword|mysword|wacche word|worden|wordy|wytword}}
+
+=====Descendants=====
+* {{desc|en|word}}
+* {{desc|gmw-msc|word|wourd}}
+** {{desc|sco|wird|alts=1}}
+
+=====References=====
+* {{R:MED Online|entry= wō̆rd|part of speech=n |id=MED53418 |accessdate=27 February 2020}}
+
+===Etymology 2===
+
+====Noun====
+{{head|enm|noun}}
+
+# {{alt form|enm|werde}}
+
+{{C|enm|Language|Religion|Talking}}
+
+==Old English==
+
+===Alternative forms===
+* {{alter|ang|ƿord}}
+* {{alter|ang|uord||Northumbrian}}
+* {{alter|ang|wyrde}}
+
+===Pronunciation===
+* {{ang-IPA|word}}
+
+===Etymology 1===
+{{root|ang|ine-pro|*werh₁-|*dʰeh₁-}}
+From {{inh|ang|gmw-pro|*word}}, from {{inh|ang|gem-pro|*wurdą}}.
+
+====Noun====
+{{ang-noun|n|word}}
+
+# [[#English|word]]
+#* {{quote-book|ang|text=''Sē þonne þisne wealsteal · wīse ġeþōhte<br/>ond þis deorce līf · dēope ġeondþenċeð,<br/>frōd in ferðe, · feor oft ġemon<br/>wælsleahta worn, · ond þās '''word''' ācwið:''|t=Then he deeply thinks over this wall-place<br/>and this dark life with wise thought,<br/>shrewd in mind, oft recalls the long bygone<br/>swarm of slaughters, and utters these '''words''':|title=The Wanderer|year=10th century}}
+# [[speech]], [[utterance]], [[statement]]
+# {{lb|ang|grammar}} [[verb]]
+# [[news]], [[information]], [[rumour]]
+#* '''c. 992''', [[w:Ælfric of Eynsham|Ælfric]], [https://en.wikisource.org/wiki/The_Homilies_of_the_Anglo-Saxon_Church/II "Sermon on the Nativiity of Our Lord"]
+#*: {{quote|ang|Ðyllīce '''word''' María hēold ārǣfniġende on hire heortan.|Such '''words''' Mary held, pondering them in her heart.}}
+# [[command]], [[request]]
+# [[Logos]], the Word of [[God]], the second person of the [[Trinity]], [[Jesus]]
+
+=====Declension=====
+{{ang-decl-noun-a-n|word}}
+
+=====Derived terms=====
+{{col3|ang
+|bīword
+|ġylpword
+|witword
+|wordfæst
+|wordiġ
+|wordriht
+}}
+
+=====Descendants=====
+* {{desctree|enm|word}}
+
+===Etymology 2===
+{{root|ang|ine-pro|*Hwerdʰ-}}
+{{etymid|ang|thornbush}}
+{{unk|ang}}. Perhaps ultimately from {{der|ang|ine-pro|*wr̥dʰos|t=sweetbriar}}. Compare {{cog|la|rubus||bramble}}, {{cog|fa|گل|tr=gol||flower}}.
+
+====Noun====
+{{head|ang|noun|g=?}}
+
+# [[thornbush]]
+
+{{topics|ang|Parts of speech}}
+
+==Old Saxon==
+
+===Etymology===
+{{root|osx|ine-pro|*werh₁-}}
+From {{inh|osx|gmw-pro|*word}}, from {{inh|osx|gem-pro|*wurdą}}.
+
+===Pronunciation===
+* {{IPA|osx|/wɔrd/|/wɔrt/}}
+
+===Noun===
+{{osx-noun|n}}
+
+# [[#English|word]]
+
+====Declension====
+{{osx-decl-noun-a-n|word}}

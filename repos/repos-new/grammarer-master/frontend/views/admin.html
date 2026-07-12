@@ -1,0 +1,217 @@
+<nav class="breadcrumb">
+    <ul>
+        <li><a href="#!/">Home</a></li>
+        <li><a href="#!/lists">Lists</a></li>
+        <li class="is-active"><a href="#!/admin">Magic Dashboard</a></li>
+    </ul>
+</nav>
+
+<p class="title is-3 tk-rigid-square">Magic Dashboard</p>
+
+<p>This page enables admins and teachers to manage codes, cohorts and more. Please see <a href="https://github.com/palkerecsenyi/grammarer#user-control" target="_blank">the User Control documentation</a> for more information.</p>
+
+<p>To create and manage grammar/vocab lists, <a href="#!/admin/lists">click here.</a></p>
+
+<hr/>
+
+<div class="columns">
+    <div class="column">
+        <div class="tabs is-boxed" ng-if="adminRole==='admin'">
+            <ul>
+                <li ng-class="{'is-active': tab === 'codes'}" id="g-t-codes">
+                    <a ng-click="switchTab($event)">Codes</a>
+                </li>
+                <li ng-class="{'is-active': tab === 'cohorts'}" id="g-t-cohorts">
+                    <a ng-click="switchTab($event)">Cohorts</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="g-t-switcher">
+            <div id="g-t-s-codes" ng-if="tab==='codes'">
+                <p class="subtitle is-4" style="margin-bottom: 5px;">Currently registered codes</p>
+                <p ng-if="adminRole==='teacher'">Showing codes belonging to cohort <code>{{cohort}}</code>. For security reasons, this list excludes users with role <code>admin</code>.</p>
+                <p ng-if="adminRole==='admin'">Showing all codes in database, independent of cohort.</p>
+
+                <div class="g-table-container" style="margin-top: 15px;">
+                    <table class="table" style="width: 100%;" id="aTable">
+                        <thead>
+                        <tr>
+                            <th ng-if="adminRole==='admin'">Cohort</th>
+                            <th>Code</th>
+                            <th>Deploy</th>
+                            <th>Card?</th>
+                            <th>Role</th>
+                            <th>Delete</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in data">
+                            <td ng-if="adminRole==='admin'"><code>{{item.cohort}}</code></td>
+                            <td><strong>{{item.code}}</strong></td>
+                            <td>{{item.deploy}}</td>
+                            <td>{{item.card ? "Yes" : "No"}}</td>
+                            <td><code>{{item.role}}</code></td>
+                            <td><a href ng-click="aDelete($event, item.code, item.cohort)" class="button is-danger">Delete</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="g-t-s-cohorts" ng-if="tab==='cohorts'">
+                <p class="subtitle is-4" style="margin-bottom: 5px;">All cohorts</p>
+                <p>Showing all cohorts in database to an <code>admin</code> user.</p>
+                <div class="g-table-container" style="margin-top: 15px;">
+                    <table class="table" style="width: 100%;" id="aTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Users</th>
+                                <th>Assigned lists</th>
+                                <th>Assign</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="c in cohorts">
+                                <td><strong>{{c.name}}</strong></td>
+                                <td>{{c.userCount}}</td>
+                                <td>{{c.assigned.length}}</td>
+                                <td><a href ng-click="aShowAssign(c.name, c.assigned)" class="button is-primary">Assign</a></td>
+                                <td><a href ng-click="aShowModal(c.name, c.userCount)" class="button is-danger">Delete</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal" ng-class="{'is-active': modal.show}">
+                    <div class="modal-background" ng-click="modal.show = false"></div>
+                    <div class="modal-content">
+
+                        <div class="box">
+                            <p class="title is-2">Are you sure?</p>
+                            <p>You are about to delete an entire cohort, <strong>along with all {{modal.userCount}} users</strong> inside it.</p>
+                            <p><strong>This action <ins>cannot</ins> be undone.</strong></p>
+                            <p class="subtitle is-5" style="margin-top: 15px;">To continue, type the name of the cohort <code><span style="pointer-events: none; -webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;" >{{modal.name}}</span></code>:</p>
+
+                            <input type="text" placeholder="Name..." class="input is-medium" ng-model="modal.confirm" style="margin-top: -10px; margin-bottom: 10px;">
+                            <button ng-disabled="modal.confirm!==modal.name" class="button is-medium is-danger" ng-click="aDeleteCohort($event, modal.name)">Delete</button>
+                        </div>
+
+                    </div>
+                    <button class="modal-close is-large" aria-label="close" ng-click="modal.show=false"></button>
+                </div>
+
+                <div class="modal" ng-class="{'is-active':assign.show}">
+                    <div class="modal-background" ng-click="assign.show = false"></div>
+                    <div class="modal-content">
+
+                        <div class="box">
+                            <p class="title is-2">Assign lists</p>
+                            <p class="subtitle is-5">Use this tool to assign lists to the <code>{{assign.name}}</code> cohort</p>
+
+                            <div class="g-table-container" ng-if="assign.assigned.length > 0" style="margin-bottom: 10px;">
+                                <table class="table" style="width: 100%;">
+                                    <thead>
+                                        <tr>
+                                            <th>List ID</th>
+                                            <th>Unassign</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="listId in assign.assigned">
+                                            <td><code>{{listId}}</code></td>
+                                            <td><a href ng-click="assign.removeAssignment($event, listId)" class="button is-danger">Unassign</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="notification is-primary" ng-if="assign.assigned.length === 0">
+                                No lists have been assigned to this cohort.
+                                <br/>
+                                <strong>Use the form below to assign one.</strong>
+                            </div>
+
+                            <hr/>
+
+                            <p class="title is-4">New assignment</p>
+                            <input type="text" ng-model="assign.newAssignment.listId" class="input is-medium" placeholder="List ID...">
+                            <button class="button is-medium is-primary" ng-click="assign.newAssignment.addIt(assign.newAssignment.listId)" style="margin-top:10px;">Add</button>
+                        </div>
+
+                    </div>
+                    <button class="modal-close is-large" aria-label="close" ng-click="assign.show=false"></button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="column">
+        <p class="subtitle is-4">Add new code</p>
+        <div class="control">
+            <div class="field">
+                <!-- Teacher code (without prefix) -->
+                <div ng-if="adminRole==='teacher'">
+                    <p style="margin-top: -18px; margin-bottom: 10px;">Will be created with role <code>student</code>.</p>
+                    <button class="button is-small is-primary" ng-click="newcode.random()" style="margin-bottom:10px;">Generate random</button>
+                    <input type="text" max="9999" ng-model="newcode.code" ng-if="adminRole==='teacher'" placeholder="Code..." class="input is-medium" style="margin-bottom: 10px;">
+                </div>
+
+                <!-- Admin code (with prefix) -->
+                <div ng-if="adminRole==='admin'">
+                    <button class="button is-small is-primary" ng-click="newcode.random()" style="margin-bottom:10px;">Generate random</button>
+                    <input type="text" limit-to="7" ng-model="newcode.code" placeholder="Code..." class="input is-medium" style="margin-bottom: 10px;">
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="g-role">Role</label>
+                        <br/>
+                        <div class="select is-medium" style="width: 100%;">
+                            <select ng-model="newcode.role" id="g-role" style="width: 100%;">
+                                <option selected="selected" value="student">Student</option>
+                                <option value="teacher">Teacher</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="g-cohort">Cohort</label>
+                        <br/>
+                        <div class="select is-medium" style="width: 100%;">
+                            <select ng-model="newcode.cohort" id="g-cohort" style="width: 100%;">
+                                <option ng-repeat="c in cohorts" ng-value="c.name">{{c.name}}</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <input type="text" ng-model="newdeploy" placeholder="Deploy..." class="input is-medium" style="margin-bottom: 10px;">
+
+                <label class="checkbox">
+                    <input type="checkbox" ng-model="newcard">
+                    Deployed with card
+                </label>
+            </div>
+        </div>
+        <button class="button is-medium is-primary" ng-click="addCode()" style="margin-top: 10px;" id="addbutton">Add code</button>
+
+        <div ng-if="adminRole==='admin'" style="margin-top:15px;">
+            <hr/>
+            <p class="subtitle is-4">Add new cohort</p>
+
+            <input type="text" ng-model="newcohort.name" placeholder="Name..." class="input is-medium" style="margin-bottom: 10px;">
+            <button class="button is-medium is-primary" ng-click="addCohort()" id="cohortbutton">Add cohort</button>
+        </div>
+
+        <hr/>
+
+        <p class="subtitle is-4">Auto-generate PDF</p>
+        <p style="margin-bottom: 10px;">This will generate a sheet of 16 cut-out code cards, on one A4 sheet of paper. All codes will be added to your current cohort <code>{{cohort}}</code> automatically.<br/>Each card will feature the page URL, the cohort and the code. The date and deploy will be written at the bottom of the page.</p>
+        <input type="text" ng-model="pdfDeploy" placeholder="Deploy..." class="input is-medium" style="margin-bottom: 10px;">
+        <button class="button is-medium is-primary" ng-click="pdf($event)">Sheet of 16 codes</button>
+    </div>
+</div>

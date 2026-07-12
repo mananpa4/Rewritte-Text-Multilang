@@ -1,0 +1,625 @@
+{{also|Appendix:Variations of "us"}}
+{{minitoc}}
+==Translingual==
+
+===Etymology===
+From {{af|mul|u-<t:micro->|s<id:Q11574><t:second>}}.
+
+===Symbol===
+{{mul-symbol}}
+
+# {{senseid|mul|Q842015}} {{lb|mul|metrology|informal|proscribed}} {{alt form of|mul|μs<id:Q842015>}}.
+
+==English==
+{{wikipedia}}
+
+===Etymology 1===
+{{etymon|en|id=pronoun|:inh|enm:us<id:pronoun>|tree=1}}
+From {{inh|en|enm|us}}, from {{inh|en|ang|ūs||pos=dative personal pronoun|us}}, from {{inh|en|gmw-pro|*uns}}, from {{inh|en|gem-pro|*uns||us}}, from {{der|en|ine-pro||*n̥swé}}, alteration of {{m|ine-pro|*n̥smé||us}}. The compensatory lengthening was lost in Middle English due to the word being unstressed when used. Cognate with {{cog|stq|uus|t=us}}, {{cog|fy|us}}, {{m|fy|us|ús|us}}, {{cog|nds|uns}}, {{m|nds|us||us}}, {{cog|nl|ons||us}}, {{cog|de|uns||us}}, {{cog|da|os||us}}, {{cog|la|nōs||we, us}}.
+
+====Pronunciation====
+* {{qualifier|stressed}} {{enPR|ŭs}}, {{IPA|en|/ʌs/|/ʌz/}}, {{IPA|en|/ʊs/|a=Local Dublin}}
+* {{qualifier|unstressed}} {{IPA|en|/əs/|a=US}}, {{IPA|en|/əs/|/əz/|a=UK}}
+* {{IPA|en|/ɪz/|a=Northumbrian}}
+* {{audio|en|en-us-us.ogg|a=US}}
+* {{rhymes|en|ʌs|s=1}}
+
+====Pronoun====
+{{en-pron|personal pronoun; the objective case of '''[[we]]'''}}
+
+# [[me|Me]] and at least one other person, excluding the person(s) being addressed. {{qualifier|[[exclusive]] ''us''.}}
+#: {{ux|en|Don't treat '''us''' like idiots.}}
+# [[me|Me]] and at least one other person, including the person(s) being addressed. {{qualifier|[[inclusive]] ''us''.}}
+#: {{ux|en|Let's ask him if he'll give '''us''' a lift.}}
+#* {{RQ:KJV|Luke|1|1|text=Forasmuch as many have taken in hand to set forth in order a declaration of those things which are most surely believed among '''us'''...}}
+# [[we|We]], {{non-gloss|used in the same circumstances where "me" would be used instead of "I", e.g. for the pronoun in isolation or as the complement of the copula:}}
+#: {{ux|en|Who's there? &mdash; '''Us'''. (or) &mdash; It's '''us'''.}}
+#: {{ux|en|Who's going to go? &mdash; '''Us'''. We'll go.}}
+# Any entity that the speaker is a part of or identifies with, such as place of employment or education, [[nation]], [[region]], [[language]], etc.
+#: {{ux|en|It's not true that the rest of Europe hates '''us'''.}}
+#: {{ux|en|I went to watch my favourite team play Real Madrid, but they thrashed '''us''' 5-0.}}
+# People in general.
+#: {{ux|en|Grief ages '''us'''.}}
+# {{lb|en|colloquial}} The person(s) being addressed.
+#: {{ux|en|Come on! Wakey wakey! Let's get '''us''' up and out of bed, please.}}
+# {{lb|en|colloquial}} {{n-g|Used to imply connection between the speaker's experiences or activities and a group of listeners}}.
+#: {{ux|en|Hey guys, in this video I'll show you how I make my upside-down sponge cake. First let's get '''us''' a few ingredients that we'll need ...}}
+# {{lb|en|Commonwealth|colloquial|chiefly with certain verbs such as {{m|en|give}}, {{m|en|get}}, {{m|en|fetch}}, etc.}} [[me|Me]].
+#: {{ux|en|Give '''us''' a look at your paper.}}
+#: {{ux|en|Fetch '''us''' a cold beer from the fridge, would you.}}
+#: {{ux|en|She's turned the [[weans]] against '''us'''!}}
+#: {{ux|en|''(talking to oneself)'' Now then ... let me see ... I hope I'm doing this right ... if we just connect these two wires together ... if it gives '''us''' a shock then ... Ow!}}
+# {{lb|en|Northumbria}} Me (in all contexts).
+#: {{ux|en|Look at '''us''' while ye’re speakin tiv '''us'''.}}
+#: {{ux|en|Could ye dee that for '''us'''?}}
+
+=====Alternative forms=====
+* {{alt|en|-'s||contracted form, as in {{m|en|let's}}}}
+* {{alt|en|uz|is|iz||Northumbria}}
+
+=====Derived terms=====
+{{col|en|after us the deluge|all your base are belong to us|bless us|can you tell us|come down to us|God preserve us|it happens to the best of us|let us|let us count the ways|my very educated mother just served us nachos|my very educated mother just served us nine pumpkins|my very educated mother just served us noodles|no longer with us|still with us|tell us another|tell us another one|the poor we will always have with us|them-and-us|they hate us 'cause they ain't us|till death do us part|till death us do part|us selves|usses|us versus them|us-and-them| my very educated mother just served us nine pizzas|nothing about us without us|and so say all of us| with us|let us go| one of us|my very excellent mother just served us nine pizzas|us-and-them-ism}}
+
+=====Translations=====
+{{trans-top|objective case of "we"}}
+* American Sign Language: {{t|ase|1^o-f@IpsiChest-FingerBack RoundHoriz 1^o-f@ContraChest-FingerBack}}
+* Arabic: {{t|ar|ـنَا}}, {{t|ar|إِيَّانَا}}
+*: Egyptian Arabic: {{t|arz|نا|alt=ـنا|tr=-nā|sc=Arab}}
+* Armenian: {{t+|hy|մեզ}}
+*: Old Armenian: {{t|xcl|մեզ}}
+* Bengali: {{t+|bn|আমাদের}}
+* Bislama: [[yumi]], [[yumitupela]] (''dual inclusive''); [[yumitripela]] (''trial inclusive''); [[yumipela]] (''plural inclusive''); [[mitupela]] (''dual exclusive''); [[mitripela]] (''trial exclusive''); [[mipela]] (''plural exclusive'')
+* Burmese: {{t|my|ကျုပ်တို့}}, {{t+|my|တို့}}
+* Catalan: {{qualifier|classical}} {{t+|ca|nos}}, {{qualifier|colloquial}} {{t+|ca|mos}}, {{qualifier|contracted}} {{t+|ca|ens}}
+* Chamicuro: {{t|ccc|a'ti}}
+* Chinese:
+*: Cantonese: {{t+|yue|我哋|tr=ngo5 dei6}}
+*: Hokkien: {{t+|nan-hbl|阮|tr=góan, gún}}, {{t+|nan-hbl|咱|tr=lán}}, {{t+|nan-hbl|咱人|tr=lán-lâng}}
+*: Mandarin: {{t+|cmn|我們|tr=wǒmen}}
+* Czech: {{t+|cs|nás}}, {{t+|cs|nám}}
+* Dalmatian: {{t|dlm|noi}}
+* Dutch: {{t+|nl|ons}}
+* Eshtehardi: {{t|esh|چَما|tr=ĉamā}}
+* Esperanto: {{t+|eo|nin}}
+* Ewe: {{t|ee|míawo}}
+* Finnish: {{t+|fi|meidät}}, {{t+|fi|meitä}}
+* French: {{t+|fr|nous}}, à nous
+* Georgian: {{t|ka|ჩვენს}}
+* German: {{t+|de|uns}}
+* Greek: {{t+|el|μας}}
+* Hopi: {{t|hop|itamuy}}
+* Hungarian: {{t+|hu|minket}}, {{t+|hu|bennünket}}
+* Ido: {{t+|io|ni}}
+* Interlingua: {{t+|ia|nos}}
+* Irish: {{t|ga|sinn|p}}
+*: Old Irish: {{t|sga|n-}}, {{t|sga|don-}}, {{t|sga|-unn}}
+* Italian: {{t+|it|noi}}, a noi, {{t+|it|ci}}
+* Japanese: {{t+|ja|私達}} (watashitachi)
+* Kabuverdianu: {{t|kea|nu}}
+* Kazakh: {{t|kk|бізді}}
+* Kituba: {{t|ktu|beto}}
+* Korean: {{t+|ko|우리}}
+* Kurdish:
+*: Central Kurdish: {{t|ckb|ئێمە}}
+* Latin: {{qualifier|accusative}} {{t+|la|nos}}, {{qualifier|dative}} {{t+|la|nobis}}, {{qualifier|ablative}} {{t+|la|nobis}}
+* Lingala: {{t|ln|bísó}}
+* Low German: {{t|nds|uns}}, {{t|nds|üsch}}, {{t|nds|üsseck}}
+* Macedonian: {{t|mk|ни}}, {{t|mk|нас}}, {{t|mk|нам}}
+* Malay: {{t+|ms|kami|p}} {{q|exclusive}}, {{t+|ms|kita|p}} {{q|inclusive}}
+* Maori: {{t|mi|māua}} {{qualifier|exclusive referring to two people}}, {{t|mi|tāua}} {{qualifier|inclusive referring to two people}}, {{t|mi|mātau/mātou}} {{qualifier|exclusive referring to three or more people}}, {{t|mi|tātau/tātou}} {{qualifier|inclusive referring to three or more people}}
+* Ngarrindjeri: {{t|nay|ngatjagha}}
+* Ngazidja Comorian: {{t|zdj|sisi}}
+* Norn: {{t|nrn|vus}}
+* Norwegian:
+*: Bokmål: {{t+|nb|oss}}
+*: Nynorsk: {{t|nn|oss}}
+* Old English: {{t+|ang|ūs}}
+* Persian: {{t+|fa|ما|tr=mâ}}
+* Pipil: {{t|ppl|tech-}}
+* Polish: {{t+|pl|nas}}, {{t+|pl|nam}}, {{t|pl|nami}}
+* Portuguese: {{t+|pt|nos}}
+* Romanian: {{t+|ro|ne}} {{qualifier|unstressed dative and accusative}}, {{t+|ro|nouă}} {{qualifier|stressed dative}}, ([[pe]]) [[noi]] {{qualifier|stressed accusative}}
+* Russian: {{t+|ru|нас|p}}, {{t+|ru|нам|p}}, {{t+|ru|на́ми|p}}
+* Scottish Gaelic: {{t|gd|sinn|p}}
+* Serbo-Croatian: {{t+|sh|nas}}
+* Slovene: {{t+|sl|midva}} (‘us two’), {{t|sl|midve}} (‘us two women’), {{t+|sl|mi}} (three or more), {{t+|sl|me}} (three or more women)
+* Sorbian:
+*: Lower Sorbian: {{t|dsb|naju|d}}, {{t|dsb|nas|p}}
+* Spanish: {{t+|es|nos}}, {{t+|es|nosotros}}, {{t+|es|nosotras}}
+* Svan: {{t-needed|sva}}
+* Swedish: {{t+|sv|oss}}
+* Telugu: {{t|te|మమ్మల్ని}}
+* Ukrainian: {{t+|uk|нас}}, {{t+|uk|нам}}
+* Volapük: {{t|vo|obis}}
+* Welsh: {{t|cy|ni}}
+* West Frisian: {{t+|fy|ús}}
+* Wolof: {{t|wo|nu}}
+* Zulu: {{t|zu|thina}}
+{{trans-bottom}}
+
+<!--Add COLLOQUIAL translations here, where these exist-->
+{{trans-top|colloquial: me}}
+* German:  {{qualifier|accusative}} {{t+|de|mich}}, {{qualifier|dative}} {{t+|de|mir}}
+{{trans-bottom}}
+
+=====See also=====
+* {{l|en|we}}
+* {{l|en|our}}
+* {{l|en|ours}}
+
+{{English personal pronouns}}
+
+====Determiner====
+{{en-det}}
+
+# {{n-g|Designates the speaker(s)/writer(s) as constituting or belonging to the stated category of people (objective case).}}
+#: {{ux|en|It's not good enough for '''us''' teachers.}}
+# {{lb|en|proscribed}} {{n-g|Designates the speaker(s)/writer(s) as constituting or belonging to the stated category of people (subjective case).}}
+#* {{quote-journal|en|date=7 Feb 88|volume=15|number=29|journal=Gay Community News|page=10|title=Why Does GCN Have A Prisoner Project?|author=Mike Riegle|quotee=John Royal|text='''Us''' gays and lesbians in here got a reason to be bitching about the conditions.}}
+# {{lb|en|Northern England|Nottinghamshire}} [[our|Our]].<ref>{{cite book|page=161|title=Survey of the Dialect of Selston in the Erewash Valley|last=Storr|first=Jeremy G.|year=1977|publisher=University of Sheffield}}</ref>
+#: {{ux|en|We'll have to throw '''us''' food out.}}
+
+=====See also=====
+* {{l|en|we}}
+
+===Etymology 2===
+From {{af|mul|u-<gloss:[[micro-]], 10<sup>-6</sup>>|s<id:Q11574><gloss:second>}}.
+
+====Symbol====
+{{head|en|symbol}}
+
+# {{senseid|en|Q842015}} {{rfd-sense|en}} {{alternative spelling of|en|μs<id:Q842015>}}: [[microsecond#English:_Q842015|microsecond]].
+#* {{quote-text|en|year=2002|author=Peter Spasov|title=Microcontroller Technology, the 68HC11|page=489
+|passage=<nowiki>;</nowiki>wait 500 '''us'''}}
+#* {{quote-text|en|year=2012|author=Peter Feiler; David Gluch|title=Model-Based Engineering with AADL
+|passage=The standard units are ns (nanoseconds), '''us''' (microseconds), ms (milliseconds), sec (seconds), min (minutes), and hr (hours).}}
+#* {{quote-text|en|year=2014|author=Michael Corey; Jeff Szastak; Michael Webster|title=Virtualizing SQL Server with VMware: Doing IT Right|page=198
+|passage=Because the flash devices are local to the server, the latencies can be microseconds ('''us''') instead of milliseconds (ms) and eliminate some traffic that would normally have gone over the storage network.}}
+
+=====Usage notes=====
+* See at {{m|mul|um}}.
+
+===Etymology 3===
+{{nonlemma}}
+
+====Noun====
+{{head|en|noun form}}
+
+# {{lb|en|rare}} {{alt form|en|u's}}.
+
+===References===
+<references/>
+
+===Anagrams===
+* {{anagrams|en|a=su|SU|Su}}
+
+[[Category:Symbols for SI units]]
+{{cln|en|first person pronouns|heteronyms|personal pronouns|plural pronouns|2-letter words}}
+
+==Awa-Cuaiquer==
+
+===Pronoun===
+{{head|kwi|pronoun}}
+
+# [[he]]/[[she]]/[[it]]  (third-person singular nominative pronoun)
+
+====See also====
+{{Awa-Cuaiquer personal pronouns}}
+
+===References===
+* Curnow, T. J. (1997). ''A grammar of Awa Pit (Cuaiquer): An indigenous language of south-western Colombia''. The Australian National University.
+
+==Catalan==
+
+===Etymology===
+{{inh+|ca|la|vōs}}.
+
+===Pronunciation===
+* {{ca-IPA}}
+* {{homophones|ca|ús}}
+
+===Pronoun===
+{{ca-ppron|type=procl+encl_con|encl=vos}}
+
+# [[you]] (plural, direct or indirect object)
+# {{contraction of|ca|vos}}
+
+====Usage notes====
+* {{U:ca:pronouns|form=reinforced}}
+*: {{uxi|ca|Si '''us''' plau.|Please.}}
+*: {{uxi|ca|Si no '''us''' importa.|If you don't mind.}}
+* -{{U:ca:pronouns|form=reduced}}
+*: {{uxi|ca|Volia veure-'''us'''.|I wanted to see you.}}
+
+====Declension====
+{{ca-decl-ppron}}
+
+===Further reading===
+* {{R:ca:DCVB}}
+* {{R:ca:GDLC}}
+* {{R:ca:IEC2}}
+
+==Central Franconian==
+
+===Pronunciation===
+* {{IPA|gmw-cfr|/us/|q2=stressed optionally|/uːs/}}
+
+===Etymology 1===
+From {{inh|gmw-cfr|gmh|ūz}}, from {{inh|gmw-cfr|gem-pro|*ūt}}.
+
+====Preposition====
+{{head|gmw-cfr|preposition|+ dative}}
+
+# {{lb|gmw-cfr|Ripuarian|parts of|_|Moselle Franconian}} [[out of]], [[from]]
+#* {{quote-text|gmw-cfr|year=1936|title=Inscription on the {{w|lang=de|Schwarze Katz}} well in {{w|Zell (Mosel)|Zell}}
+|passage=He steiht ferm wie en Zeller '''us''' dem Hamm.|t=He stands firm as a Zell man '''from''' the ''Hamm'' [i.e. the Moselle bow around Zell with its steeply sloped vineyards].}}
+
+=====Usage notes=====
+* Where it occurs in Moselle Franconian, it generally does so only in unstressed position while the stressed form is {{m|gmw-cfr|aus}}, {{m|gmw-cfr|ous}}.
+
+=====Alternative forms=====
+* {{alt|gmw-cfr|uus|uss}}
+* {{alt|gmw-cfr|aus|ous||Moselle Franconian}}
+
+===Etymology 2===
+From {{inh|gmw-cfr|gmh|uns}}, from {{inh|gmw-cfr|gem-pro|*uns}}, {{m|gem-pro|*unsiz}}. Loss of the nasal is due to a sporadic development (analogous to the Ingvaeonic nasal spirant-law, but later and not systematic); compare {{cog|lb|eis}}, {{cog|li|ós}}.
+
+====Pronoun====
+{{head|gmw-cfr|pronoun}}
+
+# {{lb|gmw-cfr|most of|_|Ripuarian|parts of|_|Moselle Franconian}} {{ng|Dative/accusative first-person plural personal pronoun}}: {{l|en|us}}
+
+=====Alternative forms=====
+* {{alt|gmw-cfr|uus|uss}}
+* {{alt|gmw-cfr|oos|os|oss||common variant}}
+* {{alt|gmw-cfr|uns|ons||[[Kölsch]], also younger byform in many other dialects}}
+
+==Cornish==
+
+===Etymology 1===
+Borrowed from {{bor|kw|enm|use}}, from {{der|kw|fro|us}}, from {{der|kw|la|ūsus}}, from past participle of {{m|la|ūtor}}.
+
+====Noun====
+{{kw-noun|m|y|usadow}}
+
+# {{l|en|use}}
+#: {{syn|kw|devnydh|usyans}}
+# {{l|en|custom}}
+#: {{syn|kw|maner}}
+# {{l|en|habit}}
+#: {{syn|kw|usadow}}
+
+=====Derived terms=====
+{{col|kw
+|es y us<t:user-friendly>
+|usadow<t:habitual, routine, usual; habit, routine, usage>
+|usya<t:use, utilise, wear out><pos:v>
+|usyans<t:use; erosion><pos:n>
+|usyer<t:user>
+|usys<t:accustomed, used, usual, worn>
+}}
+
+====Verb====
+{{head|kw|vf}}
+
+# {{infl of|kw|usya||3s|pres:ind//fut:ind}}
+# {{infl of|kw|usya||2s|imp}}
+
+===Etymology 2===
+{{rfe|kw}}
+Cognate with {{cog|br|yud}}.
+
+====Alternative forms====
+* {{alt|kw|uj||RLC}}
+
+====Noun====
+{{kw-noun|m|r}}
+
+# {{l|en|scream}}, {{l|en|yell}}
+#: {{syn|kw|garm|kri|skrij}}
+
+=====Derived terms=====
+{{col|kw
+|usa<t:scream, yell><pos:v>
+}}
+
+====Verb====
+{{head|kw|vf}}
+
+# {{infl of|kw|usa||3s|pres:ind//fut:ind}}
+# {{infl of|kw|usa||2s|imp}}
+
+===Etymology 3===
+{{rfe|kw}}
+Cognate with {{cog|cy|us}} and {{cog|br|uzien}}.
+
+====Noun====
+{{kw-noun-col|en}}
+
+# [[chaff]]s
+
+==Fala==
+
+===Etymology 1===
+From {{inh|fax|roa-opt|os}}, from {{inh|fax|la|illōs}}.
+
+====Alternative forms====
+* {{alter|fax|os|qq=Mañegu}}
+
+====Article====
+{{head|fax|article|g=m-p|singular|u|feminine|a|feminine plural|as}}
+
+# {{lb|fax|Lagarteiru|Valverdeñu}} {{ng|Masculine plural definite article}}; [[the]]
+
+====Pronoun====
+{{head|fax|pronouns}}
+
+# {{lb|fax|Lagarteiru|Valverdeñu}} {{ng|Third person plural masculine accusative pronoun}}; [[them]]
+
+=====See also=====
+{{fax-personal pronouns}}
+
+===Etymology 2===
+
+====Alternative forms====
+* {{alter|fax|unhos|qq=Mañegu}}
+* {{alter|fax|unhus|qq=Valverdeñu}}
+
+====Article====
+{{head|fax|articles|g=m-p|singular|un|feminine|unha|feminine plural|unhas}}
+
+# {{lb|fax|Lagarteiru}} {{ng|Masculine singular indefinite article}}; [[some]]
+
+===References===
+* {{R:fax:Diccionariu|276}}
+
+==French==
+
+===Etymology===
+{{inh+|fr|fro|us}}, from {{inh|fr|la|ūsus}}.
+
+===Pronunciation===
+* {{fr-IPA|uss|qual2=less often|+}}
+* {{audio|fr|LL-Q150 (fra)-Exilexi-us.wav}}
+* {{audio|fr|LL-Q150 (fra)-LoquaxFR-us.wav|a=<<France>> (<<Vosges>>)}}
+* {{audio|fr|LL-Q150 (fra)-Lyokoï-us.wav|a=<<France>> (<<Lyon>>)}}
+* {{audio|fr|LL-Q150 (fra)-WikiLucas00-us.wav|a=<<France>> (<<Lyon>>)}}
+* {{rhymes|fr|ys|y|s=1}}
+* {{homophones|fr|eusse|eussent|eusses|qq3=with {{IPAchar|/s/}}|eu|eue|eues|eus|eut|eût|u|qq10=without {{IPAchar|/s/}}|hue|huent|hues|qq13=without {{IPAchar|/s/}}, aspirated}}
+
+===Noun===
+{{fr-noun|m-p}}
+
+# {{lb|fr|plurale tantum}} [[mores]]; [[traditional]] [[practice]]s or [[manner]]s
+
+====Usage notes====
+* Now almost exclusively used in {{m|fr|us et coutumes||[[mores]] and [[custom]]s}}.
+
+====Related terms====
+* {{l|fr|abus}}
+* {{l|fr|user}}, {{l|fr|usage}}, {{l|fr|usuel}}
+
+===Further reading===
+* {{R:fr:TLFi}}
+
+===Anagrams===
+* {{l|fr|su}}
+
+==Gothic==
+
+===Romanization===
+{{got-rom}}
+
+# {{romanization of|got|𐌿𐍃}}
+
+==Middle English==
+
+===Alternative forms===
+* {{alter|enm|ous|os|hus|usse|hous}}
+
+===Etymology===
+{{etymon|enm|id=pronoun|:inh|ang:ūs<id:pronoun>|tree=1}}
+From {{inh|enm|ang|ūs||pos=dative personal pronoun|us}}, from {{inh|enm|gmw-pro|*uns}}, from {{inh|enm|gem-pro|*uns||us}}, possibly from {{der|enm|ine-pro||*n̥swé}}, alteration of {{m|ine-pro|*n̥smé||us}}.
+
+===Pronunciation===
+* {{IPA|enm|/uːs/|/us/|qq2=originally unstressed, but adopted as the usual form by Modern English}}
+
+===Pronoun===
+{{head|enm|pronoun|nominative|we}}
+
+# {{n-g|First-person plural accusative pronoun:}} [[us]].
+# {{lb|enm|reflexive|nocat=1}} [[ourselves]].
+# {{lb|enm|reciprocal|nocat=1}} [[each other]].
+
+====Synonyms====
+* {{l|enm|we}}
+
+====Descendants====
+* {{desc|en|us}}
+* {{desc|sco|us|hus}}
+* {{desc|yol|ouse|alts=1}}
+
+====See also====
+{{enm-decl-personal pronouns}}
+
+====References====
+* {{R:MED Online|entry=ū̆s|pos=pron|id=MED50620|accessdate=11 May 2018}}
+
+==Middle Low German==
+
+===Pronunciation===
+* {{IPA|gml|/ʊs/|/uːs/}}
+
+===Pronoun===
+{{head|gml|pronoun|head=ûs|head2=us}}
+
+# {{lb|gml|personal pronoun|dative|accusative}} {{alternative form of|gml|uns}}
+# {{lb|gml|possessive pronoun}} {{alternative form of|gml|uns}}
+
+====Declension====
+Possessive pronoun:
+{{gml-decl-adj||û|s}}
+
+==Norman==
+
+===Etymology===
+From {{inh|nrf|fro|uis}}, from {{inh|nrf|la|ostium}}.
+
+===Noun===
+{{nrf-noun|m|pl=us}}
+
+# [[door]]
+
+==Old English==
+
+===Etymology===
+{{etymon|ang|id=pronoun|:inh|gem-pro:*uns<id:pronoun>|tree=1}}
+{{inh+|ang|gmw-pro|*uns}}, from {{inh|ang|gem-pro|*uns}}, possibly from {{der|ang|ine-pro||*n̥swé}}, alteration of {{m|ine-pro|*n̥smé||us}}. Cognates include {{cog|ofs|ūs}} ({{cog|fy|us|ús}}), {{cog|osx|ūs}} ({{cog|nds|os}}, {{m|nds|ons}}), {{cog|nl|ons}}, {{cog|goh|uns}} ({{cog|de|uns}}), {{cog|non|oss}} ({{cog|sv|oss}}), {{cog|got|𐌿𐌽𐍃}}. The Indo-European root is also the source of {{cog|la|nos}}.
+
+===Pronunciation===
+* {{ang-IPA|ūs}}
+
+===Pronoun===
+{{head|ang|pronoun form|head=ūs}}
+
+# {{inflection of|ang|wē||acc//dat}}: (to) [[us]]
+
+====Descendants====
+* {{desctree|enm|us}}
+
+==Old French==
+
+===Etymology===
+From {{inh|fro|la|ūsus}}.
+
+===Noun===
+{{fro-noun|m}}
+
+# [[tradition]] or [[custom]]
+
+====Descendants====
+* {{desc|fr|us}}
+
+==Old Frisian==
+
+===Etymology===
+From {{inh|ofs|gem-pro|*uns}}, {{m|gem-pro|*unsiz}}. Cognates include {{cog|ang|ūs}}, {{cog|osx|ūs}} and {{cog|odt|uns}}.
+
+===Pronunciation===
+* {{IPA|ofs|/ˈuːs/}}
+
+===Pronoun===
+{{head|ofs|pronoun|head=ūs}}
+
+# {{noun form of|ofs|wī||acc//dat}}
+
+====Declension====
+{{ofs-decl-ppron}}
+
+====Descendants====
+* {{desc|frr|-}}
+*: Most dialects: {{l|frr|üs}}
+*: Sylt: {{l|frr|üüs}}
+* {{desc|stq|uus}}
+* {{desc|fy|ús}}
+
+====References====
+* {{R:ofs:Bremmer:2009}}
+
+==Portuguese==
+
+===Pronunciation===
+* {{rhymes|pt|us|s=1}}
+
+===Noun===
+{{head|pt|noun form}}
+
+# {{plural of|pt|u}}
+
+==Scots==
+
+===Etymology===
+{{inh+|sco|enm|us}}, from {{inh|sco|ang|ūs||pos=dative personal pronoun|us}}, from {{inh|sco|gmw-pro|*uns}}, from {{inh|sco|gem-pro|*uns||us}}, possibly from {{der|sco|ine-pro||*n̥swé}}, alteration of {{m|ine-pro|*n̥smé||us}}.
+
+===Pronoun===
+{{head|sco|pronoun|cat2=personal pronouns}}
+
+# {{l|en|us}}
+
+===See also===
+{{Scots personal pronouns}}
+
+===References===
+* {{R:Dictionary of the Scots Language|pos=pers. pron|accessdate=7 June 2024|source=DOST}}
+* {{R:Dictionary of the Scots Language|pos=pers. pron|url=https://www.dsl.ac.uk/entry/snd/us_pers_pron|accessdate=7 June 2024|source=SND}}
+
+==Serbo-Croatian==
+
+===Etymology===
+{{inh+|sh|sla-pro|*ǫsъ}}.
+
+===Noun===
+{{sh-noun|ȕs|f}}
+
+# [[fishbone]]
+
+===References===
+* {{R:sh:HJP|f19gWBR9}}
+
+{{C|sh|Animal body parts|Bones}}
+
+==Turkish==
+
+===Etymology===
+From {{inh|tr|ota|اوص|tr=us}}, from {{inh|tr|trk-pro|*us||mind, reason}}.<ref>{{R:tut-pro:SDM|*us|url=https://starling.rinet.ru/cgi-bin/response.cgi?single=1&basename=%2fdata%2falt%2fturcet&text_number=1700&root=config}}</ref>
+
+===Noun===
+{{tr-noun|usu|lar}}
+
+# [[mind]]
+# [[reason]]
+# [[intelligence]]
+
+====Declension====
+{{tr-infl-noun-c|u|poss=1}}
+
+====Synonyms====
+* {{l|tr|akıl}}
+* {{l|tr|zihin}}
+
+====Derived terms====
+{{col|tr
+|uslu
+|us dışı
+|us pahası
+|usa vurmak
+|uslamlamak
+|usuna getirmek
+}}
+
+===References===
+<references/>
+
+==Tz'utujil==
+
+===Noun===
+{{head|tzj|noun}}
+
+# [[fly]] {{gloss|insect}}
+
+{{topics|tzj|Dipterans}}
+
+==Volapük==
+
+===Adverb===
+{{head|vo|adverb}}
+
+# [[there]]
+#* {{quote-book|vo|1932|Arie de Jong|Leerboek der Wereldtaal|page=19|text=Cils äbinons-li i pö zäl et? Si! elogob '''us''' tumis.|t=Were there children at that party as well? Yes, I've seen hundreds of them '''there'''.}}
+
+==West Frisian==
+
+===Pronoun===
+{{head|fy|pronoun form}}
+
+# {{inflection of|fy|wy||obj}}

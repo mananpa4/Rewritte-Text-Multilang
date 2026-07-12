@@ -33,5 +33,35 @@
    "synonyms": [
      {"text": "simples", "formality": "neutral", "frequency": 0.74, "contexts": ["marketplace", "technical"]},
      {"text": "descomplicado", "formality": "informal", "frequency": 0.55, "contexts": ["informal"]}
-   ], "antonyms": ["difícil"]}
+   ], "antonyms": ["difícil"]},
+  {"word": "grande", "lemma": "grande", "pos": "ADJ", "language": "pt",
+   "synonyms": [
+     {"text": "amplo", "formality": "neutral", "frequency": 0.64, "contexts": ["marketplace", "professional"]},
+     {"text": "considerável", "formality": "formal", "frequency": 0.56, "contexts": ["professional"]}
+   ], "antonyms": ["pequeno"]},
+  {"word": "pequeno", "lemma": "pequeno", "pos": "ADJ", "language": "pt",
+   "synonyms": [
+     {"text": "compacto", "formality": "neutral", "frequency": 0.6, "contexts": ["marketplace", "technical"]},
+     {"text": "reduzido", "formality": "formal", "frequency": 0.55, "contexts": ["professional"]}
+   ], "antonyms": ["grande"]},
+  {"word": "importante", "lemma": "importante", "pos": "ADJ", "language": "pt",
+   "synonyms": [
+     {"text": "relevante", "formality": "formal", "frequency": 0.66, "contexts": ["professional"]},
+     {"text": "fundamental", "formality": "formal", "frequency": 0.6, "contexts": ["professional"]}
+   ]},
+  {"word": "problema", "lemma": "problema", "pos": "NOUN", "language": "pt",
+   "synonyms": [
+     {"text": "dificuldade", "formality": "neutral", "frequency": 0.64, "contexts": ["professional"]},
+     {"text": "inconveniente", "formality": "formal", "frequency": 0.56, "contexts": ["professional"]}
+   ]},
+  {"word": "melhorar", "lemma": "melhorar", "pos": "VERB", "language": "pt",
+   "synonyms": [
+     {"text": "otimizar", "formality": "formal", "frequency": 0.58, "contexts": ["technical", "professional"]},
+     {"text": "aperfeiçoar", "formality": "formal", "frequency": 0.5, "contexts": ["professional"]}
+   ]},
+  {"word": "usar", "lemma": "usar", "pos": "VERB", "language": "pt",
+   "synonyms": [
+     {"text": "utilizar", "formality": "formal", "frequency": 0.7, "contexts": ["professional", "technical"]},
+     {"text": "empregar", "formality": "formal", "frequency": 0.56, "contexts": ["professional"]}
+   ]}
 ]

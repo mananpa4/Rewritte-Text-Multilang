@@ -1,0 +1,10 @@
+[
+  {"word": "livraison", "lemma": "livraison", "pos": "NOUN", "language": "fr",
+   "synonyms": [{"text": "expédition", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace"]}]},
+  {"word": "offre", "lemma": "offre", "pos": "NOUN", "language": "fr",
+   "synonyms": [{"text": "promotion", "formality": "neutral", "frequency": 0.72, "contexts": ["marketplace", "seo"]}]},
+  {"word": "durable", "lemma": "durable", "pos": "ADJ", "language": "fr",
+   "synonyms": [{"text": "résistant", "formality": "neutral", "frequency": 0.68, "contexts": ["marketplace"]}]},
+  {"word": "confortable", "lemma": "confortable", "pos": "ADJ", "language": "fr",
+   "synonyms": [{"text": "ergonomique", "formality": "formal", "frequency": 0.56, "contexts": ["marketplace", "technical"]}]}
+]

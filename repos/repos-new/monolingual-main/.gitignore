@@ -1,0 +1,29 @@
+# Project stuff
+*.sha256
+*.bz2
+*.df
+*.log
+*.mobi
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.xml
+*.zip
+dict-data.*
+sections.txt
+templates.txt
+/data/
+tests/data/fr/fr/data_wikicode-*.json
+tests/data/fr/fr/output/
+tests/data/fr/fr/tmp/
+
+# Python stuff
+.coverage*
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+venv/
+
+# macOS
+.DS_Store

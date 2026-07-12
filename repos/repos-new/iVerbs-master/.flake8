@@ -1,0 +1,20 @@
+[flake8]
+ignore = 
+	E501, # line too big
+	D101, # Missing docstring in public class # flake8_docstrings
+    E401, # multiple imports on one line
+    D102, # Missing docstring in public method
+    D107, # Missing docstring in __init__
+    W293, # blank line contains whitespace
+    W291, # trailing whitespace
+    D100, # Missing docstring in public module
+    D105 # Missing docstring in magic method
+ 
+exclude = .git,__pycache__,img,data
+
+application-import-names = iVerb
+import-order-style = google
+show-source = True
+
+inline-quotes = "
+

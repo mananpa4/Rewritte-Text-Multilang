@@ -1,0 +1,70 @@
+@use "../abstracts" as *;
+
+.dropdown {
+  position: relative;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+    background: transparent;
+    color: var(--primary-text-color);
+    border: none;
+    font-weight: 700;
+    font-size: rem(14);
+
+    &:hover,
+    &:focus-visible {
+      color: var(--contrast);
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: calc(100% + rem(20));
+    right: 0;
+    display: none;
+    background-color: var(--background);
+    border-radius: rem(16);
+    list-style: none;
+    z-index: 1;
+    padding: rem(20);
+    gap: rem(16);
+    width: rem(160);
+  }
+
+  &__menu-item button {
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    font-weight: 700;
+    font-size: rem(14);
+    color: var(--foreground);
+
+    &:hover,
+    &:focus-visible {
+      color: var(--contrast);
+    }
+  }
+
+  &--open {
+    .dropdown__menu {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--background);
+      box-shadow: var(--shadow);
+    }
+  }
+}
+
+@include breakpoint("tablet") {
+  .dropdown {
+    &__button {
+      font-size: rem(18);
+    }
+
+    &__menu-item button {
+      font-size: rem(18);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {"word": "versand", "lemma": "versand", "pos": "NOUN", "language": "de",
+   "synonyms": [{"text": "lieferung", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace"]}]},
+  {"word": "angebot", "lemma": "angebot", "pos": "NOUN", "language": "de",
+   "synonyms": [{"text": "aktion", "formality": "neutral", "frequency": 0.66, "contexts": ["marketplace", "seo"]}]},
+  {"word": "langlebig", "lemma": "langlebig", "pos": "ADJ", "language": "de",
+   "synonyms": [{"text": "robust", "formality": "neutral", "frequency": 0.64, "contexts": ["marketplace"]}]},
+  {"word": "bequem", "lemma": "bequem", "pos": "ADJ", "language": "de",
+   "synonyms": [{"text": "ergonomisch", "formality": "formal", "frequency": 0.56, "contexts": ["marketplace", "technical"]}]}
+]

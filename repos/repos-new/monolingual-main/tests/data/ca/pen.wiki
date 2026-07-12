@@ -1,0 +1,41 @@
+{{vegeu|PEN}}
+
+== {{-ca-}} ==
+
+=== Verb ===
+{{ca-verb-forma|penar}}
+
+# {{marca-nocat|ca|balear|alguerès}} {{ca-forma-conj|penar|1|pres|ind}}
+
+{{-var-}}
+* [[peno]], [[pene]], [[peni]]
+
+=== Miscel·lània ===
+* {{ca-sil}}
+
+== {{-en-}} ==
+[[Fitxer:Ballpoint-pen-parts.jpg|miniatura|right|Pen (bolígraf)]]
+{{pronafi|en|/pɛn/}} {{àudio simple|En-us-pen.ogg|àudio (EUA)}}
+
+=== Nom ===
+{{en-nom}}
+
+# [[ploma]]
+# [[bolígraf]]
+# Àrea encerclada utilitzada per a contenir animals domèstics, especialment [[bestiar]]; [[corral]].
+
+== {{-rmq-x-ca-}} ==
+{{rmq-x-ca-pron}}
+
+=== Verb ===
+{{entrada|rmq-x-ca|verb-forma}}
+
+# {{forma-conj|rmq-x-ca|penar|forma obliqua|imp}}
+
+== {{-nl-}} ==
+{{pronafi|nl|/pɛn/}}
+
+=== Nom ===
+{{entrada|nl|nom|plural|pennen}}
+
+# [[bolígraf]]

@@ -1,0 +1,90 @@
+{{se även|sanð}}
+{{wikipedia}}
+
+==Svenska==
+===Substantiv===
+{{sv-subst-n-oräkn}}
+'''sand'''
+*{{uttal|sv|enkel=sand|ipa=sand}}
+#[[sten]] som blivit till små korn, antingen genom väder och vind eller på konstgjord väg
+#:''Jag har aldrig sett så mycket '''sand''', sa turisten på besök i Saharaöknen.''
+#{{tagg|geologi}} [[jordart]] med kornstorlek mellan 0,06 och 2 mm
+:{{avgränsare}}
+:{{etymologi|{{belagt|sv|1300|t}}<ref>{{källa-so}}</ref> Av {{härledning|sv|gmq-fsv|sander}}, av {{härledning|sv|non|sandr}}, av {{härledning|sv|gem-ugm|*sanda(z)}}.<ref>{{källa-wikt|en}}</ref> Besläktat med isländska ''[[sandur#Isländska|sandur]]'', norska ''[[#Norska|sand]]'' fornengelska ''[[#Fornengelska|sand]]'' (engelska ''[[#Engelska|sand]]''), fornhögtyska ''[[sant#Fornhögtyska|sant]]'' (tyska ''[[Sand#Tyska|Sand]]''). Ytterst av urindoeuropeiska ''[[*sam]](a)dho-'', motsvarande grekiska [[ἄμαθος]], ''amathos'', "sand"; troligen en uttalsförenkling av ''[[*bhsam]](a)dho-'', av roten ''[[*bhes-]]'', med rotbetydelsen "att [[krossa]]", "att gnugga". Härigenom besläktat med latin ''[[sabulum]]'', grekiska [[ψάμμος]], ''psammos'' (varav ''[[psammit]]''), båda "sand", och sanskrit ''bhas'', "sönderkrossa".}}
+:{{sammansättningar|[[fogsand]], [[kabelsand]], [[kattsand]], [[kvartssand]], [[kvicksand]], [[sanddyna]], [[sandjord]], [[sandkaka]], [[sandkorn]], [[sandkrypare]], [[sandlåda]], [[sandmask]], [[sandmaskros]], [[sandslott]], [[sandsnäppa]], [[sandsten]], [[sandstrand]], [[sandtäkt]], [[sandtärna]], [[sandöken]], [[sättsand]]}}
+:{{fraser|[[sticka huvudet i sanden]]}}
+:{{seäven|[[grus]], [[singel]]}}
+:{{anagram|[[dans]], [[Dans]]}}
+
+====Översättningar====
+{{ö-topp|små korn sten}}
+*acehnesiska: {{ö|ace|anoë}}
+*amhariska: {{ö|am|አሸዋ}}
+*azerbajdzjanska: {{ö+|az|qum}}
+*bokmål: {{ö+|no|sand}}
+*engelska: {{ö+|en|sand}}
+*finska: {{ö+|fi|hiekka}}
+*franska: {{ö+|fr|sable|m}}
+*frisiska: {{ö+|fy|sân|n}}
+*isländska: {{ö+|is|sandur}}
+*japanska: {{ö+|ja|砂|tr=suna}}
+*katalanska: {{ö+|ca|sorra}}
+*malajiska: {{ö+|ms|pasir}}
+*nederländska: {{ö+|nl|zand|n}}
+*polska: {{ö+|pl|piasek|m}}
+*ryska: {{ö+|ru|песок|m|tr=pesók}}
+*somaliska: {{ö+|so|ciid}}
+*spanska: {{ö+|es|arena|f}}
+*tigrinska: {{ö+|ti|ሑጻ}}
+*turkiska: {{ö+|tr|kum}}
+*tyska: {{ö+|de|Sand|m}}
+*ukrainska: {{ö+|uk|пісо́к|m}}
+{{ö-botten}}
+
+==Bokmål==
+===Substantiv===
+{{subst|no}}
+'''sand''' {{m}}
+#[[sand#Svenska|sand]]
+#:{{etymologi|Av {{härledning|no|non|sandr}}, av urgermanska ''[[*samdaz]]'', av urindoeuropeiska''*sámh₂dʰos''.}}
+#:{{homofoner|sann|språk=no}}
+#:{{sammansättningar|[[sandkasse]]}}
+
+==Danska==
+===Substantiv===
+{{da-subst-t-oräkn|sand|sandet}}
+'''sand'''
+#[[sand#Svenska|sand]]
+#:{{etymologi|Av {{härledning|da|non|sandr}}, av urgermanska ''[[*samdaz]]'', av urindoeuropeiska''*sámh₂dʰos''.}}
+#:{{sammansättningar|[[sandbanke]], [[sandflugt]], [[sandkasse]], [[sandpapir]], [[sandstrand]]}}
+
+===Adjektiv===
+{{adj|da}}
+'''sand'''
+#[[sann]]
+#:{{synonymer|[[rigtig]]}}
+#:{{antonymer|[[falsk]]}}
+#:{{etymologi|Av {{härledning|da|non|sannr, saðr}}, av urgermanska ''[[*sanþaz]]'', av urindoeuropeiska ''[[*h₁sónts]]'' ("varande, existerande"), presens particip av [[*h₁es-]] ("att vara").}}
+
+==Engelska==
+===Substantiv===
+{{subst|en}}
+'''sand'''
+*{{uttal|en|ipa=sænd}}
+#{{tagg||språk=en}} [[sand#Svenska|sand]]
+
+==Fornsaxiska==
+===Substantiv===
+{{subst|osx}}
+'''sand'''
+#[[strand]]
+
+==Färöiska==
+===Substantiv===
+'''sand'''
+#{{böjning|fo|subst|sandur}}
+
+==Isländska==
+===Substantiv===
+'''sand'''
+#{{böjning|is|subst|sandur}}

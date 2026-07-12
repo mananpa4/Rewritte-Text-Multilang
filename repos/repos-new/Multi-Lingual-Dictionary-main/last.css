@@ -1,0 +1,19 @@
+body {
+    
+
+    text-align: center;
+    
+}
+
+
+
+
+.main-heading {
+    color: rgb(0, 0, 0);
+    font-family: "Roboto";
+    font-size: 70px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: auto;
+    margin-top: 250px;
+}

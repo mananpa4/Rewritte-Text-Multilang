@@ -1,0 +1,59 @@
+[
+  {"word": "aĉeti", "lemma": "aĉeti", "pos": "VERB", "language": "eo",
+   "synonyms": [
+     {"text": "akiri", "formality": "formal", "frequency": 0.6, "contexts": ["marketplace", "professional"]},
+     {"text": "mendi", "formality": "neutral", "frequency": 0.58, "contexts": ["marketplace"]}
+   ], "antonyms": ["vendi"]},
+  {"word": "bona", "lemma": "bona", "pos": "ADJ", "language": "eo",
+   "synonyms": [
+     {"text": "bonega", "formality": "neutral", "frequency": 0.62, "contexts": ["marketplace", "seo"]},
+     {"text": "eminenta", "formality": "formal", "frequency": 0.5, "contexts": ["professional"]}
+   ], "antonyms": ["malbona"]},
+  {"word": "malmultekosta", "lemma": "malmultekosta", "pos": "ADJ", "language": "eo",
+   "synonyms": [
+     {"text": "ekonomia", "formality": "neutral", "frequency": 0.56, "contexts": ["marketplace", "seo"]}
+   ], "antonyms": ["multekosta"]},
+  {"word": "helpo", "lemma": "helpo", "pos": "NOUN", "language": "eo",
+   "synonyms": [
+     {"text": "subteno", "formality": "formal", "frequency": 0.62, "contexts": ["professional", "technical"]},
+     {"text": "asisto", "formality": "formal", "frequency": 0.5, "contexts": ["professional"]}
+   ]},
+  {"word": "eraro", "lemma": "eraro", "pos": "NOUN", "language": "eo",
+   "synonyms": [
+     {"text": "misaĵo", "formality": "neutral", "frequency": 0.5, "contexts": ["technical"]},
+     {"text": "difekto", "formality": "formal", "frequency": 0.5, "contexts": ["technical", "professional"]}
+   ]},
+  {"word": "rapida", "lemma": "rapida", "pos": "ADJ", "language": "eo",
+   "synonyms": [
+     {"text": "kvika", "formality": "neutral", "frequency": 0.52, "contexts": ["marketplace"]},
+     {"text": "fulmrapida", "formality": "neutral", "frequency": 0.46, "contexts": ["marketplace"]}
+   ], "antonyms": ["malrapida"]},
+  {"word": "granda", "lemma": "granda", "pos": "ADJ", "language": "eo",
+   "synonyms": [
+     {"text": "ampleksa", "formality": "neutral", "frequency": 0.54, "contexts": ["professional"]},
+     {"text": "vasta", "formality": "neutral", "frequency": 0.56, "contexts": ["professional"]}
+   ], "antonyms": ["malgranda"]},
+  {"word": "facila", "lemma": "facila", "pos": "ADJ", "language": "eo",
+   "synonyms": [
+     {"text": "simpla", "formality": "neutral", "frequency": 0.66, "contexts": ["marketplace", "technical"]}
+   ], "antonyms": ["malfacila"]},
+  {"word": "grava", "lemma": "grava", "pos": "ADJ", "language": "eo",
+   "synonyms": [
+     {"text": "esenca", "formality": "formal", "frequency": 0.56, "contexts": ["professional"]},
+     {"text": "ĉefa", "formality": "neutral", "frequency": 0.58, "contexts": ["professional"]}
+   ]},
+  {"word": "bela", "lemma": "bela", "pos": "ADJ", "language": "eo",
+   "synonyms": [
+     {"text": "ĉarma", "formality": "neutral", "frequency": 0.54, "contexts": ["marketplace"]},
+     {"text": "belega", "formality": "neutral", "frequency": 0.5, "contexts": ["marketplace", "seo"]}
+   ]},
+  {"word": "plibonigi", "lemma": "plibonigi", "pos": "VERB", "language": "eo",
+   "synonyms": [
+     {"text": "perfektigi", "formality": "formal", "frequency": 0.48, "contexts": ["professional"]}
+   ]},
+  {"word": "problemo", "lemma": "problemo", "pos": "NOUN", "language": "eo",
+   "synonyms": [
+     {"text": "malfacilaĵo", "formality": "neutral", "frequency": 0.48, "contexts": ["professional"]},
+     {"text": "komplikaĵo", "formality": "formal", "frequency": 0.46, "contexts": ["professional", "technical"]}
+   ]}
+]

@@ -1,0 +1,85 @@
+={{-pt-}}=
+=={{Contração|pt}}==
+{{flex.pt|ms=to|mp=tos|fs=ta|fp=tas}}
+{{átono|to}}, {{gramática|m}}
+# {{escopo|pt|Antigo}} [[contração]] do [[pronome pessoal]] [[te]] com o pronome pessoal ou [[demonstrativo]] [[o]]
+
+={{-da-}}=
+==Numeral==
+'''to''', {{gramática|card|id=da}}
+# [[dois]]
+
+=={{etimologia|da}}==
+{{etimo2|non|tvá|da}}
+
+[[Categoria:Numeral (Dinamarquês)]]
+
+
+={{-en-}}=
+==Partícula==
+'''to''', ''verbal''
+# marca o [[verbo]] seguinte como [[infinitivo]]
+#* ''I want '''to''' sleep.'' <small>(Eu quero dormir)</small>
+
+==Preposição==
+'''to'''
+# [[para]]
+#* ''I'm going '''to''' your house.'' <small>(Eu estou indo para sua casa)</small>
+
+[[Categoria:Partícula verbal (Inglês)]]
+[[Categoria:Preposição (Inglês)]]
+
+
+={{-ja-}}=
+=={{Transliteração|ja}}==
+'''to'''
+# transliteração de '''[[と]]''' e '''[[ト]]'''
+
+----
+
+={{-nb-}}=
+==Numeral==
+'''to''', {{gramática|card|id=nb}}
+# [[dois]]
+
+=={{etimologia|nb}}==
+{{etimo2|non|tvá|nb}}
+
+[[Categoria:Numeral (Norueguês Bokmål)]]
+
+
+={{-pl-}}=
+==Conjunção==
+'''to'''
+# [[então]]
+#* {{tradex|pl|Jeżeli x{{=}}y i y{{=}}z, '''to''' x{{=}}z.|Se x{{=}}y e y{{=}}z, então x{{=}}z.}}
+
+==Partícula==
+'''to'''
+# expletivo
+#* ''Od kiedy '''to''' mieszkacie tutaj?''
+#* ''Kogo '''to''' ja widzę!''
+# {{escopo2|partícula que conecta uma palavra ou expressão com a definição, explicação ou esclarecimento desta palavra}} [[é#Forma verbal|é]]
+#* {{tradex|pl|Arytmetyka '''to''' dział matematyki, który zajmuje się liczbami i operacjami na nich.|A aritmética é o ramo da matemática que estuda os números e as operações com eles.}}
+
+==Pronome adjetivo==
+'''to''', {{gramática|dem|n|id=pl}}
+# nominativo neutro singular de {{link idioma|ten|pl}}
+
+{{aviso.flexão|ten}}
+
+==Pronome substantivo==
+'''to''', {{gramática|dem|n|id=pl}}
+# {{escopo2|coisa ou assunto de que se fala}} [[isto]], [[isso]], [[aquilo]]
+#* {{tradex|pl|Co '''to''' jest?|O que é isso?}}
+#* {{tradex|pl|'''To''' jest książka.|Isto é um livro.}}
+#* {{tradex|pl|Nie wiem, jak '''to''' mogło się zdarzyć. '''To''' nigdy się nie powtórzy.|Não sei como aquilo pôde acontecer. Aquilo nunca irá se repetir.}}
+#* {{tradex|pl|'''Tego''' można było uniknąć.|Isso poderia ter sido evitado.}}
+
+===Declinação===
+{{decl.pl.subst.sing|n=to|g=tego|d=temu|a=to|i=tym|l=tym|v=–}}
+
+[[Categoria:Conjunção (Polonês)]]
+[[Categoria:Partícula (Polonês)]]
+[[Categoria:Pronome (Polonês)]]
+[[Categoria:Monossílabo (Polonês)]]

@@ -1,0 +1,78 @@
+@use "../abstracts" as *;
+
+.input-with-icon {
+  position: relative;
+  margin-bottom: rem(28);
+
+  input {
+    padding: rem(16);
+    padding-right: rem(40); // 40px for the icon
+    appearance: none;
+    color: var(--foreground);
+    border: 1px solid transparent;
+    border-radius: rem(16);
+    font-size: rem(16);
+    width: 100%;
+    transition: all 0.3s ease;
+    background-color: var(--secondary-background);
+    font-family: inherit;
+    font-weight: 700;
+
+    &:focus,
+    &:focus-visible {
+      border-color: var(--contrast);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: rgba(var(--foreground), 0.25);
+      font-size: rem(16);
+    }
+  }
+
+  .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-right: rem(24);
+    align-items: center;
+    display: flex;
+  }
+
+  .input__error {
+    display: none;
+    color: var(--error);
+    position: absolute;
+    margin-top: rem(15);
+  }
+
+  &.input-with-icon--error {
+    input {
+      border-color: var(--error);
+
+      &:focus {
+        border-color: var(--error);
+      }
+    }
+
+    .input__error {
+      display: block;
+    }
+  }
+}
+
+@include breakpoint("tablet") {
+  .input-with-icon {
+    margin-bottom: rem(40);
+
+    input {
+      padding: rem(20);
+      font-size: rem(20);
+
+      &::placeholder {
+        font-size: rem(20);
+      }
+    }
+  }
+}

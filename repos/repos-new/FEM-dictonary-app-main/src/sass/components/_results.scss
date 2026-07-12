@@ -1,0 +1,172 @@
+@use "../abstracts" as *;
+
+.results {
+  &__header {
+    @include horizontal-align(rem(34), rem(0));
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: rem(32);
+    margin-bottom: rem(10);
+  }
+
+  &__pronuntiation {
+    font-size: rem(18);
+    line-height: rem(24);
+    color: var(--contrast);
+  }
+
+  &__details {
+    margin-bottom: rem(30);
+  }
+
+  &__header-2 {
+    @include horizontal-align(rem(30), rem(20));
+  }
+
+  &__subtitle-1 {
+    font-style: italic;
+    font-weight: 700;
+    font-size: rem(18);
+  }
+
+  &__subtitle-2 {
+    font-size: rem(16);
+    color: var(--secondary-text);
+    font-weight: 400;
+    margin-bottom: rem(25);
+  }
+
+  &__list {
+    margin-bottom: rem(24);
+    font-size: rem(15);
+    line-height: rem(24);
+    display: flex;
+    flex-direction: column;
+    gap: rem(15);
+    padding-left: rem(15);
+
+    li {
+      padding-left: rem(10);
+    }
+  }
+
+  &__alternatives {
+    @include horizontal-align(rem(30), rem(25));
+    align-items: flex-start;
+
+    * {
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: rem(16);
+      color: var(--contrast);
+      font-weight: 700;
+    }
+  }
+
+  &__source {
+    font-size: rem(14);
+    display: flex;
+    flex-direction: column;
+    gap: rem(25);
+
+    p {
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem(10) rem(20);
+    }
+
+    strong {
+      font-weight: 400;
+      color: var(--secondary-text);
+      text-decoration: underline;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: rem(10);
+    }
+  }
+
+  &__not-found {
+    text-align: center;
+    margin-top: rem(130);
+
+    .not-found__icon {
+      display: inline-block;
+      width: rem(64);
+      aspect-ratio: 1/1;
+      margin-bottom: rem(45);
+    }
+
+    .not-found__title {
+      font-size: rem(20);
+      margin-bottom: rem(25);
+    }
+
+    .not-found__text {
+      color: var(--secondary-text);
+      font-size: rem(18);
+      line-height: rem(24);
+    }
+  }
+}
+
+@include breakpoint("tablet") {
+  .results {
+    &__header {
+      margin-bottom: rem(40);
+    }
+
+    &__title {
+      font-size: rem(64);
+    }
+
+    &__pronuntiation {
+      font-size: rem(24);
+      line-height: auto;
+    }
+
+    &__details {
+      margin-bottom: rem(40);
+    }
+
+    &__header-2 {
+      @include horizontal-align(rem(40), rem(30));
+    }
+
+    &__subtitle-1 {
+      font-size: rem(24);
+    }
+
+    &__subtitle-2 {
+      font-size: rem(20);
+    }
+
+    &__list {
+      margin-bottom: rem(40);
+      font-size: rem(18);
+      padding-left: rem(45);
+
+      li {
+        padding-left: rem(15);
+      }
+    }
+
+    &__alternatives {
+      @include horizontal-align(rem(40), rem(40));
+
+      p {
+        font-size: rem(20);
+      }
+    }
+
+    &__source {
+      gap: rem(20);
+    }
+  }
+}

@@ -1,0 +1,371 @@
+"""
+Modifiers used to uniformize, and clean-up, POS (Part Of Speech).
+"""
+
+import re
+
+# Clean-up POS using regexp(s), they are executed in order
+PATTERNS = {
+    "da": [
+        # `{{verbum}}` → `verbum`
+        re.compile(r"\{\{([^|}]+).*").sub,
+        # `verbum 1` → `verbum`
+        re.compile(r"(.+)\s+\d+.*").sub,
+    ],
+    "de": [
+        # `abkürzung/eigenname` → `abkürzung`
+        re.compile(r"([^/]+)/.+").sub,
+    ],
+    "el": [
+        # `{{έκφραση|el}}` → `έκφραση`
+        re.compile(r"\{\{([^|}]+).*").sub,
+    ],
+    "en": [
+        # `proper noun 1` → `proper noun`
+        re.compile(r"(proper noun|suffix|symbol).+").sub,
+        # `symbols` → `symbol`
+        re.compile("(.+)s$").sub,
+    ],
+    "eo": [
+        # `{{vortospeco|adverbo, vortgrupo|eo}}` → `adverbo, vortgrupo`
+        re.compile(r"\{\{vortospeco\|([^|]+).*").sub,
+        # `{{signifoj}}` → `signifoj`
+        re.compile(r"\{\{([^}]+).*").sub,
+    ],
+    "es": {
+        # `{{verbo transitivo|es|terciopersonal}}` → `verbo transitivo`
+        re.compile(r"\{\{([^|}]+).*").sub,
+        # `verbo transitivo` → `verbo`
+        re.compile(r"([^\s]+)\s+.*").sub,
+    },
+    "fr": [
+        # `{{s|verbe|fr}}` → `verbe`
+        re.compile(r"\{\{s\|([^|}]+).*").sub,
+        # `adjectif démonstratif` → `adjectif`
+        re.compile(r"(adjectif|adverbe|article|déterminant|pronom)\s+.*").sub,
+    ],
+    "it": [
+        # `{{nome}}` → `nome`
+        re.compile(r"\{\{([^}]+).*").sub,
+    ],
+    "ja": [
+        # `{{noun|ja}}` → `noun`
+        re.compile(r"((?:noun|prov|syn|Syn)).+").sub,
+        # `{{verb}}（中国地方）` → `verb`
+        re.compile(r"\{\{([^}]+).*").sub,
+        # `動詞 見てる・縮約形` → `動詞`
+        re.compile(r"(動詞).*").sub,
+        # `副詞1` → `副詞`
+        # `助詞（[[漢文]]）` → `助詞`
+        # `名詞: 将棋の駒 • Abbr` → `名詞`
+        # `名詞：ダブリュー` → `名詞：ダブリュー`
+        # `名詞・サ変動詞` → `名詞・サ変動詞`
+        # `名詞･田の実` → `名詞`
+        re.compile(r"([^\d（:：・･]+).*").sub,
+    ],
+    "lt": [
+        # `daiktavardis #1` → `daiktavardis`
+        re.compile(r"(.+) #\d").sub,
+    ],
+    "nl": [
+        # `{{noun|nld}}` → `noun`
+        re.compile(r"\{\{([^|}]+).*").sub,
+        # `interj2` → `interj`
+        re.compile(r"(.+)+\d").sub,
+        # `pronom-pos` → `pronom`
+        re.compile(r"(pronom)-\w+").sub,
+    ],
+    "no": [
+        # `verb 1` → `verb`
+        re.compile(r"([^\s,]+),?\s+.*").sub,
+    ],
+    "pt": [
+        # `{{forma de locução substantiva 1|pt}}` → `forma de locução substantiva 1`
+        re.compile(r"\{\{([^|}]+).*").sub,
+        # `forma de locução substantiva 1` → `locução substantiva 1`
+        re.compile(r"forma de (.+)").sub,
+        # `substantivo³` → `substantivo`
+        # `substantivo2` → `substantivo`
+        # `substantivo 2` → `substantivo`
+        # `substantivo <small>''Feminino''</small>` → `substantivo`
+        re.compile(r"([^\d¹²³<,]+),?\s*.*").sub,
+        # `pronome pessoal` → `pronome`
+        re.compile(r"(adjetivo|caractere|expressão|expressões|frase|locução|numeral|pronome|verbo)\s+.*").sub,
+        # `substantivos` → `substantivo`
+        re.compile("(.+)s$").sub,
+        # `símbolos derivado` → `símbolo`
+        re.compile("(.+)s derivado").sub,
+        # sinónimo/variaçõe
+        # sinônimo imperfeito'
+        re.compile("(sinónimo).+").sub,
+        re.compile("(sinônimo).+").sub,
+        # topónimos/topônimo
+        re.compile("(topónimos).+").sub,
+    ],
+    "ro": [
+        # `{{nume taxonomic|conv}}` → `nume taxonomic`
+        re.compile(r"\{\{([^|}]+).*").sub,
+        # `verb auxiliar` → `verb`
+        re.compile(r"(locuțiune|numeral|verb)\s+.*").sub,
+    ],
+    "tr": [
+        # `ad 2` → `ad`
+        re.compile(r"(.+) +\d").sub,
+    ],
+    "zh": [
+        # `發音1` → `發音`
+        # `發音 1` → `發音`
+        # `發音①` → `發音`
+        re.compile(r"([^\s\d①②③]+).*").sub,
+    ],
+}
+
+# Uniformize POS
+# Note: "top" must be defined for every locale: it is the default value when definitions are not under a subsection right below the top section;
+#       and by default we move those definitions to the "noun" POS.
+MERGE = {
+    "ca": {
+        "top": "nom",
+    },
+    "da": {
+        "abbr": "forkortelsf",
+        "abr": "forkortelsf",
+        "ad": "adjektiv",
+        "adj": "adjektiv",
+        "adjektive": "adjektiv",
+        "adv": "adverbium",
+        "art": "artikel",
+        "car-num": "mængdetal",
+        "conj": "konjunktion",
+        "dem-pronom": "pronomen",
+        "end": "endelse",
+        "expr": "udtryk",
+        "fast udtryk": "udtryk",
+        "frase": "sætning",
+        "interj": "interjektion",
+        "lyd": "lydord",
+        "noun": "substantiv",
+        "num": "talord",
+        "part": "mærke",
+        "pers-pronom": "pronomen",
+        "phr": "sætning",
+        "possessivt pronomen": "pronomen",
+        "possessivt pronomen (ejestedord)": "pronomen",
+        "pp": "pronomen",
+        "pref": "prefix",
+        "prep": "præposition",
+        "pron": "pronomen",
+        "prop": "proprium",
+        "prov": "ordsprog",
+        "seq-num": "ordenstal",
+        "substantivisk ordforbindelse": "substantiv",
+        "symb": "symbol",
+        "syn": "synonymer",
+        "top": "substantiv",
+        "ubest-pronon": "pronomen",
+        "verb": "verbum",
+    },
+    "de": {
+        "antwortpartikel": "partikel",
+        "demonstrativpronomen": "pronomen",
+        "erweiterter infinitiv": "verb",
+        "fokuspartikel": "partikel",
+        "gradpartikel": "partikel",
+        "indefinitpronomen": "pronomen",
+        "interrogativadverb": "adverb",
+        "interrogativpronomen": "pronomen",
+        "konjunktionaladverb": "adverb",
+        "lokaladverb": "adverb",
+        "modaladverb": "adverb",
+        "modalpartikel": "partikel",
+        "negationspartikel": "partikel",
+        "partizip i": "partizip 1",
+        "partizip ii": "partizip 2",
+        "personalpronomen": "pronomen",
+        "possessivpronomen": "pronomen",
+        "präfixoid": "präfix",
+        "pronominaladverb": "pronomen",
+        "reflexivpronomen": "pronomen",
+        "relativpronomen": "pronomen",
+        "reziprokpronomen": "pronomen",
+        "temporaladverb": "adverb",
+        "suffixoid": "suffix",
+    },
+    "el": {
+        "μορφή επιθέτου": "επιθέτου",
+        "μορφή ουσιαστικού": "ουσιαστικό",
+        "μορφή ρήματος": "ρήμα",
+        "top": "ουσιαστικό",
+    },
+    "en": {
+        "adverbial phrase": "adverb",
+        "prepositional phrase": "preposition",
+        "top": "noun",
+        "verb form": "verb",
+        "verb phrase": "verb",
+    },
+    "eo": {
+        "adverbo, vortgrupo": "adverbo",
+        "difinoj": "difino",
+        "liternomo": "litero",
+        "literoparo": "litero",
+        "mallongigoj": "mallongigo",
+        "signifoj": "signifo",
+        "substantiva formo": "substantivo",
+        "substantivo, vortgrupo": "substantivo",
+        "top": "substantivo",
+        "verba formo": "verbo",
+        "verbo, vortgrupo": "verbo",
+    },
+    "fr": {
+        "abréviations": "abréviation",
+        "adj": "adjectif",
+        "conjonction de coordination": "conjonction",
+        "locution-phrase": "phrase",
+        "locution phrase": "phrase",
+        "nom commun": "nom",
+        "nom de famille": "nom",
+        "top": "nom",
+    },
+    "it": {
+        "acron": "abbreviazione",
+        "agg form": "aggettivo",
+        "agg": "aggettivo",
+        "art": "articolo",
+        "avv": "avverbio",
+        "cong": "congiunzione",
+        "inter": "interiezione",
+        "loc nom": "nome",
+        "pref": "prefisso",
+        "prep": "preposizione",
+        "pron poss": "pronome possessivo",
+        "sin": "sinonimi",
+        "sost form": "sostantivo",
+        "sost": "sostantivo",
+        "suff": "suffisso",
+        "top": "sostantivo",
+        "verb form": "verb",
+    },
+    "ja": {
+        "adjc": "形容動詞",
+        "adjective": "形容動詞",
+        "adjectivenoun": "形容動詞",
+        "colloc": "連語",
+        "collocation": "連語",
+        "conjug": "活用",
+        "conjugation": "活用",
+        "idiom": "成句",
+        "noun": "名詞",
+        "prov": "ことわざ",
+        "proverb": "ことわざ",
+        "top": "名詞",  # noun
+        "verb": "動詞",
+        "syn": "類義語",
+        "活用形": "活用",  # conjugation form
+        "慣用句": "成句",  # idiom
+        "名詞形": "名詞",  # noun form
+    },
+    "lt": {
+        "top": "daiktavardis",
+        "simboliai": "simbolis",  # symbol
+    },
+    "nl": {
+        "abbr": "afkorting",
+        "adjc": "bijvoeglijk naamwoord",
+        "decl": "verbuiging",
+        "expr": "uitdrukkingen en gezegden",
+        "interj": "tussenwerpsel",
+        "name": "eigennaam",
+        "note": "opmerkingen",
+        "noun": "zelfstandig naamwoord",
+        "pref": "voorvoegsel",
+        "prep": "voorzetsel",
+        "pronom": "voornaamwoord",
+        "prov": "spreekwoorden",
+        "syn": "synoniemen",
+        "top": "zelfstandig naamwoord",
+        "verb": "werkwoord",
+    },
+    "no": {
+        "forkortelser": "forkortelse",
+        "top": "substantiv",
+    },
+    "pt": {
+        "abreviação": "abreviatura",
+        "acrônimo": "acrónimo",
+        "adjetivo/substantivo": "adjetivo",
+        "conjunção": "conjugação",
+        "expressõe": "expressão",
+        "forma verbal": "verbo",
+        "locução substantiva": "substantivo",
+        "pepb": "acrónimo",
+        "prefixos relacionado": "prefixo",
+        "sinônimo": "sinónimo",
+        "substantivo comum": "substantivo",
+        "top": "substantivo",
+        "topónimos": "topónimo",
+        "verbal": "verbo",
+    },
+    "ro": {
+        "abr": "abreviere",
+        "expr": "expresie",
+        "sin": "sinonime",
+        "top": "substantiv",
+    },
+    "ru": {
+        "семантические свойства": "свойства",  # semantic properties
+        "морфологические и синтаксические свойства": "свойства",  # morphological and syntactic properties
+        "как самостоятельный глагол": "глагол",  # verb
+        "в значении вспомогательного глагола или связки": "глагол",  # auxiliary verb
+    },
+    "sv": {
+        "förkortningar": "förkortning",
+        "prepositionsfras": "preposition",
+        "top": "substantiv",
+        "verbpartikel": "verb",
+    },
+    "tr": {
+        "eylem oranlı": "eylem",
+        "top": "ad",
+    },
+    "zh": {
+        "縮寫": "缩写",  # abbreviation
+        "首字母縮略詞": "首字母缩略词",  # acronym
+        "形容詞": "形容词",  # adjective
+        "副词": "副詞",  # adverb
+        "綴詞": "缀词",  # affix
+        "冠詞": "冠词",  # article
+        "漢字": "汉字",  # Chinese character
+        "連詞": "连词",  # conjunction
+        "限定詞": "限定词",  # determiners
+        "附加符號": "附加符号",  # diacritical marks
+        "词源": "名詞",  # etymology → noun
+        "詞源": "名詞",  # etymology → noun
+        "熟語": "熟语",  # idiom
+        "俗語": "熟语",  # idiom
+        "俗语": "熟语",  # idiom
+        "中綴": "中缀",  # infixe
+        "間綴": "间缀",  # interfixe
+        "感嘆詞": "感叹词",  # interjection
+        "感歎詞": "感叹词",  # interjection
+        "詞素": "词素",  # morpheme
+        "名词": "名詞",  # noun
+        "名詞詞": "名詞",  # noun words → noun
+        "數字": "数字",  # number
+        "數字符號": "数字符号",  # numeral symbol
+        "數詞": "数词",  # numeral
+        "助詞": "助词",  # particle
+        "短語": "短语",  # phrase
+        "前綴": "前缀",  # prefixe
+        "介詞": "介词",  # preposition
+        "代詞": "代词",  # pronoun
+        "专有名词": "專有名詞",  # proper noun
+        "諺語": "谚语",  # proverb
+        "標點符號": "标点符号",  # punctuation mark
+        "後綴": "后缀",  # suffixe
+        "音節": "音节",  # syllable
+        "符號": "符号",  # symbol
+        "同義詞": "同义词",  # synonyms
+        "动词": "動詞",  # verb
+    },
+}

@@ -1,0 +1,11 @@
+# This should be kept up to date with biome.jsonc.
+**/test/data/*
+*.css
+*.html
+*.ohm-bundle.*
+dist
+pnpm-lock.yaml
+testdata
+third_party
+visualizer
+packages/compiler/runtime/**

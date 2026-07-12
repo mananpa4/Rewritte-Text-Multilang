@@ -1,0 +1,76 @@
+{{desambiguación}}
+== {{lengua|es}} ==
+{{pron-graf|fone=fuˈtu.ɾo}}
+
+=== Etimología ===
+{{etimología|la|futurus|diacrítico=futūrus}}, participio activo futuro irregular de {{l+|la|esse|glosa=ser}}, y este el protoindoeuropeo {{l+|ine-pro|*bhū-}}, {{l+|ine-pro|*bʰew-}} ("[[existir]]", "llegar a ser").
+
+=== {{adjetivo|es}} ===
+{{es.adj}}
+;1: Que está aún por ocurrir o hacerse efectivo.
+{{ejemplo|Las provincias [[gobernadas]] por el co-césar y '''futuro''' corregente Constancio|c=pagina|t=Constancio II|u=http://www.tesorillo.com/bajo_imperio/constancio2/constancio2.htm}}
+
+=== {{sustantivo masculino|es}} ===
+{{es.sust}}
+;2: Tiempo que aún no ha llegado.
+;3 {{csem|lingüística}}: Tiempo verbal que expresa una acción que aún no ha sido realizada.
+;4: Novio o prometido de una mujer a la que va a desposar.
+{{relacionado|tit=Femenino|futura}}.
+
+=== Locuciones ===
+{{trad-arriba|Locuciones con «futuro»}}
+*[[futuro compuesto]]
+*[[futuro contingente]]
+*[[futuro imperfecto]]
+*[[futuro perfecto]]
+*[[futuro simple]]
+{{trad-abajo}}
+
+=== Información adicional ===
+{{derivad|futurismo|futurista|futurología|futuróloga|futurólogo}}.
+
+=== Véase también ===
+{{w}}
+
+=== Traducciones ===
+{{trad-arriba}}
+{{t|de|a1=1|t1=zukünftig|a2=2|t2=Zukunft|g2=m|a3=3|t3=Futurum|g3=n|a4=4|t4=Bräutigam|g4=m|a5=4|t5=Braut|g5=f}}
+{{t|az|a1=1-2|t1=gələcək}}
+{{t|bg|a1=1|t1=бъдещ|a2=2|t2=бъдеще|i3=s|t3=бъднина|a4=3|t4=бъдеще време|g4=n|a5=4|t5=годеник}}
+{{t|ca|a1=1-4|t1=futur|g1=m}}
+{{t|ko|a1=2|t1=미래|t2=未來}}
+{{t|sh|a1=2|t1=budućnost|g1=f}}
+{{t|fr|a1=1-4|t1=futur|g1=m|a2=1|t2=avenir|a3=3|t3=futur simple|g3=m|a4=4|t4=fiancé}}
+{{t|en|a1=1-3|t1=future}}
+{{t|it|a1=1-3|t1=futuro|g1=m}}
+{{t|ja|i1=s|t1=未来|t2=みらい|t3=mirai|t4=未来時制|t5=みらいじせい|t6=miraishisei}}
+{{t|nl|a1=1|t1=toekomstig|a2=2|t2=toekomst|a3=3|t3=toekomstige tijd}}
+{{trad-abajo}}
+
+== {{lengua|it}} ==
+{{pron-graf|leng=it|}}
+
+=== Etimología ===
+{{etimología|leng=it|la|futurus}}.<ref>{{Treccani}}</ref><ref>{{Pianigiani}}</ref>
+
+=== {{adjetivo|it}} ===
+{{it.adj}}
+
+;1: {{plm|futuro}}.
+{{antónimo|leng=it|passato|scorso}}
+{{ejemplo|[...] Quale sarà il ruolo '''futuro''' del Parlamento europeo? Che ne sarà del ruolo e della struttura dei diversi Consigli? [...]|c=libro|u=https://it.wikisource.org/wiki/Dichiarazione_di_Laeken_sul_futuro_dell%27Unione_Europea|trad=[...] ¿Cuál será el rol '''futuro''' del Parlamento europeo? ¿Qué será del rol de la estructura de los diversos Consejos? [...]|t=Dichiarazione di Laeken sul futuro dell'Unione Europea|a=Unione Europea|f=2001}}
+
+=== {{sustantivo masculino|it}} ===
+;2: {{plm|futuro}}, {{l|es|porvenir}}.
+{{sinónimo|leng=it|avvenire}}
+{{antónimo|leng=it|passato}}
+{{ejemplo|Quel vecchio che non ha presente né '''futuro''', non è privo perciò di vita|c=libro|u=https://it.wikisource.org/wiki/Pensieri_di_varia_filosofia_e_di_bella_letteratura/277|a1=Giacomo Leopardi|trad=Aquel viejo que no tiene presente ni '''futuro''', no por ello está privado de vida|t=Pensieri di varia filosofia e di bella letteratura|f=1898}}
+
+;3 {{csem|lingüística|leng=it}}: {{plm|futuro}}.
+{{antónimo|leng=it|passato|preterito}}
+
+=== Véase también ===
+{{w|leng=it}}
+
+== Referencias y notas ==
+<references />

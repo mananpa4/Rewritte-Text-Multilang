@@ -1,0 +1,63 @@
+name: Update Themes and Grammars
+
+permissions:
+  contents: write
+  id-token: write
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Force update
+        required: false
+        default: 'false'
+
+jobs:
+  update-grammars:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: pnpm setup
+        uses: pnpm/action-setup@v5
+
+      - name: install
+        run: pnpm install
+
+      - run: pnpm run fetch
+        if: inputs.force != 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.FETCH_GITHUB_TOKEN }}
+        timeout-minutes: 2
+
+      - run: pnpm run fetch:force
+        if: inputs.force == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.FETCH_GITHUB_TOKEN }}
+        timeout-minutes: 2
+
+      - id: bump
+        name: Bump versions
+        run: pnpm run bump
+
+      - run: pnpm run test -u
+        continue-on-error: true
+
+      - uses: EndBug/add-and-commit@v10
+        if: ${{ steps.bump.outputs.CHANGED }}
+        with:
+          author_name: GitHub Actions
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: 'feat: update Themes and Grammars [ci skip]'
+
+      - run: pnpm -r publish --no-git-checks

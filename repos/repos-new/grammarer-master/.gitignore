@@ -1,0 +1,3 @@
+node_modules/*
+.idea
+frontend/gm-options.json

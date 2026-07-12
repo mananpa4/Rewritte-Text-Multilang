@@ -1,0 +1,73 @@
+{
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@11.1.3",
+  "description": "Collection of TextMate grammars and themes in JSON",
+  "scripts": {
+    "build": "pnpm -r build",
+    "stub": "pnpm -r stub",
+    "lint": "eslint . --cache",
+    "prepublishOnly": "nr build",
+    "bump": "tsx scripts/bump.ts",
+    "test": "vitest",
+    "fetch": "tsx scripts/fetch.ts && eslint . --cache --fix",
+    "fetch:force": "tsx scripts/fetch.ts --force && eslint . --cache --fix",
+    "typecheck": "vue-tsc --noEmit",
+    "play": "nr -C playground dev",
+    "play:build": "nr -C playground build",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "@antfu/ni": "catalog:",
+    "@antfu/utils": "catalog:",
+    "@iconify-json/svg-spinners": "catalog:",
+    "@shikijs/core": "catalog:",
+    "@shikijs/engine-javascript": "catalog:",
+    "@shikijs/engine-oniguruma": "catalog:",
+    "@types/adm-zip": "catalog:",
+    "@types/cson": "catalog:",
+    "@types/js-yaml": "catalog:",
+    "@types/node": "catalog:",
+    "@types/semver": "catalog:",
+    "adm-zip": "catalog:",
+    "bumpp": "catalog:",
+    "chalk": "catalog:",
+    "cson": "catalog:",
+    "dotenv": "catalog:",
+    "eslint": "catalog:",
+    "fast-glob": "catalog:",
+    "fast-plist": "catalog:",
+    "js-yaml": "catalog:",
+    "json-stable-stringify": "catalog:",
+    "jsonc-parser": "catalog:",
+    "lint-staged": "catalog:",
+    "octokit": "catalog:",
+    "ofetch": "catalog:",
+    "ohash": "catalog:",
+    "oniguruma-parser": "catalog:",
+    "oniguruma-to-es": "catalog:",
+    "p-limit": "catalog:",
+    "pnpm": "catalog:",
+    "rimraf": "catalog:",
+    "semver": "catalog:",
+    "simple-git": "catalog:",
+    "simple-git-hooks": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "unbuild": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:",
+    "vue-tsc": "catalog:",
+    "yaml": "catalog:"
+  },
+  "resolutions": {
+    "oniguruma-to-es": "catalog:"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

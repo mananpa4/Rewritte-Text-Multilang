@@ -1,0 +1,61 @@
+== {{lengua|es}} ==
+{{pron-graf}}
+
+=== Etimología 1 ===
+{{etimología|endo|hocicar}}.
+
+==== {{sustantivo masculino|es}} ====
+{{es.sust}}
+;1 {{csem|zootomía}}: Parte más o menos [[prolongar|prolongada]] de la [[cabeza]] de algunos [[animal]]es en que están la [[boca]] y las [[nariz|narices]].
+;2 {{csem|anatomía}}: {{plm}} de una persona cuando tiene muy [[abultado]]s los [[labio]]s.
+;3: {{plm|cara}}.
+{{uso|familiar}}.
+{{ejemplo|Félix tiene buen hocico.}}
+;4: {{plm|gesto}} que [[denotar|denota]] [[enojo]] o [[enfado]].
+;5: Forma despectiva para referirse a la boca de alguien.
+{{ámbito|Chile}}.
+{{uso|despectivo|malsonante}}
+{{ejemplo|Te voy a dar un [[combo]] en lhocico.}}
+{{ejemplo|Tení' el hocico [[hediondo]].}}
+{{ejemplo|Tengo el hocico p'a la cag'á.}}
+{{ejemplo|¿Querí que te de una patá en el hocico?}}
+;6: Boca de una persona, especialmente de la que dice malas palabras.
+{{uso|coloquial}}.
+{{ámbito|México}}.
+
+==== Locuciones ====
+{{trad-arriba|Locuciones con «hocico»}}
+* [[pimiento de hocico]]: Variedad del [[pimiento]], que se diferencia en ser más grueso que el de otras castas.
+* [[caer de hocicos]]: Dar con la cara, o cayendo en ella en otra parte.
+* [[de hocicos]]: De bruces, cabeza abajo.
+* echar, decir o restregar una cosa por los hocicos: Decirle a uno a la cara lo que le repugna oir.
+* [[meter el hocico en todo]]: Ser entrometido.
+* [[meter el hocico]] en algo: Entrometerse en algo.
+* [[quitar a uno el hocico]]: Ponerle de buen humor.
+{{trad-abajo}}
+
+==== Información adicional ====
+{{derivad|hocicón|hocicudo|hocico|hocicar}}
+
+==== Véase también ====
+{{Wikipedia}}
+* [[morro]]
+* [[malhablado]]
+
+==== Traducciones ====
+{{trad-arriba}}
+{{t|de|t1=Schnauze}}
+{{t|ca|t1=morro}}
+{{t|fr|t1=museau}}
+{{t|eo|t1=muzelo}}
+{{t|gl|t1=fociño}}
+{{t|cy|a1=1|t1=trwyn}}
+{{t|en|t1=snout}}
+{{t|nv|a1=1|t1=áchį́į́h}}
+{{t|nl|t1=snuit}}
+{{t|pt|t1=focinho}}
+{{t|sv|t1=nos}}
+{{trad-abajo}}
+
+== Referencias y notas ==
+<references />

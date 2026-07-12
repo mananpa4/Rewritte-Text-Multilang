@@ -50,8 +50,9 @@ class Mode(StrEnum):
 
 # Modos que el motor offline no implementa plenamente (necesitan un LLM para
 # dar buenos resultados). Se ejecutan igualmente pero emiten un warning.
+# 'summarized' ya funciona offline (resumen extractivo), por eso no está aquí.
 LLM_PREFERRED_MODES: frozenset[Mode] = frozenset(
-    {Mode.EXPANDED, Mode.SUMMARIZED, Mode.CREATIVE}
+    {Mode.EXPANDED, Mode.CREATIVE}
 )
 
 

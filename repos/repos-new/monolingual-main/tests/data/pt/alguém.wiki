@@ -1,0 +1,43 @@
+={{-pt-}}=
+==Pronome==
+{{flex.pt|0s=alguém|0p=alguéns}}
+{{oxítona|al|guém}}, {{gramática|s|ind}}
+# [[pessoa]] não [[identificada]]
+#* '''''Alguém''' levou o meu carro!''
+#* ''Toda vez que levei alguém lá foi uma decepção para os '''alguéns'''.'' (jornal O Globo de 12 de novembro de 2017 [https://web.archive.org/web/20230822015825/https://www.academia.org.br/artigos/conversacoes] [https://web.archive.org/web/20230822020336/https://oglobo.globo.com/ela/gastronomia/como-lidar-com-paris-22055807])
+
+==={{PEPB|Antónimo|Antônimo|inline=1}}===
+* De '''1''': [[ninguém]]
+
+===Tradução===
+{{tradini}}
+* {{trad|de|jemand}}
+* {{trad|kea|algem}}
+* {{trad|es|alguien}}
+* {{trad|fi|joku|kukaan}}
+* {{trad|fr|quelqu’un}}
+* {{trad|gl|alguén}}
+* {{trad|nl|iemand}}
+* {{trad|hu|valaki}}
+{{tradmeio}}
+* {{trad|en|someone}}
+* {{trad|is|einhver}}
+* {{trad|it|qualcuno}}
+* {{trad|mwl|alguien}}
+* {{trad|nb|noen}}
+* {{trad|pl|ktoś}}
+* {{trad|sv|någon}}
+{{tradfim}}
+
+=={{Etimologia|pt}}==
+{{etimo2|la|alĭquem|pt}}
+
+=={{Pronúncia|pt}}==
+===Brasil===
+====Paulistana e Caipira====
+* [[AFI]]: {{AFI|[aw.ˈgẽj]}}
+* [[X-SAMPA]]: /aw."ge~j/
+===Portugal===
+* AFI: {{AFI|/aɫ.ˈɡɐ̃j̃/}}
+
+[[Categoria:Pronome (Português)]]

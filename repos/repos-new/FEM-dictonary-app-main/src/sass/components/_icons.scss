@@ -1,0 +1,48 @@
+@use "../abstracts" as *;
+
+@mixin icon($height, $width, $mask-image, $background-color) {
+  height: $height;
+  width: $width;
+  mask: url($mask-image) no-repeat center / cover;
+  background: $background-color;
+  transition: all 0.3s ease-in-out;
+}
+
+.moon-icon {
+  display: inline-block;
+  @include icon(
+    rem(22),
+    rem(22),
+    "../images/icon-moon.svg",
+    var(--secondary-text)
+  );
+}
+
+.search-icon {
+  @include icon(rem(15), rem(15), "../images/icon-search.svg", var(--contrast));
+}
+
+.arrow-down-icon {
+  display: inline-block;
+  @include icon(
+    rem(7),
+    rem(12),
+    "../images/icon-arrow-down.svg",
+    var(--contrast)
+  );
+}
+
+.new-window-icon {
+  display: inline-block;
+  @include icon(
+    rem(12),
+    rem(12),
+    "../images/icon-new-window.svg",
+    var(--secondary-text)
+  );
+}
+
+.logo-icon {
+  display: inline-block;
+  @include icon(rem(34), rem(30), "../images/logo.svg", var(--secondary-text));
+}

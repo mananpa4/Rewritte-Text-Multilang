@@ -1,0 +1,18 @@
+#loading-bar .bar {
+  display: none;
+}
+
+#loading-bar-spinner {
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+#loading-bar-spinner .spinner-icon {
+  height: 100px;
+  width: 100px;
+  border: solid 6px transparent;
+  border-top-color: #5fe85a;
+  border-left-color: #5fe85a;
+}

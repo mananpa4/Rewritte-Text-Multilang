@@ -1,0 +1,23 @@
+== {{lengua|es}} ==
+{{pron-graf}}
+
+=== Etimología 1 ===
+{{etimología}}.
+
+==== {{adjetivo|es}} ====
+{{es.adj}}
+;1: {{plm|cansado}}, [[debilitado]].
+{{ejemplo|La naturaleza parecía suspirar y rendirse ''extenuada''.|título=La Última Niebla|capítulo=La Historia de María Griselda|fecha=1987|editorial=Revista VEA|páginas=81|c=libro|a=María Luisa Bombal}}
+;2: Se dice de un individuo: sin energía, debido a un gran esfuerzo físico o mental.
+{{ejemplo|—Ana María, más vale no seguir el viaje. Los caballos están ''extenuados''. El coche no tiene faroles. Esperemos que amanezca.|título=La Última Niebla/La Amortajada|capítulo=La Amortajada|fecha=2012|editorial=Planeta|páginas=145|c=libro|a=María Luisa Bombal}}
+
+==== Traducciones ====
+{{trad-arriba}}
+{{trad-abajo}}
+
+=== Forma flexiva ===
+==== Forma verbal ====
+;1: {{participio|extenuar}} (debilitar o debilitarse).
+
+== Referencias y notas ==
+<references />

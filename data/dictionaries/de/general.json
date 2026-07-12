@@ -27,5 +27,35 @@
    "synonyms": [
      {"text": "unkompliziert", "formality": "neutral", "frequency": 0.55, "contexts": ["marketplace", "technical"]},
      {"text": "schlicht", "formality": "formal", "frequency": 0.5, "contexts": ["professional"]}
+   ]},
+  {"word": "groß", "lemma": "groß", "pos": "ADJ", "language": "de",
+   "synonyms": [
+     {"text": "umfangreich", "formality": "neutral", "frequency": 0.58, "contexts": ["professional"]},
+     {"text": "beträchtlich", "formality": "formal", "frequency": 0.52, "contexts": ["professional"]}
+   ], "antonyms": ["klein"]},
+  {"word": "klein", "lemma": "klein", "pos": "ADJ", "language": "de",
+   "synonyms": [
+     {"text": "kompakt", "formality": "neutral", "frequency": 0.58, "contexts": ["marketplace", "technical"]},
+     {"text": "gering", "formality": "formal", "frequency": 0.56, "contexts": ["professional"]}
+   ], "antonyms": ["groß"]},
+  {"word": "wichtig", "lemma": "wichtig", "pos": "ADJ", "language": "de",
+   "synonyms": [
+     {"text": "wesentlich", "formality": "formal", "frequency": 0.62, "contexts": ["professional"]},
+     {"text": "entscheidend", "formality": "formal", "frequency": 0.6, "contexts": ["professional"]}
+   ]},
+  {"word": "problem", "lemma": "problem", "pos": "NOUN", "language": "de",
+   "synonyms": [
+     {"text": "schwierigkeit", "formality": "neutral", "frequency": 0.6, "contexts": ["professional"]},
+     {"text": "hürde", "formality": "neutral", "frequency": 0.5, "contexts": ["professional"]}
+   ]},
+  {"word": "verbessern", "lemma": "verbessern", "pos": "VERB", "language": "de",
+   "synonyms": [
+     {"text": "optimieren", "formality": "formal", "frequency": 0.58, "contexts": ["technical", "professional"]},
+     {"text": "verfeinern", "formality": "formal", "frequency": 0.48, "contexts": ["professional"]}
+   ]},
+  {"word": "verwenden", "lemma": "verwenden", "pos": "VERB", "language": "de",
+   "synonyms": [
+     {"text": "nutzen", "formality": "neutral", "frequency": 0.68, "contexts": ["professional"]},
+     {"text": "einsetzen", "formality": "formal", "frequency": 0.6, "contexts": ["professional", "technical"]}
    ]}
 ]

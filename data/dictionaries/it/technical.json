@@ -1,0 +1,8 @@
+[
+  {"word": "veloce", "lemma": "veloce", "pos": "ADJ", "language": "it",
+   "synonyms": [{"text": "efficiente", "formality": "formal", "frequency": 0.66, "contexts": ["technical"]}]},
+  {"word": "configurazione", "lemma": "configurazione", "pos": "NOUN", "language": "it",
+   "synonyms": [{"text": "impostazione", "formality": "neutral", "frequency": 0.64, "contexts": ["technical"]}]},
+  {"word": "prestazione", "lemma": "prestazione", "pos": "NOUN", "language": "it",
+   "synonyms": [{"text": "rendimento", "formality": "neutral", "frequency": 0.58, "contexts": ["technical", "professional"]}]}
+]

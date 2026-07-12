@@ -1,0 +1,8 @@
+[
+  {"word": "rapide", "lemma": "rapide", "pos": "ADJ", "language": "fr",
+   "synonyms": [{"text": "efficace", "formality": "formal", "frequency": 0.68, "contexts": ["technical"]}]},
+  {"word": "configuration", "lemma": "configuration", "pos": "NOUN", "language": "fr",
+   "synonyms": [{"text": "réglage", "formality": "neutral", "frequency": 0.64, "contexts": ["technical"]}]},
+  {"word": "performance", "lemma": "performance", "pos": "NOUN", "language": "fr",
+   "synonyms": [{"text": "rendement", "formality": "neutral", "frequency": 0.6, "contexts": ["technical", "professional"]}]}
+]

@@ -1,0 +1,23 @@
+== {{-ca-}} ==
+{{ca-pron|péémaéfa|rima=}}
+
+=== Sigles ===
+{{sigles|ca|nc|f-p}}
+
+# {{sigles de|ca|[[preguntes]] [[més]] [[freqüents]]}}
+
+{{-trad-}}
+{{t-inici}}
+* {{en}} : {{trad|en|FAQ}}
+* {{es}} : {{trad|es|PMF|f}}
+* {{fi}} : {{trad|fi|UKK}}
+* {{fr}} : {{trad|fr|FAQ|f}}
+{{t-final}}
+
+== {{-es-}} ==
+{{es-pron|/ˌpeˈe.meˌe.fe/|rima=}}
+
+=== Sigles ===
+{{sigles|es|nc|f-p}}
+
+# {{sigles de|es|[[preguntas]] [[más]] [[frecuentes]]}}

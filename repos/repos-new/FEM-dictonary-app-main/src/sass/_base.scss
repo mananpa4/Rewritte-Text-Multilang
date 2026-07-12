@@ -1,0 +1,46 @@
+@use "abstracts" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--foreground);
+  background-color: var(--background);
+  transition: all 0.3s ease-in-out;
+}
+
+ul {
+  margin: 0;
+}
+
+li::marker {
+  color: var(--contrast);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background-color: var(--contrast);
+  color: var(--white);
+}
+
+button:focus {
+  outline: none;
+}

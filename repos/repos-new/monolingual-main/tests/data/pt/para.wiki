@@ -1,0 +1,156 @@
+={{-pt-}}=
+==Preposição==
+{{paroxítona|pa|ra}}
+# exprime [[fim]], [[destino]], [[lugar]], [[tempo]], [[direção]] etc
+
+===Tradução===
+{{tradini}}
+* {{trad|de|nach}}
+* {{trad|ast|pa}}
+* {{trad|cs|pro}}
+* {{trad|es|para}}
+* {{trad|fr|pour}}
+* {{trad|en|to|for|toward|towards|at}}
+{{tradmeio}}
+* {{trad|it|per}}
+* {{trad|ms|agar}}
+* {{trad|mwl|para|pa}}
+* {{t|fa|به||beh}}
+* {{trad|tet|atu|hodi}}
+{{tradfim}}
+
+==={{etimologia|pt}}===
+: Do {{etm|la|pt}} {{etimo|la|per}} {{etimo|la|ad}}.
+
+==Forma verbal==
+{{paroxítona|pa|ra}}
+# terceira pessoa do singular do presente do indicativo do verbo [[parar]]
+# segunda pessoa do singular do imperativo do verbo [[parar]]
+
+{{aviso.flexão|parar}}
+
+==={{-varort-}}===
+* {{escopo2|Anterior ao AO 1990}} [[pára]]
+
+=={{pronúncia|pt}}==
+: [[AFI]]: ['pɐɾɐ]
+
+===Portugal===
+* AFI: {{AFI|/ˈpɐ.ɾɐ/}}
+
+==Ligações externas==
+* {{Aulete}}
+* {{Michaelis}}
+* {{Dicio}}
+* {{DicioAberto}}
+* {{DLPO}}
+* {{Infopédia}}
+* {{PLP}}
+* {{VOLPABL}}
+* {{Forvo|para|pt}}
+
+[[Categoria:Preposição (Português)]]
+[[Categoria:Forma verbal (Português)]]
+[[Categoria:Tempo (Português)]]
+
+
+={{-ast-}}=
+==Substantivo<sup>1</sup>==
+{{flex.ast|fs=para|fp=pares}}
+{{paroxítona|pa|ra|id=ast}}, {{gramática|f}}
+# [[parada]], ação de [[parar]]
+
+==={{etimologia|ast}}===
+: Regressivo de {{etimo|ast|parar}}.
+
+==Substantivo<sup>2</sup>==
+{{flex.ast|fs=para|fp=pares}}
+{{paroxítona|pa|ra|id=ast}}, {{gramática|f}}
+# no direito [[consuetudinário]], prerrogativa que permite a qualquer pessoa de uma comunidade [[usufruir]] de um bem comum ou de uma parte, alternando com outras
+# [[faixa]] de [[terreno]] agrícola ou de um prado; parte de um terreno agrícola
+# [[grupo]] de pessoas que juntas [[maçar|maçam]] as maçãs para a [[sidra]]
+
+===Expressões===
+* '''guardar para''' / '''levar para''': alternarem-se no uso de duas terras dous agricultores
+
+==={{etimologia|ast}}===
+: Da mesma origem que o latim {{etimo|la|par}}.
+
+[[Categoria:Substantivo (Asturiano)]]
+
+
+={{-gl-}}=
+==Preposição==
+{{paroxítona|pa|ra|id=gl}}
+# [[para#{{pt}}|para]]
+
+==Substantivo==
+{{flex.gl|fs=para|fp=paras}}
+{{paroxítona|pa|ra|id=gl}}, {{g|f|id=gl}}
+# casca, pele exterior tirada de um fruto, ou tubérculo, casca do [[queijo]]
+# [[apara]] da madeira
+# [[pasta]] entre as [[mó]]s do moinho, que faz o grão novo ao ser moído para farinha, por estar ainda com umidade
+
+===Sinónimo===
+* De '''1''' (casca): [[prana#{{gl}}|prana]]
+* De '''3''': [[bouta#{{gl}}|bouta]]
+
+==Forma verbal==
+{{paroxítona|pa|ra|id=gl}}
+# terceira pessoa do singular do presente indicativo do verbo ''[[parar#{{gl}}|parar]]''
+# segunda pessoa do singular do imperativo afirmativo do verbo ''[[parar#{{gl}}|parar]]''
+# primeira pessoa do singular do presente subjuntivo do verbo ''[[parir#{{gl}}|parir]]''
+# terceira pessoa do singular do presente subjuntivo do verbo ''[[parir#{{gl}}|parir]]''
+# terceira pessoa do singular do imperativo afirmativo do verbo ''[[parir#{{gl}}|parir]]''
+
+{{aviso.flexão|parar}}
+
+=={{etimologia|gl}}==
+: Da mesma origem que [[apara]]. Confronte-se com o húngaro {{etimo|hu|para}} "[[cortiça]], casca de árvore".
+
+[[Categoria:Preposição (Galego)]]
+[[Categoria:Substantivo (Galego)]]
+[[Categoria:Forma verbal (Galego)]]
+
+
+={{-mwl-}}=
+==Preposição==
+{{paroxítona|pa|ra|língua=mwl}}
+# [[para#Português|para]]
+
+===Nota===
+*: Utilizado em todas as situações excepto antes de artigos definidos. Nessa situação utilizar ''[[pa#Mirandês|pa]]''.
+:: Aqueilho ye [[para#Mirandês|para]] [[nós#Mirandês|nós]]. - <small>Aquilo é para nós.</small>
+:: [[aqueilho|Aqueilho]] ye '''pa''' [[l]] [[perro#Mirandês|perro]]. - <small>Aquilo é para o cão.</small>
+
+{{flex.mwl.contr.definidos}}
+
+[[Categoria:Preposição (Mirandês)]]
+
+
+={{-pap-}}=
+==Substantivo==
+'''para'''
+# [[pássaro]]
+
+[[Categoria:Substantivo (Papiamento)]]
+[[Categoria:Ave (Papiamento)]]
+[[Categoria:Falso cognato (Papiamento)]]
+
+
+={{-tet-}}=
+==Verbo==
+'''para'''
+# [[parar]]
+
+[[Categoria:Verbo (Tétum)]]
+
+
+={{-tr-}}=
+==Substantivo==
+'''para'''
+# [[dinheiro]]
+
+[[Categoria:Substantivo (Turco)]]
+[[Categoria:Economia (Turco)]]
+[[Categoria:Falso cognato (Turco)]]

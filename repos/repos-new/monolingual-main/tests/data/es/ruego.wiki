@@ -1,0 +1,21 @@
+{{desambiguación||}}
+== {{lengua|es}} ==
+{{pron-graf}}
+
+=== Etimología 1 ===
+{{etimología}}.
+
+==== {{sustantivo masculino|es}} ====
+{{es.sust}}          
+;1: {{plm|súplica}}, [[petición]] hecha con el fin de alcanzar lo que se pide.<ref name="dlc1914">{{DLC1914|908}} </ref>
+
+==== Traducciones ====
+{{trad-arriba}}
+{{trad-abajo}}
+
+=== Forma flexiva ===
+==== Forma verbal ====
+;1: {{forma verbo|rogar|p=1s|t=presente|m=indicativo}}.
+
+== Referencias y notas ==
+<references />

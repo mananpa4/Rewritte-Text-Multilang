@@ -1,0 +1,31 @@
+{
+  "name": "ohm-grammar-ecmascript",
+  "version": "3.0.0",
+  "description": "Ohm grammars for various editions of ECMAScript (aka JavaScript).",
+  "type": "module",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohmjs/ohm.git"
+  },
+  "keywords": ["ohm", "ohm-grammar", "es5", "ecmascript", "javascript", "peg"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ohmjs/ohm/issues"
+  },
+  "homepage": "https://github.com/ohmjs/ohm/tree/main/examples/ecmascript#readme",
+  "peerDependencies": {
+    "ohm-js": "^17.0.0"
+  },
+  "devDependencies": {
+    "ava": "^6.0.0",
+    "ohm-js": "^17.0.0"
+  },
+  "ava": {
+    "files": ["!**/test/data/**/*"]
+  },
+  "files": ["src", "index.js", "!**/*.test.*", "!**/testdata/**"],
+  "dependencies": {}
+}

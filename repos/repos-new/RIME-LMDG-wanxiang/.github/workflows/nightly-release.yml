@@ -1,0 +1,111 @@
+name: Nightly Build Rime Assets
+
+on:
+  workflow_dispatch: # 手动触发
+  push:
+    branches:
+      - wanxiang
+    paths:
+      - 'dicts/**'
+      - 'dicts_hant/**'
+      - 'pypinyin/**'
+      - 'pinyin_data/**'
+      - 'tqdm/**'
+      - 'rime固定*.py'
+
+concurrency:
+  group: nightly-release
+  cancel-in-progress: true
+
+jobs:
+  nightly-release:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Pack dicts.zip
+        run: |
+          mkdir -p dist
+          echo "Packing dicts..."
+          if [ -d "dicts" ]; then
+            zip -r dist/dicts.zip dicts
+            echo "Packing completed: dist/dicts.zip"
+          else
+            echo "Warning: dicts folder does not exist, skipping."
+          fi
+
+
+      - name: Pack dicts_hant.zip
+        run: |
+          mkdir -p dist
+          echo "Packing dicts_hant..."
+          if [ -d "dicts_hant" ]; then
+            zip -r dist/dicts_hant.zip dicts_hant
+            echo "Packing completed: dist/dicts_hant.zip"
+          else
+            echo "Warning: dicts_hant folder does not exist, skipping."
+          fi
+
+      - name: Pack dict-tools.zip
+        run: |
+          echo "Packing tools..."
+          zip -r "dist/dict-pinyin-tools.zip" pypinyin pinyin_data tqdm rime固定*.py
+          echo "Packing completed: dist/dict-pinyin-tools.zip"
+
+      - name: Delete existing Nightly Release and Tag
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const tag = "dict-nightly";
+            try {
+              const releases = await github.rest.repos.listReleases({
+                owner: context.repo.owner,
+                repo: context.repo.repo
+              });
+              const existingRelease = releases.data.find(r => r.tag_name === tag);
+              if (existingRelease) {
+                console.log(`Deleting existing Release with ID: ${existingRelease.id}`);
+                await github.rest.repos.deleteRelease({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  release_id: existingRelease.id
+                });
+              }
+              console.log(`Deleting tag: ${tag}`);
+              await github.rest.git.deleteRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: `tags/${tag}`
+              });
+            } catch (error) {
+              console.log(`No existing release or tag to delete: ${error.message}`);
+            }
+
+      - name: Wait for cleanup
+        run: sleep 10
+
+      - name: Setup Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Create new Release
+        uses: softprops/action-gh-release@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: dict-nightly
+          name: "词库更新与拼音标注工具包"
+          body: |
+            - `dicts.zip`：最新中文简体词库文件。
+            - `dicts_hant.zip`：最新中文繁体词库文件。
+            - `dict-pinyin-tools.zip`：包含 pypinyin、pinyin_data、tqdm、rime固定*.py 工具脚本。
+          files: |
+            dist/dicts.zip
+            dist/dicts_hant.zip
+            dist/dict-pinyin-tools.zip
+          draft: false
+          prerelease: false
+          make_latest: true

@@ -94,6 +94,19 @@ class RewriteEngine:
         self._grammar = GrammarChecker(enabled=cfg.use_grammar)
         self._transformer = transformer or NullTransformer()
 
+    def set_transformer(self, transformer: BaseTransformer | None) -> None:
+        """Cambia el backend de refinado (IA) en caliente, sin recrear el motor.
+
+        Usado por la GUI/CLI para el toggle de IA: activar/desactivar no
+        recarga diccionarios ni WordNet, sólo sustituye esta etapa opcional.
+        ``None`` restaura el comportamiento 100% offline (``NullTransformer``).
+        """
+        self._transformer = transformer or NullTransformer()
+
+    @property
+    def transformer(self) -> BaseTransformer:
+        return self._transformer
+
     # -- carga de datos -----------------------------------------------------
     def _load_protected_literals(self) -> list[str]:
         """Marcas + términos legales/médicos a proteger literalmente."""
@@ -197,6 +210,22 @@ class RewriteEngine:
                     "No se encontró una mejora con la configuración actual; se "
                     "devuelve el texto original."
                 )
+
+        # Modo resumido: reduce el texto ya reescrito a sus oraciones clave
+        # (extractivo, offline). Mayor intensidad → resumen más corto.
+        if mode == Mode.SUMMARIZED and rewritten.strip():
+            from rewrite_engine.rewrite.summarizer import summarize
+
+            ratio = max(0.25, min(0.75, 1.0 - strength))
+            short = summarize(rewritten, lang=lang, ratio=ratio)
+            if short.strip() and short.strip() != rewritten.strip():
+                rewritten = short
+                changes = []  # las posiciones ya no aplican tras recortar
+                readability = self._scorer.readability(rewritten)
+                similarity = self._scorer.similarity(original, rewritten)
+                alternatives = [summarize(a, lang=lang, ratio=ratio) for a in alternatives]
+            else:
+                warnings.append("El texto es demasiado corto para resumirlo.")
 
         return RewriteResult(
             original=original,

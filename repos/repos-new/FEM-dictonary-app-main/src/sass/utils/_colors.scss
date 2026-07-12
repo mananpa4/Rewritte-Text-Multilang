@@ -1,0 +1,28 @@
+@use "../abstracts" as *;
+
+$light-theme-shadow: shadow($black-900, -0.9);
+$dark-theme-shadow: shadow($violet-600);
+
+// light theme
+:root {
+  --background: #{$white-900};
+  --contrast-separators: #{$gray-100};
+  --contrast: #{$violet-600};
+  --error: #{$red-500};
+  --foreground: #{$black-600};
+  --secondary-background: #{$white-100};
+  --secondary-text: #{$gray-500};
+  --separators: #{$gray-100};
+  --shadow: #{$light-theme-shadow};
+  --white: #{$white-900};
+}
+
+// dark theme
+.dark-mode {
+  --background: #{$black-800};
+  --contrast-separators: #{$gray-100};
+  --foreground: #{$white-900};
+  --secondary-background: #{$black-700};
+  --separators: #{$black-500};
+  --shadow: #{$dark-theme-shadow};
+}

@@ -1,0 +1,331 @@
+"""Danish language."""
+
+import re
+
+from ... import lang, utils
+from . import variant_handlers as variant_handlers_mod
+from .variant_handlers import handlers as variant_handlers  # noqa: F401
+
+random_word_url = "https://da.wiktionary.org/wiki/Speciel:RandomRootpage"
+
+module_trans = "Modul"
+template_trans = "Skabelon"
+
+float_separator = ","
+thousands_separator = " "
+
+section_patterns = ("#", r"\*")
+section_sublevels = (3, 4)
+head_sections = (
+    "{{da}}",
+    "{{=da=}}",
+    "{{-da-}}",
+    "dansk",
+    "{{mul}}",
+    "{{=mul=}}",
+    "{{-mul-}}",
+    "tværsprogligt",
+)
+etyl_section = ("{{etym}}", "{{etym2}}", "etymologi", "etymologi 1", "etymologi 2", "etymologi 3", "etymologi 4")
+sections = (
+    *etyl_section,
+    "adjektiv",
+    "adverbium",
+    "alternativ form",
+    "bogstav",
+    "bøjning",
+    "fast udtryk",
+    "formelt subjekt",
+    "interfiks",
+    "interjektion",
+    "konjugation",
+    "lydord",
+    "noun",
+    "possessivt pronomen",
+    "possessivt pronomen (ejestedord)",
+    "prefix",
+    "pronomen",
+    "proposition",
+    "proprium",
+    "prœposition",
+    "substantiv",
+    "symbol",
+    "synonymer",
+    "sætning",
+    "ubestemt prononmen",
+    "ubestemt pronomen",
+    "ubestemt talord",
+    "udtryk",
+    "verbum",
+    "{{abbr}",
+    "{{abr}",
+    "{{abr|mul}",
+    "{{adj}",
+    "{{adv}",
+    "{{art}",
+    "{{car-num}",
+    "{{car-num|mul}",
+    "{{conj}",
+    "{{contr}",
+    "{{dem-pronom}",
+    "{{decl}",
+    "{{end}",
+    "{{expr}",
+    "{{frase}",
+    "{{interj}",
+    "{{lyd}",
+    "{{noun}",
+    "{{noun2}",
+    "{{num}",
+    "{{part}",
+    "{{pers-pronom}",
+    "{{phr}",
+    "{{pp}",
+    "{{pref}",
+    "{{prep}",
+    "{{pron}",
+    "{{prop}",
+    "{{prov}",
+    "{{seq-num}",
+    "{{sætning}",
+    "{{suf}",
+    "{{symb}",
+    "{{symb|mul}",
+    "{{syn}",
+    "{{ubest-pronon}",
+    "{{verb}",
+)
+
+variant_titles = sections
+variant_templates = ("{{alternativ stavemåde af", "{{form of", "{{flexion", "{{imperativ af", "{{imperativ form af")
+
+reverse_variant_titles = (
+    "{{da-noun",
+    "{{da-verb",
+)
+reverse_variant_templates = ("{{rev-flexion",)
+
+templates_ignored = (
+    "{{definition mangler",
+    "{{dm",
+    "{{rfe",
+    "{{wikipedia",
+    "{{Wikipedia",
+)
+
+
+def find_pronunciations(code: str, locale: str) -> list[str]:
+    """
+    >>> find_pronunciations("", "da")
+    []
+    >>> find_pronunciations("{{IPA|/bɛ̜ːˀ/|lang=da}}", "da")
+    ['/bɛ̜ːˀ/']
+    """
+    pattern = re.compile(rf"\{{\{{IPA(?:\|(.*?))?\|lang={locale}\}}\}}")
+    return [item for sublist in (re.findall(pattern, code) or []) for item in sublist.split("|") if item]
+
+
+ALL_FORMS = [
+    "bestemt ental af",
+    "bestemt flertal af",
+    "da-adj-1",
+    "da-adj-2",
+    "da-noun-1",
+    "da-noun-2",
+    "da-noun-",
+    "da-noun-3",
+    "da-noun-4",
+    "da-noun-5",
+    "da-noun-6",
+    "da-noun-7",
+    "ental af",
+    "ental bestemt af",
+    "ental flertal af",
+    "flertal af",
+    "genitivform af",
+    "genitiv bestemt ental af",
+    "genitiv bestemt flertal af",
+    "genitiv ental ubestemt af",
+    "genitiv ubestemt entalsform af",
+    "genitiv ubestemt ental af",
+    "genitiv ubestemt flertalsform af",
+    "genitiv ubestemt flertal af",
+    "imperativ af",
+    "nutid af",
+    "pluralis af",
+    "præsens af",
+    "præsens participium af",
+    "præteritum participium af",
+    "præteritum af",
+    "ubestemt ental af",
+    "ubestemt flertal af",
+]
+
+
+def adjust_wikicode(
+    code: str,
+    locale: str,
+    *,
+    templates_status: list[tuple[str, str]] | None = None,
+    word: str = "",
+    forms: str = "|".join(ALL_FORMS),
+    start: str = rf"^(?:{'|'.join(section_patterns)})\s*",
+) -> str:
+    # sourcery skip: inline-immediately-returned-variable
+    r"""
+    >>> adjust_wikicode("== Dansk ==\n=== Alternativ form ===\n* {{l|da|vørme}}", "da")
+    '== Dansk ==\n=== Alternativ form ===\n* {{flexion|vørme}}'
+
+    >>> adjust_wikicode("=={{da}}==\n{{(}}\n* {{en}}: {{trad|en|limnology}}\n{{)}}", "da")
+    '=={{da}}=='
+
+    >>> adjust_wikicode("=={{da}}==\n{{trans-top|en kødbolle lavet af hakket fars}}\n*{{en}}: {{t|en|meatball}}\n*{{fi}}: {{t|fi|lihapulla}}f}}\n*{{el}}: {{t|el|κεφτές|m|sc=Grek}}\n**{{grc}}: {{t|grc|ἰσίκιον|n}}\n{{trans-mid}}\n*{{it}}: {{t|it|polpetta}}\n*{{es}}: {{t|es|albóndigas}}\n*{{sv}}: {{t|sv|frikadell|c}}\n*{{de}}: {{t|de|Frikadelle|f}}\n{{trans-bottom}}", "da")
+    '=={{da}}=='
+
+    >>> adjust_wikicode("=={{da}}==\n{{-avv-|da}}", "da")
+    '=={{da}}==\n=== {{avv}} ==='
+
+    >>> adjust_wikicode("=={{da}}==\n{{-avv-|ANY}}", "da")
+    '=={{da}}==\n=== {{avv|ANY}} ==='
+
+    >>> adjust_wikicode("=={{da}}==\n{{-avv-}}", "da")
+    '=={{da}}==\n=== {{avv}} ==='
+
+    >>> adjust_wikicode("=={{da}}==\n*Pluralis af [[tale]]", "da")
+    '=={{da}}==\n# {{flexion|tale}}'
+    >>> adjust_wikicode("=={{da}}==\n#Pluralis af [[tale]]", "da")
+    '=={{da}}==\n# {{flexion|tale}}'
+    >>> adjust_wikicode("=={{da}}==\n#Pluralis af [[tale|tale]]", "da")
+    '=={{da}}==\n# {{flexion|tale}}'
+    >>> adjust_wikicode("=={{da}}==\n#Pluralis af [[tale#Substantiv|tale]]", "da")
+    '=={{da}}==\n# {{flexion|tale}}'
+    >>> adjust_wikicode("=={{da}}==\n# Nutid af [[tale#Verbum|tale]]", "da")
+    '=={{da}}==\n# {{flexion|tale}}'
+    >>> adjust_wikicode("=={{da}}==\n# Flertal af [[tale]]: [[ui]].", "da")
+    '=={{da}}==\n# {{flexion|tale}}'
+
+    >>> adjust_wikicode("=={{da}}==\n# {{flertal af}} [[tale]]", "da")
+    '=={{da}}==\n# {{flexion|tale}}'
+    >>> adjust_wikicode("=={{da}}==\n# {{flertal af}} '''[[tale]]'''", "da")
+    '=={{da}}==\n# {{flexion|tale}}'
+    >>> adjust_wikicode("=={{da}}==\n#''præsens participium af'' '''[[abandonnere]]'''.", "da")
+    '=={{da}}==\n# {{flexion|abandonnere}}'
+    >>> adjust_wikicode("=={{da}}==\n# {{flertal af}} {{l|da|tale}}", "da")
+    '=={{da}}==\n# {{flexion|{{l|da|tale}}}}'
+    >>> adjust_wikicode("=={{da}}==\n# {{flertal af}} {{l|da|tale|taler}}", "da")
+    '=={{da}}==\n# {{flexion|{{l|da|tale|taler}}}}'
+
+    >>> from ... import context
+    >>> _ = context.reset("da")
+
+    >>> context.new_word("baskyle")
+    >>> adjust_wikicode("=={{da}}==\n{{da-noun|en|baskyle|baskylen|baskyler|baskylerne}}", "da", word="baskyle")
+    '=={{da}}==\n# {{rev-flexion|baskylen}}\n# {{rev-flexion|baskyler}}\n# {{rev-flexion|baskylerne}}'
+
+    >>> context.new_word("hav")
+    >>> adjust_wikicode("=={{da}}==\n{{da-verb|hav|have|har|havde|har|haft}}", "da", word="hav")
+    '=={{da}}==\n# {{rev-flexion|haft}}\n# {{rev-flexion|har}}\n# {{rev-flexion|havde}}\n# {{rev-flexion|have}}'
+
+    >>> context.new_word("genom")
+    >>> adjust_wikicode("=={{da}}==\n{{da-noun-infl|et|er}}", "da", word="genom")
+    '=={{da}}==\n# {{rev-flexion|genomer}}\n# {{rev-flexion|genomerne}}\n# {{rev-flexion|genomernes}}\n# {{rev-flexion|genomers}}\n# {{rev-flexion|genomet}}\n# {{rev-flexion|genomets}}\n# {{rev-flexion|genoms}}'
+
+    >>> context.new_word("atlas")
+    >>> adjust_wikicode("=={{da}}==\n{{da-noun|et|atlas|atlasset|atlas(ser)|atlasse(r)ne}}", "da", word="atlas")
+    '=={{da}}==\n# {{rev-flexion|atlasser}}\n# {{rev-flexion|atlasserne}}\n# {{rev-flexion|atlasset}}'
+
+    >>> context.new_word("forlige")
+    >>> adjust_wikicode("=={{da}}==\n{{da-verb|forlig|forlige|forliger|forligte/forligede|har/er|forlig(e)t}}", "da", word="forlige")
+    '=={{da}}==\n# {{rev-flexion|forlig}}\n# {{rev-flexion|forligede}}\n# {{rev-flexion|forliger}}\n# {{rev-flexion|forliget}}\n# {{rev-flexion|forligte}}'
+
+    >>> context.new_word("magma")
+    >>> adjust_wikicode("=={{da}}==\n{{da-noun|en|magma|magmaen|magmaer|magmaerne}} / {{da-noun|et|magma|magmaet|magmaer|magmaerne}}", "da", word="magma")
+    '=={{da}}==\n# {{rev-flexion|magmaen}}\n# {{rev-flexion|magmaer}}\n# {{rev-flexion|magmaerne}}\n# {{rev-flexion|magmaer}}\n# {{rev-flexion|magmaerne}}\n# {{rev-flexion|magmaet}}'
+
+    >>> context.new_word("forhammer")
+    >>> adjust_wikicode("=={{da}}==\n{{da-noun|en|forhammer|forhammeren|forhamre|forhamrene}} eller\n:{{da-noun|en|forhammer|forhammeren|forhammere|forhammerne}}", "da", word="forhammer")
+    '=={{da}}==\n# {{rev-flexion|forhammeren}}\n# {{rev-flexion|forhamre}}\n# {{rev-flexion|forhamrene}}\n# {{rev-flexion|forhammere}}\n# {{rev-flexion|forhammeren}}\n# {{rev-flexion|forhammerne}}'
+    >>> adjust_wikicode("=={{da}}==\n{{da-noun|en|forhammer|forhammeren|forhamre|forhamrene}} eller\n{{da-noun|en|forhammer|forhammeren|forhammere|forhammerne}}", "da", word="forhammer")
+    '=={{da}}==\n# {{rev-flexion|forhammeren}}\n# {{rev-flexion|forhamre}}\n# {{rev-flexion|forhamrene}}\n# {{rev-flexion|forhammere}}\n# {{rev-flexion|forhammeren}}\n# {{rev-flexion|forhammerne}}'
+    >>> adjust_wikicode("=={{da}}==\n{{da-noun|en|forhammer|forhammeren|forhamre|forhamrene}} eller uofficielt\n{{da-noun|en|forhammer|forhammeren|forhammere|forhammerne}}", "da", word="forhammer")
+    '=={{da}}==\n# {{rev-flexion|forhammeren}}\n# {{rev-flexion|forhamre}}\n# {{rev-flexion|forhamrene}}\n# {{rev-flexion|forhammere}}\n# {{rev-flexion|forhammeren}}\n# {{rev-flexion|forhammerne}}'
+    >>> adjust_wikicode("=={{da}}==\n{{da-noun|en|forhammer|forhammeren|forhamre|forhamrene}} (''plante'')\n{{da-noun|en|forhammer|forhammeren|forhammere|forhammerne}} (''grøntsag'')", "da", word="forhammer")
+    '=={{da}}==\n# {{rev-flexion|forhammeren}}\n# {{rev-flexion|forhamre}}\n# {{rev-flexion|forhamrene}}\n# {{rev-flexion|forhammere}}\n# {{rev-flexion|forhammeren}}\n# {{rev-flexion|forhammerne}}'
+
+    >>> context.new_word("føde")
+    >>> adjust_wikicode("=={{da}}==\n{{da-verb|fød|føde|føder|fødede<br />fødte|har|fødet<br />født}}", "da", word="føde")
+    '=={{da}}==\n# {{rev-flexion|fød}}\n# {{rev-flexion|fødede}}\n# {{rev-flexion|føder}}\n# {{rev-flexion|fødet}}\n# {{rev-flexion|født}}\n# {{rev-flexion|fødte}}'
+    """
+    code = code.replace("----", "")
+
+    # `=== Alternativ form ===\n* {{l|...}}` → `=== Alternativ form ===\n* {{flexion|...}}`
+    code = re.sub(
+        r"^(={3,}[ ]*Alternativ form[ ]*={3,})\n\* \{\{l\|[^|]+\|([^}]+)\}\}",
+        r"\1\n* {{flexion|\2}}",
+        code,
+        flags=re.MULTILINE,
+    )
+
+    # {{-avv-|da}} → === {{avv}} ===
+    code = re.sub(rf"^\{{\{{-(.+)-\|{locale}\}}\}}", r"=== {{\1}} ===", code, flags=re.MULTILINE)
+
+    # {{-avv-|ANY}} → === {{avv|ANY}} ===
+    code = re.sub(r"^\{\{-(.+)-\|(\w+)\}\}", r"=== {{\1|\2}} ===", code, flags=re.MULTILINE)
+
+    # {{-avv-}} → === {{avv}} ===
+    code = re.sub(r"^\{\{-(\w+)-\}\}", r"=== {{\1}} ===", code, flags=re.MULTILINE)
+
+    # {{(}} .* {{)}}
+    code = re.sub(r"\{\{\(\}\}(.+)\{\{\)\}\}", "", code, flags=re.DOTALL | re.MULTILINE)
+
+    # {{trans-top|...}}...{{trans-bottom}}
+    code = re.sub(r"\{\{trans-top(.+)\{\{trans-bottom\}\}", "", code, flags=re.DOTALL | re.MULTILINE)
+
+    #
+    # Variants
+    #
+
+    patterns = [
+        # Pluralis af [[tale#Substantiv|tale]]
+        rf"(?:{forms})\s+\[\[([^\]#|]+)(?:[#|].+)?]]",
+        # {{flertal af}} '''[[tale]]'''
+        rf"\{{\{{(?:{forms})\}}\}} '*\[\[([^\]]+)",
+        #''præsens participium af'' '''[[abandonnere]]'''.
+        rf"'+(?:{forms})[\s']+\[\[([^\]]+)",
+        # {{flertal af}} {{l|da|tale}}
+        rf".*\{{\{{(?:{forms})\}}\}}\s+(\{{\{{[^}}]+\}}\}})",
+    ]
+
+    lines: list[str] = []
+    for line in code.splitlines():
+        if re.match(start, line):
+            for pattern in patterns:
+                line, count = re.subn(rf"{start}{pattern}.*", r"# {{flexion|\1}}", line, count=1, flags=re.IGNORECASE)  # noqa: PLW2901
+                if count:
+                    break
+        lines.append(line)
+    code = "\n".join(lines)
+
+    #
+    # Reverse variants
+    #
+
+    interesting_reverse_variant_titles = lang.reverse_variant_titles[locale]
+    if any(tpl in code for tpl in interesting_reverse_variant_titles):
+        pattern = rf"(\{{\{{(?:{'|'.join(tpl[2:] for tpl in interesting_reverse_variant_titles)})[^}}]+}}}})"
+        cleaned: list[str] = []
+
+        for line in code.splitlines():
+            if not any(tpl in line for tpl in interesting_reverse_variant_titles):
+                cleaned.append(line)
+                continue
+
+            for tpl in re.findall(pattern, line):
+                tpl_name = tpl[2 : max(0, tpl.find("|")) or tpl.find("}")].strip(" \u200e")
+                variant_handlers_mod.append_to_reverse_variants(tpl_name)
+                forms = utils.process_templates(word, tpl, locale, templates_status=templates_status, variant_only=True)
+                cleaned.extend(f"# {{{{rev-flexion|{form}}}}}" for form in sorted(forms.split("|")))
+
+        code = "\n".join(cleaned)
+
+    return code

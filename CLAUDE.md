@@ -42,9 +42,13 @@ en `repos/` (ver §8 Licencias).
   - `[semantic]` → `sentence-transformers` (embeddings multilenguaje).
   - `[spacy]` → `spacy` (POS/NER por idioma).
   - `[grammar]` → `language-tool-python`.
-  - `[ai]` → `anthropic` (gancho LLM, **no cableado todavía**).
+  - `[ai]` → `anthropic` (gancho LLM en la nube, **no cableado todavía**).
+  - `[ai-paraphrase]` → `transformers` + `torch` + `sentencepiece` (T5 local + puente de traducción MarianMT, **sí cableados**: toggles opt-in en GUI/CLI. El T5 solo entiende inglés; el puente de traducción lo extiende a los 12 idiomas).
+  - `[desktop]` → `pyspellchecker` (corrector de la app de escritorio).
+  - `[build-exe]` → `pyinstaller`.
   - `[dev]` → `pytest`, `ruff`.
-- **Idiomas soportados de fábrica:** es, en, pt, fr, it, de, nl, pl, ru, uk, sv.
+- **Idiomas soportados de fábrica:** es, en, pt, fr, it, de, nl, pl, ru, uk, sv, eo
+  (Esperanto, con lematizador por reglas en `lang/esperanto.py`).
 
 ## 3. Arquitectura
 
@@ -71,7 +75,8 @@ Capas y archivos clave:
 | Idioma | `lang/metadata.py` | Idiomas soportados, aliases, stopwords, función, spaCy/WordNet |
 | Idioma | `lang/detector.py` | Detección (langdetect + fallback heurístico) |
 | Idioma | `lang/protector.py` | Protege URLs/precios/marcas/HTML… vía tokens (1 pasada) |
-| Idioma | `lang/tokenizer.py` | Tokenización **sin pérdida** + lematización (simplemma/spaCy) |
+| Idioma | `lang/tokenizer.py` | Tokenización **sin pérdida** + lematización (simplemma/spaCy) + `analyze()` (POS+morfología) |
+| Idioma | `lang/morphology.py` | Concordancia morfológica: reflexiona el reemplazo (género/número en ADJ, conjugación regular presente-3ª en VERB) usando `token.morph` de spaCy |
 | Sinónimos | `synonyms/dict_source.py` | Diccionarios JSON por idioma/industria |
 | Sinónimos | `synonyms/wordnet_source.py` | WordNet/OMW vía NLTK (reimplementado) |
 | Sinónimos | `synonyms/engine.py` | Combina fuentes; filtra por modo/formalidad/contexto |
@@ -83,8 +88,14 @@ Capas y archivos clave:
 | Reescritura | `rewrite/ranker.py` | Elige mejor variante + ordena alternativas |
 | IA | `transformers/base.py` | Interfaz `BaseTransformer` (gancho LLM) |
 | IA | `transformers/null.py` | `NullTransformer` (offline por defecto) |
+| IA | `transformers/_guards.py` | Guardas compartidas (tokens protegidos, longitud, repetición degenerada) + defensa `torchvision` a nivel de módulo |
+| IA | `transformers/t5_paraphraser.py` | `T5ParaphraserTransformer` opt-in: T5 local, sólo inglés |
+| IA | `transformers/translation_bridge.py` | `TranslationBridgeTransformer`: envuelve un transformer inglés-only y lo extiende a los 12 idiomas vía MarianMT (traduce ida y vuelta) |
+| Reescritura | `rewrite/summarizer.py` | Resumen extractivo offline (modo `summarized`) |
 | API | `api/app.py` | FastAPI `POST /api/rewrite`, `GET /health` |
 | CLI | `cli/main.py` | Comando `rewrite-engine` (Click) |
+| Escritorio | `desktop/app.py` | App Tkinter de 2 paneles + `desktop/spell.py` (corrector) |
+| Idioma | `lang/esperanto.py` | Lematizador por reglas de Esperanto (idioma súper regular) |
 
 **Principio transversal:** todo lo pesado (spaCy, embeddings, LanguageTool,
 WordNet) es opcional y **degrada con gracia** (try/except import → fallback). El
@@ -100,15 +111,17 @@ motor corre solo con el núcleo ligero.
 ├── CLAUDE_CONTEXT.md           # memoria viva (estado del desarrollo)
 ├── prompt.txt                  # prompts originales que motivaron el proyecto
 ├── src/rewrite_engine/         # código del paquete (ver §3)
-│   ├── core/  lang/  synonyms/  rewrite/  transformers/  api/  cli/
+│   ├── core/  lang/  synonyms/  rewrite/  transformers/  api/  cli/  desktop/
 │   └── data/                   # (en wheel) copia de /data empaquetada
 ├── data/                       # datos editables (fuente en desarrollo)
-│   ├── dictionaries/{es,en,pt,fr,it,de,nl,pl,ru,uk,sv}/...
+│   ├── dictionaries/{es,en,pt,fr,it,de,nl,pl,ru,uk,sv,eo}/...
 │   ├── ai_markers/burned_words.json
 │   └── protected/{brands,legal_terms,medical_terms}.json
 ├── scripts/build_burned_words.py   # convierte HumanAI *.md → burned_words.json
+├── scripts/build_thesaurus.py      # convierte un tesauro de texto plano → JSON
+├── packaging/                  # spec de PyInstaller + entry point del .exe
 ├── examples/demo.py            # demo ejecutable es/en
-├── tests/                      # pytest (los 20 casos obligatorios del prompt)
+├── tests/                      # pytest (los 20 casos obligatorios del prompt + regresiones)
 └── repos/                      # repos de referencia (NO son código del proyecto)
 ```
 
@@ -135,6 +148,24 @@ ruff check src/ tests/                  # lint
 # CLI
 rewrite-engine "Este producto es bueno y barato." --lang es --mode marketplace --explain
 echo "Buy this now." | rewrite-engine - --lang en --json
+
+# CLI con IA (T5 local, opt-in, sólo inglés)
+pip install -e ".[ai-paraphrase]"
+rewrite-engine "I need help to fix this error." --lang en --ai --explain
+
+# CLI con IA + puente de traducción (extiende la IA a los 12 idiomas)
+rewrite-engine "Necesito ayuda para arreglar este error." --lang es --ai --ai-translate --explain
+
+# App de escritorio (dos paneles + corrector ortográfico)
+pip install -e ".[desktop]"
+rewrite-engine-gui                               # GUI Tkinter
+
+# Generar el ejecutable .exe (Windows)
+pip install -e ".[build-exe]"
+pyinstaller packaging/rewrite_engine_gui.spec --noconfirm   # -> dist/RewriteEngine.exe
+
+# Enriquecer un idioma desde un tesauro de texto (palabra; sin1, sin2, ...)
+python scripts/build_thesaurus.py repos/repos-new/sinonimos.txt --lang es --out data/dictionaries/es/thesaurus.json
 
 # API
 uvicorn rewrite_engine.api.app:app --reload      # http://127.0.0.1:8000

@@ -1,0 +1,234 @@
+== {{lengua|es}} ==
+{{pron-graf|1audio1=LL-Q1321 (spa)-Rodelar-Guyana.wav|v1=Guayana|p1=Guyena}}
+
+=== Etimología 1 ===
+{{etimología}}.
+
+==== {{sustantivo propio|es}} ====
+{{es.sust|s}}
+[[Archivo:Guyana in its region (disputed hatched).svg|miniaturadeimagen|[1] Ubicación resaltada en rojo, territorios en disputa sombreados]]
+;1 {{csem|países}}: {{plm|país}} {{l|es|ubicado}} al {{l|es|noreste}} de {{l|es|Sudamérica}}. {{l|es|limitar|Limita}} al {{l|es|oeste}} con {{l|es|Venezuela}}, al {{l|es|norte}} con el {{l|es|océano Atlántico}}, al {{l|es|este}} con {{l|es|Surinam}} y al {{l|es|sur}} {{l|es|Brasil}}.
+:*'''Nombre oficial:''' ''{{plm|república}} {{l|es|cooperativo|Cooperativa}} de Guyana'' (en inglés: ''Co-operative Republic of Guyana'').
+:*'''Símbolo:''' {{l|mul|🇬🇾}} ({{l|es|emoji}}).
+:* '''[[Wikipedia:es:ISO 3166|Códigos ISO 3166]]:''' 328 / GUY / GY.<ref>{{ISO3166|GY}}</ref>
+:*'''Capital:''' {{l|es|Georgetown}}.
+:*'''Gentilicio:''' {{l|es|guyanés}}.
+{{relacionado|tit=Idioma oficial|inglés}}.
+{{relacionado|tit=Moneda|dólar}}.
+
+==== Véase también ====
+* {{l|es|Guayana Francesa}}
+* [[:Categoría:Guyana|Categoría:Guyana]]
+{{Commons}}
+{{w}}
+{{Wikinoticias}}
+{{Wikiviajes}}
+
+==== Traducciones ====
+{{trad-arriba}}
+{{t|af|a1=1|t1=Guyana}}
+{{t|ay|a1=1|t1=Wayana}}
+{{t|sh|a1=1|t1=Gvajana|a2=1|t2=Гвајана}}
+{{t|sq|a1=1|t1=Guiana}}
+{{t|de|a1=1|t1=Guyana}}
+{{t|ar|t1=غويانا|a1=1}}
+{{t|an|a1=1|t1=Guyana}}
+{{t|ast|a1=1|t1=Guyana}}
+{{t|az|a1=1|t1=Qayana}}
+{{t|nds-de|a1=1|t1=Guyana}}
+{{t|dsb|a1=1|t1=Guyana}}
+{{t|bn|a1=1|t1=গায়ানা}}
+{{t|be|a1=1|t1=Гаяна}}
+{{t|br|a1=1|t1=Guyana}}
+{{t|bg|a1=1|t1=Гвиана}}
+{{t|ca|a1=1|t1=Guyana}}
+{{t|ceb|a1=1|t1=Guyana}}
+{{t|cs|a1=1|t1=Guyana}}
+{{t|cv|a1=1|t1=Гайана}}
+{{t|ko|a1=1|t1=가이아나}}
+{{t|kw|a1=1|t1=Gwayana}}
+{{t|ht|a1=1|t1=Giyàn}}
+{{t|da|a1=1|t1=Guyana}}
+{{t|dv|t1=ގުޔާނާ|a1=1}}
+{{t|sl|a1=1|t1=Gvajana}}
+{{t|eo|a1=1|t1=Gujano}}
+{{t|et|a1=1|t1=Guyana}}
+{{t|eu|a1=1|t1=Guyana}}
+{{t|ee|a1=1|t1=Guyana}}
+{{t|fi|a1=1|t1=Guyana}}
+{{t|fr|a1=1|t1=Guyana}}
+{{t|frp|a1=1|t1=Guyana}}
+{{t|fy|a1=1|t1=Guyana}}
+{{t|gd|a1=1|t1=Guiana}}
+{{t|cy|a1=1|t1=Guyana}}
+{{t|gl|a1=1|t1=Guyana}}
+{{t|ka|a1=1|t1=გაიანა}}
+{{t|el|a1=1|t1=Γουιάνα}}
+{{t|kl|a1=1|t1=Guyana}}
+{{t|gn|a1=1|t1=Gujána}}
+{{t|he|t1=גיאנה|a1=1}}
+{{t|hu|a1=1|t1=Guyana}}
+{{t|io|a1=1|t1=Guyana}}
+{{t|id|a1=1|t1=Guyana}}
+{{t|en|a1=1|t1=Guyana}}
+{{t|ia|a1=1|t1=Guyana}}
+{{t|is|a1=1|t1=Gvæjana}}
+{{t|it|a1=1|t1=Guyana|g1=f}}
+{{t|ja|a1=1|t1=ガイアナ}}
+{{t|jv|a1=1|t1=Guyana}}
+{{t|kn|a1=1|t1=ಗಯಾನ}}
+{{t|kk|a1=1|t1=Ғайана}}
+{{t|ku|a1=1|t1=Guyana}}
+{{t|la|a1=1|t1=Guiana}}
+{{t|lv|a1=1|t1=Gajāna}}
+{{t|lij|a1=1|t1=Guyana}}
+{{t|lt|a1=1|t1=Gajana}}
+{{t|lmo|a1=1|t1=Gujana}}
+{{t|lb|a1=1|t1=Guyana}}
+{{t|ml|a1=1|t1=ഗയാന}}
+{{t|ms|a1=1|t1=Guyana}}
+{{t|zh|a1=1|t1=圭亚那}}
+{{t|gv|a1=1|t1=Geeaaney}}
+{{t|mr|a1=1|t1=गियाना}}
+{{t|mn|a1=1|t1=Гайана}}
+{{t|nhn|a1=1|t1=Guyana}}
+{{t|nch|a1=1|t1=Guyana}}
+{{t|na|a1=1|t1=Guyana}}
+{{t|nl|a1=1|t1=Guyana}}
+{{t|no|a1=1|t1=Guyana}}
+{{t|nn|a1=1|t1=Guyana}}
+{{t|nov|a1=1|t1=Guyana}}
+{{t|oc|a1=1|t1=Guyana}}
+{{t|os|a1=1|t1=Гайанæ}}
+{{t|pam|a1=1|t1=Guyana}}
+{{t|ps|t1=ګيانا|a1=1}}
+{{t|fa|t1=گویان|a1=1}}
+{{t|pms|a1=1|t1=Gujan-a}}
+{{t|pl|a1=1|t1=Gujana}}
+{{t|pt|a1=1|t1=Guiana}}
+{{t|quz|a1=1|t1=Wayana}}
+{{t|ro|a1=1|t1=Guyana}}
+{{t|ru|a1=1|t1=Гайана}}
+{{t|se|a1=1|t1=Guyana}}
+{{t|sgs|a1=1|t1=Gajana}}
+{{t|sa|a1=1|t1=गयाना}}
+{{t|sc|a1=1|t1=Guyana}}
+{{t|sv|a1=1|t1=Guyana}}
+{{t|sw|a1=1|t1=Guyana}}
+{{t|th|a1=1|t1=ประเทศกายอานา}}
+{{t|tl|a1=1|t1=Guyana}}
+{{t|ta|a1=1|t1=கயானா}}
+{{t|crh|a1=1|t1=Gayana}}
+{{t|tet|a1=1|t1=Giana}}
+{{t|tr|a1=1|t1=Guyana}}
+{{t|uk|a1=1|t1=Гаяна|a2=1|t3=Ґаяна|a3=1|t4=Ґаяна|a5=1|t5=Гайана}}
+{{t|ug|t1=گايانا|a1=1}}
+{{t|uz|a1=1|t1=Guyana}}
+{{t|vi|a1=1|t1=Guyana}}
+{{t|vo|a1=1|t1=Gvayän}}
+{{t|wo|a1=1|t1=Guyaana}}
+{{t|yi|t1=גויאנע|a1=1}}
+{{trad-abajo}}
+
+== {{lengua|fr}} ==
+{{pron-graf|leng=fr}}
+
+=== Etimología 1 ===
+{{etimología|leng=fr}}.
+
+==== {{sustantivo propio|fr}} ====
+;1 {{csem|países|leng=fr}}: {{plm|Guyana}}.
+:*'''Nombre oficial''': ''{{plm|république|fr}} {{l|fr|coopérative}} du Guyana''.
+:*'''Gentilicio:''' {{l|fr|guyanien}}.
+:*'''Capital:''' {{l|fr|Georgetown}}.
+
+==== Véase también ====
+{{Wikipedia|leng=fr}}
+
+== {{lengua|fy}} ==
+{{pron-graf|leng=fy}}
+
+=== Etimología 1 ===
+{{etimología|leng=fy}}.
+
+==== {{sustantivo propio|fy}} ====
+;1 {{csem|países|leng=fy}}: {{plm}}.
+
+==== Véase también ====
+{{Wikipedia|idioma=fy}}
+
+== {{lengua|en}} ==
+{{pron-graf|leng=en}}
+
+=== Etimología 1 ===
+{{etimología|leng=en}}.
+
+==== {{sustantivo propio|en}} ====
+;1 {{csem|países|leng=en}}: {{plm|Guyana}}.
+:*'''Nombre oficial''': ''{{plm|co-operative|en}} {{plm|republic|en}} of Guyana''.
+{{relacionado|leng=en|tit=Gentilicio|Guyanese}}.
+{{relacionado|leng=en|tit=Capital|Georgetown}}.
+
+==== Véase también ====
+{{Wikipedia|idioma=en}}
+
+== {{lengua|yua}} ==
+{{pron-graf|leng=yua}}
+
+=== Etimología 1 ===
+{{etimología|leng=yua}}.
+
+==== {{sustantivo propio|yua}} ====
+;1 {{csem|países|leng=yua}}: {{plm}}.
+
+== {{lengua|nch}} ==
+{{pron-graf|leng=nch}}
+
+=== Etimología 1 ===
+{{etimología|leng=nch}}.
+
+==== {{sustantivo propio|nch}} ====
+;1 {{csem|países|leng=nch}}: {{plm|Guyana}}.
+
+== {{lengua|nhw}} ==
+{{pron-graf|leng=nhw}}
+
+=== Etimología 1 ===
+{{etimología|leng=nhw}}.
+
+==== {{sustantivo propio|nhw}} ====
+;1 {{csem|países|leng=nhw}}: {{plm|Guyana}}.
+
+== {{lengua|nl}} ==
+{{pron-graf|leng=nl}}
+
+=== Etimología 1 ===
+{{etimología|leng=nl}}.
+
+==== {{sustantivo propio|nl}} ====
+;1 {{csem|países|leng=nl}}: {{plm}}.
+
+==== Véase también ====
+{{Wikipedia|idioma=nl}}
+
+== {{lengua|oc}} ==
+{{pron-graf|leng=oc|p1=Guiana}}
+
+=== Etimología 1 ===
+{{etimología|leng=oc}}.
+;1 {{csem|países|leng=oc}}: {{plm|Guyana}}.
+
+==== Véase también ====
+{{Wikipedia|idioma=oc}}
+
+== {{lengua|zai}} ==
+{{pron-graf|leng=zai}}
+
+=== Etimología 1 ===
+{{etimología|leng=zai}}.
+
+==== {{sustantivo propio|zai}} ====
+;1 {{csem|países|leng=zai}}: {{plm|Guyana}}.
+
+== Referencias y notas ==
+<references />

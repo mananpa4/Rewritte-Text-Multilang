@@ -1,0 +1,23 @@
+{
+  "name": "grammar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "vitepress build docs",
+    "dev": "vitepress dev docs",
+    "serve": "vitepress serve docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.26"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.7.2",
+    "jsdom": "^27.4.0",
+    "turndown": "^7.2.2"
+  }
+}

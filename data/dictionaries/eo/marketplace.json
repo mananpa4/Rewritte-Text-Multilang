@@ -1,0 +1,6 @@
+[
+  {"word": "bona", "lemma": "bona", "pos": "ADJ", "language": "eo",
+   "synonyms": [{"text": "altkvalita", "formality": "neutral", "frequency": 0.5, "contexts": ["marketplace", "seo"]}]},
+  {"word": "rapida", "lemma": "rapida", "pos": "ADJ", "language": "eo",
+   "synonyms": [{"text": "tuja", "formality": "neutral", "frequency": 0.48, "contexts": ["marketplace"]}]}
+]

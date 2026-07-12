@@ -28,5 +28,35 @@
    "synonyms": [
      {"text": "simple", "formality": "neutral", "frequency": 0.76, "contexts": ["marketplace", "technical"]},
      {"text": "aisé", "formality": "formal", "frequency": 0.55, "contexts": ["professional"]}
-   ], "antonyms": ["difficile"]}
+   ], "antonyms": ["difficile"]},
+  {"word": "grand", "lemma": "grand", "pos": "ADJ", "language": "fr",
+   "synonyms": [
+     {"text": "vaste", "formality": "neutral", "frequency": 0.62, "contexts": ["professional"]},
+     {"text": "considérable", "formality": "formal", "frequency": 0.56, "contexts": ["professional"]}
+   ], "antonyms": ["petit"]},
+  {"word": "petit", "lemma": "petit", "pos": "ADJ", "language": "fr",
+   "synonyms": [
+     {"text": "réduit", "formality": "neutral", "frequency": 0.6, "contexts": ["professional"]},
+     {"text": "compact", "formality": "neutral", "frequency": 0.58, "contexts": ["marketplace", "technical"]}
+   ], "antonyms": ["grand"]},
+  {"word": "important", "lemma": "important", "pos": "ADJ", "language": "fr",
+   "synonyms": [
+     {"text": "essentiel", "formality": "formal", "frequency": 0.66, "contexts": ["professional"]},
+     {"text": "majeur", "formality": "formal", "frequency": 0.6, "contexts": ["professional"]}
+   ]},
+  {"word": "problème", "lemma": "problème", "pos": "NOUN", "language": "fr",
+   "synonyms": [
+     {"text": "souci", "formality": "neutral", "frequency": 0.64, "contexts": ["professional"]},
+     {"text": "difficulté", "formality": "formal", "frequency": 0.62, "contexts": ["professional"]}
+   ]},
+  {"word": "améliorer", "lemma": "améliorer", "pos": "VERB", "language": "fr",
+   "synonyms": [
+     {"text": "optimiser", "formality": "formal", "frequency": 0.6, "contexts": ["technical", "professional"]},
+     {"text": "perfectionner", "formality": "formal", "frequency": 0.5, "contexts": ["professional"]}
+   ]},
+  {"word": "utiliser", "lemma": "utiliser", "pos": "VERB", "language": "fr",
+   "synonyms": [
+     {"text": "employer", "formality": "formal", "frequency": 0.66, "contexts": ["professional"]},
+     {"text": "exploiter", "formality": "formal", "frequency": 0.56, "contexts": ["professional", "technical"]}
+   ]}
 ]

@@ -1,0 +1,8 @@
+[
+  {"word": "rápido", "lemma": "rápido", "pos": "ADJ", "language": "pt",
+   "synonyms": [{"text": "eficiente", "formality": "formal", "frequency": 0.66, "contexts": ["technical"]}]},
+  {"word": "configuração", "lemma": "configuração", "pos": "NOUN", "language": "pt",
+   "synonyms": [{"text": "ajuste", "formality": "neutral", "frequency": 0.64, "contexts": ["technical"]}]},
+  {"word": "desempenho", "lemma": "desempenho", "pos": "NOUN", "language": "pt",
+   "synonyms": [{"text": "rendimento", "formality": "neutral", "frequency": 0.6, "contexts": ["technical", "professional"]}]}
+]

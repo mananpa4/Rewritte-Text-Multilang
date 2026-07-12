@@ -1,0 +1,352 @@
+{{også|Hund}}
+{{=da=}}
+{{wikipedia}}
+[[Image:MasPiri-Puma-FIN.jpg|thumb|right|225px|En hund]]
+{{-etym-}}
+Menes at stamme fra [[indoeuropæisk]] sprog ''[[ḱʷn̥tós]]'', fra ''[[ḱwṓ]]'' og derfra videre til [[germansk]] sprog ''*[[hundaz]]'' og fra {{etyl|non|da}} {{term|hundr|lang=non}}.
+{{-pronun-}}
+*{{IPA|[ˈhunˀ]|lang=da}}. I sammensætninger startende med ''hunde-'': {{IPA|[ˈhunə-]|lang=da}}
+*{{X-SAMPA|["hun_?]}}. I sammensætninger startende med ''hunde-'': {{X-SAMPA|["hun@-]}}
+{{-noun-|da}}
+{{pn}} {{c}}
+#(''zoologi''): et pattedyr af underarten ''Canis lupus familiaris''.
+#:''[[jeg|Jeg]] [[være|er]] [[ikke]] [[bange]] [[for]] '''hunde'''.''
+#(''slang''): [[100]] [[DKK]]-[[seddel]] (bruges ikke i flertal)
+#:''[[ville|Vil]] [[du]] [[låne]] [[mig]] [[en]] '''hund'''?
+{{-decl-}}
+{{da-noun-infl|en|e}}
+* I sammensætninger er formen ''hunde-'' f.eks. ''[[hundehus]]'', ''[[hundeliv]]''.
+{{-syn-}}
+{{(}}
+*(''hunhund''): en [[tæve]]
+*(''unge''): en [[hvalp]]
+*(''nedsættende''): en [[køter]]
+{{-}}
+*(''slang om lille hund''): en [[tæppetisser]]
+*(''babysprog''): en [[vovse]]
+*(''babysprog''): en [[vovhund]]
+{{)}}
+{{-derv-}}
+{{(}}
+*[[blodhund]]
+*[[førerhund]]
+*[[fårehund]]
+*[[gravhund]]
+*[[grævlingehund]]
+*[[hanhund]]
+*[[hundeangst]]
+*[[hundedage]]
+*[[hundefoder]]
+*[[hundefører]]
+*[[hundegalskab]]
+*[[hundegræs]]
+*[[hundehoved]]
+*[[hundehul]]
+{{-}}
+*[[hundehus]]
+*[[hundehvalp]]
+*[[hundekennel]]
+*[[hundekiks]]
+*[[hundekold]]
+*[[hundekunster]]
+*[[hundeliv]]
+*[[hundelort]]
+*[[hundepension]]
+*[[hunderæd]]
+*[[hundeslagsmål]]
+*[[hundeslæde]]
+*[[hundevejr]]
+*[[hunhund]]
+{{-}}
+*[[hyrdehund]]
+*[[hønsehund]]
+*[[jagthund]]
+*[[jordhund]]
+*[[kamphund]]
+*[[lænkehund]]
+*[[muskelhund]]
+*[[mårhund]]
+*[[pladshund]]
+*[[politihund]]
+*[[præriehund]]
+*[[puddelhund]]
+*[[sanktbernhardshund]]
+*[[schæferhund]]
+*[[slædehund]]
+{{)}}
+{{-expr-}}
+*(have stor lyst til noget): [[at|At]] [[være]] [[en]] hund [[efter]] [[noget]];
+*(problemets egentlige årsag): [[der|Dér]] [[ligge]]r hunden begravet;
+*(at være morsom eller vittig): [[en|En]] [[vittig]] [[hund]];
+*(blive fattig eller alkoholiker mv.): [[gå|Gå]] [[i]] hundene;
+*(at være barsk og ufølsom): [[at|At]] [[være]] [[en]] [[hård]] hund;
+*(skændes altid): [[leve|Leve]] [[som]] hund [[og]] [[kat]];
+*(man gør, hvad man er vant til): [[man|Man]] [[kunne|kan]] [[ikke]] [[lære]] [[en]] [[gammel]] hund [[ny]]e [[kunst]]er;
+*(man skal ikke dømme efter det ydre): [[man|Man]] [[skulle|skal]] [[ikke]] [[skue]] hunden [[på]] [[hår]]ene;
+*(hårdt liv): [[det|Det]] [[er]] [[et]] hundeliv;
+*(meget dårligt vejr): Det er et hundevejr;
+*(når man nævner at man er med i noget uden at ville virke pralende): Og mig selv, sagde hunden;
+*(når man utilsigtet bringer uorden eller forstyrrelse i noget der ellers fungerer): Som en hund i et spil kegler.
+{{-trans-}}
+;husdyr
+{{(}}
+*{{af}}: {{trad|af|hond}}
+*{{sq}}: {{trad|sq|qen}}
+*{{ar}}: {{ARchar|[[كلب]]}} (kalb)
+* {{eu}}: {{t|eu|etxe-txakur}}
+* {{bs}}: {{t|bs|pas|m}}
+* {{br}}: {{t|br|ki|m}} chas {{p}}, {{t|br|kiez|f}} -ed
+* {{bg}}: {{t|bg|куче}} ({{t|bg|kuče}})
+* {{ca}}: {{t|ca|gos|m}}, {{t|ca|gossa|f}}, {{t|ca|ca|m}}
+*{{chr}}: [[gitli]] [[gili]]
+*{{chs}} (Inezeño): [[huču]]
+* {{en}}: {{t|en|dog}}
+* {{eo}}: {{t|eo|hundo}}
+* {{et}}: {{t|et|koer}}
+*{{fi}}: {{trad|fi|koira}}
+* {{fr}}: {{t|fr|chien|m}}
+*{{fur}}: [[cjan]]
+* {{fo}}: {{t|fo|hundur}}
+* {{gl}}: {{t|gl|can}}
+*{{got}}: [[𐌷𐌿𐌽𐌳𐍃]] (hunds) {{m}}
+* {{el}}: {{t|el|σκύλος}} (skýlos) {{m}}
+* {{kl}}: {{t|kl|qimmeq}}
+* {{gn}}: {{t|gn|jagua}}
+*{{haw}}: [[ʻilio]]
+* {{he}}: {{t|he|כלב}} (keh-lev)
+* {{hi}}: {{t|hi|कुत्ता}} (kuttā)
+* {{be}}: {{t|be|сабака}}
+* {{id}}: {{t|id|anjing}}
+* {{ia}}: {{t|ia|can}}
+* {{ie}}: {{t|ie|cane}}
+*{{iu}}: [[qimmiq]]
+* {{ga}}: {{t|ga|madra}}, {{t|ga|gadhar}}, {{t|ga|cú}}
+* {{is}}: {{t|is|hundur}}
+* {{it}}: {{t|it|cane|m}}
+* {{ja}}: {{t|ja|犬}} (いぬ, inu)
+* {{jv}}: {{t|jv|asu}}
+* {{yi}}: {{t|yi|הונט}} (hunt)
+*{{zh}}: {{ZHchar|[[犬]]}} (quǎn)
+* {{ko}}: {{t|ko|개}} (gæ)
+* {{hr}}: {{t|hr|pas|m}}
+* {{O|ku|se|m}}
+*{{lld}}: [[cian]]
+* {{lo}}: {{t|lo|ໝາ}} (maa)
+* {{la}}: {{t|la|canis|c}}
+* {{lv}}: {{t|lv|suns}}
+* {{li}}: {{t|li|hóndj|m}}
+* {{lt}}: {{t|lt|šuo}}
+{{-}}
+*{{jbo}}: [[gerku]]
+* {{mk}}: {{t|mk|пес}} ({{t|mk|pes}})
+* {{ml}}: {{t|ml|നായ്}}
+*{{mnc}}: [[indahūn]]
+* {{mi}}: {{t|mi|kurī}}
+* {{mn}}: {{t|mn|нохой}} (noxoy)
+* {{nl}}: {{t|nl|hond|m}}
+*{{dsb}}: [[pjas]]
+* {{se}}: {{t|se|beana}}
+* {{no}}: hund, {{t|no|bikkje}}
+* {{oc}}: {{t|oc|gos}}, {{t|oc|can}}
+*{{grc}}: [[κύων]] (kýōn) {{c}}
+*{{fa}}: {{trad|fa|سگ}} (sag)
+*{{nds}}: [[Hund]]
+* {{pl}}: {{t|pl|pies|m}}
+* {{pt}}: {{t|pt|cão|m}}, {{t|pt|cadela|f}}, {{t|pt|cachorro|m}}, {{t|pt|cachorra|f}}
+*{{prv}}: [[can]]
+*{{rom}} ("sigøjnersk"): [[zhukel]] {{m}}, [[zhukli]] {{f}}
+* {{ro}}: {{t|ro|câine}}
+* {{ru}}: {{t|ru|собака}} (sobaka) {{f}}, {{t|ru|пёс}} (pǒs) {{m}}
+* {{rm}}: {{t|rm|chaun}}
+* {{sa}}: {{t|sa|s'va-na}}
+* {{sc}}: {{t|sc|cani}}/{{t|sc|cane}}, {{t|sc|perru}}, {{t|sc|catteddu}}
+* {{sr}}: {{t|sr|пас}} ({{t|sr|pas}})
+* {{gd}}: {{t|gd|cù|m}}
+* {{sk}}: {{t|sk|pes|m}}, {{t|sk|suka|f}}
+* {{sl}}: {{t|sl|pes|m}}
+* {{so}}: {{t|so|ey}}
+* {{es}}: {{t|es|perro|m}}, {{t|es|chucho|m}}
+* {{sv}}: {{t|sv|hund|c}}
+* {{tl}}: {{t|tl|aso}}
+* {{ty}}: {{t|ty|ʻuri}}
+* {{th}}: {{t|th|หมา}} (mǎa)
+* {{cs}}: {{t|cs|pes|m}}
+*{{tpi}}: [[dok]]
+*{{tpn}}: [[îagûara]]
+* {{tr}}: {{t|tr|köpek}}
+* {{de}}: {{t|de|Hund|m}}
+* {{uk}}: {{t|uk|собака}} (sobaka), {{t|uk|пес}} (pes)
+* {{hu}}: {{t|hu|kutya}}
+* {{fy}}: {{t|fy|hûn}}
+* {{vi}}: {{t|vi|chó}} ({{IPA|/ʧɔ́/}}; {{t|vi|VIQR}}: cho')
+*{{vo}}: {{trad|vo|dog}}
+* {{cy}}: {{t|cy|ci|m}}
+*{{hsb}}: [[pos]], [[psyk]]
+{{)}}
+;100 DKK-seddel
+{{(}}
+* {{sv}}: {{t|sv|hundring|c}}
+{{-}}
+* {{de}}: {{t|de|Hündin|f}}
+{{)}}
+ 
+[[Kategori:Pattedyr på dansk]]
+
+{{-no-}}
+{{-etym-}}
+Sandsynligvis fra [[w:Urgermansk|urgermansk]] ''*hundaz'' - gennem {{etyl|non|no}} {{term|hundr|lang=non}}.
+{{-pronun-}}
+* {{IPA|/hʉn/|lang=no}}, {{X-SAMPA|/h}n/|lang=no}}
+* [[homofon|Homofoner]]: [[hun#Norsk|hun]]
+{{-noun-|no}}
+{{pn}} • {{m}} <span style="font-variant:small-caps; font-size:0.9em;">Bokmål/Nynorsk</span> • {{c}} <span style="font-variant:small-caps; font-size:0.9em;">Riksmål</span>
+# en [[#hund (dansk)|hund]]
+#: ''Jeg har en '''hund'''.''
+{{-decl-}}
+{| border=0
+|-
+|bgcolor="#fff3f3" valign=top width=20%|
+{|
+Ental ubestemt<br>
+en <b>[[hund]]</b>
+|}
+| width=1% |
+|bgcolor="#fff3f3" valign=top width=20%|
+{|
+Ental bestemt<br>
+<b>hunden</b>
+|}
+| width=1% |
+|bgcolor="#fff3f3" valign=top width=20%|
+{|
+Flertal ubestemt<br>
+<b>hunder</b>
+|}
+| width=1% |
+|bgcolor="#fff3f3" valign=top width=20%|
+{|
+Flertal bestemt<br>
+<b>hundene</b>
+|}
+|}</div></div>
+{{-expr-}}
+<div class="NavFrame">
+<div class="NavHead" align=left>Udtryk</div>
+<div class="NavContent">
+* [[det er der hunden ligger begravet]]
+* [[en skal ikke skue hunden på hårene]]
+* [[fryse som en hund]]
+* [[gale hunder får revet skinn]]
+* [[gå i hundene]]
+* [[jage en vekk som en hund]]
+* [[leve som hund og katt]]
+* [[skamme seg som en hund]]
+* [[være en hund etter noe]]
+* [[være lydig som en hund]]
+</div>
+</div>
+{{-syn-}}
+[[bikkje]], [[kjøter]], [[vovvov]], [[bisk]], [[rakke]]
+{{-rel-}}
+[[buhund]], [[elghund]], [[fuglehund]], [[harehund]], [[trekkhund]]
+{{-srce-}}
+*Niels Åge Nielsen: ''Ordenes Historie'' ISBN 87-7789-000-0
+
+[[Kategori:Pattedyr på norsk]]
+
+{{-sv-}}
+{{-etym-}}
+Sandsynligvis fra [[w:Urgermansk|urgermansk]] ''*hundaz'' - gennem {{etyl|non|sv}} {{term|hundr|lang=non}}.
+{{-pronun-}}
+* {{audio|Sv-hund.ogg|audio}}
+* {{IPA|/hɵnd/|lang=sv}}, {{X-SAMPA|/h8nd/|lang=sv}}
+{{-noun-|sv}}
+{{pn}} {{c}}
+# en [[#hund (dansk)|hund]]
+#: ''Här ligger '''en hund''' begraven.''
+#:: Her ligger '''hunden''' begravet.
+{{-decl-}}
+{{sv-noun-reg-ar}}
+{{-rel-}}
+<div class="NavFrame">
+<div class="NavHead" align=left>Relaterede opslag</div>
+<div class="NavContent">
+{|
+|- valign=top
+|
+* [[fårhund]]
+* [[fähund]]
+* [[hundaktig]]
+* [[hundan]]
+* [[hundbajs]]
+* [[hundben]]
+* [[hundbett]]
+* [[hundbiten]]
+* [[hundblick]]
+* [[hundbuss]]
+|
+* [[hunddagis]]
+* [[hunddjur]]
+* [[hunddressyr]]
+* [[hundfoder]]
+* [[hundförare]]
+* [[hundgalenskap]]
+* [[hundgård]]
+* [[hundgöra]]
+* [[hundhuvud]]
+* [[hundhår]]
+|
+* [[hundjobb]]
+* [[hundkapplöpning]]
+* [[hundkex]]
+* [[hundkoja]]
+* [[hundkoppel]]
+* [[hundkräk]]
+* [[hundkyrkogård]]
+* [[hundkäx]]
+* [[hundlik]]
+* [[hundliv]]
+|
+* [[hundloka]]
+* [[hundlort]]
+* [[hundmat]]
+* [[hundnos]]
+* [[hundpatrull]]
+* [[hundpsykolog]]
+* [[hundsfottera]]
+* [[hundsim]]
+* [[hundskall]]
+* [[hundskatt]]
+|
+* [[hundskinn]]
+* [[hundskit]]
+* [[hundskola]]
+* [[hundslagsmål]]
+* [[hundsläde]]
+* [[hundspann]]
+* [[Hundstjärnan]]
+* [[hundtoalett]]
+* [[hundtunga]]
+* [[hundutställning]]
+|
+* [[hundvakt]]
+* [[hundvalp]]
+* [[hundviol]]
+* [[hundväder]]
+* [[hundår]]
+* [[hundägare]]
+* [[hundäxing]]
+* [[hundöga]]
+* [[hundöra]]
+* [[hynda]]
+|
+* [[knähund]]
+* [[vakthund]]
+|}</div></div>
+{{-syn-}}
+* [[vofsing]]
+* [[vovve]]
+{{-ref-}}
+* {{SAOL}}
+
+[[Kategori:Pattedyr på svensk]]

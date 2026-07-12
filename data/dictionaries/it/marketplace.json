@@ -1,0 +1,10 @@
+[
+  {"word": "spedizione", "lemma": "spedizione", "pos": "NOUN", "language": "it",
+   "synonyms": [{"text": "consegna", "formality": "neutral", "frequency": 0.72, "contexts": ["marketplace"]}]},
+  {"word": "offerta", "lemma": "offerta", "pos": "NOUN", "language": "it",
+   "synonyms": [{"text": "promozione", "formality": "neutral", "frequency": 0.7, "contexts": ["marketplace", "seo"]}]},
+  {"word": "resistente", "lemma": "resistente", "pos": "ADJ", "language": "it",
+   "synonyms": [{"text": "robusto", "formality": "neutral", "frequency": 0.66, "contexts": ["marketplace"]}]},
+  {"word": "comodo", "lemma": "comodo", "pos": "ADJ", "language": "it",
+   "synonyms": [{"text": "ergonomico", "formality": "formal", "frequency": 0.56, "contexts": ["marketplace", "technical"]}]}
+]

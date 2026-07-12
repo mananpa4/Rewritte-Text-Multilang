@@ -38,8 +38,22 @@ semantic = ["sentence-transformers>=2.5.0"]
 spacy = ["spacy>=3.7.0"]
 # Corrección gramatical.
 grammar = ["language-tool-python>=2.8"]
-# Gancho de IA opcional (NO se cablea en esta entrega).
+# Gancho de IA opcional vía API en la nube (NO se cablea en esta entrega).
 ai = ["anthropic>=0.40.0"]
+# Paráfrasis neuronal local (T5 ligero, HuggingFace) para el toggle de IA de la
+# GUI/CLI. Corre 100% offline tras la primera descarga (caché de HuggingFace);
+# no requiere servidor propio. Sólo aplica a texto en inglés (ver
+# transformers/t5_paraphraser.py).
+ai-paraphrase = ["transformers>=4.30.0", "torch>=2.0.0", "sentencepiece>=0.1.99"]
+# App de escritorio (Tkinter es stdlib). pyspellchecker: corrector ortográfico.
+# ttkthemes: tema visual "winxpblue" (azul XP-Luna, igual en cualquier versión
+# de Windows). Aviso de licencia: ttkthemes es GPL-3.0-or-later (copyleft) —
+# si distribuyes el .exe empaquetado con este tema, GPL obliga a poder
+# entregar el código fuente completo a quien lo reciba. Sin este extra, la app
+# usa los temas nativos vista/xpnative de Tcl/Tk (sin ninguna implicación).
+desktop = ["pyspellchecker>=0.8.0", "ttkthemes>=3.2.2"]
+# Para generar el ejecutable .exe.
+build-exe = ["pyinstaller>=6.0"]
 # Todo lo razonable de una vez (sin torch pesado de 'ai').
 all = [
     "nltk>=3.8",
@@ -55,6 +69,9 @@ dev = ["pytest>=8.0", "ruff>=0.5.0"]
 
 [project.scripts]
 rewrite-engine = "rewrite_engine.cli.main:main"
+
+[project.gui-scripts]
+rewrite-engine-gui = "rewrite_engine.desktop.app:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/rewrite_engine"]

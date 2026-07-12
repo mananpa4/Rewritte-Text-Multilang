@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spellcaster"
+version = "0.0.7"
+authors = [
+    { name="Alex Reibman", email="areibman@gmail.com" }
+]
+description = "An open-source tool that leverages AI agents to enhance the quality of your codebase by scanning repositories for grammar, spelling, and code example errors in documentation files."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "agentops>=0.3.11",
+    "tokencost==0.1.12",
+    "litellm>=1.44.23",
+    "python-dotenv",
+    "rich",
+    "GitPython",
+    "tenacity",
+    "pydantic==2.9.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/areibman/spellcaster"
+Issues = "https://github.com/areibman/spellcaster/issues"
+
+[tool.autopep8]
+max_line_length = 120
+
+[project.scripts]
+spellcaster = "spellcaster.cli:main"
+
+[project.entry-points.console_scripts]
+spellcaster = "spellcaster.cli:main"
+
+# Add this section to explicitly specify the packages
+[tool.setuptools.packages.find]
+include = ["spellcaster*"]
+exclude = ["assets*", "samples*"]

@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet")
+    link(rel="icon" type="image/png" href="images/favicon-32x32.png")
+
+    //- Primary Meta Tags
+    title Dictionary app
+    meta(name="title" content="dictionary app")
+    meta(name="description" content="English dictionary. Meanings and definitions of words with pronunciations, synonyms and antonyms")
+
+    //- Open Graph / Facebook
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="https://dictionary-app-bootcamp.netlify.app/")
+    meta(property="og:title" content="dictionary app")
+    meta(property="og:description" content="English dictionary. Meanings and definitions of words with pronunciations, synonyms and antonyms")
+    meta(property="og:image" content="https://raw.githubusercontent.com/Javieer57/dictonary-app/main/thumbnail.png")
+
+    //- Twitter
+    meta(property="twitter:card" content="summary_large_image")
+    meta(property="twitter:url" content="https://dictionary-app-bootcamp.netlify.app/")
+    meta(property="twitter:title" content="dictionary app")
+    meta(property="twitter:description" content="English dictionary. Meanings and definitions of words with pronunciations, synonyms and antonyms")
+    meta(property="twitter:image" content="https://raw.githubusercontent.com/Javieer57/dictonary-app/main/thumbnail.png")
+
+  body
+    .dictionary-container
+      include pug/header.pug
+
+      main 
+        h1.sr-only Dictionary app
+        form#search-form
+          include pug/search.pug
+
+        .results#results(aria-live="polite" aria-atomic="true")
+
+
+

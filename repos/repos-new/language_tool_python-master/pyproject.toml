@@ -1,0 +1,183 @@
+[project]
+name = "language_tool_python"
+version = "3.4.0" # Keep in sync with docs/source/conf.py
+requires-python = ">=3.10"
+description = "Checks grammar using LanguageTool."
+readme = { file = "README.md", content-type = "text/markdown" }
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Jack Morris", email = "jxmorris12@gmail.com" }
+]
+maintainers = [
+    { name = "mdevolde", email = "martin.devolder2@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Linguistic",
+]
+keywords = ["python", "nlp", "grammar", "languagetool", "grammar-checker", "spellchecker", "grammar-parser"]
+
+dependencies = [
+    "requests",
+    "tqdm",
+    "psutil",
+    "tomli; python_version < '3.11'", # only needed for py < 3.11 because tomllib added in 3.11 is used in the codebase, needs a fallback
+    "typing_extensions; python_version < '3.13'", # only needed for py < 3.13 because warnings.deprecated added in 3.13 is used in the codebase
+]
+
+[project.urls]
+repository = "https://github.com/jxmorris12/language_tool_python.git"
+documentation = "https://language-tool-python.readthedocs.io/en/latest/"
+changelog = "https://github.com/jxmorris12/language_tool_python/blob/master/CHANGELOG.md"
+
+[dependency-groups]
+tests = [
+    "pytest",
+    "pytest-benchmark",
+    "pytest-cov",
+    "hypothesis",
+]
+
+docs = [
+  "furo",
+  "sphinx",
+  "sphinx-design",
+]
+
+types = [
+    "types-requests",
+    "types-tqdm",
+    "types-psutil",
+]
+
+quality = [
+    # Keep in sync mypy version with .pre-commit-config.yaml
+    "mypy==2.1.0",
+    # Keep in sync ruff version with .pre-commit-config.yaml
+    "ruff==0.15.16",
+    # Keep in sync zizmor version with .pre-commit-config.yaml
+    "zizmor==1.26.1"
+]
+
+
+[project.scripts]
+language_tool_python = "language_tool_python.__main__:main"
+
+[build-system]
+requires = ["uv_build>=0.11.14,<0.12"]
+build-backend = "uv_build"
+
+[tool.uv]
+exclude-newer = "7 days"
+required-version = ">=0.11.25,<0.12"
+
+[tool.ruff]
+line-length = 88
+include = ["src/**/*.py", "tests/**/*.py"]
+
+[tool.ruff.lint]
+select = [
+    "A",      # Built-in shadowing and variable shadowing checks
+    "ANN",    # Type annotation presence and quality checks
+    "ARG",    # Unused function and method arguments
+    "ASYNC",  # Asyncio and asynchronous programming issues
+    "B",      # Likely bugs and dangerous patterns (flake8-bugbear)
+    "BLE",    # Blind exception handling (e.g. bare except)
+    "COM",    # Trailing commas consistency
+    "C4",     # Unnecessary or suboptimal collection constructions
+    "C90",    # McCabe complexity checks
+    "D",      # Docstring conventions and style (pydocstyle)
+    "DTZ",    # Naive datetime usage and timezone issues
+    "E",      # pycodestyle errors (PEP 8 violations)
+    "EM",     # Exception message formatting issues
+    "ERA",    # Commented-out dead code detection
+    "F",      # Pyflakes logical and static analysis errors
+    "FA",     # Future-compatible typing annotations
+    "FBT",    # Boolean positional argument "traps"
+    "FIX",    # TODO, FIXME, XXX comment detection
+    "FLY",    # Prefer f-strings over str.format()
+    "FURB",   # Refactoring and modernization suggestions (refurb)
+    "G",      # Logging format and logging call issues
+    "I",      # Import sorting and organization (isort)
+    "ICN",    # Import alias naming conventions
+    "INP",    # Missing __init__.py package checks
+    "N",      # PEP 8 naming conventions (pep8-naming)
+    "PERF",   # Performance anti-patterns
+    "PGH",    # Pygrep-hooks rules and miscellaneous checks
+    "PIE",    # Unnecessary or non-pythonic code patterns
+    "PL",     # Pylint-derived checks
+    "PT",     # Pytest style and correctness checks
+    "PTH",    # Prefer pathlib over os/path utilities
+    "Q",      # Quote style consistency
+    "RET",    # Return statement consistency and simplification
+    "RSE",    # Raise statement improvements
+    "RUF",    # Ruff-specific rules
+    "S",      # Security issues and insecure code patterns (bandit)
+    "SLF",    # Access to private members
+    "SLOT",   # __slots__ usage checks
+    "SIM",    # Code simplification opportunities
+    "TC",     # Type-checking block optimizations
+    "TCH",    # Move typing-only imports into TYPE_CHECKING blocks
+    "TID",    # Import restriction and tidiness rules
+    "TRY",    # try/except structure improvements
+    "T10",    # Debugger breakpoint detection
+    "T20",    # print/pprint statement detection
+    "UP",     # Python syntax and API modernization (pyupgrade)
+    "W",      # pycodestyle warnings
+    "YTT",    # Unsafe or outdated sys.version checks
+]
+ignore = [
+    "COM812", # Missing trailing comma in confict with formatter
+    "D203",   # Has to choose between D203 and D211 (No blank line before class docstring)
+    "D213",   # Has to choose between D213 and D212 (Multi-line docstring should start at the first line)
+    "FBT001", # Positional boolean arguments. Fix these in next breaking change release
+    "FBT002", # Default positional boolean arguments. Fix these in next breaking change release
+    "TRY301", # Raise an exception in a try block that is caught by the except block. There is a workaround for this in the codebase
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = [
+    "S101",   # Need to use assert statements in tests
+    "SLF001", # Need to use private members of the library for testing
+    "RUF001", # LanguageTool output contains typographic quotes (‘’“”)
+]
+"src/language_tool_python/__main__.py" = ["T201"] # Allow usage of print in the CLI entry point
+
+[tool.mypy]
+files = ["src", "tests"]
+disallow_any_decorated = true
+disallow_any_explicit = true
+disallow_any_expr = true
+disallow_any_generics = true
+disallow_any_unimported = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+extra_checks = true
+no_implicit_optional = true
+no_implicit_reexport = true
+pretty = true
+show_error_codes = true
+strict_equality = true
+strict_equality_for_none = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = ["tests.property.*"]
+# hypothesis decorators contain Any expressions, so we need to disable the following checks for tests using hypothesis
+disallow_any_decorated = false
+disallow_any_expr = false

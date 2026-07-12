@@ -1,0 +1,82 @@
+@use "../abstracts" as *;
+
+.toggle-switch__container {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: rem(40);
+  aspect-ratio: 1/0.5;
+  background-color: var(--secondary-text);
+  border-radius: rem(30);
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus,
+  &:hover {
+    .slider {
+      &:after {
+        background-color: var(--contrast);
+      }
+    }
+  }
+
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: rem(14);
+      aspect-ratio: 1/1;
+      left: rem(3);
+      bottom: rem(3);
+      background-color: var(--white);
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      aspect-ratio: 1/1;
+      width: rem(6);
+      left: rem(7);
+      bottom: rem(7);
+      background-color: transparent;
+      border-radius: 50%;
+      transition: left 0.3s ease-in-out;
+    }
+  }
+
+  &[aria-pressed="true"] {
+    background-color: var(--contrast);
+
+    & + .moon-icon {
+      background-color: var(--contrast);
+    }
+
+    .slider:before {
+      left: rem(21);
+    }
+
+    .slider:after {
+      left: rem(25);
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{{vegeu|Català|catalá|CATALÀ|catalã}}
+
+== {{-ca-}} ==
+{{ca-pron
+|f-centr = LL-Q7026 (cat)-Unjoanqualsevol-català.wav
+|f-val = LL-Q7026 (cat)-Millars-català.wav
+}}
+{{-etimologia-}} D’origen incert, paral·lel al de {{m|ca|Catalunya}}, {{etim-s|ca|XII}}. Potser de {{m|roa-oca|*catelanos}}, metàtesi del llatí {{m|la|Lacetanōs}}, acusatiu de {{m|la|Lacetani|t=lacetans}},<ref>{{DECat|IX|277|a|57}}</ref> poble ibèric de la regió central de Catalunya i que podria relacionar-se amb la menció de Ptolomeu dels {{m|grc||Καστελανοι}} o {{m|grc||Κατελανοι}}.<ref>{{OnCat|III|337}}</ref> Vegeu més informació a {{m|ca|Catalunya}}.
+
+=== Adjectiu ===
+{{ca-adj|m}}
+
+# Relatiu o pertanyent a [[Catalunya]], als seus habitants o a la [[català#Substantiu|llengua catalana]].
+# Relatiu o pertanyent als [[Països Catalans]] o als seus habitants.
+
+{{-trad-}}
+{{t-inici|Relatiu a Catalunya o al català}}
+* {{de}}: {{trad|de|katalanisch}}
+* {{en}}: {{trad|en|Catalan}}
+* {{ast}}: {{trad|ast|catalán}}
+* {{bs}}: {{trad|bs|katalonski}}
+* {{es}}: {{trad|es|catalán|m}}
+* {{hr}}: {{trad|hr|katalonski}}
+* {{eo}}: {{trad|eo|kataluna}}
+* {{fr}}: {{trad|fr|catalan}}
+* {{gl}}: {{trad|gl|catalán}}
+* {{it}}: {{trad|it|catalano}}
+* {{csc}}: {{trad|csc|CATALÀ}}
+* {{mt}}: {{trad|mt|Katalan}}
+* {{nl}}: {{trad|nl|Catalaans}}
+* {{oc}}: {{trad|oc|catalan}}
+* {{ru}}: {{trad|ru|каталанский}}, {{trad|ru|каталонский}}
+* {{sv}}: {{trad|sv|katalansk}}
+* {{uk}}: {{trad|uk|каталонський}}
+{{t-final}}
+
+=== Nom ===
+{{ca-nom|m|f=}}
+
+# Natural de Catalunya.
+# Natural dels Països Catalans.
+#: {{ex-cit|ca|He pellucat una trentena de topònims marinencs que podem qualificar de genèrics, però que sonen com a més habituals per a un '''català''' de Mallorca.|ref=Vicenç M. Rosselló i Verger, ''Toponímia, geografia i cartografia'', 2004, {{ISBN|9788437058528}}}}
+# {{marca|ca|masculí singular}} Llengua històricament parlada a [[Catalunya]], [[Andorra]], [[País Valencià]], les [[illes Balears]], la [[Catalunya Nord]], l'[[Alguer]] i la [[Franja de Ponent]].
+# [[catalanoparlant]]
+
+{{-sin-}}
+* {{q|llengua}} [[llemosí]] {{q|històric|impropi}}, [[valencià]] {{q|valencià}}, [[pla]] {{q|menorquí}}
+
+{{-der-}}
+* [[acatalanar]]
+* [[catalanada]]
+* [[catalanejar]]
+* [[catalanesc]]
+* [[catalanisme]]
+* [[catalanista]]
+* [[catalanística]]
+* [[catalanitat]]
+* [[catalanització]]
+* [[catalanitzar]]
+* [[catalano-]]
+
+{{-trad-}}
+{{t-inici|Natural de Catalunya}}
+* {{de}}: {{trad|de|Katalane|m}}
+* {{en}}: {{trad|en|Catalan}}
+* {{ast}}: {{trad|ast|catalán}}
+* {{es}}: {{trad|es|catalán}}
+* {{eo}}: {{trad|eo|kataluno}}
+* {{fr}}: {{trad|fr|Catalan}}
+* {{gl}}: {{trad|gl|catalán}}
+* {{csc}}: {{trad|csc|CATALÀ}}
+* {{mt}}: {{trad|mt|Katalan}}
+* {{ru}}: {{trad|ru|каталонец}}
+{{t-final}}
+
+{{t-inici|Llengua originària de Catalunya}}
+* {{af}}: {{trad|af|Katalaans}}
+* {{sq}}: {{trad|sq|katalonisht}}
+* {{de}}: {{trad|de|Katalanisch|n}}
+* {{en}}: {{trad|en|Catalan}}
+* {{ar}}: {{trad|ar|القطلونية}}
+* {{ast}}: {{trad|ast|catalán}}
+* {{az}}: {{trad|az|katalan}}
+* {{eu}}: {{trad|eu|katalaniera}}
+* {{be}}: {{trad|be|каталёнскай}}
+* {{bh}}: {{trad|bh|Catal Ke}}
+* {{bs}}: {{trad|bs|katalonski}} jezik
+* {{br}}: {{trad|br|katalaneg|m}}
+* {{bg}}: {{trad|bg|каталонски}}
+* {{es}}: {{trad|es|catalán|m}}
+* {{chr}}: {{trad|chr|ᎧᏔᎳ}}
+* {{ko}}: {{trad|ko|카탈로니아어}}
+* {{hr}}: {{trad|hr|katalonski|m}}
+* {{da}}: {{trad|da|catalansk}}
+* {{sco}}: {{trad|sco|Catalanais}}
+* {{sk}}: {{trad|sk|katalánčine}}
+* {{sl}}: {{trad|sl|katalonščina|f}}
+* {{eo}}: {{trad|eo|kataluno}}
+* {{et}}: {{trad|et|katalaani}}
+* {{fo}}: {{trad|fo|Katalandskt}}
+* {{fi}}: {{trad|fi|katalaani}}
+* {{fr}}: {{trad|fr|catalan}}
+* {{fy}}: {{trad|fy|catalan}}
+* {{gl}}: {{trad|gl|catalán}}
+* {{cy}}: {{trad|cy|Catalaneg}}
+* {{ka}}: {{trad|ka|კატალანური}}
+* {{el}}: {{trad|el|καταλανικά}}
+* {{gu}}: {{trad|gu|કૅટલૅન}}
+* {{he}}: {{trad|he|קטלונית}}
+* {{hi}}: {{trad|hi|कॅटलॅन}}
+* {{hu}}: {{trad|hu|katalán}}
+* {{id}}: {{trad|id|katalan}}
+* {{ia}}: {{trad|ia|catalano}}
+* {{ga}}: {{trad|ga|Catalóinis}}
+* {{is}}: {{trad|is|katalónsku}}
+* {{it}}: {{trad|it|catalano}}
+* {{ja}}: {{trad|ja|カタルーニャ語|tr=katarūnyago}}
+* {{jv}}: {{trad|jv|Boso Katal}}
+* {{lv}}: {{trad|lv|kataloniešu}}
+* {{lt}}: {{trad|lt|katalonų}}
+* {{la}}: {{trad|la|catalana}}
+* {{csc}}: {{trad|csc|CATALÀ}}
+* {{mk}}: {{trad|mk|каталонски}}
+* {{ms}}: {{trad|ms|catala}}
+* {{mt}}: {{trad|mt|Katalan}}
+* {{mr}}: {{trad|mr|Catalee}}
+* {{nl}}: {{trad|nl|Catalaans|n}}
+* {{ne}}: {{trad|ne|क्याटालन}}
+* {{no}}: {{trad|no|katalansk}}
+* {{nn}}: {{trad|nn|katalansk}}
+* {{oc}}: {{trad|oc|catalan}}
+* {{fa}}: {{trad|fa|کاتالاتی}}
+* {{pl}}: {{trad|pl|kataloński}}
+* {{pt}}: {{trad|pt|catalão}}
+* {{ro}}: {{trad|ro|catalană}}
+* {{ru}}: {{trad|ru|каталанский}}
+* {{su}}: {{trad|su|katalanya}}
+* {{sw}}: {{trad|sw|kikatalan}}
+* {{sv}}: {{trad|sv|katalanska}}
+* {{th}}: {{trad|th|ภาษาคาตาลัน}}
+* {{te}}: {{trad|te|Catalan Bhaasha}}
+* {{tr}}: {{trad|tr|Katalanca}}
+* {{cs}}: {{trad|cs|katalánsky}}
+* {{uk}}: {{trad|uk|каталанська мова}}
+* {{uz}}: {{trad|uz|katalan tili}}
+* {{zh}}: {{trad|zh|加泰羅尼亞語}}
+* {{zu}}: {{trad|zu|isiKhathalani}}
+{{t-final}}
+
+=== Miscel·lània ===
+* {{ca-sil}}
+* {{anagrames|ca|acalat}}
+
+=== Vegeu també ===
+* {{vegeu-cat|Català}}
+* {{Viquipèdia}}
+* {{ca-dicc|diec|gdlc|optimot}}
+{{referències}}
+
+{{catllengua|ca|Gentilicis|Llengües|Autologismes}}

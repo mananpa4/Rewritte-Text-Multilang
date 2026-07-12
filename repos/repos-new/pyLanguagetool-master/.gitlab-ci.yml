@@ -1,0 +1,61 @@
+image: python:3.11
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+cache:
+  paths:
+    - .venv
+    - .cache/pip/
+
+
+tests:
+  before_script:
+    - pip install .[dev]
+    - pip install .[optional]
+  stage: tests
+  script: python -m pytest  --junitxml=junit.xml
+  artifacts:
+    reports:
+      junit: junit.xml
+
+
+
+build:
+  stage: build
+  before_script:
+    - pip install --upgrade build
+  script: python3 -m build
+  artifacts:
+    name: build
+    paths:
+      - dist
+
+
+
+docs:
+  before_script:
+    - pip install .[dev]
+    - pip install .[optional]
+  stage: docs
+  script:
+    - sphinx-build -M dirhtml docs/ docs/_build/
+#    - .venv/bin/pylanguagetool --pwl spelling.txt --disabled-rules=WHITESPACE_RULE README.rst
+  artifacts:
+    name: docs
+    paths:
+      - docs/_build/
+
+deploy_docs:
+  stage: deploy
+  tags:
+    - shell
+  script:
+    - cp -r docs/_build/dirhtml /var/www/pylanguagetool/
+
+stages:
+  - check
+  - tests
+  - build
+  - docs
+  - deploy
+

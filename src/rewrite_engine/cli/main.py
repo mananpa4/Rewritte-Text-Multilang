@@ -54,6 +54,17 @@ def _read_input(value: str) -> str:
 @click.option("--json", "as_json", is_flag=True, help="Salida JSON completa.")
 @click.option("--explain", is_flag=True, help="Muestra métricas y avisos por stderr.")
 @click.option("-o", "--output", type=click.Path(), default=None, help="Escribe la salida a un archivo.")
+@click.option(
+    "--ai", "use_ai", is_flag=True,
+    help="Activa el refinado con IA (T5, opt-in, extra [ai-paraphrase]). "
+         "Sólo se aplica a texto en inglés; otros idiomas usan el motor offline.",
+)
+@click.option(
+    "--ai-translate", "use_ai_translate", is_flag=True,
+    help="Con --ai: traduce a inglés, aplica la IA y traduce de vuelta "
+         "(MarianMT/Helsinki-NLP), extendiendo la IA a los 12 idiomas. Más "
+         "lento; descarga ~600 MB extra por idioma usado en la sesión.",
+)
 def main(
     input: str,
     lang: str,
@@ -66,10 +77,31 @@ def main(
     as_json: bool,
     explain: bool,
     output: str | None,
+    use_ai: bool,
+    use_ai_translate: bool,
 ) -> None:
     """Reescribe texto de forma natural y multilenguaje."""
     text = _read_input(input)
-    engine = RewriteEngine()
+
+    transformer = None
+    if use_ai:
+        from rewrite_engine.transformers.t5_paraphraser import T5ParaphraserTransformer
+
+        transformer = T5ParaphraserTransformer()
+        if not transformer.available:
+            click.echo(
+                f"Aviso: no se pudo cargar el modelo de IA ({transformer.load_error}). "
+                'Instala: pip install -e ".[ai-paraphrase]" — continuando sin IA.',
+                err=True,
+            )
+        elif use_ai_translate:
+            from rewrite_engine.transformers.translation_bridge import (
+                TranslationBridgeTransformer,
+            )
+
+            transformer = TranslationBridgeTransformer(inner=transformer)
+
+    engine = RewriteEngine(transformer=transformer)
     result = engine.rewrite(
         RewriteRequest(
             text=text, language=lang, mode=mode, strength=strength,
