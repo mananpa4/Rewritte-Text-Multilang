@@ -8,9 +8,8 @@ idoneidad, aplicando reglas de naturalidad (frecuencia mínima, no antónimos).
 from __future__ import annotations
 
 from rewrite_engine.core.models import Candidate, Mode
+from rewrite_engine.lang.metadata import FUNCTION_WORDS, INTENSIFIERS
 from rewrite_engine.rewrite.constants import (
-    FUNCTION_WORDS,
-    INTENSIFIERS,
     MIN_WORD_LEN,
     NON_REPLACEABLE_POS,
 )

@@ -1,0 +1,22 @@
+[
+  {
+    "word": "iyi", "lemma": "iyi", "pos": "ADJ", "language": "tr",
+    "synonyms": [
+      {"text": "kaliteli", "formality": "neutral", "frequency": 0.82, "contexts": ["marketplace"]},
+      {"text": "uygun", "formality": "formal", "frequency": 0.70, "contexts": ["professional"]}
+    ]
+  },
+  {
+    "word": "yardım", "lemma": "yardım", "pos": "NOUN", "language": "tr",
+    "synonyms": [
+      {"text": "destek", "formality": "formal", "frequency": 0.88, "contexts": ["professional", "technical"]},
+      {"text": "katkı", "formality": "neutral", "frequency": 0.66, "contexts": ["general"]}
+    ]
+  },
+  {
+    "word": "hızlı", "lemma": "hızlı", "pos": "ADJ", "language": "tr",
+    "synonyms": [
+      {"text": "süratli", "formality": "neutral", "frequency": 0.73, "contexts": ["marketplace", "technical"]}
+    ]
+  }
+]

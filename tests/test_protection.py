@@ -1,7 +1,5 @@
 """Tests de protección de entidades (prompt: tests 1-4, 13, 19)."""
 
-import pytest
-
 
 def test_urls_no_cambian(rewrite):
     """Test 1: las URLs nunca se modifican."""

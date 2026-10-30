@@ -1,7 +1,0 @@
-{
-  "extends": "./tsconfig.base.json",
-  "files": ["test-typings.ts"],
-  "compilerOptions": {
-    "module": "commonjs"
-  }
-}

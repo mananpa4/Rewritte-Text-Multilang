@@ -49,7 +49,32 @@ def _selftest() -> int:
         return 1
 
 
+def _ai_selftest() -> int:
+    """Comprueba que el modelo de paráfrasis empaquetado carga sin red."""
+    out = os.path.join(tempfile.gettempdir(), "rewrite_engine_ai_selftest.log")
+    try:
+        from rewrite_engine.transformers.t5_paraphraser import T5ParaphraserTransformer
+
+        transformer = T5ParaphraserTransformer(device="cpu")
+        if not transformer.available:
+            raise RuntimeError(transformer.load_error or "modelo no disponible")
+        result = transformer.refine(
+            "This tool makes text easier to understand.",
+            language="en",
+            mode="natural",
+        )
+        with open(out, "w", encoding="utf-8") as fh:
+            fh.write(f"OK\nmodel={transformer.model_name}\nresult={result}\n")
+        return 0
+    except Exception:
+        with open(out, "w", encoding="utf-8") as fh:
+            fh.write("FAIL\n" + traceback.format_exc())
+        return 1
+
+
 def main() -> None:
+    if "--ai-selftest" in sys.argv:
+        raise SystemExit(_ai_selftest())
     if "--selftest" in sys.argv:
         raise SystemExit(_selftest())
     try:

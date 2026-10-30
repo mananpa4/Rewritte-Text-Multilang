@@ -1,5 +1,0 @@
-'''
-some
-values
-here
-'''

@@ -1,5 +1,0 @@
-0xcafebabe
-
-0xC_A_F_E
-
-0x1234567890abcdefABCDEF

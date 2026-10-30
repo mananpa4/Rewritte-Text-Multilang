@@ -1,6 +1,0 @@
-# 15 模型版本监控依赖
-# 用法: pip install -r scripts/requirements.txt
-# GitHub Action 也读这份(.github/workflows/model-version-monitor.yml)
-
-requests>=2.31.0
-PyYAML>=6.0.1

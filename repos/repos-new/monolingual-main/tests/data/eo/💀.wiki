@@ -1,8 +1,0 @@
-== translingva ==
-=== Signo ===
-{{livs|mul|KK}}
-{{signo|des=SKULL}}
-{{k|mul|T: BILD.}}
-
-===={{Signifoj}}====
-# morto

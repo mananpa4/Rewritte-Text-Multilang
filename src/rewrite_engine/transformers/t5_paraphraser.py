@@ -1,7 +1,7 @@
 """Paráfrasis neuronal opcional vía un modelo T5 ligero de HuggingFace.
 
 Etapa de refinado **opt-in**: por defecto el motor usa ``NullTransformer``
-(100% offline, misma calidad para los 12 idiomas). Este transformer añade una
+(100% offline, misma calidad para los 16 idiomas). Este transformer añade una
 pasada de parafraseo neuronal con un T5 pequeño — pero **sólo para inglés**:
 los modelos T5 de parafraseo disponibles públicamente son monolingües en
 inglés, así que en cualquier otro idioma esta etapa se salta sin tocar el
@@ -23,11 +23,16 @@ import regex as re
 from rewrite_engine.core.models import Mode
 from rewrite_engine.transformers.base import BaseTransformer
 from rewrite_engine.transformers._guards import is_safe_candidate
+from rewrite_engine.transformers.model_assets import resolve_model_source
 
-# Modelo por defecto: T5-small (~240 MB), el más ligero y probado de los
-# parafraseadores públicos en inglés. Alternativa de mayor calidad (más lenta
-# y pesada, ~850 MB): "Ateeqq/Text-Rewriter-Paraphraser".
-DEFAULT_MODEL = "mrm8488/t5-small-finetuned-quora-for-paraphrasing"
+# Catálogo propio inspirado en la selección multimodelo evaluada en VHumanize,
+# sin reutilizar su código CC BY-NC. Sólo se ofrecen checkpoints específicos de
+# paráfrasis; BART/T5 base sin fine-tuning no reescriben de forma fiable.
+MODEL_CATALOG = {
+    "calidad": "Ateeqq/Text-Rewriter-Paraphraser",
+    "ligero": "mrm8488/t5-small-finetuned-quora-for-paraphrasing",
+}
+DEFAULT_MODEL = MODEL_CATALOG["calidad"]
 
 _SENT_SPLIT = re.compile(r"(?<=[.!?])\s+")
 
@@ -57,10 +62,15 @@ class T5ParaphraserTransformer(BaseTransformer):
     def _load(self, device: str | None) -> None:
         try:
             import torch
-            from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+            from transformers.models.t5.modeling_t5 import T5ForConditionalGeneration
+            from transformers.models.t5.tokenization_t5 import T5Tokenizer
 
-            tokenizer = AutoTokenizer.from_pretrained(self._model_name)
-            model = AutoModelForSeq2SeqLM.from_pretrained(self._model_name)
+            source = resolve_model_source(self._model_name)
+            local_only = source != self._model_name
+            tokenizer = T5Tokenizer.from_pretrained(source, local_files_only=local_only)
+            model = T5ForConditionalGeneration.from_pretrained(
+                source, local_files_only=local_only,
+            )
             resolved_device = device or ("cuda" if torch.cuda.is_available() else "cpu")
             model = model.to(resolved_device)
             model.eval()

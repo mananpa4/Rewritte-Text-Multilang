@@ -80,13 +80,36 @@ def parse(md: str) -> dict:
     }
 
 
+def merge(base: dict, generated: dict) -> dict:
+    """Une datos curados existentes con la fuente HUMAN-AI sin perder términos."""
+    result = {"_note": base.get("_note", "Generado desde HUMAN-AI (MIT).")}
+    result["universal"] = list(dict.fromkeys([
+        *base.get("universal", []), *generated.get("universal", []),
+    ]))
+    for section in ("words", "intensifiers", "fillers"):
+        result[section] = {}
+        languages = set(base.get(section, {})) | set(generated.get(section, {}))
+        for lang in sorted(languages):
+            result[section][lang] = list(dict.fromkeys([
+                *base.get(section, {}).get(lang, []),
+                *generated.get(section, {}).get(lang, []),
+            ]))
+    return result
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("source", type=Path, help="Ruta a burned-words.md")
     ap.add_argument("--out", type=Path, required=True, help="JSON de salida")
+    ap.add_argument(
+        "--merge", type=Path, default=None,
+        help="JSON curado que se une con la fuente sin perder ampliaciones locales",
+    )
     args = ap.parse_args()
 
     data = parse(args.source.read_text(encoding="utf-8"))
+    if args.merge and args.merge.exists():
+        data = merge(json.loads(args.merge.read_text(encoding="utf-8")), data)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(
         json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"

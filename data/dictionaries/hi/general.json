@@ -1,0 +1,22 @@
+[
+  {
+    "word": "अच्छा", "lemma": "अच्छा", "pos": "ADJ", "language": "hi",
+    "synonyms": [
+      {"text": "बेहतरीन", "formality": "neutral", "frequency": 0.82, "contexts": ["marketplace"]},
+      {"text": "उपयुक्त", "formality": "formal", "frequency": 0.70, "contexts": ["professional"]}
+    ]
+  },
+  {
+    "word": "मदद", "lemma": "मदद", "pos": "NOUN", "language": "hi",
+    "synonyms": [
+      {"text": "सहायता", "formality": "formal", "frequency": 0.86, "contexts": ["professional", "technical"]},
+      {"text": "सहयोग", "formality": "neutral", "frequency": 0.72, "contexts": ["general"]}
+    ]
+  },
+  {
+    "word": "तेज़", "lemma": "तेज़", "pos": "ADJ", "language": "hi",
+    "synonyms": [
+      {"text": "तीव्र", "formality": "formal", "frequency": 0.72, "contexts": ["technical"]}
+    ]
+  }
+]

@@ -1,4 +1,0 @@
-# Stringtemplate
-
-## Reference
-

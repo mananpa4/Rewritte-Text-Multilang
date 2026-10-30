@@ -1,3 +1,5 @@
+models/nllb-200-distilled-600M-int8/
+
 # Python
 __pycache__/
 *.py[cod]

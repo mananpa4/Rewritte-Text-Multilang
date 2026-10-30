@@ -45,6 +45,9 @@ ai = ["anthropic>=0.40.0"]
 # no requiere servidor propio. Sólo aplica a texto en inglés (ver
 # transformers/t5_paraphraser.py).
 ai-paraphrase = ["transformers>=4.30.0", "torch>=2.0.0", "sentencepiece>=0.1.99"]
+# Traducción NLLB-200 local mediante CTranslate2 cuantizado. El modelo se
+# instala por separado para mantener ligero el paquete base.
+nllb = ["ctranslate2>=4.4.0", "transformers>=4.30.0", "sentencepiece>=0.1.99"]
 # App de escritorio (Tkinter es stdlib). pyspellchecker: corrector ortográfico.
 # ttkthemes: tema visual "winxpblue" (azul XP-Luna, igual en cualquier versión
 # de Windows). Aviso de licencia: ttkthemes es GPL-3.0-or-later (copyleft) —

@@ -1,4 +1,4 @@
-"""Puente de traducción: extiende un transformer inglés-only a los 12 idiomas.
+"""Puente de traducción: extiende un transformer inglés-only a los 16 idiomas.
 
 ``T5ParaphraserTransformer`` (y cualquier otro backend "sólo inglés") sólo
 mejora texto en inglés. Este transformer lo envuelve y lo hace funcionar en
@@ -60,6 +60,7 @@ import regex as re
 from rewrite_engine.core.models import Mode
 from rewrite_engine.transformers._guards import is_safe_candidate
 from rewrite_engine.transformers.base import BaseTransformer
+from rewrite_engine.transformers.model_assets import resolve_model_source
 
 _SENT_SPLIT = re.compile(r"(?<=[.!?])\s+")
 _MAX_SENTENCE_CHARS = 400
@@ -71,7 +72,7 @@ class TranslationBridgeTransformer(BaseTransformer):
 
     Uso:
         bridge = TranslationBridgeTransformer(inner=T5ParaphraserTransformer())
-        engine.set_transformer(bridge)   # ahora la IA aplica a los 12 idiomas
+        engine.set_transformer(bridge)   # ahora la IA aplica a los 16 idiomas
     """
 
     def __init__(self, inner: BaseTransformer, *, device: str | None = None) -> None:
@@ -118,7 +119,8 @@ class TranslationBridgeTransformer(BaseTransformer):
             return self._pairs[lang]
         try:
             import torch
-            from transformers import MarianMTModel, MarianTokenizer
+            from transformers.models.marian.modeling_marian import MarianMTModel
+            from transformers.models.marian.tokenization_marian import MarianTokenizer
 
             self._torch = torch
             device = self._device or ("cuda" if torch.cuda.is_available() else "cpu")
@@ -126,10 +128,22 @@ class TranslationBridgeTransformer(BaseTransformer):
             to_en_name = f"Helsinki-NLP/opus-mt-{lang}-en"
             from_en_name = f"Helsinki-NLP/opus-mt-en-{lang}"
 
-            to_en_tok = MarianTokenizer.from_pretrained(to_en_name)
-            to_en_model = MarianMTModel.from_pretrained(to_en_name).to(device).eval()
-            from_en_tok = MarianTokenizer.from_pretrained(from_en_name)
-            from_en_model = MarianMTModel.from_pretrained(from_en_name).to(device).eval()
+            to_en_source = resolve_model_source(to_en_name)
+            from_en_source = resolve_model_source(from_en_name)
+            to_local = to_en_source != to_en_name
+            from_local = from_en_source != from_en_name
+            to_en_tok = MarianTokenizer.from_pretrained(
+                to_en_source, local_files_only=to_local,
+            )
+            to_en_model = MarianMTModel.from_pretrained(
+                to_en_source, local_files_only=to_local,
+            ).to(device).eval()
+            from_en_tok = MarianTokenizer.from_pretrained(
+                from_en_source, local_files_only=from_local,
+            )
+            from_en_model = MarianMTModel.from_pretrained(
+                from_en_source, local_files_only=from_local,
+            ).to(device).eval()
 
             pair = (to_en_tok, to_en_model, from_en_tok, from_en_model)
         except Exception:

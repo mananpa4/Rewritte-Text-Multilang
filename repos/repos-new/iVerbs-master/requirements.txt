@@ -1,6 +1,0 @@
-tinydb
-ujson
-terminaltables
-colorclass
-pygame
-

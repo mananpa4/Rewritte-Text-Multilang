@@ -1,0 +1,22 @@
+[
+  {
+    "word": "جيد", "lemma": "جيد", "pos": "ADJ", "language": "ar",
+    "synonyms": [
+      {"text": "ممتاز", "formality": "neutral", "frequency": 0.82, "contexts": ["marketplace"]},
+      {"text": "ملائم", "formality": "formal", "frequency": 0.68, "contexts": ["professional"]}
+    ]
+  },
+  {
+    "word": "مساعدة", "lemma": "مساعدة", "pos": "NOUN", "language": "ar",
+    "synonyms": [
+      {"text": "دعم", "formality": "formal", "frequency": 0.84, "contexts": ["professional", "technical"]},
+      {"text": "عون", "formality": "neutral", "frequency": 0.65, "contexts": ["general"]}
+    ]
+  },
+  {
+    "word": "سريع", "lemma": "سريع", "pos": "ADJ", "language": "ar",
+    "synonyms": [
+      {"text": "فوري", "formality": "neutral", "frequency": 0.75, "contexts": ["marketplace", "technical"]}
+    ]
+  }
+]

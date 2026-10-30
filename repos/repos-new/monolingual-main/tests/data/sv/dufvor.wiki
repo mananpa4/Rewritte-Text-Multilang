@@ -1,4 +1,0 @@
-==Svenska==
-===Substantiv===
-'''dufvor'''
-#{{böjning|sv|subst|dufva}}

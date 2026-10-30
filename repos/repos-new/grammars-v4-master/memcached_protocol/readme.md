@@ -1,4 +1,0 @@
-# Memcached Protocol
-
-## Reference
-

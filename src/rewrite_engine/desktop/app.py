@@ -18,7 +18,7 @@ import threading
 from pathlib import Path
 
 import tkinter as tk
-from tkinter import filedialog, messagebox, ttk
+from tkinter import messagebox, ttk
 
 import regex as re
 
@@ -204,6 +204,9 @@ class RewriteApp(tk.Tk):
             side=tk.LEFT, padx=(0, 6)
         )
         ttk.Button(actions, text="Limpiar", command=self._on_clear).pack(side=tk.LEFT)
+        ttk.Button(actions, text="dowdes.com…", command=self._open_dowdes).pack(
+            side=tk.RIGHT
+        )
 
         # --- Paneles izquierda/derecha ---
         panes = ttk.PanedWindow(self, orient=tk.HORIZONTAL)
@@ -217,6 +220,14 @@ class RewriteApp(tk.Tk):
             self, textvariable=self.status_var, relief=tk.SUNKEN, anchor=tk.W,
             padding=(8, 3),
         ).pack(side=tk.BOTTOM, fill=tk.X)
+
+    def _open_dowdes(self) -> None:
+        if self._engine is None:
+            messagebox.showinfo("Motor cargando", "Espera a que termine de cargar el motor.")
+            return
+        from rewrite_engine.desktop.dowdes_sync import DowdesSyncWindow
+
+        DowdesSyncWindow(self, self._engine)
 
     def _on_summarize_toggle(self) -> None:
         self.mode_var.set("summarized" if self.summarize_var.get() else "natural")
@@ -236,13 +247,13 @@ class RewriteApp(tk.Tk):
     def _update_ai_note(self) -> None:
         if self.ai_translate_var.get():
             self.ai_note_var.set(
-                "Traduce a inglés, aplica la IA y traduce de vuelta: aplica a los 12 "
+                f"Traduce a inglés, aplica la IA y traduce de vuelta: aplica a los {len(DEFAULT_LANGUAGES)} "
                 "idiomas, pero es más lento y añade el riesgo propio de traducir dos veces."
             )
         else:
             self.ai_note_var.set(
                 "La IA sólo se aplica a texto en inglés (modelos T5 disponibles son "
-                "monolingües); los otros 11 idiomas siguen usando el motor offline."
+                f"monolingües); los otros {len(DEFAULT_LANGUAGES) - 1} idiomas siguen usando el motor offline."
             )
 
     def _on_ai_translate_toggle(self) -> None:
@@ -255,7 +266,7 @@ class RewriteApp(tk.Tk):
             if self._engine is not None:
                 self._engine.set_transformer(None)  # vuelve a NullTransformer
             self.status_var.set(
-                "IA desactivada. Motor 100% offline (mismo comportamiento en los 12 idiomas)."
+                f"IA desactivada. Motor offline disponible en {len(DEFAULT_LANGUAGES)} idiomas."
             )
             return
 
@@ -278,14 +289,20 @@ class RewriteApp(tk.Tk):
             return
         if self.ai_translate_var.get():
             if self._ai_bridge is None:
-                from rewrite_engine.transformers.translation_bridge import (
-                    TranslationBridgeTransformer,
-                )
+                from rewrite_engine.transformers.nllb import NLLBBridgeTransformer
 
-                self._ai_bridge = TranslationBridgeTransformer(inner=self._ai_transformer)
+                nllb_bridge = NLLBBridgeTransformer(inner=self._ai_transformer)
+                if nllb_bridge.available:
+                    self._ai_bridge = nllb_bridge
+                else:
+                    from rewrite_engine.transformers.translation_bridge import (
+                        TranslationBridgeTransformer,
+                    )
+
+                    self._ai_bridge = TranslationBridgeTransformer(inner=self._ai_transformer)
             self._engine.set_transformer(self._ai_bridge)
             self.status_var.set(
-                "IA activa con traducción (T5 + MarianMT). Aplica a los 12 idiomas."
+                f"IA activa con traducción (T5 + NLLB/Marian). Aplica a {len(DEFAULT_LANGUAGES)} idiomas."
             )
         else:
             self._engine.set_transformer(self._ai_transformer)
@@ -294,7 +311,7 @@ class RewriteApp(tk.Tk):
     def _load_ai_transformer_async(self) -> None:
         self.ai_checkbox.config(state=tk.DISABLED)
         self.status_var.set(
-            "Cargando modelo de IA (T5)… la primera vez descarga ~240 MB, puede tardar."
+            "Cargando modelo de IA (T5)… usa el bundle local o la caché de Hugging Face."
         )
 
         def worker() -> None:
@@ -303,7 +320,7 @@ class RewriteApp(tk.Tk):
 
                 transformer = T5ParaphraserTransformer()
             except Exception as exc:  # noqa: BLE001 - se reporta al usuario
-                self.after(0, lambda: self._on_ai_load_error(exc))
+                self.after(0, self._on_ai_load_error, exc)
                 return
             self.after(0, lambda: self._on_ai_loaded(transformer))
 
@@ -376,7 +393,7 @@ class RewriteApp(tk.Tk):
                 engine = RewriteEngine(config=config)
                 self.after(0, lambda: self._on_engine_ready(engine))
             except Exception as exc:  # noqa: BLE001 - mostrar al usuario
-                self.after(0, lambda: self._on_engine_error(exc))
+                self.after(0, self._on_engine_error, exc)
 
         threading.Thread(target=worker, daemon=True).start()
 
@@ -425,7 +442,7 @@ class RewriteApp(tk.Tk):
                 result = self._engine.rewrite(request)
                 self.after(0, lambda: self._on_rewrite_done(result))
             except Exception as exc:  # noqa: BLE001
-                self.after(0, lambda: self._on_rewrite_error(exc))
+                self.after(0, self._on_rewrite_error, exc)
 
         threading.Thread(target=worker, daemon=True).start()
 

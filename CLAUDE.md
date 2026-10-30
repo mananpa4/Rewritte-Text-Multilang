@@ -25,9 +25,9 @@ Objetivo: reescribir texto preservando el significado pero mejorando estilo,
 naturalidad y tono, en varios idiomas y modos (formal, marketplace, SEO, etc.),
 sin romper URLs, precios, marcas ni HTML.
 
-Origen: se construyó a partir de `prompt.txt` (recopilación de prompts de varias
-IAs; el de ChatGPT define la arquitectura más completa) y 4 repos de referencia
-en `repos/` (ver §8 Licencias).
+Origen: se construyó a partir de `prompt.txt` y una colección de repositorios de
+referencia en `repos/`. Esa carpeta es material de investigación, no código del
+paquete ni un conjunto de dependencias.
 
 ## 2. Tecnologías
 
@@ -42,13 +42,13 @@ en `repos/` (ver §8 Licencias).
   - `[semantic]` → `sentence-transformers` (embeddings multilenguaje).
   - `[spacy]` → `spacy` (POS/NER por idioma).
   - `[grammar]` → `language-tool-python`.
-  - `[ai]` → `anthropic` (gancho LLM en la nube, **no cableado todavía**).
-  - `[ai-paraphrase]` → `transformers` + `torch` + `sentencepiece` (T5 local + puente de traducción MarianMT, **sí cableados**: toggles opt-in en GUI/CLI. El T5 solo entiende inglés; el puente de traducción lo extiende a los 12 idiomas).
+  - `[ai]` → `anthropic` (reservado para un backend en la nube; no está cableado).
+  - `[ai-paraphrase]` → `transformers` + `torch` + `sentencepiece` (T5 local + puente de traducción MarianMT, **sí cableados**: toggles opt-in en GUI/CLI. El T5 solo entiende inglés; el puente de traducción lo extiende a los 16 idiomas).
   - `[desktop]` → `pyspellchecker` (corrector de la app de escritorio).
   - `[build-exe]` → `pyinstaller`.
   - `[dev]` → `pytest`, `ruff`.
-- **Idiomas soportados de fábrica:** es, en, pt, fr, it, de, nl, pl, ru, uk, sv, eo
-  (Esperanto, con lematizador por reglas en `lang/esperanto.py`).
+- **Idiomas soportados de fábrica:** es, en, pt, fr, it, de, nl, pl, ru, uk, sv,
+  eo, ar, hi, tr, id (16 en total).
 
 ## 3. Arquitectura
 
@@ -90,7 +90,9 @@ Capas y archivos clave:
 | IA | `transformers/null.py` | `NullTransformer` (offline por defecto) |
 | IA | `transformers/_guards.py` | Guardas compartidas (tokens protegidos, longitud, repetición degenerada) + defensa `torchvision` a nivel de módulo |
 | IA | `transformers/t5_paraphraser.py` | `T5ParaphraserTransformer` opt-in: T5 local, sólo inglés |
-| IA | `transformers/translation_bridge.py` | `TranslationBridgeTransformer`: envuelve un transformer inglés-only y lo extiende a los 12 idiomas vía MarianMT (traduce ida y vuelta) |
+| IA | `transformers/translation_bridge.py` | `TranslationBridgeTransformer`: envuelve un transformer inglés-only y lo extiende a los 16 idiomas vía MarianMT (traduce ida y vuelta) |
+| IA | `transformers/model_assets.py` | Resuelve modelos del Hub o snapshots incluidos en una distribución congelada |
+| IA | `transformers/ollama.py` | `OllamaTransformer`: backend local por HTTP, sin dependencia Python extra; hoy lo usa el script batch, no la GUI/CLI general |
 | Reescritura | `rewrite/summarizer.py` | Resumen extractivo offline (modo `summarized`) |
 | API | `api/app.py` | FastAPI `POST /api/rewrite`, `GET /health` |
 | CLI | `cli/main.py` | Comando `rewrite-engine` (Click) |
@@ -153,8 +155,13 @@ echo "Buy this now." | rewrite-engine - --lang en --json
 pip install -e ".[ai-paraphrase]"
 rewrite-engine "I need help to fix this error." --lang en --ai --explain
 
-# CLI con IA + puente de traducción (extiende la IA a los 12 idiomas)
+# CLI con IA + puente de traducción (extiende la IA a los 16 idiomas)
 rewrite-engine "Necesito ayuda para arreglar este error." --lang es --ai --ai-translate --explain
+
+# Batch con Ollama local (requiere servidor y modelo instalados)
+ollama serve
+ollama pull qwen2.5:3b
+python scripts/batch_rewrite.py --help
 
 # App de escritorio (dos paneles + corrector ortográfico)
 pip install -e ".[desktop]"
@@ -163,6 +170,11 @@ rewrite-engine-gui                               # GUI Tkinter
 # Generar el ejecutable .exe (Windows)
 pip install -e ".[build-exe]"
 pyinstaller packaging/rewrite_engine_gui.spec --noconfirm   # -> dist/RewriteEngine.exe
+
+# Distribución IA onedir (Ateeqq + Marian ES↔EN incluidos)
+pyinstaller packaging/rewrite_engine_gui_ai.spec --noconfirm
+dist/RewriteEngineAI/RewriteEngineAI.exe --selftest
+dist/RewriteEngineAI/RewriteEngineAI.exe --ai-selftest
 
 # Enriquecer un idioma desde un tesauro de texto (palabra; sin1, sin2, ...)
 python scripts/build_thesaurus.py repos/repos-new/sinonimos.txt --lang es --out data/dictionaries/es/thesaurus.json
@@ -203,30 +215,30 @@ En Windows, fuerza UTF-8 al ejecutar scripts con acentos: `PYTHONUTF8=1`.
 
 1. **Lee `CLAUDE_CONTEXT.md` antes de cualquier cambio importante** y
    actualízalo al terminar tareas relevantes o tomar decisiones técnicas.
-2. **Respeta la licencia de las repos de referencia** (ver §8): NO copiar código
-   de `repos/Humanizer-main` (CC BY-NC, no comercial); reimplementar o usar las
-   repos MIT.
-3. **No rompas la degradación elegante:** toda dependencia nueva debe ser
+
+2. **No rompas la degradación elegante:** toda dependencia nueva debe ser
    opcional con fallback, salvo que se acuerde lo contrario.
-4. **Mantén el determinismo** del motor (sin `random` sin seed) para no romper
+3. **Mantén el determinismo** del motor (sin `random` sin seed) para no romper
    tests.
-5. **Verifica con `pytest -q`** tras cualquier cambio; los 20 casos del prompt
+4. **Verifica con `pytest -q`** tras cualquier cambio; los 20 casos del prompt
    (protección de entidades, idiomas, modos, HTML, gate semántico) deben seguir
    en verde.
-6. **No cablees llamadas a un LLM** sin pedirlo explícitamente: el gancho es
-   `BaseTransformer`; el comportamiento por defecto es offline.
-7. **Seguridad de contenido:** no reescribir claims médicos como afirmaciones
+5. **Mantén la IA como opt-in:** cualquier backend nuevo implementa
+   `BaseTransformer`; el comportamiento predeterminado debe seguir siendo offline.
+6. **Seguridad de contenido:** no reescribir claims médicos como afirmaciones
    médicas; preservar marcas, precios, datos legales/médicos protegidos.
-8. Reescribe el código en el estilo del que lo rodea (comentarios en español,
+7. Reescribe el código en el estilo del que lo rodea (comentarios en español,
    type hints, dataclasses).
+8. **No trates `repos/` como código de producción:** úsalo para investigación,
+   comprueba licencia/procedencia y porta únicamente ideas o datos compatibles y trazables.
 
 ## 8. Licencias (importante)
 
 - **Este proyecto:** MIT.
-- **`repos/Humanizer-main` (VHumanize): CC BY-NC 4.0 — NO comercial.** Su código
-  **no se copia**; solo se usó como referencia conceptual.
+
 - **`repos/HumanAI-main`** (MIT) y **`repos/humanizer-workbench-main`** (MIT): sí
   reutilizables. Se usaron como esqueleto de arquitectura y fuente de datos
   lingüísticos.
-- Dependencias del motor: todas permisivas (MIT/Apache/BSD). `language-tool-python`
-  es opcional (LGPL / API).
+- Las licencias de dependencias, modelos y fuentes de datos deben revisarse antes
+  de distribuir. Casos destacados: `language-tool-python` es opcional (LGPL/API)
+  y `ttkthemes` es GPL-3.0-or-later.

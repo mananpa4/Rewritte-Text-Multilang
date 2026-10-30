@@ -1,4 +1,0 @@
-Words {
-  Words = ListOf<word, ",">
-  word = letter+
-}

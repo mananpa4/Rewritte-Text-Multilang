@@ -1,3 +1,0 @@
-`${function() {
-  const {x} = y;
-}}`;

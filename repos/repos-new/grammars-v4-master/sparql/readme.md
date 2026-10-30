@@ -1,5 +1,0 @@
-# SPARQL Grammar
-
-## Reference
-* [pldb](http://pldb.info/concepts/sparql)
-

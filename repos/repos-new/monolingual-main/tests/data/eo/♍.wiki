@@ -1,9 +1,0 @@
-{{character info}}
-=={{Lingvo|mul}}==
-==={{Vortospeco|signo|mul}}===
-
-===={{Signifoj}}====
-# {{k|mul|F: astrologio}} zodiaka signo de [[Virgulino]] (''[[Virgo]]'')
-
-{{nevideblafinodesekcio}}
-{{emojibox}}

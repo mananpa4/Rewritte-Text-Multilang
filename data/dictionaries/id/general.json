@@ -1,0 +1,22 @@
+[
+  {
+    "word": "baik", "lemma": "baik", "pos": "ADJ", "language": "id",
+    "synonyms": [
+      {"text": "berkualitas", "formality": "neutral", "frequency": 0.82, "contexts": ["marketplace"]},
+      {"text": "sesuai", "formality": "formal", "frequency": 0.70, "contexts": ["professional"]}
+    ]
+  },
+  {
+    "word": "bantuan", "lemma": "bantuan", "pos": "NOUN", "language": "id",
+    "synonyms": [
+      {"text": "dukungan", "formality": "formal", "frequency": 0.87, "contexts": ["professional", "technical"]},
+      {"text": "pertolongan", "formality": "neutral", "frequency": 0.72, "contexts": ["general"]}
+    ]
+  },
+  {
+    "word": "cepat", "lemma": "cepat", "pos": "ADJ", "language": "id",
+    "synonyms": [
+      {"text": "lekas", "formality": "neutral", "frequency": 0.72, "contexts": ["marketplace"]}
+    ]
+  }
+]

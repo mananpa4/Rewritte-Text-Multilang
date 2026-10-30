@@ -1,7 +1,0 @@
-==Norsk==
-===Subjektiv===
-'''{{PAGENAME}}''' {{f}} {{norm|høgnorsk}}
-
-#[[jente]]
-
-[[kategori:Høgnorsk]]

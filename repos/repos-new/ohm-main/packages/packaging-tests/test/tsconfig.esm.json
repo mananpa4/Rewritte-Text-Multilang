@@ -1,9 +1,0 @@
-{
-  "extends": "./tsconfig.base.json",
-  "files": ["test-ts.ts"],
-  "compilerOptions": {
-    "module": "esnext",
-    "moduleResolution": "node",
-    "esModuleInterop": true
-  }
-}

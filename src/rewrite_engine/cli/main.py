@@ -62,7 +62,7 @@ def _read_input(value: str) -> str:
 @click.option(
     "--ai-translate", "use_ai_translate", is_flag=True,
     help="Con --ai: traduce a inglés, aplica la IA y traduce de vuelta "
-         "(MarianMT/Helsinki-NLP), extendiendo la IA a los 12 idiomas. Más "
+         "(MarianMT/Helsinki-NLP), extendiendo la IA a los 16 idiomas. Más "
          "lento; descarga ~600 MB extra por idioma usado en la sesión.",
 )
 def main(

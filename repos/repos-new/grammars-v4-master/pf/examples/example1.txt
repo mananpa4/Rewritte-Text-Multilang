@@ -1,3 +1,0 @@
-ext_if = "kue0"
-match in all scrub (no-df max-mss 1440)
-block return log on $ext_if all

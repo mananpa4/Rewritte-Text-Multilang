@@ -1,4 +1,0 @@
-# Bencoding Grammar
-
-## Reference
-

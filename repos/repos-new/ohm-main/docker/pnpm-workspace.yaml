@@ -1,5 +1,0 @@
-packages:
-  - 'packages/*'
-linkWorkspacePackages: true
-# injectWorkspacePackages: true
-minimumReleaseAge: 1440

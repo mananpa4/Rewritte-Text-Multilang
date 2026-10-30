@@ -1,4 +1,0 @@
-# IRI Grammar
-
-## Reference
-

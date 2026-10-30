@@ -1,5 +1,0 @@
-WITH cte AS (SELECT * FROM table_name) SELECT * FROM cte;
-
-WITH cte AS MATERIALIZED (SELECT * FROM table_name) SELECT * FROM cte;
-
-WITH cte AS NOT MATERIALIZED (SELECT * FROM table_name) SELECT * FROM cte;

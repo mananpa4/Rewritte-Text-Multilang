@@ -9,6 +9,7 @@ from __future__ import annotations
 # Idiomas con soporte sembrado: diccionario local + heurísticas de seguridad.
 DEFAULT_LANGUAGES = (
     "es", "en", "pt", "fr", "it", "de", "nl", "pl", "ru", "uk", "sv", "eo",
+    "ar", "hi", "tr", "id",
 )
 
 LANGUAGE_ALIASES: dict[str, str] = {
@@ -31,6 +32,10 @@ LANGUAGE_ALIASES: dict[str, str] = {
     "zh-hant": "zh",
     "ja-jp": "ja",
     "th-th": "th",
+    "ar-sa": "ar",
+    "hi-in": "hi",
+    "tr-tr": "tr",
+    "id-id": "id",
 }
 
 
@@ -108,6 +113,22 @@ STOPWORD_HINTS: dict[str, frozenset[str]] = {
     "eo": frozenset({
         "la", "kaj", "de", "en", "al", "por", "kun", "mi", "vi", "li",
         "estas", "ne", "ke", "tiu", "ĉi", "pri", "el", "ĝi", "ni", "aŭ",
+    }),
+    "ar": frozenset({
+        "في", "من", "إلى", "على", "هذا", "هذه", "هو", "هي", "و", "أو",
+        "مع", "عن", "لا", "ما", "التي", "الذي", "كان", "تكون", "لها", "كل",
+    }),
+    "hi": frozenset({
+        "है", "के", "की", "का", "में", "और", "से", "को", "यह", "वह",
+        "पर", "लिए", "नहीं", "एक", "जो", "भी", "कर", "था", "हैं", "हम",
+    }),
+    "tr": frozenset({
+        "ve", "bir", "bu", "için", "ile", "de", "da", "çok", "olan", "olarak",
+        "ama", "veya", "değil", "daha", "her", "ne", "gibi", "sonra", "var", "yok",
+    }),
+    "id": frozenset({
+        "dan", "yang", "di", "ke", "dari", "untuk", "ini", "itu", "dengan", "adalah",
+        "atau", "tidak", "pada", "juga", "lebih", "sebagai", "oleh", "akan", "dalam", "kami",
     }),
 }
 
@@ -192,6 +213,26 @@ FUNCTION_WORDS: dict[str, frozenset[str]] = {
         "kun", "sur", "pri", "el", "mi", "vi", "li", "ŝi", "ĝi", "ni",
         "ili", "estas", "esti", "se", "ĉu", "tiu", "tio", "min", "sia", "do",
     }),
+    "ar": frozenset({
+        "في", "من", "إلى", "على", "عن", "مع", "بين", "و", "أو", "لكن", "هذا",
+        "هذه", "ذلك", "تلك", "هو", "هي", "هم", "نحن", "أنا", "أنت", "لا", "نعم",
+        "كان", "كانت", "يكون", "كل", "أي", "ما", "الذي", "التي", "لأن", "ثم",
+    }),
+    "hi": frozenset({
+        "के", "की", "का", "में", "पर", "से", "को", "और", "या", "लेकिन", "यह",
+        "वह", "ये", "वे", "मैं", "हम", "आप", "तुम", "है", "हैं", "था", "थे",
+        "नहीं", "हाँ", "एक", "भी", "जो", "लिए", "तक", "ही", "तो", "फिर",
+    }),
+    "tr": frozenset({
+        "ve", "veya", "ama", "bu", "şu", "o", "bir", "için", "ile", "gibi", "de",
+        "da", "ben", "sen", "biz", "siz", "onlar", "değil", "evet", "hayır", "olan",
+        "olarak", "her", "hiç", "daha", "çok", "ne", "kim", "sonra", "önce",
+    }),
+    "id": frozenset({
+        "dan", "atau", "tetapi", "yang", "di", "ke", "dari", "untuk", "dengan", "ini",
+        "itu", "saya", "kami", "kita", "anda", "mereka", "adalah", "tidak", "ya", "pada",
+        "juga", "sebagai", "oleh", "akan", "telah", "lebih", "semua", "setiap", "karena",
+    }),
 }
 
 # Intensificadores: se dejan intactos para evitar sustituciones forzadas.
@@ -228,6 +269,10 @@ INTENSIFIERS: dict[str, frozenset[str]] = {
     "eo": frozenset({
         "tre", "tro", "sufiĉe", "plej", "pli", "tute", "vere", "preskaŭ",
     }),
+    "ar": frozenset({"جداً", "حقاً", "للغاية", "تماماً", "تقريباً", "كثيراً"}),
+    "hi": frozenset({"बहुत", "वास्तव में", "काफी", "बेहद", "लगभग", "पूरी तरह"}),
+    "tr": frozenset({"çok", "gerçekten", "oldukça", "aşırı", "tamamen", "neredeyse"}),
+    "id": frozenset({"sangat", "benar-benar", "cukup", "terlalu", "sepenuhnya", "hampir"}),
 }
 
 SPACY_MODELS: dict[str, str] = {
@@ -257,6 +302,10 @@ WORDNET_LANGS: dict[str, str] = {
     "ru": "rus",
     "uk": "ukr",
     "sv": "swe",
+    "ar": "arb",
+    "hi": "hin",
+    "tr": "tur",
+    "id": "ind",
 }
 
 # Idiomas/escrituras sin separación por espacios. No son idiomas de primera

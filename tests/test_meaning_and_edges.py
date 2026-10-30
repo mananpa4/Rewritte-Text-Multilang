@@ -1,7 +1,5 @@
 """Tests de significado, diccionarios y casos límite (prompt: tests 5,14-18,20)."""
 
-import pytest
-
 from rewrite_engine import RewriteEngine, RewriteRequest
 from rewrite_engine.core.config import EngineConfig
 

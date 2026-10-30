@@ -1,6 +1,6 @@
 # rewrite-engine
 
-**Reescritura inteligente, natural y multilenguaje** — motor híbrido *offline* (diccionarios de sinónimos + WordNet/OMW + NLP) con interfaz lista para enchufar un LLM. No es un "spinner" tonto: protege entidades, valida el significado y respeta el tono.
+**Reescritura inteligente, natural y multilenguaje** — motor híbrido *offline* (diccionarios de sinónimos + WordNet/OMW + NLP) con transformers locales opcionales. No es un "spinner" tonto: protege entidades, valida el significado y respeta el tono.
 
 > *Intelligent, natural, multilingual text rewriting — a hybrid offline engine (synonym dictionaries + WordNet/OMW + NLP) with an optional pluggable LLM layer.*
 
@@ -13,7 +13,10 @@
 
 - **Híbrido y offline**: funciona 100% local y gratis (diccionarios JSON + WordNet/OMW). Sin API keys.
 - **IA opcional y enchufable**: implementa `BaseTransformer` para añadir Claude, un paraphraser de HuggingFace, etc., sin tocar el núcleo. Incluye un toggle listo para usar con un T5 ligero (ver [Reescritura con IA](#-reescritura-con-ia-t5-beta) más abajo).
-- **Multilenguaje**: es, en, pt, fr, it, de, nl, pl, ru, uk, sv, eo (Esperanto) — y fácil de extender.
+- **Backends locales incluidos**: T5/MarianMT para la GUI y CLI, y Ollama para
+  procesamiento batch; el motor offline sigue siendo el comportamiento por defecto.
+- **Multilenguaje**: 16 idiomas — es, en, pt, fr, it, de, nl, pl, ru, uk, sv,
+  eo, ar, hi, tr e id.
 - **Protección de entidades**: URLs, emails, teléfonos, fechas, precios, %, SKUs/códigos, hashtags, menciones, **HTML** y markdown nunca se rompen.
 - **12 modos**: `natural, formal, informal, professional, seo, marketplace, technical, simple, expanded, summarized, grammar_only, creative`.
 - **Validación semántica**: embeddings multilenguaje si están disponibles; si no, similitud léxica robusta.
@@ -109,7 +112,7 @@ no necesariamente idéntico al de XP/7).
 Checkbox opt-in en la GUI ("Reescritura con IA (T5, beta)") y flag `--ai` en el
 CLI que añaden una pasada de **parafraseo neuronal** sobre el resultado del
 motor offline, usando un modelo T5 ligero de HuggingFace
-(`mrm8488/t5-small-finetuned-quora-for-paraphrasing` por defecto, ~240 MB).
+(`Ateeqq/Text-Rewriter-Paraphraser` por defecto, Apache-2.0, ~850 MB).
 
 ```bash
 pip install -e ".[ai-paraphrase]"     # transformers + torch + sentencepiece
@@ -130,38 +133,46 @@ Windows) y, tras esa primera descarga, corre **100% localmente y sin
 conexión** — sin llamadas a HuggingFace ni a ningún servidor en cada uso, sin
 costo por petición.
 
+La distribución `RewriteEngineAI` incluye el modelo Ateeqq y los modelos
+MarianMT español↔inglés. Funciona offline desde el primer arranque para inglés
+y español; los pares de traducción de otros idiomas se descargan bajo demanda.
+
+```bash
+pyinstaller packaging/rewrite_engine_gui_ai.spec --noconfirm
+dist/RewriteEngineAI/RewriteEngineAI.exe --selftest
+dist/RewriteEngineAI/RewriteEngineAI.exe --ai-selftest
+```
+
+Es una distribución `onedir`: conserva juntos `RewriteEngineAI.exe` y
+`_internal/`. No muevas sólo el `.exe`.
+
 **Limitaciones honestas de esta función (por eso es "beta" y opt-in):**
-- **Sólo aplica a texto en inglés.** Los parafraseadores T5 disponibles
-  públicamente son monolingües; en los otros 11 idiomas el toggle no tiene
+- **Sólo aplica directamente a texto en inglés.** Los parafraseadores T5 disponibles
+  públicamente son monolingües; en los otros 15 idiomas el toggle no tiene
   ningún efecto (se comunica explícitamente en la UI, no es una degradación
   silenciosa).
-- **El modelo por defecto está afinado sobre pares de preguntas de Quora**
-  (Question Paraphrasing), así que parafrasea muy bien preguntas y, con la
-  decodificación determinista que usa este proyecto (`num_beams=4,
-  do_sample=False`, por el principio de determinismo del motor), a menudo deja
-  intactas las frases declarativas — no es un fallo, sino la naturaleza del
-  modelo: en ese caso el motor conserva el resultado del paso léxico offline.
+- **El modelo por defecto es Ateeqq**, afinado para reescritura de texto
+  declarativo. La decodificación sigue siendo determinista (`num_beams=4`,
+  `do_sample=False`); si las guardas rechazan una salida, se conserva el
+  resultado del paso léxico offline.
 - **Guardas de seguridad activas:** el candidato del T5 se descarta (se
   conserva el texto sin IA) si pierde algún token protegido, si su longitud se
   dispara o se desploma, o si repite una cláusula en bucle (fallo real
   observado en modelos pequeños, p.ej. invertir sujeto/objeto y repetir la
   frase). Además pasa por la misma puerta de similitud semántica que el resto
   del motor.
-- **Licencias de los modelos:** `mrm8488/t5-small-finetuned-quora-for-paraphrasing`
-  no declara una licencia explícita en su tarjeta de HuggingFace (verifica los
-  términos de HuggingFace antes de un uso comercial). Alternativa más pesada y
-  con mejor cobertura de frases declarativas: `Ateeqq/Text-Rewriter-Paraphraser`
-  (T5-Base, ~850 MB, **Apache-2.0**) — pásalo como
-  `T5ParaphraserTransformer(model_name="Ateeqq/Text-Rewriter-Paraphraser")`.
+- **Licencias de los modelos:** `Ateeqq/Text-Rewriter-Paraphraser` es
+  Apache-2.0 y se usa por defecto. El modelo ligero opcional de `mrm8488` no
+  declara licencia en su ficha; verifica sus términos antes de distribuirlo.
 - Esta capa **no** está incluida en el `.exe` ligero por defecto (`torch` por
   sí solo pesa varios cientos de MB); es una función para quien instale desde
   código con el extra `[ai-paraphrase]`.
 
-### Puente de traducción: IA para los 12 idiomas
+### Puente de traducción: IA para los 16 idiomas
 
 Checkbox adicional en la GUI ("Traducir para IA en todos los idiomas") y flag
 `--ai-translate` (junto con `--ai`) en el CLI. Extiende la IA (que por sí sola
-sólo entiende inglés) a **cualquiera de los 12 idiomas**: traduce el texto a
+sólo entiende inglés) a **cualquiera de los 16 idiomas**: traduce el texto a
 inglés, aplica el T5, y traduce el resultado de vuelta.
 
 ```bash
@@ -208,6 +219,23 @@ palabra por palabra, así que una frase con una sola palabra mal traída puede
 seguir puntuando muy alto. Es una limitación de la similitud a nivel de
 oración en general, no algo exclusivo de este puente.
 
+### Ollama local para lotes
+
+`OllamaTransformer` permite refinar texto con un modelo servido localmente sin
+API keys ni una dependencia Python adicional. Actualmente se integra en
+`scripts/batch_rewrite.py`; no está expuesto como opción de la CLI general ni
+de la GUI.
+
+```bash
+ollama serve
+ollama pull qwen2.5:3b
+python scripts/batch_rewrite.py --help
+```
+
+Por defecto busca `qwen2.5:3b` en `http://localhost:11434`; `OLLAMA_URL` permite
+cambiar el endpoint. Si el servidor/modelo no está disponible, ocurre un error
+de red o el resultado pierde un token protegido, conserva el texto de entrada.
+
 ## 🌐 API
 
 ```bash
@@ -237,7 +265,8 @@ src/rewrite_engine/
   synonyms/  base · dict_source (JSON) · wordnet_source (OMW) · engine
   rewrite/   candidates · scorer (semántico/legibilidad) · sentence · grammar · ai_scorer · ranker
   transformers/ base (interfaz IA) · null (offline por defecto) · t5_paraphraser (T5 opt-in) ·
-    translation_bridge (extiende IA a 12 idiomas vía MarianMT) · _guards (guardas compartidas)
+    translation_bridge (IA en 16 idiomas vía MarianMT) · ollama (LLM local por HTTP) ·
+    _guards (guardas compartidas)
   api/ · cli/
 data/
   dictionaries/{es,en,pt,fr,it,de,nl,pl,ru,uk,sv,...}/general.json   # editables
@@ -271,9 +300,11 @@ Flujo: **detectar idioma → proteger entidades → tokenizar → generar candid
    segmentación Unicode conservadora para `zh`, `ja` y `th`, pero no se declaran
    idiomas de primera clase hasta tener diccionarios y pruebas de calidad.
 
-## 🤖 Enchufar un LLM (futuro)
+## 🤖 Añadir otro transformer
 
-Implementa `rewrite_engine.transformers.base.BaseTransformer` (`available`, `refine(text, language, mode)`) y pásalo al motor:
+Implementa `rewrite_engine.transformers.base.BaseTransformer` (`available`,
+`refine(text, language, mode)`) y pásalo al motor. T5, el puente MarianMT y
+Ollama son implementaciones existentes que sirven como referencia:
 
 ```python
 engine = RewriteEngine(transformer=MiTransformerDeClaude())
@@ -309,9 +340,9 @@ Material de referencia usado durante el diseño (carpeta `repos/`):
 
 | Modelo | Licencia | Uso |
 |--------|----------|-----|
-| `mrm8488/t5-small-finetuned-quora-for-paraphrasing` | sin licencia declarada en HF | Paráfrasis en inglés (toggle IA por defecto). Verifica los términos de HuggingFace antes de uso comercial. |
-| `Ateeqq/Text-Rewriter-Paraphraser` | Apache-2.0 | Alternativa de paráfrasis en inglés, más pesada, mejor en frases declarativas. |
-| `Helsinki-NLP/opus-mt-*` (MarianMT) | Apache-2.0 | Puente de traducción (extiende la IA a los 12 idiomas). |
+| `Ateeqq/Text-Rewriter-Paraphraser` | Apache-2.0 | Paráfrasis en inglés; modelo predeterminado y embebido. |
+| `mrm8488/t5-small-finetuned-quora-for-paraphrasing` | sin licencia declarada en HF | Alternativa ligera; no se distribuye en el bundle. |
+| `Helsinki-NLP/opus-mt-*` (MarianMT) | Apache-2.0 | Puente de traducción; ES↔EN incluido, otros pares bajo demanda. |
 
 > ⚠️ **Evaluados y descartados** (ver §Puente de traducción), cada uno por un motivo distinto, no por una política general de licencias:
 > - `google/mt5-small` — **motivo técnico**: no funciona tal cual, necesita fine-tuning (verificado en su propia tarjeta de modelo).
@@ -331,3 +362,17 @@ ruff check src tests
 ```
 
 GitHub Actions ejecuta `pytest` y `ruff` en Python 3.11 y 3.13.
+# NLLB-200 local y sincronización con dowdes.com
+
+Instalación/conversión opcional del traductor local:
+
+```powershell
+pip install -e ".[nllb]"
+python scripts/convert_nllb.py
+```
+
+La conversión genera CTranslate2 int8 (~651 MB). Los pesos de
+`facebook/nllb-200-distilled-600M` son CC-BY-NC-4.0. En la GUI, el botón
+**dowdes.com…** abre una cola privada con acciones para faltantes, todas o
+volver a reescribir, progreso, pausa, reanudación y cancelación. El token solo
+se conserva durante la sesión y no se inserta ninguna marca en el HTML público.

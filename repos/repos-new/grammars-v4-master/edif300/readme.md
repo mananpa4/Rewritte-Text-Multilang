@@ -1,4 +1,0 @@
-# Edif300
-
-## Reference
-

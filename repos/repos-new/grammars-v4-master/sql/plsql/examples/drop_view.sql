@@ -1,3 +1,0 @@
-DROP VIEW employee;
-DROP VIEW employee CASCADE CONSTRAINT;
-DROP VIEW employee IF EXISTS;

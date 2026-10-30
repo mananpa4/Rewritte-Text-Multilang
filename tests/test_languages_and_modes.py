@@ -113,6 +113,32 @@ def test_config_normaliza_aliases_de_idioma():
 @pytest.mark.parametrize(
     ("lang", "text", "expected"),
     [
+        ("ar", "أحتاج مساعدة جيدة.", ("دعم", "عون", "ممتاز", "ملائم")),
+        ("hi", "मुझे अच्छी मदद चाहिए।", ("सहायता", "सहयोग")),
+        ("tr", "İyi yardım gerekiyor.", ("destek", "katkı")),
+        ("id", "Saya perlu bantuan baik.", ("dukungan", "pertolongan")),
+    ],
+)
+def test_reescribe_idiomas_globales_agregados(rewrite, lang, text, expected):
+    r = rewrite(text, language=lang, mode="formal", strength=0.9)
+    assert r.language == lang
+    assert r.rewritten != r.original
+    assert any(word in r.rewritten.lower() for word in expected)
+
+
+@pytest.mark.parametrize(
+    ("alias", "expected"),
+    [("ar-SA", "ar"), ("hi-IN", "hi"), ("tr-TR", "tr"), ("id-ID", "id")],
+)
+def test_aliases_idiomas_globales(alias, expected):
+    cfg = EngineConfig(languages=(alias,), default_language=alias)
+    assert cfg.languages == (expected,)
+    assert cfg.default_language == expected
+
+
+@pytest.mark.parametrize(
+    ("lang", "text", "expected"),
+    [
         ("nl", "verzending aanbieding duurzaam comfortabel", ("actie", "prettig")),
         ("pl", "wysyłka oferta trwały wygodny", ("promocja", "komfortowy")),
         ("ru", "доставка предложение прочный удобный", ("акция", "комфортный")),

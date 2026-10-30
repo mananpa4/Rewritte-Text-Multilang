@@ -1,4 +1,0 @@
-# PGN Grammar
-
-## Reference
-
